@@ -1,0 +1,37 @@
+$main-text-color: white;
+
+section {
+    height: 100dvh;
+    width: 100%;
+    background-image: url('/img/01-Hero/hero-bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $main-text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 100&;
+}
+
+.header {
+    width: 100%;
+}
+/* 01_Hero */
+
+// width: 1440px;
+// height: 900px;
+// overflow-y: scroll;
+
+// background: url(12 Isolated Paper Rips copia.png);
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// align-self: stretch;
+// flex-grow: 0;
+// z-index: 0;
