@@ -3,7 +3,6 @@
     padding: 0;
     position: relative;
     box-sizing: border-box;
-    text-decoration: none;
     scroll-behavior: smooth;
 }
 
@@ -80,4 +79,9 @@ html {
   font-family: 'Bricolage Grotesque';
   font-weight: 800;
   
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

@@ -5,3 +5,21 @@ header {
     width: 100%;
     font-size: 18px;
 }
+
+.container-logo {
+    &:hover > .logo-hover {
+        opacity: 1;
+    }
+}
+
+.logo-normal {
+    
+}
+
+.logo-hover {
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in
+}
