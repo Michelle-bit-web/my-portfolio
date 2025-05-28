@@ -1,5 +1,14 @@
 * {
-    margin: 0
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
 }
 
 /* bricolage-grotesque-regular - latin */
