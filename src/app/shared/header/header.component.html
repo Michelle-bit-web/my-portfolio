@@ -1,16 +1,66 @@
 <header class="fontBricolage700">
-    <div class="container-logo">
-     <img class="logo-normal" src="assets/img/01-Hero/header-bar/header-frame/Logo.png" alt="logo image">
-     <img class="logo-hover" src="assets/img/01-Hero/header-bar/header-frame/Logo-Hover.png" alt="logo image">
-    </div>
-    <div>
-        <div><a href="#about">About me</a></div>
-        <!-- <img src="assets/img/01-Hero/header-bar/header-frame/lines/1.png" alt=""> -->
-    </div>
-    <div><a href="#skills">Skills</a></div>
-    <div><a href="#projects">Projects</a></div>
-    <div><a href="#contact">Contact</a></div>
-    <img src="assets/img/01-Hero/header-bar/header-frame/Property 1=English Default.png" alt="">
-    <img src="assets/img/01-Hero/header-bar/header-frame/Property 1=Deutsch Default.png" alt="">
-    <img src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Left.png" alt="toggle bar for language">
+  <div class="container-logo">
+    <img
+      class="logo-normal"
+      src="assets/img/01-Hero/header-bar/header-frame/Logo.png"
+      alt="logo image"
+    />
+    <img
+      class="logo-hover"
+      src="assets/img/01-Hero/header-bar/header-frame/Logo-Hover.png"
+      alt="logo image"
+    />
+  </div>
+
+  <div class="nav-link-wrapper">
+    <a class="nav-link" href="#about">
+      About me
+      <img
+        src="assets/img/01-Hero/header-bar/header-frame/lines/1.png"
+        alt=""
+      />
+    </a>
+  </div>
+
+  <div class="nav-link-wrapper">
+    <a class="nav-link" href="#skills">
+      Skills
+      <img
+        src="assets/img/01-Hero/header-bar/header-frame/lines/2.png"
+        alt=""
+      />
+    </a>
+  </div>
+  <div class="nav-link-wrapper">
+    <a class="nav-link" href="#projects">
+      Projects
+      <img
+        src="assets/img/01-Hero/header-bar/header-frame/lines/3.png"
+        alt=""
+      />
+    </a>
+  </div>
+  <div class="nav-link-wrapper">
+    <a class="nav-link" href="#contact">
+      Contact
+      <img
+        src="assets/img/01-Hero/header-bar/header-frame/lines/4.png"
+        alt=""
+      />
+    </a>
+  </div>
+  <img
+    src="assets/img/01-Hero/header-bar/header-frame/Property 1=English Default.png"
+    alt=""
+  />
+  <img
+    src="assets/img/01-Hero/header-bar/header-frame/Property 1=Deutsch Default.png"
+    alt=""
+  />
+  @if(english){
+    <img (click)="switchLanguage()" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Left.png" alt="toggle bar for language"/>
+  } @else {
+    <img (click)="switchLanguage()" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Right.png" alt="toggle bar for language"/>
+  }
+  
 </header>

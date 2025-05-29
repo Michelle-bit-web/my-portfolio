@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  english = false;
 
+  switchLanguage(){
+    if(this.english){
+      this.english = false;
+    } else {
+      this.english = true;
+    }
+  }
 }
