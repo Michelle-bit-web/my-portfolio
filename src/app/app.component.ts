@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CursorComponent } from './shared/cursor/cursor.component';
 
@@ -13,4 +13,5 @@ import { CursorComponent } from './shared/cursor/cursor.component';
 })
 export class AppComponent {
   title = 'my-portfolio';
+
 }
