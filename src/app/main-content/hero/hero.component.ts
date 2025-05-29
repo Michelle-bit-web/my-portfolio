@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { HeaderComponent } from '../../shared/header/header.component';
 
 @Component({
@@ -9,9 +9,27 @@ import { HeaderComponent } from '../../shared/header/header.component';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
-export class HeroComponent {
+export class HeroComponent implements AfterViewInit{
 
-// document.querySelectorAll(".bouncing-letters>span").forEach((element) => {
+  @ViewChild('titleUpper', { static: true }) refHeadlineUpper!: ElementRef<HTMLHeadingElement>;
+  ngAfterViewInit() {
+    console.log('Was passiert');
+    this.bounce();
+  }
+
+  @HostListener('document:mouseover')
+  onMouseOver() {
+    
+    this.refHeadlineUpper.nativeElement.style.color = "yellow";
+   
+    
+  }
+
+  bounce(){
+    this.refHeadlineUpper.nativeElement.style.scale = "1.1"
+    requestAnimationFrame(() => this.bounce());
+  }
+  // document.querySelectorAll(".bouncing-letters>span").forEach((element) => {
 //   element.addEventListener("mouseover",
 //     (e) => bounce(e.target));
 // });

@@ -16,7 +16,7 @@ export class CursorComponent implements AfterViewInit{
   circleX = 0;
   circleY = 0;
 
-   @ViewChild('cursor', { static: true }) refCursor!: ElementRef<HTMLDivElement>;
+  @ViewChild('cursor', { static: true }) refCursor!: ElementRef<HTMLDivElement>;
   @ViewChild('circle', { static: true }) refCircle!: ElementRef<HTMLDivElement>;
 
   ngAfterViewInit() {
