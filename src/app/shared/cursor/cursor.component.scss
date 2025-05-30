@@ -1,3 +1,11 @@
+//#region colors
+$main-text-color: white;
+$secondary-text-color: black;
+$fill-color-violett: #7e4ae7;
+$fill-color-green:#bae011;
+$fill-color-orange: #e08c05;
+// #endregion colors
+
 .cursor, .circle {
       position: fixed;
       top: 0;
@@ -11,7 +19,7 @@
     .cursor {
       width: 5px;
       height: 5px;
-      background-color: #bae011;
+      background-color: $fill-color-green;
       border-radius: 50%;
       z-index: 10;
       animation-duration: 0.4s;
@@ -22,7 +30,7 @@
       width: 24px;
       height: 24px;
       border-radius: 50%;
-      border: 2px solid #bae011;
+      border: 2px solid $fill-color-green;
       display: flex;
       justify-content: center;
       align-items: center;

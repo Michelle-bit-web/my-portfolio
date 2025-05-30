@@ -1,4 +1,17 @@
-$main-text-color: black;
+//#region colors
+$text-primary: white;
+$text-inverse: black;
+
+$accent-primary: #7e4ae7;
+$accent-secondary:#bae011;
+$accent-tertiary: #e08c05;
+
+$bg-primary: #7e4ae7;
+$bg-secondary: #e08c05;
+$bg-light: white;
+$bg-inverse: black;
+
+// #endregion colors
 .paper-features {
   width: 560px;
   height: 152px;
@@ -10,7 +23,7 @@ $main-text-color: black;
 section {
   height: 100dvh;
   width: 100%;
-  color: $main-text-color;
+  color: $text-inverse;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +45,7 @@ section {
 
 .paper-text {
   font-size: 24px;
-  color: white;
+  color: $text-primary;
 }
 
 .right-frame {
@@ -73,9 +86,9 @@ button {
   border-radius: 100px;
   border-width: 1px;
   padding: min(1.2rem, 12%) min(2.4rem, 6%);
-  background-color: rgb(255, 255, 255);
+  background-color: $bg-light;
   color: $main-text-color;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid $bg-inverse;
 }
 
 .paper-location {

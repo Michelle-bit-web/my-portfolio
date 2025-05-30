@@ -1,3 +1,18 @@
+//#region colors
+$text-primary: white;
+$text-inverse: black;
+
+$accent-primary: #7e4ae7;
+$accent-secondary:#bae011;
+$accent-tertiary: #e08c05;
+
+$bg-primary: #7e4ae7;
+$bg-secondary: #e08c05;
+$bg-light: white;
+$bg-inverse: black;
+
+// #endregion colors
+
 header {
   display: flex;
   align-items: center;
@@ -21,7 +36,7 @@ header {
 }
 
 .hover-overlay {
-  background-color: black;
+  background-color: $bg-inverse;
 }
 
 .nav-link {
@@ -37,4 +52,63 @@ header {
   }
 }
 
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 
+.nav-cirlce,
+.nav-line,
+  .nav-curve-line,
+  .nav-crossing-line {
+  position: relative;
+  mask-image: linear-gradient(transparent, transparent, transparent, transparent);
+  &:hover {
+    
+   animation: fade-in ease-in-out forwards;
+   animation-duration: 500ms;
+  }
+}
+  @keyframes fade-in {
+    0% {
+      mask-image: linear-gradient(transparent, transparent, transparent, transparent);
+    }
+    5%{
+      mask-image: linear-gradient(rgba(0, 0, 0, 0.72), transparent, transparent, transparent);
+    }
+    10% {
+      mask-image: linear-gradient(black, transparent, transparent, transparent);
+    }
+    25% {
+      mask-image: linear-gradient( black, rgba(0, 0, 0, 0.626), transparent, transparent);
+    }
+    35%{
+      mask-image: linear-gradient( black, black, transparent, transparent);
+    }
+    50%{
+      mask-image: linear-gradient( black, black, rgba(0, 0, 0, 0.703), transparent);
+    }
+    75% {
+      mask-image: linear-gradient( black, black, black, transparent);
+    }
+    85% {
+      mask-image: linear-gradient( black, black, black, rgba(0, 0, 0, 0.703));
+    }
+    100% {
+      mask-image: linear-gradient(black, black, black, black);
+    }
+  }
+ 
+
+.line-box {
+  width: fit-content;
+  > .box-img {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+.toggle-img {
+  position: relative;
+}

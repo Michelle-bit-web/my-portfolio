@@ -1,4 +1,17 @@
-$main-text-color: white;
+//#region colors
+$text-primary: white;
+$text-inverse: black;
+
+$accent-primary: #7e4ae7;
+$accent-secondary:#bae011;
+$accent-tertiary: #e08c05;
+
+$bg-primary: #7e4ae7;
+$bg-secondary: #e08c05;
+$bg-light: white;
+$bg-inverse: black;
+
+// #endregion colors
 
 section {
   height: 100dvh;
@@ -7,7 +20,7 @@ section {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  color: $main-text-color;
+  color: $text-primary;
  
   justify-content: flex-start;
 }
@@ -80,7 +93,7 @@ h2 {
     align-items: center;
     padding: 12px;
     > span {
-        color: black;
+        color: $text-inverse;
         font-size: 18px;
         width: 100%;
     }
