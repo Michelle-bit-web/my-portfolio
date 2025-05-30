@@ -10,8 +10,10 @@ $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
 $bg-inverse: black;
-
 // #endregion colors
+
+//#region font-sizes
+// $fs-btn-default: clamp(2rem, calc(7vw + 1rem), 12.8rem);
 
 section {
   height: 100dvh;
@@ -44,20 +46,27 @@ section {
 }
 
 .polaroid-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media(max-width: 768px) {
+    top: 200%;
+    right: unset;
+    translate: (0, 0);
+  }
 }
 
 .polaroid {
-  width: 20rem;
-  height: 250px;
+  width: 20.3rem;
+  height: 24.4rem;
   transform: rotate(5deg);
 }
 
 .bg-polaroid {
+  @extend .polaroid;
   position: absolute;
-  top: 5px;
-  left: 15px;
-  width: 20rem;
-  height: 250px;
+  top: 0.5rem;
+  left: 1.5rem;
   transform: rotate(10deg);
   background-color: #7e4ae7;
   &:hover {
@@ -82,6 +91,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2.4rem;
+  position: relative;
+  @media(max-width: 768px) {
+    height: 61.7rem;
+  }
 }
 
 .upper-subframe {
@@ -130,7 +144,7 @@ section {
       border-radius: 50%;
       translate: -50% -50%;
       z-index: -1;
-      padding: 3px;
+      padding: 0.3rem;
       filter: blur(0.5rem);
       opacity: 0.5;
       background-image: conic-gradient(
@@ -144,7 +158,6 @@ section {
   }
 }
 
-
 @keyframes spin {
   0% {
     --angle: 0deg;
@@ -157,20 +170,24 @@ section {
 
 h1 {
   > span {
-    font-size: clamp(2rem, calc(7vw + 1rem), 12.8rem);
+    font-size: clamp(4.8rem, calc(7vw + 1rem), 12.8rem);
   }
 }
 
 button {
-  width: 130px;
-  height: 40px;
-  gap: 10px;
-  border-radius: 100px;
-  border-width: 1px;
-  padding: min(1.2rem, 12%) min(2.4rem, 6%);
+  box-sizing: border-box;
+  width: 14.5rem;
+  height: 4rem;
+  gap: 1rem;
+  font-size: 1.8rem;
+  border-radius: 10rem;
+  border: 0.1rem;
   background-color: black;
   color: $text-primary;
-  border: 1px solid $bg-light;
+  border: 0.1rem solid $bg-light;
+  @media(max-width: 450px){
+    font-size: 1.6rem;
+  }
 }
 
 .bouncing-letters span {
@@ -234,20 +251,32 @@ button {
 // }
 
 .btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
 }
 
+.img-hand {
+  width: 4rem;
+  height: 4rem;
+  &:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+  }
+}
+
+
 .btn-name {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   opacity: 0;
   background-color: $accent-primary;
-  width: 180px;
-  height: 40px;
+  width: 18rem;
   &:hover {
-    animation: fadeIn ease-in forwards;
-    animation-duration: 1s;
+    animation: 5s fadeIn ease-in forwards;
+    animation-duration: 500ms;
   }
 }
 
@@ -271,13 +300,13 @@ button {
 
 @keyframes fadeOut {
   0% {
-    width: 140px;
+    width: 14rem;
     box-shadow: inset 140 0 0 0 #7e4ae72c;
     opacity: 1;
   }
 
   100% {
-    width: 180px;
+    width: 18rem;
     box-shadow: inset 180 0 0 0 $accent-primary;
     background-color: $accent-primary;
     opacity: 0;
@@ -287,5 +316,5 @@ button {
 .btn-contact:hover {
   background-color: $accent-tertiary;
   transform: scale(0.9);
-  box-shadow: 5px 0 0 5px $accent-primary;
+  box-shadow: 0.5rem 0 0 0.5rem $accent-primary;
 }
