@@ -13,13 +13,15 @@ $bg-inverse: black;
 
 // #endregion colors
 
-header {
+header, nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   font-size: 18px;
+  gap: 10%;
 }
+
 
 .container-logo {
   &:hover > .logo-hover {
@@ -39,6 +41,20 @@ header {
   background-color: $bg-inverse;
 }
 
+.burger-menu {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.menu-line {
+    width: 100%;
+    border-radius: 10px;
+    height: 3px;
+    background-color: $bg-light;
+    margin: 4px 0;
+}
+
 .nav-link {
    position: relative;
   > img {
@@ -52,6 +68,20 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+}
+
+
+
+
+
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -61,7 +91,8 @@ header {
 .nav-cirlce,
 .nav-line,
   .nav-curve-line,
-  .nav-crossing-line {
+  .nav-crossing-line,
+  .box-img {
   position: relative;
   mask-image: linear-gradient(transparent, transparent, transparent, transparent);
   &:hover {
@@ -103,12 +134,19 @@ header {
 
 .line-box {
   width: fit-content;
-  > .box-img {
-    width: 40px;
-    height: 40px;
-  }
-
+  position: relative;
 }
 .toggle-img {
   position: relative;
+}
+
+.hover-boxes {
+  position: absolute;
+  top: -0.5rem;
+
+
+  > img {
+    width: 40px;
+    height: 40px;
+  }
 }

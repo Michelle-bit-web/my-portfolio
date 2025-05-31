@@ -30,35 +30,33 @@ section {
 }
 
 .content {
+  border: 2px solid red;
   max-width: 1920px;
   width: 100%;
-  display: grid;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: min(5rem, 3.4%);
   padding: 0 min(6.4rem, 4.4%);
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr;
-  grid-template-areas: "left-frame right-frame";
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:  "right-frame" "left-frame";
+  @media(max-width: 1000px) {
+    flex-direction: column-reverse;
+    padding: 0 min(2.4rem, 4.4%);
   }
 }
 
 .left-frame, 
 .right-frame {
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  
+  flex: 1 0 50%;
+  min-width: 0;
+  height: auto;
 }
 
 .left-frame {
-  grid-area: left-frame;
-  justify-content: center;
   align-items: center;
-  
 }
 
 .paper-text {
@@ -67,10 +65,7 @@ section {
 }
 
 .right-frame {
-  grid-area: right-frame;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 3.2rem;
+  gap: 4rem;
   > div {
     > span {
     font-size: clamp(1.8rem, 2.5vw + 1rem, 2.0rem);
@@ -110,15 +105,10 @@ button {
   border: 1px solid $bg-inverse;
 }
 
-.flex-grow {
-  flex: 1 1 0;
-}
-
 .paper-location {
   background: url('./../../../../public/assets/img/02-AboutMe/papers/1.png') center/cover no-repeat;
   @extend .paper-features;
   transform: rotate(-10deg);
-  height:100px;
 }
 
 .paper-remote {
