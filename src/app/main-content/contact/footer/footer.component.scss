@@ -1,0 +1,57 @@
+//#region colors
+$text-primary: white;
+$text-inverse: black;
+
+$accent-primary: #7e4ae7;
+$accent-secondary:#bae011;
+$accent-tertiary: #e08c05;
+
+$bg-primary: #7e4ae7;
+$bg-secondary: #e08c05;
+$bg-light: white;
+$bg-inverse: black;
+
+// #endregion colors
+
+footer, 
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+  gap: 10%;
+}
+
+footer {
+    border: 2px solid white;
+    height: 100px;
+}
+
+.container-logo {
+  &:hover > .logo-hover {
+    opacity: 1;
+  }
+}
+
+.logo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+
+.footer-link {
+   position: relative;
+  > img {
+    position: absolute;
+    top: 0;
+    left:0;
+    transform: translate(-15px, -15px);
+    width: 120px;
+    height: 50px;
+    // border: 2px solid white;
+  }
+}
