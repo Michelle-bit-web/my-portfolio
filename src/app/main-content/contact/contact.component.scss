@@ -1,0 +1,112 @@
+//#region colors
+$text-primary: white;
+$text-inverse: black;
+
+$accent-primary: #7e4ae7;
+$accent-secondary:#bae011;
+$accent-tertiary: #e08c05;
+
+$bg-primary: #7e4ae7;
+$bg-secondary: #e08c05;
+$bg-light: white;
+$bg-inverse: black;
+
+// #endregion colors
+.paper-features {
+  width: 56rem;
+  height: 15.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 100dvh;
+  width: 100%;
+  color: $text-primary;
+  display: flex;
+  justify-content: center;
+  background: url("./../../../../public/assets/img/06-Contact/bg.png") top/cover no-repeat;
+}
+
+.content {
+  border: 2px solid red;
+  max-width: 1920px;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: min(5rem, 3.4%);
+  padding: 0 min(6.4rem, 4.4%);
+  
+}
+
+.main-frame {
+  width: 100%;
+  height: 100dvh;
+  border: 2px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 10rem 0;
+}
+
+.left-frame {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    gap: 3.2rem;
+}
+
+.right-frame {
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+.sticker {
+    width: 100px;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+}
+
+.arrow-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.arrow {
+    width: 300px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+}
+
+span {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 6.4rem;
+}
+
+input {
+    background: transparent;
+    height: 4rem;
+}
+
+label {
+    font-size: 2rem;;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
