@@ -150,3 +150,9 @@ header, nav {
     height: 40px;
   }
 }
+
+/* Nur wenn 'inverse' aktiv ist */
+.color-inverse .nav-link-wrapper:nth-child(1) .nav-link,
+.color-inverse .nav-link-wrapper:nth-child(2) .nav-link {
+  color: $text-inverse;
+}

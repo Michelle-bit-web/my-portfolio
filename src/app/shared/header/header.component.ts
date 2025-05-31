@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
-import { NgModel } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [
+    CommonModule,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  @Input() variant: "default" | "inverse" = "default";
   english = false;
 
   switchLanguage(){

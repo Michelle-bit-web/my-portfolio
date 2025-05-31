@@ -16,7 +16,7 @@
       <div class="menu-line"></div>
       <div class="menu-line"></div>
     </div>
- <nav>
+ <nav [ngClass]="{'color-inverse': variant === 'inverse'}">
    <div class="nav-link-wrapper">
     <a class="nav-link" href="#about">
       About me
