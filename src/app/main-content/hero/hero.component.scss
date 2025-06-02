@@ -260,38 +260,6 @@ button {
   position: relative;
 }
 
-.img-hand {
-  width: 4rem;
-  height: 4rem;
-  &:hover {
-    transform: rotate(360deg);
-    transition: 2s;
-  }
-}
-
-
-.btn-name {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  background-color: $accent-primary;
-  width: 18rem;
-  &:hover {
-    animation: 5s fadeIn ease-in forwards;
-    animation-duration: 500ms;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .btn-greeting {
   box-shadow: inset 0 0 0 0 $accent-primary;
 
@@ -316,6 +284,58 @@ button {
   }
 }
 
+.img-hand {
+  width: 4rem;
+  height: 4rem;
+  &:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+  }
+}
+
+
+.btn-name {
+  cursor: pointer;
+   position: relative;
+   display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-color: $accent-primary;
+  width: 18rem;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 50%;
+    background-color: $accent-primary;
+    border-radius: 20px;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s;
+    // opacity: 1;
+  }
+  &:hover::after {
+    height: 100%;
+    width: 100%;
+    // animation: 5s fadeIn ease-in forwards;
+    // animation-duration: 500ms;
+   
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .btn-contact:hover {
   background-color: $accent-tertiary;
   transform: scale(0.9);
@@ -329,3 +349,4 @@ button {
       display: none;
     }
   }
+

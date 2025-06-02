@@ -22,4 +22,9 @@ export class HeaderComponent {
       this.english = true;
     }
   }
+
+  toggleMenu(){
+    const overlay = document.querySelector('.overlay');
+    overlay?.classList.toggle('d_none');
+  }
 }
