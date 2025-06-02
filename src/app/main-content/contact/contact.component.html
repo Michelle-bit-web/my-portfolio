@@ -16,16 +16,26 @@
             </div>
         </div>
         <div class="right-frame">
-            <label class="fontBricolage400" for="">What´s your name?</label>
-            <input  class="fontBricolage400"type="text" required placeholder="Please enter your name">
-            <label class="fontBricolage400" for="">Whta´s your email?</label>
-            <input class="fontBricolage400" type="text" required placeholder="Please enter your email">
-            <label class="fontBricolage400" for="">How can I help you?</label>
-            <input class="fontBricolage400" type="text" required placeholder="Please give ... so I can answer">
-            <div class="checkbox-wrapper">
-                <input type="checkbox">
-                <p class="fontBricolage400">data policy etc</p>
-            </div>
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <div class="form-group">
+                    <label class="fontBricolage400" for="name">What´s your name?</label>
+                    <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required placeholder="Please enter your name">
+                </div>
+                <div class="form-group">
+                    <label class="fontBricolage400" for="email">Whta´s your email?</label>
+                    <input [(ngModel)]="contactData.email" class="fontBricolage400" name="email" type="email" id="email" required placeholder="Please enter your email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                </div>
+                <div class="form-group">
+                    <label class="fontBricolage400" for="message">How can I help you?</label>
+                    <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required placeholder="Please give ... so I can answer"></textarea>
+                </div>
+                <div class="checkbox-wrapper form-group">
+                    <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required>
+                    <p class="fontBricolage400">data policy etc</p>
+                </div>
+                <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid">Send</button>
+
+            </form>
         </div>
         <img class="sticker" src="assets\img\04_ Color option 2 - B.png" alt="">
     </div>

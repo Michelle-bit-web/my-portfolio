@@ -43,11 +43,15 @@ export class CursorComponent implements AfterViewInit{
   
   @HostListener('document:mousedown')
   onMouseDown() {
-    this.refCircle.nativeElement.style.backgroundColor = " #bae011";
+    if(this.refCircle.nativeElement){
+      this.refCircle.nativeElement.style.backgroundColor = " #bae011";
+    }
   }
 
   @HostListener('document:mouseup')
   onMouseUp() {
-    this.refCircle.nativeElement.style.backgroundColor = "transparent";
+    if(this.refCircle.nativeElement){
+      this.refCircle.nativeElement.style.backgroundColor = "transparent";
+    }
   }
 }

@@ -11,26 +11,26 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
-export class HeroComponent implements AfterViewInit{
+export class HeroComponent {
 
-  @ViewChild('titleUpper', { static: true }) refHeadlineUpper!: ElementRef<HTMLHeadingElement>;
-  ngAfterViewInit() {
-    console.log('Was passiert');
-    this.bounce();
-  }
+  // @ViewChild('titleUpper', { static: true }) refHeadlineUpper!: ElementRef<HTMLHeadingElement>;
+  // ngAfterViewInit() {
+  //   console.log('Was passiert');
+  //   this.bounce();
+  // }
 
-  @HostListener('document:mouseover')
-  onMouseOver() {
+  // @HostListener('document:mouseover')
+  // onMouseOver() {
     
-    this.refHeadlineUpper.nativeElement.style.color = "yellow";
+  //   this.refHeadlineUpper.nativeElement.style.color = "yellow";
    
     
-  }
+  // }
 
-  bounce(){
-    this.refHeadlineUpper.nativeElement.style.scale = "1.1"
-    requestAnimationFrame(() => this.bounce());
-  }
+  // bounce(){
+  //   this.refHeadlineUpper.nativeElement.style.scale = "1.1"
+  //   requestAnimationFrame(() => this.bounce());
+  // }
   // document.querySelectorAll(".bouncing-letters>span").forEach((element) => {
 //   element.addEventListener("mouseover",
 //     (e) => bounce(e.target));
