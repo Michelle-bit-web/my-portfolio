@@ -1,10 +1,12 @@
 import { Component, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { HeaderComponent } from '../../shared/header/header.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
   imports: [
     HeaderComponent,
+    TranslateModule
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'

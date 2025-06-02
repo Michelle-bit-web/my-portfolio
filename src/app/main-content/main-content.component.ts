@@ -5,6 +5,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { HeroComponent } from './hero/hero.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-content',
@@ -14,7 +15,8 @@ import { SkillsComponent } from './skills/skills.component';
     FeedbackComponent,
     HeroComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    TranslateModule
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
