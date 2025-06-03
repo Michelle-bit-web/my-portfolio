@@ -41,20 +41,6 @@ header, nav {
   background-color: $bg-inverse;
 }
 
-.burger-menu {
-    width: 24px;
-    height: 24px;
-    display: none;
-}
-
-.menu-line {
-    width: 100%;
-    border-radius: 10px;
-    height: 3px;
-    background-color: $bg-light;
-    margin: 4px 0;
-}
-
 .nav-link {
    position: relative;
   > img {
@@ -172,20 +158,37 @@ header, nav {
     gap: 3.2rem;
     padding: 4.0rem 3.2rem;
   }
-  > div {
-    display: flex;
-    justify-content: flex-end;
-    padding: 4.0rem 3.2rem;
-    > button {
-      width: 2.4rem;
-    height: 2.4rem;
-    background-color: $bg-inverse;
-    color: $text-primary;
-    border: 2px solid $bg-primary;
-    }
-  }
+ 
 }
 
 .d_none {
   display: none;
+}
+
+.menu-btn {
+  background: transparent;
+  border-radius: 1rem;
+  // border: 1px solid white;
+  overflow: hidden;
+
+}
+
+.menu-btn .burger-icon {
+  transition: translate 1s, rotate 1s;
+  z-index: 2;
+}
+
+.menu-btn[aria-expanded="true"] .burger-icon {
+  translate: 2.5px 0px;
+  rotate: 0.125turn;
+}
+
+.menu-btn .line {
+  transition: 1s;
+  stroke-dasharray: 60 30 60 300;
+}
+
+.menu-btn[aria-expanded="true"] .line {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
 }

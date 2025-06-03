@@ -26,5 +26,12 @@ export class HeaderComponent {
   toggleMenu(){
     const overlay = document.querySelector('.overlay');
     overlay?.classList.toggle('d_none');
+    const buttonThree = document.querySelector(".menu-btn");
+    const isOpened = buttonThree?.getAttribute("aria-expanded");
+    if(isOpened === "false") {
+      buttonThree?.setAttribute("aria-expanded", "true");
+    } else {
+      buttonThree?.setAttribute("aria-expanded", "false");
+    }
   }
 }
