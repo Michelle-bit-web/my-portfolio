@@ -1,6 +1,8 @@
 import { Component, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { HeaderComponent } from '../../shared/header/header.component';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 @Component({
@@ -14,9 +16,11 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-  //  ngOnInit() {
-  //   AOS.init();
-  // }
+  
+   ngOnInit() {
+    AOS.init();
+  }
+
   // @ViewChild('titleUpper', { static: true }) refHeadlineUpper!: ElementRef<HTMLHeadingElement>;
   // ngAfterViewInit() {
   //   console.log('Was passiert');
