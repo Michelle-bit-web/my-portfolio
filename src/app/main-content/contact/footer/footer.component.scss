@@ -52,16 +52,14 @@ footer {
    cursor: pointer;
    position: relative;
    display: inline-block;
-   
-  // > img {
-  //   position: absolute;
-  //   top: 0;
-  //   left:0;
-  //   transform: translate(-15px, -15px);
-  //   width: 120px;
-  //   height: 50px;
-    // border: 2px solid white;
-  // }
+   z-index: 2;
+   > img {
+    position: absolute;
+    top: -3rem;
+    right: 1.2rem;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+   }
   &::after {
     content: "";
     position: absolute;
@@ -73,9 +71,15 @@ footer {
     bottom: 0;
     transition: all 0.3s;
     opacity: 1;
+    z-index: -1;
   }
-  &:hover::after {
-    width: 100%;
-   
+  &:hover{
+    &::after {
+      width: 100%;
+    }
+    > img {
+      transform: translateX(4rem) rotate(360deg);
+      opacity: 1;
+    }
   }
 }
