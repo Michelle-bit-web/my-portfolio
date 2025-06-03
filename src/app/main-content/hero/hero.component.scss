@@ -427,10 +427,12 @@ button {
 
 
 
-.btn-contact:hover {
-  background-color: $accent-tertiary;
-  transform: scale(0.9);
-  box-shadow: 0.5rem 0 0 0.5rem $accent-primary;
+.btn-contact {
+  box-shadow: 0 4px 4px $bg-light;
+  &:hover {
+    scale: 0.9;
+    box-shadow: 0 4px 4px $bg-light inset;
+  }
 }
 
 

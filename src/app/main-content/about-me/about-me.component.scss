@@ -103,6 +103,11 @@ button {
   background-color: $bg-light;
   color: $text-inverse;
   border: 1px solid $bg-inverse;
+  box-shadow: 0 4px 4px rgba(0, 0, 0);
+  &:hover {
+    scale: 0.9;
+    box-shadow: 0 4px 4px rgba(0, 0, 0) inset;
+  }
 }
 
 .paper-location {

@@ -96,9 +96,10 @@ section {
         width: 7.2rem;
         height: 7.2rem;
         filter:saturate(0);
-        transition: filter 0.5s ease-in-out;
+        transition: filter 0.3s ease-in-out;
         &:hover {
             filter: saturate(1);
+            scale:(0.9);
         }
     }
     @media (max-width: 850px) {
