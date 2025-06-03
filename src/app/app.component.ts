@@ -23,7 +23,7 @@ export class AppComponent {
     this.translate.use('en');
     // this.translate.use(this.translate.getBrowserLang() || "en");
   }
-
+ 
 
   useLanguage(language: string): void {
     this.translate.use(language);

@@ -75,8 +75,8 @@
   </div>
  </nav>
   <div class="overlay d_none">
-    <nav [ngClass]="{'color-inverse': variant === 'inverse'}">
-   <div class="nav-link-wrapper">
+    <nav >
+   <div (click)="toggleMenu()" class="nav-link-wrapper">
     <a class="nav-link" href="#about">
       About me
       <img class="nav-cirlce"
@@ -86,7 +86,7 @@
     </a>
   </div>
 
-  <div class="nav-link-wrapper">
+  <div (click)="toggleMenu()" class="nav-link-wrapper">
     <a class="nav-link" href="#skills">
       Skills
       <img class="nav-line"
@@ -95,7 +95,7 @@
       />
     </a>
   </div>
-  <div class="nav-link-wrapper">
+  <div (click)="toggleMenu()" class="nav-link-wrapper">
     <a class="nav-link" href="#projects">
       Projects
       <img class="nav-curve-line"
@@ -104,7 +104,7 @@
       />
     </a>
   </div>
-  <div class="nav-link-wrapper">
+  <div (click)="toggleMenu()" class="nav-link-wrapper">
     <a class="nav-link" href="#contact">
       Contact
       <img class="nav-crossing-line"
@@ -115,16 +115,21 @@
   </div>
   <div class="line-box">
     @if(english){
-    <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Left.png" alt="toggle bar for language"/>
+      <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Left.png" alt="toggle bar for language"/>
     
-  } @else {
-    <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Right.png" alt="toggle bar for language"/>
-  }
+    } @else {
+      <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Right.png" alt="toggle bar for language"/>
+    }
     <div class="hover-boxes">
       <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
       <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
     </div> 
   </div>
+  <div class="frame-sm icons-mobile">
+      <div class="icons"><a href="https://www.linkedin.com/in/dr-michelle-puschkarow-605a7b17a/" target="_blank"><img  src="assets/img/01-Hero/social-media/Linkedin.png" alt="LinkedIn Icon"/></a></div>
+      <div class="icons"><a href="https://github.com/Michelle-bit-web" target="_blank"><img  src="assets/img/01-Hero/social-media/Github.png" alt="GitHub Icon" /></a></div>
+      <div class="icons"><a href="#contact"><img  src="assets/img/01-Hero/social-media/mail.png" alt="Email Icon" /></a></div>
+    </div>
  </nav>
   </div>
   

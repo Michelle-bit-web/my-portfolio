@@ -49,7 +49,7 @@ section {
 
 .main-frame {
   border: 1px solid green;
-  width: 100rem;
+  width: clamp(34rem, 80vw + 1rem, 100rem);
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -171,9 +171,9 @@ section {
 h1 {
   > span {
     font-size: 12.8rem;
-  //  @media(max-width: 1210px){
-  //   font-size: clamp(4.8rem, calc(7vw + 1rem), 12.8rem);
-  //  }
+   @media(max-width: 1210px){
+    font-size: clamp(4.8rem, calc(8vw + 1rem), 12.8rem);
+   }
   }
 }
 
@@ -253,87 +253,178 @@ button {
 //   100% { color: yellow; }
 // }
 
+
+
+// .btn-greeting {
+//   box-shadow: inset 0 0 0 0 $accent-primary;
+//   &::before{
+//     content: "I´m Michelle";
+//     display: none;
+//     height: 0;
+//     transition: height 100ms ease-in-out;
+//     // opacity: 1;
+//     // transition: width 1s, height 1s, opacity 1s;
+//     // transition-behavior: allow-discrete;
+//   }
+//   &:hover :is(.img-hand:hover){
+//     animation: grow ease-out forwards;
+//     animation-duration: 1s;
+//     content: "I´m Michelle";
+//   }
+// }
+
+// @keyframes grow {
+//   0% {
+//     width: 14rem;
+//     box-shadow: inset 140 0 0 0 #7e4ae72c;
+//     color: white;
+//     opacity: 1;
+//   }
+
+//   50% {
+//     content: "";
+//   }
+
+//   100% {
+//     content: "I´m Michelle";
+//     width: 18rem;
+//     box-shadow: inset 180 0 0 0 $accent-primary;
+//     background-color: $accent-primary;
+//     opacity: 1;
+//     color: $accent-primary;
+//   }
+// }
+
+// .img-hand {
+//   width: 4rem;
+//   height: 4rem;
+  // &:hover {
+  //   transform: rotate(360deg);
+  //   transition: 2s;
+  // }
+
+
+
+// .btn-name {
+//   cursor: pointer;
+//    position: relative;
+//    display: inline-block;
+//   // position: absolute;
+//   // bottom: 0;
+//   // left: 0;
+//   // opacity: 0;
+//   background-color: $accent-primary;
+//   width: 18rem;
+  
+//   &::after {
+//     content: "I´m Michelle";
+//     position: absolute;
+//     height: 0;
+//     width: 50%;
+//     background-color: $accent-primary;
+//     border-radius: 20px;
+//     left: 0;
+//     bottom: 0;
+//     transition: all 0.3s;
+//     opacity: 0;
+//   }
+//   &:hover::after {
+//     height: 100%;
+//     width: 100%;
+//     animation: 5s fadeIn ease-in forwards;
+//     animation-duration: 500ms;
+//     opacity: 1;
+   
+//   }
+// }
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+    
+//   }
+//   100% {
+//     opacity: 1;
+   
+//   }
+// }
 .btn-wrapper {
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
+
 
 .btn-greeting {
-  box-shadow: inset 0 0 0 0 $accent-primary;
-
-  &:hover {
-    animation: fadeOut ease-out forwards;
-    animation-duration: 1s;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    width: 14rem;
-    box-shadow: inset 140 0 0 0 #7e4ae72c;
-    opacity: 1;
-  }
-
-  100% {
-    width: 18rem;
-    box-shadow: inset 180 0 0 0 $accent-primary;
-    background-color: $accent-primary;
-    opacity: 0;
-  }
-}
-
-.img-hand {
-  width: 4rem;
-  height: 4rem;
-  &:hover {
-    transform: rotate(360deg);
-    transition: 2s;
-  }
-}
-
-
-.btn-name {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 14rem;
+  transition: width 1s ease;
+  background-color: $text-inverse;
+  color: white;
+  border: 2px solid $bg-light;
+  padding: 1rem;
   cursor: pointer;
-   position: relative;
-   display: inline-block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  background-color: $accent-primary;
-  width: 18rem;
-  
-  &::after {
-    content: "";
+
+  &::before {
+    content: "I’m Michelle";
     position: absolute;
-    height: 0;
-    width: 50%;
-    background-color: $accent-primary;
-    border-radius: 20px;
     left: 0;
-    bottom: 0;
-    transition: all 0.3s;
-    // opacity: 1;
-  }
-  &:hover::after {
+    top: 0;
     height: 100%;
-    width: 100%;
-    // animation: 5s fadeIn ease-in forwards;
-    // animation-duration: 500ms;
-   
+    width: 0;
+    opacity: 0;
+    background-color: $accent-primary;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: width 1s ease, opacity 0.8s ease, font-size 0.8s ease;
+    z-index: 1;
+  }
+}
+  // Das Icon
+  .img-hand {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: -4rem;
+    right: 1rem;
+    z-index: 2;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease 0.1s;
+  }
+
+  // Inhalt
+ .btn-name{
+    position: relative;
+    z-index: 2;
+  }
+
+  // HOVER = alles zusammen animieren
+  &:hover {
+    width: 18rem;
+
+    .btn-greeting {
+      width: 18rem;
+      &::before {
+      transition-delay: 0s, 0.1s;
+      width: 100%;
+      opacity: 1;
+      font-size: 1.8rem;
+    }
+    }
+    .img-hand {
+      transform: translateX(20px) rotate(360deg);
+      opacity: 1;
+    }
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 
 .btn-contact:hover {
@@ -343,10 +434,22 @@ button {
 }
 
 
-@media(max-width: 768px) {
-    .icons,
-    .polaroid-frame {
+@media(max-width: 650px) {
+    .icons {
       display: none;
     }
-  }
+
+    .upper-frame {
+      position: relative;
+    }
+
+    .polaroid-frame {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -300%;
+    }
+     
+   
+}
 

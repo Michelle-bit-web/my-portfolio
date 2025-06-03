@@ -56,7 +56,7 @@ section {
   justify-content: flex-start;
   align-items: flex-end;
   gap: 3.2rem;
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     flex-direction: column;
     align-items: flex-end;
     
@@ -95,8 +95,13 @@ section {
     > img {
         width: 7.2rem;
         height: 7.2rem;
+        filter:saturate(0);
+        transition: filter 0.5s ease-in-out;
+        &:hover {
+            filter: saturate(1);
+        }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 850px) {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -131,7 +136,7 @@ h2 {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:850px) {
   .upper-subframe,
   .lower-subframe {
   flex-direction: column;
