@@ -25,7 +25,7 @@ header {
 
 .container-logo {
   > img {
-    width: 2.2em;
+    width: 4em;
   }
   &:hover > .logo-hover {
     opacity: 1;
@@ -38,6 +38,60 @@ header {
   left: 0;
   opacity: 0;
   transition: opacity 0.5s ease-in;
+}
+
+.container-logo {
+  position: relative;
+  display: inline-block;
+  // overflow: hidden;
+  &::after {
+  content: '';
+  position: absolute;
+  top: 10%; // Abstand zur oberen Kante
+  right: 10%; // Abstand zur rechten Kante
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(0.5%);
+  transition: all 4s;
+  transform: scale(1);
+  pointer-events: none;
+  animation: glow-pulse 4s ease infinite;
+}
+}
+
+@keyframes glow-pulse {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+    filter: blur(2px);
+  }
+
+  45% {
+    opacity: 0;
+    transform: scale(1);
+    filter: blur(2px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.8);
+    filter: blur(6px);
+  }
+
+  55% {
+    opacity: 0;
+    transform: scale(1);
+    filter: blur(2px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+    filter: blur(2px);
+  }
 }
 
 .hover-overlay {
@@ -159,6 +213,18 @@ nav {
 .color-inverse .nav-link-wrapper:nth-child(1) .nav-link,
 .color-inverse .nav-link-wrapper:nth-child(2) .nav-link {
   color: $text-inverse;
+}
+
+@media (max-width: 1300px) {
+  .color-inverse .nav-link-wrapper:nth-child(3) .nav-link,
+  .color-inverse .nav-link-wrapper:nth-child(4) .nav-link {
+    color: $text-inverse;
+  }
+}
+
+.color-inverse .logo-normal,
+.color-inverse svg path{
+  filter:invert(1);
 }
 
 .overlay{

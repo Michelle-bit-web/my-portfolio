@@ -35,7 +35,7 @@ footer {
   align-items: center;
   gap: 2rem;
   img {
-    width: 2.2em;
+    width: 4em;
   }
   &:hover > .logo-hover {
     opacity: 1;
@@ -85,4 +85,8 @@ footer {
       opacity: 1;
     }
   }
+}
+
+.fs16 {
+  font-size: 1.6rem;
 }

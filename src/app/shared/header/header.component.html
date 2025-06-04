@@ -1,17 +1,19 @@
 <header class="fontBricolage700">
-  <div class="container-logo">
-    <img
+  <div class="container-logo" [ngClass]="{'color-inverse': variant === 'inverse'}">
+    
+    <img 
       class="logo-normal"
-      src="assets/img/01-Hero/header-bar/header-frame/Logo.png"
+      src="assets/img/08-Logo/Logo 3 Statisch.png"
       alt="logo image"
     />
     <img
       class="logo-hover"
-      src="assets/img/01-Hero/header-bar/header-frame/Logo-Hover.png"
+      src="assets/img/08-Logo/Logo 3 Hover.png"
       alt="logo image"
     />
   </div>
-  <button (click)="toggleMenu()" class="menu-btn" aria-controls="navigation" aria-expanded="false">
+  
+  <button (click)="toggleMenu()" class="menu-btn" aria-controls="navigation" aria-expanded="false" [ngClass]="{'color-inverse': variant === 'inverse'}">
     <svg class="burger-icon" viewBox="-5 0 100 100" width="40" fill="none">
       <path class="line" 
       stroke="white"
@@ -121,6 +123,8 @@
       <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Right.png" alt="toggle bar for language"/>
     }
     <div class="hover-boxes">
+      
+
       <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
       <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
     </div> 
@@ -131,6 +135,7 @@
       <div class="icons"><a href="#contact"><img  src="assets/img/01-Hero/social-media/mail.png" alt="Email Icon" /></a></div>
     </div>
  </nav>
+ 
   </div>
   
 </header>

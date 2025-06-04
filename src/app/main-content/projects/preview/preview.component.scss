@@ -28,7 +28,7 @@ section {
   justify-content: center;
   background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper.png") top/cover no-repeat;
   background-color: $bg-inverse;
-  @media(max-width: 1100px){
+  @media(max-width: 1300px){
     background-position: left;
     background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper-mobile.png") top/cover no-repeat;
     background-color: $bg-inverse;
@@ -55,12 +55,6 @@ section {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  @media(max-width: 1100px){
-    background-position: left;
-    background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper-mobile.png") top/cover no-repeat;
-    background-color: $bg-inverse;
-    justify-content: center;
-  }
 }
 
 .left-frame, 
@@ -84,9 +78,14 @@ section {
 
 }
 
-.color-inverse .nav-link-wrapper:nth-child(1) .nav-link,
 .color-inverse .nav-link-wrapper:nth-child(2) .nav-link {
   color: $text-inverse;
+  @media(max-width: 1300px) {
+    .color-inverse .nav-link-wrapper:nth-child(3) .nav-link,
+    .color-inverse .nav-link-wrapper:nth-child(4) .nav-link {
+       color: $text-inverse;
+    }
+  }
 }
 
 span {
