@@ -31,7 +31,7 @@
                 </div>
                 <div class="checkbox-wrapper form-group">
                     <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required>
-                    <p class="fontBricolage400">data policy etc</p>
+                    <p [routerLink]="'privacy-policy'" class="fontBricolage400">privacy policy</p>
                 </div>
                 <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid">Send</button>
 

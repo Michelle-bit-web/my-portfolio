@@ -30,6 +30,8 @@ section {
   background-color: $bg-inverse;
   @media(max-width: 1100px){
     background-position: left;
+    background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper-mobile.png") top/cover no-repeat;
+    background-color: $bg-inverse;
   }
 }
 
@@ -48,10 +50,17 @@ section {
   width: 100%;
   border: 2px solid green;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   position: relative;
+  @media(max-width: 1100px){
+    background-position: left;
+    background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper-mobile.png") top/cover no-repeat;
+    background-color: $bg-inverse;
+    justify-content: center;
+  }
 }
 
 .left-frame, 
@@ -60,10 +69,19 @@ section {
     flex-direction: column;
     width: 50rem;
     gap: 3.2rem;
+    @media(max-width: 1100px){
+   width: 100%;
+  }
 }
 
+
 .right-frame {
-    justify-content: center;
+    > div {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
 }
 
 .color-inverse .nav-link-wrapper:nth-child(1) .nav-link,
@@ -91,6 +109,9 @@ h2 {
     bottom: 50%;
     right: 0rem;
     translate: 0 50%;
+    @media(max-width: 1100px){
+    right: 190px;
+  }
 }
 
 .img-project {
@@ -98,6 +119,7 @@ h2 {
 }
 
 button {
+  cursor: pointer;
   box-sizing: border-box;
   width: 14.5rem;
   height: 4rem;

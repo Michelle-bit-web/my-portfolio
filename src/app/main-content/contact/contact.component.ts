@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -12,7 +13,8 @@ import { CommonModule } from '@angular/common';
     TranslateModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
