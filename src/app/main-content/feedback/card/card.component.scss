@@ -1,0 +1,76 @@
+//#region colors
+$text-primary: white;
+$text-inverse: black;
+
+$accent-primary: #7e4ae7;
+$accent-secondary:#bae011;
+$accent-tertiary: #e08c05;
+
+$bg-primary: #7e4ae7;
+$bg-secondary: #e08c05;
+$bg-light: white;
+$bg-inverse: black;
+
+// #endregion colors
+
+//#region font-sizes
+.fs20 {
+  font-size: 2.0rem;
+}
+
+.fs18 {
+  font-size: 1.8rem;
+}
+
+.fs16 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
+  text-align: end;
+}
+// #endregion font-sizes
+
+.card-wrapper {
+    width: fit-content;
+    display: flex;
+    @media(max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 2.4rem;
+    }
+}
+
+.card {
+    background: url("./../../../../../public/assets/img/05-Testimonial/A.png") center/cover no-repeat;
+    width: 35rem;
+    height: 25rem;
+    border-radius: 20px;
+    position: relative;
+    padding: 1.6rem;
+  &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+    }
+}
+
+.arrow {
+    width: 70px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4em;
+  > a{
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem
+  }
+  
+}
+

@@ -1,0 +1,17 @@
+<div class="card-wrapper">
+    @for(card of list; track $index){
+        <div class="card">
+            <span class="fontBricolage400 fs18">{{card.feedback}}</span>
+            <div class="author">
+                <span>
+                    <p class="fontBricolage700 fs20">{{card.firstName}} {{card.lastName}}</p>
+                    <p class="fontBricolage500 fs16">{{card.profession}}</p>
+                </span>
+                 <a href="https://www.linkedin.com/" class="fontBricolage500 fs18">
+                    <img src="assets/img/05-Testimonial/Linkedin.png" alt="">
+                    Profile
+                 </a>
+            </div>       
+        </div>
+    }            
+</div>
