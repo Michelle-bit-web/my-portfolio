@@ -1,0 +1,99 @@
+//#region colors
+$text-primary: white;
+$text-inverse: black;
+
+$accent-primary: #7e4ae7;
+$accent-secondary:#bae011;
+$accent-tertiary: #e08c05;
+
+$bg-primary: #7e4ae7;
+$bg-secondary: #e08c05;
+$bg-light: white;
+$bg-inverse: black;
+
+// #endregion colors
+
+//#region font-sizes
+.fs32 {
+  font-size: 3.2rem;
+}
+
+.fs24 {
+  font-size: 2.4rem;
+}
+
+.fs20 {
+  font-size: 2.0rem;
+}
+
+.fs18 {
+  font-size: 1.8rem;
+}
+
+.fs16 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
+  text-align: end;
+}
+
+// #endregion font-sizes
+
+section {
+  min-height: 100dvh;
+  width: 100%;
+  color: $text-primary;
+  display: flex;
+  justify-content: center;
+  background: url("./../../../../public/assets/img/06-Contact/bg.png") top/cover no-repeat;
+}
+
+.content {
+  border: 2px solid red;
+  background-color: rgba(0, 0, 0, 0.658);
+  max-width: 1920px;
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: min(5rem, 3.4%);
+  padding: 0 min(6.4rem, 4.4%);
+  
+}
+
+button {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 14.5rem;
+  height: 4rem;
+  gap: 1rem;
+  font-size: 1.8rem;
+  border-radius: 10rem;
+  border: 0.1rem;
+  background-color: black;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgb(255, 255, 255);
+  color: $text-primary;
+  border: 0.1rem solid $bg-light;
+  margin-right: 2rem;
+  @media(max-width: 450px){
+    font-size: 1.6rem;
+  }
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    > .arrow {
+    width: 5rem;
+}
+}
+
+a {
+    color: $accent-primary;
+    &:hover {
+        color: $accent-secondary;
+    }
+}
