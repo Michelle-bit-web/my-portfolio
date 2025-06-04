@@ -146,6 +146,7 @@ nav {
   inherits: false;
 }
 
+//#region hover animation nav-links
 .nav-cirlce,
 .nav-line,
 .nav-curve-line,
@@ -188,28 +189,9 @@ nav {
       mask-image: linear-gradient(black, black, black, black);
     }
   }
- 
+//#endregion hover animation nav-links
 
-.line-box {
-  width: fit-content;
-  position: relative;
-}
-.toggle-img {
-  position: relative;
-}
-
-.hover-boxes {
-  position: absolute;
-  top: -0.5rem;
-
-
-  > img {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-/* Nur wenn 'inverse' aktiv ist */
+//#region changes dependend on project preview component
 .color-inverse .nav-link-wrapper:nth-child(1) .nav-link,
 .color-inverse .nav-link-wrapper:nth-child(2) .nav-link {
   color: $text-inverse;
@@ -226,7 +208,9 @@ nav {
 .color-inverse svg path{
   filter:invert(1);
 }
+//#endregion changes dependend on project preview component
 
+//#region mobile burger menu
 .overlay{
   position: absolute;
   top:0;
@@ -288,9 +272,9 @@ nav {
 .icons-mobile {
   display: flex;;
 }
+//#endregion mobile burger menu
 
-
-
+//#region language slider
 
 .toggle-box {
   display: flex;
@@ -338,3 +322,4 @@ nav {
     }
   }
 }
+//#endregion language slider

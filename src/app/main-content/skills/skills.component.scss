@@ -71,44 +71,109 @@ section {
 
 .lower-subframe {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 5rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 3rem;
 
+}
+
+.frame-icon-sticker {
+  display: flex;
+  flex-wrap: wrap;
+  > .icon-sticker {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 .frame-sticker {
+  background: url("./../../../../public/assets/img/03-Skills/sticker-C.png") center/contain no-repeat;
   display: flex;
-  align-items: flex-end;
-  > .sticker {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  font-size: 2.0rem;
+  padding: 1em;
+  width: 20rem;
+  height: 20rem;
+  transform: rotate(10deg);
+  gap: 0.8rem;
+  overflow: hidden;
+  border-radius: 10px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    padding: 1em;
     width: 20rem;
     height: 20rem;
-    transform: rotate(10deg);
+    gap: 0.8rem;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "";
+    background: url("./../../../../public/assets/img/03-Skills/sticker-B.png") center/contain no-repeat;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "Further interests";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./../../../../public/assets/img/03-Skills/sticker-A.png") center/contain no-repeat;
+    z-index: 2;
+  }
+
+  &:hover::after {
+    animation: fadeOutUp 0.5s forwards;
+  }
+
+  &:hover::before {
+    animation: fadeOutUp 0.5s 0.5s forwards; // startet nach A
+  }
+  &:not:hover::before {
+    animation: fadeInDown 0.5s forwards;
+  }
+
+  &:not:hover::after {
+    animation: fadeInDown 0.5s 0.5s forwards; // startet nach A
   }
 }
 
-.icon-frame {
-    max-width: 70rem;
-    text-align: end;
-    flex-wrap: wrap;
-    flex: 1 1 0;
-    gap: 3rem;
-    > img {
-        width: 7.2rem;
-        height: 7.2rem;
-        filter:saturate(0);
-        transition: filter 0.3s ease-in-out;
-        &:hover {
-            filter: saturate(1);
-            scale:(0.9);
-        }
-    }
-    @media (max-width: 800px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.icon {
+  width: 7.2rem;
+  height: 7.2rem;
+  filter:saturate(0);
+  transition: filter 0.3s ease-in-out;
+ &:hover {
+    filter: saturate(1);
+    scale:(0.9);
+ }  
 }
 
 span {
@@ -131,13 +196,4 @@ h2 {
         font-size: 1.8rem;
         width: 80%;
     }
-}
-
-@media (max-width:640px) {
-  .upper-subframe,
-  .lower-subframe {
-  flex-direction: column;
-}
-
-  
 }
