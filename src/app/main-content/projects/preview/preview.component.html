@@ -6,7 +6,7 @@
             <span>
                 <div class="button-wrapper">
                     <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="">
-                    <button class="simple">Go Back</button>
+                    <button [routerLink]="''" class="simple">Go Back</button>
                 </div>
                 <h2 class="fontBricolage700">Projekttitel</h2>
             </span>
@@ -34,12 +34,16 @@
                 <img class="sticker" src="assets/img/03_ Color option 2 - A.png" alt="Sticker">
             </div>
             <div class="button-wrapper-right">
-                <button >A</button>
-                <button >B</button>
+                <a href="https://github.com/Michelle-bit-web" target="_blank">
+                    <button >GitHub</button>
+                </a>
+                <a href="https://github.com/Michelle-bit-web" target="_blank">
+                    <button >Live-Test</button>
+                </a>
              </div>
              <div class="button-wrapper-right">
                 <button class="simple inverse">Next</button>
-                <img class="arrow right" src="assets/img/04-Projects/arrow.png" alt="">
+                <img [routerLink]="'preview'" class="arrow right" src="assets/img/04-Projects/arrow.png" alt="">
              </div>
         </div>
         

@@ -118,6 +118,12 @@ section {
   height: 1.5rem;
 }
 
+.pos-absolute {
+  position: absolute;
+  bottom: 22%;
+  left: 4%;
+}
+
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;

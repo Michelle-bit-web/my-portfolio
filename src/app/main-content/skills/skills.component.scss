@@ -125,11 +125,11 @@ h2 {
     background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/contain no-repeat;
     display: flex;
     align-items: center;
-    padding: 1.2rem;
+    justify-content: center;
     > span {
         color: $text-inverse;
         font-size: 1.8rem;
-        width: 100%;
+        width: 80%;
     }
 }
 

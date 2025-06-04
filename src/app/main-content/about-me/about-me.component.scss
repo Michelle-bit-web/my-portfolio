@@ -59,7 +59,7 @@ section {
 }
 
 .left-frame {
-align-items: center;
+ align-items: center;
  flex: 1 0 50%;
 }
 
@@ -122,6 +122,8 @@ button {
 
 .paper-wrapper{
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .paper-location {
