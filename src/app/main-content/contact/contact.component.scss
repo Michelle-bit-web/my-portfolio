@@ -14,7 +14,7 @@ $bg-inverse: black;
 // #endregion colors
 
 section {
-  height: 100dvh;
+  min-height: 100dvh;
   width: 100%;
   color: $text-primary;
   display: flex;
@@ -92,7 +92,14 @@ section {
 
 .checkbox-wrapper {
     display: flex;
+    justify-content: space-between;
+    
 }
+
+input[type=checkbox] {
+  height: 16px;
+}
+
 
 span {
     font-size: 2rem;

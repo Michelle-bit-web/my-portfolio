@@ -54,9 +54,9 @@ section {
 .upper-subframe {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   gap: 3.2rem;
-  @media (max-width: 850px) {
+  @media (max-width: 640px) {
     flex-direction: column;
     align-items: flex-end;
     
@@ -80,7 +80,7 @@ section {
 .frame-sticker {
   display: flex;
   align-items: flex-end;
-  > img {
+  > .sticker {
     width: 20rem;
     height: 20rem;
     transform: rotate(10deg);
@@ -88,7 +88,7 @@ section {
 }
 
 .icon-frame {
-    width: 50rem;
+    max-width: 70rem;
     text-align: end;
     flex-wrap: wrap;
     flex: 1 1 0;
@@ -103,17 +103,12 @@ section {
             scale:(0.9);
         }
     }
-    @media (max-width: 850px) {
+    @media (max-width: 800px) {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 3rem;
   }
-}
-
-.sticker {
-  width: 20rem;
-    height: 20rem;
 }
 
 span {
@@ -125,7 +120,7 @@ h2 {
 }
 
 .div-paper {
-    width: 50rem;
+    width: 50%;
     height: 10rem;
     background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/contain no-repeat;
     display: flex;
@@ -138,7 +133,7 @@ h2 {
     }
 }
 
-@media (max-width:850px) {
+@media (max-width:640px) {
   .upper-subframe,
   .lower-subframe {
   flex-direction: column;
