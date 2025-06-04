@@ -288,3 +288,53 @@ nav {
 .icons-mobile {
   display: flex;;
 }
+
+
+
+
+.toggle-box {
+  display: flex;
+  position: relative;
+  gap: 1.6rem;
+}
+
+.hover-box {
+   width:  3em;
+   height:  3em;
+   position: absolute;
+   opacity: 0;
+  }
+
+.language-box,
+.slider-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-box {
+  cursor: pointer;
+  &:hover .hover-box {
+    opacity: 1;
+  }
+  &.active p {
+    color: $accent-tertiary;
+  }
+}
+
+.slider-box {
+  position: relative;
+  > .circle {
+    position: absolute;
+    transition: all 2s ease-in-out 5s;
+    &.right {
+      right: 0;
+     
+    }
+
+    &.left {
+      left: 0;
+      
+    }
+  }
+}

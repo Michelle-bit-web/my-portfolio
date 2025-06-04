@@ -63,7 +63,7 @@
       />
     </a>
   </div>
-  <div class="line-box">
+  <!-- <div class="line-box">
     @if(english){
     <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Left.png" alt="toggle bar for language"/>
     
@@ -74,7 +74,30 @@
       <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
       <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
     </div> 
-  </div>
+  </div> -->
+
+  <div class="toggle-box">
+      <div class="language-box" (click)="switchLanguage('en')"  [class.active]="language === 'en'">
+        <p>EN</p>
+        <img class="hover-box"  src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt="">
+      </div>
+
+      <div class="slider-box">
+        <img class="slider" src="assets/img/01-Hero/header-bar/header-frame/bar.png" alt="">
+        <img class="circle" src="assets/img/01-Hero/header-bar/header-frame/circle.png" alt="" [class.left]="language === 'en'" [class.right]="language === 'de'">
+      </div>
+
+      <div class="language-box" (click)="switchLanguage('de')" [class.active]="language === 'de'">
+        <p>DE</p>
+        <img class="hover-box"  src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt="">
+      </div>
+    </div>
+
+
+
+
+
+
  </nav>
   <div class="overlay d_none">
     <nav >
@@ -115,20 +138,22 @@
       />
     </a>
   </div>
-  <div class="line-box">
-    @if(english){
-      <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Left.png" alt="toggle bar for language"/>
-    
-    } @else {
-      <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Right.png" alt="toggle bar for language"/>
-    }
-    <div class="hover-boxes">
-      
+  <div class="toggle-box">
+      <div class="language-box" (click)="switchLanguage('en')"  [class.active]="language === 'en'">
+        <p>EN</p>
+        <img class="hover-box"  src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt="">
+      </div>
 
-      <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
-      <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
-    </div> 
-  </div>
+      <div class="slider-box">
+        <img class="slider" src="assets/img/01-Hero/header-bar/header-frame/bar.png" alt="">
+        <img class="circle" src="assets/img/01-Hero/header-bar/header-frame/circle.png" alt="" [class.left]="language === 'en'" [class.right]="language === 'de'">
+      </div>
+
+      <div class="language-box" (click)="switchLanguage('de')" [class.active]="language === 'de'">
+        <p>DE</p>
+        <img class="hover-box"  src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt="">
+      </div>
+    </div>
   <div class="frame-sm icons-mobile">
       <div class="icons"><a href="https://www.linkedin.com/in/dr-michelle-puschkarow-605a7b17a/" target="_blank"><img  src="assets/img/01-Hero/social-media/Linkedin.png" alt="LinkedIn Icon"/></a></div>
       <div class="icons"><a href="https://github.com/Michelle-bit-web" target="_blank"><img  src="assets/img/01-Hero/social-media/Github.png" alt="GitHub Icon" /></a></div>

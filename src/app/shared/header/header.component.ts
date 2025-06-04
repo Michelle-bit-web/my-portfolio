@@ -13,14 +13,11 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   @Input() variant: "default" | "inverse" = "default";
-  english = false;
+  language = "en";
 
-  switchLanguage(){
-    if(this.english){
-      this.english = false;
-    } else {
-      this.english = true;
-    }
+  switchLanguage(current:string){
+    if(this.language === current) return;
+      this.language = current;
   }
 
   toggleMenu(){
