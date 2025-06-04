@@ -12,6 +12,12 @@ html {
   scrollbar-color:  #7e4ae7 black;
   scrollbar-width: thin;
   cursor: none;
+  @media(max-width: 800px) {
+    font-size: 8px;
+  }
+  @media(max-width: 400px) {
+    font-size: 6px;
+  }
 }
 
 //#region font-faces
@@ -95,4 +101,3 @@ a {
   color: white;
 }
 //#endregion font-classes
-

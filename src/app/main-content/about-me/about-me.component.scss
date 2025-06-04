@@ -39,7 +39,7 @@ section {
   align-items: center;
   gap: min(5rem, 3.4%);
   padding: 0 min(6.4rem, 4.4%);
-  @media(max-width: 1000px) {
+  @media(max-width: 800px) {
     flex-direction: column-reverse;
     padding: 0 min(2.4rem, 4.4%);
   }
@@ -50,34 +50,39 @@ section {
   border: 2px solid green;
   display: flex;
   flex-direction: column;
-  flex: 1 0 50%;
-  min-width: 0;
+  width: 50%;
   height: auto;
+    @media(max-width: 800px) {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .left-frame {
-  align-items: center;
+align-items: center;
+ flex: 1 0 50%;
 }
 
 .paper-text {
-  font-size: 24px;
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 2.4rem);
   color: $text-primary;
 }
 
 .right-frame {
   gap: 4rem;
-  > div {
-    > span {
+  > span {
     font-size: clamp(1.8rem, 2.5vw + 1rem, 2.0rem);
   }
+  > div {
+    
   > h2 {
     font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
   }
   > img {
-    width: 30.3rem;
-    @media(max-width: 768px) {
-      width: 24rem;
-    }
+    width: 30.3em;
+    // @media(max-width: 768px) {
+    //   width: 24rem;
+    // }
   }
   }
 }
@@ -94,12 +99,17 @@ width: 100%;
 }
 
 button {
-  width: 145;
-  height: 40;
-  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8rem;
+  width: 14.5rem;
+  height: 4rem;
+  gap: 1rem;
   border-radius: 100px;
-  border-width: 1px;
-  padding: min(1.2rem, 12%) min(2.4rem, 6%);
+  border-width: 0.1rem;
+  padding: 0.66em 1.33em;
   background-color: $bg-light;
   color: $text-inverse;
   border: 1px solid $bg-inverse;
@@ -110,19 +120,44 @@ button {
   }
 }
 
+.paper-wrapper{
+  width: 100%;
+}
+
 .paper-location {
   background: url('./../../../../public/assets/img/02-AboutMe/papers/1.png') center/cover no-repeat;
   @extend .paper-features;
   transform: rotate(-10deg);
+  width: 100%;
+  max-width: 50rem;
+ 
 }
 
 .paper-remote {
   background: url('./../../../../public/assets/img/02-AboutMe/papers/3.png') center/cover no-repeat;
   @extend .paper-features;
   transform: rotate(5deg);
+ width: 100%;
+  max-width: 50rem;
 }
 
 .paper-relocate {
   background: url('./../../../../public/assets/img/02-AboutMe/papers/2.png') center/cover no-repeat;
   @extend .paper-features;
+  width: 100%;
+  max-width: 50rem;
+}
+
+@media (max-width: 800px){
+  .paper-location,
+  .paper-remote,
+  .paper-relocate {
+   > span {
+     font-size: 1.8rem;
+   }
+   > img {
+    width: 3rem;
+   }
+   height: 10em;
+  }
 }

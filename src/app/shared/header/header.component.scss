@@ -13,17 +13,20 @@ $bg-inverse: black;
 
 // #endregion colors
 
-header, nav {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  font-size: 18px;
+  font-size: 1.8rem;
   gap: 10%;
 }
 
 
 .container-logo {
+  > img {
+    width: 2.2em;
+  }
   &:hover > .logo-hover {
     opacity: 1;
   }
@@ -41,10 +44,24 @@ header, nav {
   background-color: $bg-inverse;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex:1;
+}
+
+.nav-link-wrapper {
+  // width: 10em;
+}
+
 .nav-link {
+  display: flex;
+  justify-content: center;
    position: relative;
   > img {
     position: absolute;
+    opacity: 1;
     top: 0;
     left:0;
     transform: translate(-15px, -15px);
@@ -58,7 +75,7 @@ header, nav {
   display: none;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 650px) {
     .menu-btn {
         display: block;
     }
@@ -77,9 +94,9 @@ header, nav {
 
 .nav-cirlce,
 .nav-line,
-  .nav-curve-line,
-  .nav-crossing-line,
-  .box-img {
+.nav-curve-line,
+.nav-crossing-line,
+.box-img {
   position: relative;
   mask-image: linear-gradient(transparent, transparent, transparent, transparent);
   &:hover {
