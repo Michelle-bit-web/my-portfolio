@@ -1,1 +1,6 @@
-<p>project-card works!</p>
+<div class="project-frame" data-aos="fade-left">
+    <img [routerLink]="'preview'" src="{{project.img}}" alt="" (click)="getIndex(index)">
+    <h3 class="fontBricolage700">{{project.title}}</h3>
+    <span class="fontBricolage400">{{project.description}}</span>
+</div>
+      

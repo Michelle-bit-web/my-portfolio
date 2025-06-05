@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-single-project',
-  imports: [],
+  imports: [
+
+  ],
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent {
-
+@Input() index = 0;
+  
 }
