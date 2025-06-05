@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from '../../main-content/contact/footer/footer.component';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 
 @Component({
@@ -8,7 +8,8 @@ import { HeaderComponent } from '../header/header.component';
   imports: [
 
     FooterComponent,
-    RouterModule
+    RouterModule,
+    RouterLink
   ],
   templateUrl: './legal-notice.component.html',
   styleUrl: './legal-notice.component.scss'
