@@ -1,45 +1,52 @@
 <section alt="contact-section">
-  <div class="content">
-    <div class="main-frame">
-        <div class="left-frame">
-            <span>
-                <p class="fontBricolage500">Text</p>
-                <h2 class="fontBricolage700">Ready to work together?</h2>
-            </span>
-            <span class="fontBricolage400">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Quo nisi assumenda aperiam culpa magni at, laborum, vel corporis est eligendi
-                veritatis saepe corrupti beatae nam quae quibusdam explicabo dolores illum.
-            </span>
-            <div class="">
-                <img class="arrow" src="assets/img/06-Contact/arrow.png" alt="">
-            </div>
-        </div>
-        <div class="right-frame">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <div class="form-group">
-                    <label class="fontBricolage400" for="name">What´s your name?</label>
-                    <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required placeholder="Please enter your name">
-                </div>
-                <div class="form-group">
-                    <label class="fontBricolage400" for="email">Whta´s your email?</label>
-                    <input [(ngModel)]="contactData.email" class="fontBricolage400" name="email" type="email" id="email" required placeholder="Please enter your email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                </div>
-                <div class="form-group">
-                    <label class="fontBricolage400" for="message">How can I help you?</label>
-                    <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required placeholder="Please give ... so I can answer"></textarea>
-                </div>
-                <div class="checkbox-wrapper form-group">
-                    <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required>
-                    <p [routerLink]="'privacy-policy'" class="fontBricolage400 pp-link">privacy policy</p>
-                </div>
-                <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid">Send</button>
-
-            </form>
-        </div>
-        <img class="sticker" src="assets/img/07-Sticker/Sticker 02.png" alt="">
+    <div class="fontBricolage500 fs20 send-mail-overlay" *ngIf = "mailSend">
+     <p class="fs28">Thanks a lot for your message!</p>
+     <br>
+     <p class="fs24">I will answer as soon as possible.</p>
+     <p>I hope, you enjoyed my website.</p>
     </div>
-    <app-footer class="footer"></app-footer>
+  <div class="content">
+        <div class="main-frame">
+                
+                <div class="left-frame">
+                    <span>
+                        <p class="fontBricolage500">Text</p>
+                        <h2 class="fontBricolage700">Ready to work together?</h2>
+                    </span>
+                    <span class="fontBricolage400">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quo nisi assumenda aperiam culpa magni at, laborum, vel corporis est eligendi
+                        veritatis saepe corrupti beatae nam quae quibusdam explicabo dolores illum.
+                    </span>
+                    <div class="">
+                        <img class="arrow" src="assets/img/06-Contact/arrow.png" alt="">
+                    </div>
+                </div>
+                <div class="right-frame">
+                    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                        <div class="form-group">
+                            <label class="fontBricolage400" for="name">What´s your name?</label>
+                            <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required placeholder="Please enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="fontBricolage400" for="email">Whta´s your email?</label>
+                            <input [(ngModel)]="contactData.email" class="fontBricolage400" name="email" type="email" id="email" required placeholder="Please enter your email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        </div>
+                        <div class="form-group">
+                            <label class="fontBricolage400" for="message">How can I help you?</label>
+                            <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required placeholder="Please give ... so I can answer"></textarea>
+                        </div>
+                        <div class="checkbox-wrapper form-group">
+                            <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required>
+                            <p [routerLink]="'privacy-policy'" class="fontBricolage400 pp-link">privacy policy</p>
+                        </div>
+                        <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid">Send</button>
+
+                    </form>
+                </div>
+                <img class="sticker" src="assets/img/07-Sticker/Sticker 02.png" alt="">
+        </div>
+        <app-footer class="footer"></app-footer>
   </div>
   
 </section>

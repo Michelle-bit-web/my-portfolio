@@ -29,6 +29,7 @@ export class ContactComponent {
   }
 
   mailTest = true;
+  mailSend = false;
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
@@ -47,6 +48,7 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             //hier könnte man auch weiteres ergänzen, was passieren soll
+            this.showSendingResponse();
             ngForm.resetForm();
           },
           error: (error) => {
@@ -58,5 +60,14 @@ export class ContactComponent {
       //Wenn man oben noch was ergänzt, muss das hier auch hin?
       ngForm.resetForm();
     }
+  }
+
+  showSendingResponse(){
+    this.mailSend = true;
+    console.log('mail send')
+    setTimeout(() => {
+      this.mailSend = false;
+      console.log('overlay inactivated after 3s')
+    }, 8000)
   }
 }
