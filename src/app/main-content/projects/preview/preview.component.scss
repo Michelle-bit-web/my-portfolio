@@ -28,7 +28,7 @@ section {
   justify-content: center;
   background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper.png") top/cover no-repeat;
   background-color: $bg-inverse;
-  @media(max-width: 1300px){
+  @media(max-width: 1100px){
     background-position: left;
     background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper-mobile.png") top/cover no-repeat;
     background-color: $bg-inverse;
@@ -50,31 +50,43 @@ section {
   width: 100%;
   border: 2px solid green;
   display: flex;
-  flex-wrap: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  // flex-wrap: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // flex-wrap: wrap;
   position: relative;
+  @media(max-width: 768px) {
+    display: unset;
+    margin: 0 auto;
+  }
 }
 
 .left-frame, 
 .right-frame {
+  margin: 0 auto;
     display: flex;
     flex-direction: column;
     width: 50rem;
     gap: 3.2rem;
+    padding: 0 min(6.4rem, 4.4%);
     @media(max-width: 1100px){
-   width: 100%;
+     width: 100%;
+    }
+    @media(max-width: 768px) {
+    padding: 0;
   }
+  
 }
 
 
 .right-frame {
-    > div {
-      position: relative;
-      display: flex;
-      justify-content: center;
-    }
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex:1;
+  @media(max-width: 768px) {
+    align-items: center;
+  }
 
 }
 
@@ -96,29 +108,52 @@ h2 {
     font-size: 6.4rem;
 }
 
-.icons {
-    > img {
-        width: 40px;
+h3 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 2.0rem;
+}
+
+.icon-list {
+  display: flex;
+  gap: 3.2rem;
+    > .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       > img {
+        width: 6rem;
+       height: 6rem;
+       }
     }
 }
 
 .sticker {
-    width: 15rem;
+    width: 12rem;
     position: absolute;
     bottom: 50%;
-    right: 0rem;
-    translate: 0 50%;
+    right: 0;
+    translate: 50% 50%;
     transition: transform 3s;
     &:hover {
       transform: rotate(360deg);
     }
-    @media(max-width: 1100px){
-    right: 190px;
+    @media(max-width: 768px) {
+     display: none;
   }
 }
 
+.project-img-frame {
+  width: fit-content;
+}
+
 .img-project {
-    width: 45rem;
+    width: 50rem;
+    @media(max-width: 768px) {
+     width: 45rem;
+  }
 }
 
 button {
@@ -134,7 +169,7 @@ button {
   box-shadow: 0.2rem 0.2rem 0.4rem rgb(255, 255, 255);
   color: $text-primary;
   border: 0.1rem solid $bg-light;
-  margin-right: 2rem;
+  margin-left: 2rem;
   @media(max-width: 450px){
     font-size: 1.6rem;
   }
@@ -152,6 +187,7 @@ button {
 
 .arrow {
     width: 5rem;
+    cursor: pointer;
 }
 
 .right {

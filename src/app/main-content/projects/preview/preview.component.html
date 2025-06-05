@@ -1,57 +1,56 @@
 <section alt="contact-section">
   <div class="content">
     <app-header class="header" [variant]="'inverse'"></app-header>
-    <div class="main-frame">
-        <div class="left-frame">
-            <div *ngIf="project">
-                <h2>{{ project.title }}</h2>
-                <img [src]="project.img" alt="{{ project.title }}">
-                <p>{{ project.description }}</p>
-            </div>
             <span>
                 <div class="button-wrapper">
-                    <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="">
+                    <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="{{ project.title }}" [routerLink]="''">
                     <button [routerLink]="''" class="simple">Go Back</button>
                 </div>
-                <h2 class="fontBricolage700">Projekttitel</h2>
+                
+            </span>
+    <div class="main-frame" *ngIf="project">
+         
+        <div class="left-frame">
+           <h2 class="fontBricolage700">{{ project.title }}</h2>
+            <span class="fontBricolage400">
+                <h3>Description</h3>
+                {{ project.description }}
             </span>
             <span class="fontBricolage400">
-                <h3>Titel</h3>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Quo nisi assumenda aperiam culpa magni at, laborum, vel corporis est eligendi
-                veritatis saepe corrupti beatae nam quae quibusdam explicabo dolores illum.
+                <h3>Implementtation Details</h3>
+                {{ project.details }}
             </span>
-            <span class="fontBricolage400">
-                <h3>Titel</h3>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Quo nisi assumenda aperiam culpa magni at, laborum, vel corporis est eligendi
-                veritatis saepe corrupti beatae nam quae quibusdam explicabo dolores illum.
-            </span>
-            <div class="icons">
-                <img src="assets/img/03-Skills/icons/1.png" alt="Angular Icon">
-                <img src="assets/img/03-Skills/icons/2.png" alt="HTML Icon">
-                <img src="assets/img/03-Skills/icons/3.png" alt="CSS Icon">
+            <div class="icon-list">
+                @for(item of project.languages; track item; let index = $index){
+                 <div class="icon">
+                    <img src="{{project.languages[index].img}}" alt="Angular Icon">
+                    <p class="fontBricolage400">{{project.languages[index].name}}</p>
+                 </div>
+                }
             </div>
         </div>
+
+
         <div class="right-frame">
-            <div>
-                <img class="img-project" src="assets/img/04-Projects/project-preview/Property 1=El Pollo Loco.png" alt="Image of Game El Pollo Loco">
+            <div class="project-img-frame">
+                <img class="img-project" src="{{ project.img }}" alt="Image of Game El Pollo Loco">
                 <img class="sticker" src="assets/img/07-Sticker/Sticker 01.png" alt="Sticker">
             </div>
             <div class="button-wrapper-right">
                 <a href="https://github.com/Michelle-bit-web" target="_blank">
                     <button >GitHub</button>
                 </a>
-                <a href="https://github.com/Michelle-bit-web" target="_blank">
+                <a href="{{project.link}}" target="_blank">
                     <button >Live-Test</button>
                 </a>
              </div>
-             <div class="button-wrapper-right">
-                <button class="simple inverse">Next</button>
-                <img [routerLink]="'preview'" class="arrow right" src="assets/img/04-Projects/arrow.png" alt="">
-             </div>
+            
         </div>
         
+    </div>
+    <div class="button-wrapper-right">
+        <button class="simple inverse" (click)="nextProject()">Next</button>
+        <img class="arrow right" src="assets/img/04-Projects/arrow.png" alt="" >
     </div>
   </div>
   

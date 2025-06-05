@@ -13,6 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   @Input() variant: "default" | "inverse" = "default";
+  activeMenu = false;
   language = "en";
 
   switchLanguage(current:string){
@@ -23,12 +24,17 @@ export class HeaderComponent {
   toggleMenu(){
     const overlay = document.querySelector('.overlay');
     overlay?.classList.toggle('d_none');
-    const buttonThree = document.querySelector(".menu-btn");
-    const isOpened = buttonThree?.getAttribute("aria-expanded");
+    const button = document.querySelector(".menu-btn");
+    const isOpened = button?.getAttribute("aria-expanded");
     if(isOpened === "false") {
-      buttonThree?.setAttribute("aria-expanded", "true");
+      button?.setAttribute("aria-expanded", "true");
     } else {
-      buttonThree?.setAttribute("aria-expanded", "false");
+      button?.setAttribute("aria-expanded", "false");
+    }
+    if(this.activeMenu){
+      this.activeMenu = false
+    } else {
+      this.activeMenu = true;
     }
   }
 }

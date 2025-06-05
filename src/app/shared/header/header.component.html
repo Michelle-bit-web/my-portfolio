@@ -13,7 +13,7 @@
     />
   </div>
   
-  <button (click)="toggleMenu()" class="menu-btn" aria-controls="navigation" aria-expanded="false" [ngClass]="{'color-inverse': variant === 'inverse'}">
+  <button (click)="toggleMenu()" class="menu-btn" aria-controls="navigation" aria-expanded="false" [ngClass]="{'color-inverse': variant === 'inverse' && !activeMenu}">
     <svg class="burger-icon" viewBox="-5 0 100 100" width="40" fill="none">
       <path class="line" 
       stroke="white"
