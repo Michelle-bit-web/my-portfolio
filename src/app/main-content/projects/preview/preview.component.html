@@ -3,6 +3,11 @@
     <app-header class="header" [variant]="'inverse'"></app-header>
     <div class="main-frame">
         <div class="left-frame">
+            <div *ngIf="project">
+                <h2>{{ project.title }}</h2>
+                <img [src]="project.img" alt="{{ project.title }}">
+                <p>{{ project.description }}</p>
+            </div>
             <span>
                 <div class="button-wrapper">
                     <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="">

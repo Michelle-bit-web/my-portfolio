@@ -27,3 +27,20 @@ export class ProjectCardComponent {
     console.log (this.index)
   }
 }
+
+  // getIndex(i: number){
+  //   console.log ('Das Bild mit dem Index:' + i + ' wurde geklickt');
+  //   this.currentIndex = i;
+  //   console.log (this.index);
+
+  //   this.index.emit(this.currentIndex);
+  //   console.log(this.currentIndex)
+  // }
+
+  // @Output()fruitname = new EventEmitter<string>();
+
+  //   sendInputData(){
+      
+  //     this.fruitname.emit(this.inputData); //EventEmitter fängt Änderungen ab
+  //     this.inputData = "";
+  //   }
