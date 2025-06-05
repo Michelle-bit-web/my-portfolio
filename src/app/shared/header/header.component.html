@@ -1,4 +1,5 @@
 <header class="fontBricolage700">
+
   <div class="container-logo" [ngClass]="{'color-inverse': variant === 'inverse'}">
     
     <img 
@@ -25,10 +26,11 @@
     
     </svg>
   </button>
+
  <nav [ngClass]="{'color-inverse': variant === 'inverse'}">
    <div class="nav-link-wrapper">
     <a class="nav-link" href="#about">
-      About me
+      {{ 'header.about' | translate }}
       <img class="nav-cirlce"
         src="assets/img/01-Hero/header-bar/header-frame/lines/1.png"
         alt=""
@@ -38,7 +40,7 @@
 
   <div class="nav-link-wrapper">
     <a class="nav-link" href="#skills">
-      Skills
+      {{ 'header.skills' | translate }}
       <img class="nav-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/2.png"
         alt=""
@@ -47,7 +49,7 @@
   </div>
   <div class="nav-link-wrapper">
     <a class="nav-link" href="#projects">
-      Projects
+      {{ 'header.projects' | translate }}
       <img class="nav-curve-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/3.png"
         alt=""
@@ -56,25 +58,13 @@
   </div>
   <div class="nav-link-wrapper">
     <a class="nav-link" href="#contact">
-      Contact
+      {{ 'header.contact' | translate }}
       <img class="nav-crossing-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/4.png"
         alt=""
       />
     </a>
   </div>
-  <!-- <div class="line-box">
-    @if(english){
-    <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Left.png" alt="toggle bar for language"/>
-    
-  } @else {
-    <img (click)="switchLanguage()" class="toggle-img" src="assets/img/01-Hero/header-bar/header-frame/Property 1=Toggle Right.png" alt="toggle bar for language"/>
-  }
-    <div class="hover-boxes">
-      <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
-      <img class="box-img" src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt=""> 
-    </div> 
-  </div> -->
 
   <div class="toggle-box">
       <div class="language-box" (click)="switchLanguage('en')"  [class.active]="language === 'en'">
@@ -92,11 +82,6 @@
         <img class="hover-box"  src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt="">
       </div>
     </div>
-
-
-
-
-
 
  </nav>
   <div class="overlay d_none">

@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   imports: [
     CommonModule,
-    TranslateModule
+    TranslateModule,
+    TranslatePipe
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -15,10 +16,13 @@ export class HeaderComponent {
   @Input() variant: "default" | "inverse" = "default";
   activeMenu = false;
   language = "en";
+ 
 
+  constructor(private translate: TranslateService){}
   switchLanguage(current:string){
     if(this.language === current) return;
       this.language = current;
+      this.translate.use(current);
   }
 
   toggleMenu(){
