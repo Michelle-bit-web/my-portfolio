@@ -1,22 +1,20 @@
 <section alt="contact-section">
     <div class="fontBricolage500 fs20 send-mail-overlay" *ngIf = "mailSend">
-     <p class="fs28">Thanks a lot for your message!</p>
+     <p class="fs28">{{'contact.pautomatic-reply-one' | translate}}</p>
      <br>
-     <p class="fs24">I will answer as soon as possible.</p>
-     <p>I hope, you enjoyed my website.</p>
+     <p class="fs24">{{'contact.automatic-reply-two' | translate}}</p>
+     <p>{{'contact.automatic-reply-three' | translate}}</p>
     </div>
   <div class="content">
         <div class="main-frame">
                 
                 <div class="left-frame">
                     <span>
-                        <p class="fontBricolage500">Text</p>
-                        <h2 class="fontBricolage700">Ready to work together?</h2>
+                        <p class="fontBricolage500">{{'contact.title-small' | translate}}</p>
+                        <h2 class="fontBricolage700">{{'contact.page-title' | translate}}</h2>
                     </span>
                     <span class="fontBricolage400">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quo nisi assumenda aperiam culpa magni at, laborum, vel corporis est eligendi
-                        veritatis saepe corrupti beatae nam quae quibusdam explicabo dolores illum.
+                       {{'contact.invitation' | translate}}
                     </span>
                     <div class="">
                         <img class="arrow" src="assets/img/06-Contact/arrow.png" alt="">
@@ -25,22 +23,24 @@
                 <div class="right-frame">
                     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                         <div class="form-group">
-                            <label class="fontBricolage400" for="name">What´s your name?</label>
-                            <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required placeholder="Please enter your name">
+                            <label class="fontBricolage400" for="name">{{'contact.label-name' | translate}}</label>
+                            <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required placeholder="{{'contact.input-name' | translate}}">
                         </div>
                         <div class="form-group">
-                            <label class="fontBricolage400" for="email">Whta´s your email?</label>
-                            <input [(ngModel)]="contactData.email" class="fontBricolage400" name="email" type="email" id="email" required placeholder="Please enter your email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                            <label class="fontBricolage400" for="email">{{'contact.label-mail' | translate}}</label>
+                            <input [(ngModel)]="contactData.email" class="fontBricolage400" name="email" type="email" id="email" required placeholder="{{'contact.input-mail' | translate}}" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                         </div>
                         <div class="form-group">
-                            <label class="fontBricolage400" for="message">How can I help you?</label>
-                            <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required placeholder="Please give ... so I can answer"></textarea>
+                            <label class="fontBricolage400" for="message">{{'contact.label-message' | translate}}</label>
+                            <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required placeholder="{{'contact.input-message' | translate}}"></textarea>
                         </div>
                         <div class="checkbox-wrapper form-group">
                             <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required>
-                            <a [routerLink]="'/privacy-policy'" class="fontBricolage400 pp-link">privacy policy</a>
+                            {{'contact.privacy-note-before' | translate}}
+                            <a [routerLink]="'/privacy-policy'" class="fontBricolage400 pp-link">{{'contact.privacy-policy' | translate}}</a>
+                            {{'contact.privacy-note-after' | translate}}
                         </div>
-                        <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid">Send</button>
+                        <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid">{{'contact.submit-button' | translate}}</button>
 
                     </form>
                 </div>

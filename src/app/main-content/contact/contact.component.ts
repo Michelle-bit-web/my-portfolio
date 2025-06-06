@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FooterComponent } from './footer/footer.component';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     FooterComponent,
     TranslateModule,
+    TranslatePipe,
     FormsModule,
     ReactiveFormsModule,
     CommonModule,

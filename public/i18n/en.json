@@ -15,7 +15,7 @@
     "contact": "Get in touch"
   },
   "about-me": {
-    "title-small": "This is who I am.",
+    "title-small": "THIS IS WHO I AM.",
     "title": "About me",
     "fact-one": "Hamburg - my home.",
     "fact-two": "Open for continuous learning.",
@@ -57,6 +57,33 @@
     "button-next": "Next"
   },
   "feedback": {
+    "title-small": "IN THEIR WORDS",
+    "page-title": "Colleagues´ Thoughts",
+    "profile": "Profile",
+    "description-one": "Great text about me :D - 1",
+    "description-two": "Great text about me :D- 2",
+    "description-three": "Great text about me :D - 3"
+  },
+  "contact": {
+    "title-small": "CONTACT ME",
+    "page-title": "Ready to work together?",
+    "invitation": "I´m always excited to bring value through my skills and commitment. I´m a team player and passionate about growing with every new challenge. Let´s get in touch and see how we can create something great together!",
+    "label-name": "What´s your name?",
+    "input-name": "Please enter your name",
+    "label-mail": "Whta´s your email?",
+    "input-mail": "Please enter your email",
+    "label-message": "How can I help you?",
+    "input-message": "Let me know what you're looking for…",
+    "privacy-note-before": "I´ve read the ",
+    "privacy-policy": "privacy-policy",
+    "privacy-note-after": " and agree to the processing of my data as outlined.",
+    "submit-button": "Send",
+    "automatic-reply-one": "Thanks a lot for your message!",
+    "automatic-reply-two": "I will answer as soon as possible.",
+    "automatic-reply-three": "I hope, you enjoyed my website."
+  }
+  ,
+  "footer": {
     "title-small": "In their words",
     "page-title": "Colleagues´ Thoughts",
     "profile": "Profile",
