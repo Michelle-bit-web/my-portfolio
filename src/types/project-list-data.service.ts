@@ -11,8 +11,8 @@ export class ProjectListDataService {
     {
       title: "DABubble",
       img: "assets/img/04-Projects/project-preview/Property 1=DABubble.png",
-      description: "This App is a Slack clone App. It revolutionized team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      details: "Short text about my role or the workflow for this project (to show knowledge, independent work or collaboratively)",
+      description: "project-card.dabubble.description",
+      details: "project-card.dabubble.details",
       languages: [
         {
           name: "Angular",
@@ -32,8 +32,8 @@ export class ProjectListDataService {
     {
       title: "Join",
       img: "assets/img/04-Projects/project-preview/Property 1=Join.png",
-      description: "Task manager inspired by the Kanban system. Create an organize tasks using drag and drop functions, assign users and categories.",
-      details: "Short text about my role or the workflow for this project (to show knowledge, independent work or collaboratively)",
+      description: "project-card.join.description",
+      details: "project-card.join.details",
       languages: [
         {
           name: "Angular",
@@ -53,8 +53,8 @@ export class ProjectListDataService {
     {
       title: "El Pollo Loco",
       img: "assets/img/04-Projects/project-preview/Property 1=El Pollo Loco.png",
-      description: "Jump `N Run game based on object-oriented approach. Help Pepe el Peligroso to fight agains the crazy hen with tabasco salsa.",
-      details: "Short text about my role or the workflow for this project (to show knowledge, independent work or collaboratively)",
+      description: "project-card.el-pollo-loco.description",
+      details: "project-card.el-pollo-loco.details",
       languages: [
         {
           name: "Angular",

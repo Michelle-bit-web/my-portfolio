@@ -36,7 +36,32 @@
     "page-description": "About this project page."
   },
   "project-card": {
-    "project-title": "{{title}}",
-    "project-description": "{{description}}"
+
+    "dabubble": {
+      "description": "This App is a Slack clone App. It revolutionized team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "details": "Short text about my role or the workflow for this project."
+    },
+    "join": {
+      "description": "Task manager inspired by the Kanban system. Create an organize tasks using drag and drop functions, assign users and categories.",
+      "details": "Short text about my role or the workflow for this project."
+    },
+    "el-pollo-loco": {
+      "description": "Jump `N Run game based on object-oriented approach. Help Pepe el Peligroso to fight agains the crazy hen with tabasco salsa.",
+      "details": "Short text about my role or the workflow for this project."
+    }
+  },
+   "project-preview": {
+    "button-back": "Go Back",
+    "description-header": "Description",
+    "details-header": "Implementation Details",
+    "button-next": "Next"
+  },
+  "feedback": {
+    "title-small": "In their words",
+    "page-title": "Colleagues´ Thoughts",
+    "profile": "Profile",
+    "description-one": "Great text about me :D - 1",
+    "description-two": "Great text about me :D- 2",
+    "description-three": "Great text about me :D - 3"
   }
 }

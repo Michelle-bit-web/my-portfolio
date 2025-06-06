@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { NgModel } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 
@@ -7,12 +9,15 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   imports: [
     RouterModule,
     TranslateModule,
-    TranslatePipe
+    TranslatePipe,
+    CommonModule
   ],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.scss'
 })
 export class ProjectCardComponent {
+
+  
   @Input() project = 
   {
     title: "Join",

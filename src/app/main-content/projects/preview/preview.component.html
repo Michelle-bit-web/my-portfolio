@@ -4,7 +4,7 @@
             <span>
                 <div class="button-wrapper">
                     <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="{{ project.title }}" [routerLink]="''">
-                    <button [routerLink]="''" class="simple">Go Back</button>
+                    <button [routerLink]="''" class="simple">{{ 'project-preview.button-back' | translate }}</button>
                 </div>
                 
             </span>
@@ -13,12 +13,12 @@
         <div class="left-frame">
            <h2 class="fontBricolage700">{{ project.title }}</h2>
             <span class="fontBricolage400">
-                <h3>Description</h3>
-                {{ project.description }}
+                <h3>{{ 'project-preview.description-header' | translate }}</h3>
+                {{ project.description | translate }}
             </span>
             <span class="fontBricolage400">
-                <h3>Implementtation Details</h3>
-                {{ project.details }}
+                <h3>{{ 'project-preview.details-header' | translate }}</h3>
+                {{ project.details | translate }}
             </span>
             <div class="icon-list">
                 @for(item of project.languages; track item; let index = $index){
@@ -49,7 +49,7 @@
         
     </div>
     <div class="button-wrapper-right">
-        <button class="simple inverse" (click)="nextProject()">Next</button>
+        <button class="simple inverse" (click)="nextProject()">{{ 'project-preview.button-next' | translate }}</button>
         <img class="arrow right" src="assets/img/04-Projects/arrow.png" alt="" >
     </div>
   </div>

@@ -1,6 +1,6 @@
 <div class="project-frame" data-aos="fade-left">
     <img [routerLink]="['preview', index]" src="{{project.img}}" alt="" (click)="getIndex(index)">
-    <h3 class="fontBricolage700">{{ 'project-card.project-title' | translate:{title: project.title} }}</h3>
-    <span class="fontBricolage400">{{ 'project-card.project-description' | translate:{description: project.description} }}</span>
+    <h3 class="fontBricolage700">{{ project.title }}</h3>
+    <span class="fontBricolage400">{{ project.description | translate }}</span>
 </div>
       

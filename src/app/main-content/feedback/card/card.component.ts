@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 
 export interface List {
   firstName: string;
@@ -12,7 +13,9 @@ export interface List {
 @Component({
   selector: 'app-card',
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule,
+    TranslatePipe
   ],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
@@ -25,21 +28,21 @@ list: List[] = [
     lastName: "lastName",
     profession: "profession",
     profileLink: "profileLink",
-    feedback: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores reprehenderit dicta nihil provident hic?"
+    feedback: "feedback.description-one"
   },
   {
     firstName: "firstName",
     lastName: "lastName",
     profession: "profession",
     profileLink: "profileLink",
-    feedback: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores reprehenderit dicta nihil provident hic?"
+    feedback: "feedback.description-two"
   },
   {
     firstName: "firstName",
     lastName: "lastName",
     profession: "profession",
     profileLink: "profileLink",
-    feedback: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores reprehenderit dicta nihil provident hic?"
+    feedback: "feedback.description-three"
   }
 ];
 

@@ -29,5 +29,39 @@
     "sticker": "Was mich außerdem interessiert",
     "peel-sticker": "Zieh mich ab",
     "description": "Während einer sechsmonatigen, praxisorientierten Ausbildung habe ich mir eine solide Grundlage in HTML, CSS und JavaScript erarbeitet. Besonders gerne arbeite ich mit Angular, wodurch ich mein Verständnis für TypeScript deutlich vertiefen konnte. Wichtige Tools für die Zusammenarbeit und Versionskontrolle wie GitHub und Loom waren ein zentraler Bestandteil meiner Projekte."
+  },
+  "projects": {
+    "title-small": "Auszüge meiner Arbeit",
+    "page-title": "Projekte",
+    "page-description": "Text über die Seite"
+  },
+  "project-card": {
+  
+    "dabubble": {
+      "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine durchdachte Kanalstruktur.",
+      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt."
+    },
+    "join": {
+      "description": "Ein Task-Manager inspiriert vom Kanban-System. Aufgaben lassen sich per Drag & Drop organisieren, Nutzern und Kategorien zuweisen.",
+      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
+    },
+    "el-pollo-loco": {
+      "description": "Ein Jump 'n' Run-Spiel basierend auf objektorientierter Programmierung. Hilf Pepe el Peligroso, mit Tabascosoße gegen das verrückte Huhn zu kämpfen.",
+      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
+    }
+  },
+   "project-preview": {
+    "button-back": "Zurück",
+    "description-header": "Beschreibung",
+    "details-header": "Details zur Implementierung",
+    "button-next": "Weiter"
+  },
+  "feedback": {
+    "title-small": "In ihren Worten",
+    "page-title": "Feedback von Kollegen",
+    "profile": "Profil",
+    "description-one": "Toller Text über mich :D - 1",
+    "description-two": "Toller Text über mich :D- 2",
+    "description-three": "Toller Text über mich :D - 3"
   }
 }
