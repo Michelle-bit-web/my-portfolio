@@ -13,5 +13,21 @@
     "hello-world": "Hello world",
     "name": "I´m Michelle",
     "contact": "Get in touch"
+  },
+  "about-me": {
+    "title-small": "This is who I am.",
+    "title": "About me",
+    "fact-one": "Hamburg - my home.",
+    "fact-two": "Open for continuous learning.",
+    "fact-three": "Open to remote work & hybrid models.",
+    "button": "Let´s talk",
+    "description": "Hi everyone, I'm Michelle – and a big fan of coding. You might know the quote from a crime series that says programmers are both the detective and the criminal. That perfectly captures my fascination: programming isn’t just about solving problems, it’s a thrilling investigation that challenges you and helps you grow.  I love how each project pushes me forward and opens the door to new Technologies - also as a team. If you're looking for someone who brings heart, curiosity, and a sharp mind to the table, I’d love to work together!"
+  },
+   "skills": {
+    "title-small": "MY STACK",
+    "title": "My Skills",
+    "sticker": "I´d like to dive into:",
+    "peel-sticker": "Peel me off",
+    "description": "During a six-month, practice-oriented training program, I built a solid foundation in HTML, CSS, and JavaScript. I especially enjoy working with Angular, which has helped me deepen my understanding of TypeScript. Essential tools for collaboration and version control, such as GitHub and Loom, where a big part of my projects."
   }
 }

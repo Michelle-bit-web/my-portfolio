@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   imports: [
-    TranslateModule
+    TranslateModule,
+    TranslatePipe
   ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'

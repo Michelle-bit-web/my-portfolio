@@ -13,5 +13,21 @@
     "hello-world": "Hallo Welt",
     "name": "Ich bin Michelle",
     "contact": "Kontakt"
+  },
+  "about-me": {
+    "title-small": "Das bin ich.",
+    "title": "Über mich",
+    "fact-one": "Hamburg - hier wohne ich.",
+    "fact-two": "Hohe Lernbereitschaft.",
+    "fact-three": "Offen für remote / hybride Arbeitsmodelle.",
+    "button": "Auf ins Gespräch",
+    "description": "Hallo ihr Lieben, ich bin Michelle – und großer Fan des Codings. Vielleicht kennen Sie das Zitat, dass Programmierer in einer Krimiserie gleichzeitig Detektiv und Täter seien. Genau das beschreibt meine Faszination: Programmieren bedeutet nicht nur, Probleme zu lösen, sondern sich auf eine spannende Spurensuche zu begeben, bei der man sich ständig weiterentwickelt. Ich liebe es, mich mit jedem Projekt wachsen zu sehen und neue Technologien zu entdecken - das ebenso im Team. Wenn Sie jemanden suchen, der mit Herz, Verstand und Neugier bei der Sache ist: Ich freue mich auf die Zusammenarbeit!"
+  },
+  "skills": {
+    "title-small": "WAS ICH MITBRINGE",
+    "title": "Meine Fähigkeiten",
+    "sticker": "Was mich außerdem interessiert",
+    "peel-sticker": "Zieh mich ab",
+    "description": "Während einer sechsmonatigen, praxisorientierten Ausbildung habe ich mir eine solide Grundlage in HTML, CSS und JavaScript erarbeitet. Besonders gerne arbeite ich mit Angular, wodurch ich mein Verständnis für TypeScript deutlich vertiefen konnte. Wichtige Tools für die Zusammenarbeit und Versionskontrolle wie GitHub und Loom waren ein zentraler Bestandteil meiner Projekte."
   }
 }

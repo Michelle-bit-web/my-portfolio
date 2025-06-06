@@ -70,9 +70,7 @@ section {
 
 .right-frame {
   gap: 4rem;
-  > span {
-    font-size: clamp(1.8rem, 2.5vw + 1rem, 2.0rem);
-  }
+  
   > div {
     
   > h2 {
@@ -83,6 +81,9 @@ section {
     // @media(max-width: 768px) {
     //   width: 24rem;
     // }
+  }
+  > span {
+    font-size: clamp(1.8rem, 2.5vw + 1rem, 2.0rem);
   }
   }
 }

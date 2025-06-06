@@ -4,19 +4,19 @@
         
                 <div class="upper-subframe" data-aos="fade-right">
                     <div class="title-frame">
-                        <span class="fontBricolage500">MY STACK</span>
-                        <h2 class="fontBricolage700">Skill set</h2>
+                        <span class="fontBricolage500">{{'skills.title-small' | translate}}</span>
+                        <h2 class="fontBricolage700">{{'skills.title' | translate}}</h2>
                     </div>
                     <div class="div-paper">
-                        <span class="fontBricolage400">Text rein & Zettel als Background</span>
+                        <span class="fontBricolage400">{{'skills.description' | translate}}</span>
                     </div>
             </div>
             <div class="lower-subframe" data-aos="fade-left">
                 @for(icon of iconList; track $index){
                     <img class="icon" src="assets/img/03-Skills/icons/{{iconList[$index]}}.png" alt="">
                     }
-                 <div class="frame-sticker fontBricolage400">
-                    I´d love to dive into:
+                 <div class="frame-sticker fontBricolage400" [attr.sticker-text]="'skills.peel-sticker' | translate">
+                    {{'skills.sticker' | translate}}
                     <div class="frame-icon-sticker">
                         <img class="icon-sticker" src="assets/img/03-Skills/icons/13.png" alt="">
                         <img class="icon-sticker" src="assets/img/03-Skills/icons/15.png" alt="">

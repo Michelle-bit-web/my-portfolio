@@ -123,7 +123,7 @@ section {
   }
 
   &::after {
-    content: "Further interests";
+    content: attr(sticker-text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,18 +182,20 @@ span {
 
 h2 {
     font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
-}
+    text-align: end;
+  }
 
 .div-paper {
-    width: 50%;
-    height: 10rem;
-    background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/contain no-repeat;
+    width: 70em;
+    height: 20em;
+    background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     > span {
         color: $text-inverse;
         font-size: 1.8rem;
-        width: 80%;
+        padding: min(1em, 5%);
+        width: 65em;
     }
 }
