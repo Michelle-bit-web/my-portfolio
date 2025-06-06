@@ -18,7 +18,10 @@ export class HeaderComponent {
   language = "en";
  
 
-  constructor(private translate: TranslateService){}
+  constructor(private translate: TranslateService){
+    this.language = this.translate.currentLang || 'en';
+  }
+
   switchLanguage(current:string){
     if(this.language === current) return;
       this.language = current;
