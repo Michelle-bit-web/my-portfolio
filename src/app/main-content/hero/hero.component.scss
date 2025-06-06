@@ -270,7 +270,7 @@ button {
   cursor: pointer;
 
   &::before {
-    content: "I’m Michelle";
+    content: attr(data-name);
     position: absolute;
     left: 0;
     top: 0;

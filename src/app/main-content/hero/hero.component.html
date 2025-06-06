@@ -10,8 +10,8 @@
         <div class="upper-left-frame">
           <div class="btn-wrapper">
           <img class="img-hand" src="assets/img/01-Hero/title-photo/waving_hand.png" alt="A waving hand animation"/>
-          <button class="fontBricolage500 btn-greeting">
-            Hello world
+          <button class="fontBricolage500 btn-greeting" [attr.data-name]="'hero.name' | translate">
+            {{'hero.hello-world' | translate}}
             
           </button>
           <!-- <button class="btn-name" class="fontBricolage500 btn-name">I´m Michelle</button> -->
@@ -49,7 +49,7 @@
           <span>R</span>
         </h1>
         <a class="nav-link" href="#contact">
-          <button class="fontBricolage500 btn-contact">Get in Touch</button>
+          <button class="fontBricolage500 btn-contact">{{'hero.contact' | translate}}</button>
         </a>
       </div>
     </div>

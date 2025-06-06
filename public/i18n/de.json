@@ -8,5 +8,10 @@
       "de": "DE",
       "en": "EN"
     }
+  },
+  "hero": {
+    "hello-world": "Hallo Welt",
+    "name": "Ich bin Michelle",
+    "contact": "Kontakt"
   }
 }
