@@ -84,11 +84,6 @@
   }
   ,
   "footer": {
-    "title-small": "In their words",
-    "page-title": "Colleagues´ Thoughts",
-    "profile": "Profile",
-    "description-one": "Great text about me :D - 1",
-    "description-two": "Great text about me :D- 2",
-    "description-three": "Great text about me :D - 3"
+    "legal-notice": "Legal Notice"
   }
 }

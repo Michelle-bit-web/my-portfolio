@@ -63,5 +63,27 @@
     "description-one": "Toller Text über mich :D - 1",
     "description-two": "Toller Text über mich :D- 2",
     "description-three": "Toller Text über mich :D - 3"
+  },
+  "contact": {
+    "title-small": "KONTAKTIEREN SIE MICH",
+    "page-title": "Bereit für eine Zusammenarbeit?",
+    "invitation": "Mir liegt viel daran, mit meinen Fähigkeiten und meinem Engagement einen echten Mehrwert zu schaffen. Ich arbeite gerne im Team und wachse an jeder neuen Herausforderung. Melden Sie sich gern bei Interesse an einer Zusammenarbeit!",
+    "label-name": "Wie lautet Ihr Name?",
+    "input-name": "Bitte tragen Sie Ihren Namen ein",
+    "label-mail": "Wie lautet Ihre E-Mail-Adresse?",
+    "input-mail": "Bitte tragen Sie Ihre E-Mail-Adresse ein",
+    "label-message": "Wobei kann ich helfen?",
+    "input-message": "Lassen Sie mich wissen, wobei ich unterstützen kann…",
+    "privacy-note-before": "Ich habe die ",
+    "privacy-policy": "Datenschutzerklärung",
+    "privacy-note-after": " gelesen und stimme der Verarbeitung meiner Daten zum genannten Zweck zu.",
+    "submit-button": "Senden",
+    "automatic-reply-one": "Vielen Dank für Ihre Nachricht!",
+    "automatic-reply-two": "Ich melde mich so schnell wie möglich zurück.",
+    "automatic-reply-three": "Ich hoffe, Ihnen hat meine Website gefallen."
+},
+  "footer": {
+    "legal-notice": "Impressum"
   }
+
 }
