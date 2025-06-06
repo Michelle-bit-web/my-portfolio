@@ -2,9 +2,9 @@
   <div class="content">
     <div class="main-frame">
         <div class="project-frame" data-aos="fade-right">
-          <p class="fontBricolage500">MY CRAFT</p>
-          <h2 class="fontBricolage700">Projects</h2>
-          <span class="fontBricolage400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quod autem blanditiis iure accusantium, eum nemo architecto officiis dolores dolorum illo porro laudantium. Eveniet, tenetur a ab modi pariatur ipsa?</span>
+          <p class="fontBricolage500">{{'projects.title-small' | translate}}</p>
+          <h2 class="fontBricolage700">{{'projects.page-title' | translate}}</h2>
+          <span class="fontBricolage400">{{'projects.page-description' | translate}}</span>
         </div>
         <ng-container *ngFor="let project of projectListData.projectList; let index = index">
           <app-project-card [project]="project" [index]="index"></app-project-card>
