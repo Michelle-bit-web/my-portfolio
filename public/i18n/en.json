@@ -87,16 +87,17 @@
     "email": "Email"
   },
   "legal-notice": {
+    "button-back": "Go Back",
     "title": "Legal Notice",
     "subtitle": "Information in accordance with Section 5 DDG",
-    "name": "Name",
-    "address": "Address",
-    "city": "City",
+    "name": "Name:",
+    "address": "Address:",
+    "city": "City:",
     "contact": {
-      "title": "Contact:",
-      "phone": "Phone: number",
-      "email": "Email:"
-    },
+        "title": "Contact:",
+        "phone": "Phone: number",
+        "email": "Email:"
+      },
     "disclaimer": "Disclaimer:",
     "liabilityContentTitle": "Liability for Content",
     "liabilityContent": "The contents of my pages have been created with the utmost care. However, I cannot guarantee the contents' accuracy, completeness or topicality. As a service provider, I am responsible for my own content on these pages according to general laws pursuant to § 7(1) DDG. According to §§ 8 to 10 DDG, however, I can not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected by this. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such legal violations, I will remove the content immediately. The website is intended solely for non-commercial and therefore private purposes as my personal portfolio.",
@@ -116,20 +117,19 @@
     "lawFirm": "Kanzlei Hasselbach"
   },
   "privacy-policy": {
+      "button-back": "Go Back",
       "title": "Privacy Policy",
-      "intro": "Information in accordance with Section 5 DDG",
+      "subtitle": "Information in accordance with Section 5 DDG",
       "disclaimer": "Disclaimer:",
       "general": "General information",
       "generalText": "You can use this website without providing personal data. If you contact me via the contact form, your data (name, email address, message) will be processed solely to handle your request. This is done based on your consent in accordance with Art. 6 (1) (a) GDPR. The data will not be shared with third parties and will be deleted after the request has been resolved, unless legal retention obligations apply.",
-      "cookieNotice": "Your selection will be stored locally in your browser (via cookie or local storage) to record your consent and to enable the map to be displayed automatically in the future. This information is stored for a duration of 1 year. You can withdraw your consent at any time by clicking here: 'reset my consent' or by changing your privacy settings.",
       "noteTransmission": "Note on data transmission",
       "noteTransmissionText": "Please note that data transmission over the Internet (e.g., via email) may have security vulnerabilities. Complete protection of data from third-party access is not possible.",
       "spamDisclaimer": "Prohibition of unsolicited contact",
       "spamDisclaimerText": "Use of the contact details provided in the legal notice for sending unsolicited advertising or information is not permitted. As operator of the pages I reserves the right to take legal action against unsolicited advertising information, such as spam or similar abuses.",
-      "credits": "Credits",
-      "creditsText": "Thanks to all people for their support.",
       "createdWith": "Created with",
       "generator": "Impressum-Generator.de",
+      "toolPurpose": "the tool for legal notice and",
       "privacyLink": "privacy policy",
       "templateBy": "Based on a template by",
       "lawOffice": "Kanzlei Hasselbach"

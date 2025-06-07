@@ -6,71 +6,50 @@
   <div class="imprint-overlay  fontBricolage400 fs20">
     <div class="button-wrapper">
         <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="">
-        <button [routerLink]="''" class="simple">Go Back</button>
+        <button [routerLink]="''" class="simple">{{'legal-notice.button-back' | translate}}</button>
     </div>
-    <h1 class="fontBricolage500 fs32">Legal Notice</h1>
-    <p>Information in accordance with Section 5 DDG</p><br>
+    <h1 class="fontBricolage500 fs32">{{'legal-notice.title' | translate}}</h1>
+    <p>{{'legal-notice.subtitle' | translate}}</p><br>
     <p>
-      Dr. Michelle Puschkarow<br />
-      Waldingstraße 6<br />
-      22391 Hamburg<br />
+      {{'legal-notice.name' | translate}} Dr. Michelle Puschkarow<br />
+      {{'legal-notice.address' | translate}} Waldingstraße 6<br />
+      {{'legal-notice.city' | translate}} 22391 Hamburg<br />
     </p>
     <p><br>
     <p>
-      <strong>Contact:</strong><br />
-      Phone: 0157-36616303<br />
-      Email: <a href="mpuschkarow&#64;web.de">mpuschkarow&#64;web.de</a><br />
+      <strong>{{'legal-notice.contact.title' | translate}}</strong><br />
+      {{'legal-notice.contact.phone' | translate}} 0157-36616303<br />
+      {{'legal-notice.contact.email' | translate}} <a href="mpuschkarow&#64;web.de">mpuschkarow&#64;web.de</a><br />
     </p><br>
     <p>
-      <strong class="fs24">Disclaimer:</strong><br /><br />
+      <strong class="fs24">{{'legal-notice.disclaimer' | translate}}</strong><br /><br />
 
-      <strong class="fs24">Liability for Content</strong><br /><br />
-      The contents of my pages have been created with the utmost care. However,
-      I cannot guarantee the contents' accuracy, completeness or topicality. As
-      a service provider, I am responsible for my own content on these pages
-      according to general laws pursuant to § 7(1) DDG. According to §§ 8 to 10
-      DDG, however, I can not obligated to monitor transmitted or stored
-      third-party information or to investigate circumstances that indicate
-      illegal activity. Obligations to remove or block the use of information
-      under general laws remain unaffected by this. However, liability in this
-      regard is only possible from the time of knowledge of a specific
-      infringement. Upon becoming aware of such legal violations, I will remove
-      the content immediately. <br>
-      The website is intended solely for non-commercial and therefore private purposes 
-      as my personal portfolio.<br /><br />
+      <strong class="fs24">{{'legal-notice.liabilityContentTitle' | translate}}</strong><br /><br />
+      {{'legal-notice.liabilityContent' | translate}}<br /><br />
 
-      <strong class="fs24">Liability for Links</strong><br /><br />
-      My offer contains links to external websites of third parties on whose
-      contents I have no influence. Therefore, I cannot assume any liability
-      for these external contents. The respective provider or operator of the
-      linked pages is always responsible for the content. The linked pages were
-      checked for possible legal violations at the time of linking. Illegal
-      contents were not recognizable at the time of linking. However, a
-      permanent content control of the linked pages is not reasonable without
-      concrete evidence of a violation of the law. Upon notification of
-      violations, I will remove such links immediately.<br /><br />
+      <strong class="fs24">{{'legal-notice.liabilityLinksTitle' | translate}}</strong><br /><br />
+      {{'legal-notice.liabilityLinks' | translate}}<br /><br />
 
-      <strong class="fs24">Data Protection</strong><br /><br />
+      <strong class="fs24">{{'legal-notice.privacy' | translate}}</strong><br /><br />
       
-      The use of this website is possible without providing personal
-      data. For further informations about how your data is handled, please check the <a class="reset-consent-link" [routerLink]="'/privacy-policy'">privacy policy</a>.  
+      {{'legal-notice.privacyNote' | translate}} <a class="reset-consent-link" [routerLink]="'/privacy-policy'">{{'legal-notice.privacyLinkText' | translate}}</a>.  
     </p>
     <br />
-     <strong class="fs24">Credits</strong><br /><br />
-      Thanks to all people for their support.
-      <a href="">Sascha Morteza Chinahkash</a><br /><br />
+     <strong class="fs24">{{'legal-notice.credits' | translate}}</strong><br /><br />
+      {{'legal-notice.thanks' | translate}}
+      <a href="">{{'legal-notice.creditPerson' | translate}}</a><br /><br />
 
-    Created with
+    {{'legal-notice.generatedWith' | translate}}
     <a href="https://impressum-generator.de" rel="dofollow"
-      class="links">Impressum-Generator.de</a
-    >, the tool for legal notice and
+      class="links">{{'legal-notice.generator' | translate}}</a
+    >, {{'legal-notice.toolPurpose' | translate}}
     <a
       href="https://impressum-generator.de/datenschutz-generator"
       rel="dofollow"
-      class="links">privacy policy</a
-    >. Based on a template by
+      class="links">{{'legal-notice.privacyGenerator' | translate}}</a
+    >. {{'legal-notice.templateSource' | translate}}
     <a href="https://www.kanzlei-hasselbach.de/" rel="dofollow"
-      class="links">Kanzlei Hasselbach</a
+      class="links">{{'legal-notice.lawFirm' | translate}}</a
     >.
   </div>
   <br>

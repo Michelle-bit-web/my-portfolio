@@ -87,11 +87,12 @@
     "email": "E-Mail"
   },
   "legal-notice": {
+    "button-back": "Zurück",
     "title": "Impressum",
     "subtitle": "Angaben gemäß § 5 DDG",
-    "name": "Name",
-    "address": "Adresse",
-    "city": "Stadt",
+    "name": "Name:",
+    "address": "Adresse:",
+    "city": "Stadt:",
     "contact": {
       "title": "Kontakt:",
       "phone": "Telefon: Nummer",
@@ -115,21 +116,20 @@
     "templateSource": "Basierend auf einer Vorlage von",
     "lawFirm": "Kanzlei Hasselbach"
   },
-  "privacy": {
+  "privacy-policy": {
+    "button-back": "Zurück",
     "title": "Datenschutzerklärung",
-    "intro": "Informationen gemäß §5 DDG",
+    "subtitle": "Informationen gemäß §5 DDG",
     "disclaimer": "Haftungsausschluss:",
     "general": "Allgemeine Hinweise",
     "generalText": "Die Nutzung dieser Website ist ohne Angabe personenbezogener Daten möglich. Wenn Sie über das Kontaktformular mit mir in Verbindung treten, werden Ihre Daten (Name, E-Mail-Adresse, Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet. Dies erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Die Daten werden nicht an Dritte weitergegeben und nach Erledigung der Anfrage gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
-    "cookieNotice": "Ihre Auswahl wird lokal in Ihrem Browser gespeichert (per Cookie oder Local Storage), um Ihre Einwilligung zu dokumentieren und die Karte zukünftig automatisch anzuzeigen. Diese Information wird für die Dauer von 1 Jahr gespeichert. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie hier klicken: 'Meine Einwilligung zurücksetzen' oder Ihre Datenschutzeinstellungen ändern.",
     "noteTransmission": "Hinweis zur Datenübertragung",
     "noteTransmissionText": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein vollständiger Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
     "spamDisclaimer": "Verbot unaufgeforderter Kontaktaufnahme",
     "spamDisclaimerText": "Die Nutzung der im Rahmen des Impressums veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien ist nicht gestattet. Der Betreiber der Seiten behält sich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.",
-    "credits": "Danksagung",
-    "creditsText": "Vielen Dank an alle für ihre Unterstützung.",
     "createdWith": "Erstellt mit",
     "generator": "Impressum-Generator.de",
+    "toolPurpose": "dem Tool für Impressum und",
     "privacyLink": "Datenschutzerklärung",
     "templateBy": "Basierend auf einer Vorlage von",
     "lawOffice": "Kanzlei Hasselbach"
