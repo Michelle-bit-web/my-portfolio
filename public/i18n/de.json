@@ -18,8 +18,8 @@
     "title-small": "Das bin ich.",
     "title": "Über mich",
     "fact-one": "Hamburg - hier wohne ich.",
-    "fact-two": "Hohe Lernbereitschaft.",
-    "fact-three": "Offen für remote / hybride Arbeitsmodelle.",
+    "fact-two": "Offen für Open-Source-Projekte",
+    "fact-three": "Offen für Remote-Arbeit",
     "button": "Auf ins Gespräch",
     "description": "Hallo ihr Lieben, ich bin Michelle – und großer Fan des Codings. Vielleicht kennen Sie das Zitat, dass Programmierer in einer Krimiserie gleichzeitig Detektiv und Täter seien. Genau das beschreibt meine Faszination: Programmieren bedeutet nicht nur, Probleme zu lösen, sondern sich auf eine spannende Spurensuche zu begeben, bei der man sich ständig weiterentwickelt. Ich liebe es, mich mit jedem Projekt wachsen zu sehen und neue Technologien zu entdecken - das ebenso im Team. Wenn Sie jemanden suchen, der mit Herz, Verstand und Neugier bei der Sache ist: Ich freue mich auf die Zusammenarbeit!"
   },
@@ -33,7 +33,7 @@
   "projects": {
     "title-small": "Auszüge meiner Arbeit",
     "page-title": "Projekte",
-    "page-description": "Text über die Seite"
+    "page-description": "In dieser Projektübersicht finden sich Webanwendungen zu Business-Tools für Kommunikation und Aufgabenmanagement bis hin zu unterhaltsamen Spielen. Jedes Projekt zeigt verschiedene Aspekte meiner Fähigkeiten zu Design, entwicklung und Nutzererfahrung. Probieren Sie diese gern einmal aus - Feedback ist natürlich jederzeit erwünscht!"
   },
   "project-card": {
   
@@ -60,9 +60,9 @@
     "title-small": "In ihren Worten",
     "page-title": "Feedback von Kollegen",
     "profile": "Profil",
-    "description-one": "Toller Text über mich :D - 1",
-    "description-two": "Toller Text über mich :D- 2",
-    "description-three": "Toller Text über mich :D - 3"
+    "description-one": "-Platzhalter-In deinen Frontend-Projekten wurde immer deutlich, dass du großen Wert auf Nutzerfreundlichkeit legst.",
+    "description-two": "-Platzhalter-Du zeigst großen Ehrgeiz bei deiner Projektumsetzung und bist darüber hinaus auch sehr kreativ in der Lösungsfindung.",
+    "description-three": "-Platzhalter-Du erarbeitest dir viel zusätzliches Know-how, um dich kontinuierlich weiterzuentwickeln."
   },
   "contact": {
     "title-small": "KONTAKTIEREN SIE MICH",

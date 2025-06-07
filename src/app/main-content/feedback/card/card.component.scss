@@ -34,16 +34,21 @@ h2 {
 
 .card-wrapper {
     width: fit-content;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     @media(max-width: 768px) {
         flex-wrap: wrap;
-        gap: 2.4rem;
+        gap: 1rem;
     }
 }
 
 .card {
     background: url("./../../../../../public/assets/img/05-Testimonial/A.png") center/cover no-repeat;
-    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 350px;
     height: 25rem;
     border-radius: 20px;
     position: relative;
@@ -53,6 +58,9 @@ h2 {
         transition: transform 0.3s ease-in-out;
         z-index: 1;
         box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+    }
+    @media(max-width: 768px) {
+         flex: 0 1 200px;
     }
 }
 
@@ -64,7 +72,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4em;
+  
   > a{
     color: black;
     display: flex;

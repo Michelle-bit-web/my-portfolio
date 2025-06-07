@@ -41,7 +41,7 @@ section {
   padding: 0 min(6.4rem, 4.4%);
   @media(max-width: 800px) {
     flex-direction: column-reverse;
-    padding: 0 min(2.4rem, 4.4%);
+    
   }
 }
 
@@ -75,6 +75,7 @@ section {
     
   > h2 {
     font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
+    margin: 2.4rem 0;
   }
   > img {
     width: 30.3em;
@@ -89,7 +90,7 @@ section {
 }
 
 .description {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .container-btn {

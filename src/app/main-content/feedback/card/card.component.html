@@ -1,6 +1,6 @@
 <div class="card-wrapper">
     @for(card of list; track $index){
-        <div class="card" data-aos="fade-up">
+        <div class="card" data-aos="fade-up" [ngStyle]="{transform: 'rotate(' + ($index % 2 === 0 ? '-5deg' : '+4deg') +')'}">
             <span class="fontBricolage400 fs18">{{card.feedback | translate}}</span>
             <div class="author">
                 <span>

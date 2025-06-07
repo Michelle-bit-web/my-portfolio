@@ -47,28 +47,36 @@ section {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 2rem;
+  padding: 10% 0;
 }
 
-.project-frame {
+.title-frame {
   display: flex;
-  
   flex-direction: column;
   justify-content: center;
-  width: 400px;
-  > img {
-    width: 100%;
-    border-radius: 20px;
-    &:hover {
-      scale: (1.05);
-      box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.235) inset;
-    }
-  }
+  flex: 0 1 500px;
+}
+
+.card-frame {
+ flex: 0 1 500px;
 }
 
 h2 {
   font-size: 6.4rem;
+  position: relative;
+  &::after {
+    content: "";
+    width: 28rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    translate: 0 60%;
+    background: url("./../../../../public/assets/img/04-Projects/underline.png") center/contain no-repeat;
   }
+}
+
 
 h3 {
   font-size: 2.4rem;

@@ -21,6 +21,16 @@ html {
   }
 }
 
+h2 {
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 //#region font-faces
 
 /* bricolage-grotesque-regular - latin */
@@ -97,8 +107,4 @@ html {
   font-weight: 800;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
 //#endregion font-classes

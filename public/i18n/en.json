@@ -17,9 +17,9 @@
   "about-me": {
     "title-small": "THIS IS WHO I AM.",
     "title": "About me",
-    "fact-one": "Hamburg - my home.",
-    "fact-two": "Open for continuous learning.",
-    "fact-three": "Open to remote work & hybrid models.",
+    "fact-one": "Hamburg - my home",
+    "fact-two": "Open for open-source projects",
+    "fact-three": "Open to work remote",
     "button": "Let´s talk",
     "description": "Hi everyone, I'm Michelle – and a big fan of coding. You might know the quote from a crime series that says programmers are both the detective and the criminal. That perfectly captures my fascination: programming isn’t just about solving problems, it’s a thrilling investigation that challenges you and helps you grow.  I love how each project pushes me forward and opens the door to new Technologies - also as a team. If you're looking for someone who brings heart, curiosity, and a sharp mind to the table, I’d love to work together!"
   },
@@ -33,7 +33,7 @@
   "projects": {
     "title-small": "MY CRAFT",
     "page-title": "Projects",
-    "page-description": "About this project page."
+    "page-description": "Take a look at my project showcase featuring a variety of web apps – from business tools for communication and task management to fun and interactive games. Each project highlights different aspects of design, development, and user experience. Feel free to explore and try them out – feedback is always welcome!"
   },
   "project-card": {
 
@@ -60,9 +60,10 @@
     "title-small": "IN THEIR WORDS",
     "page-title": "Colleagues´ Thoughts",
     "profile": "Profile",
-    "description-one": "Great text about me :D - 1",
-    "description-two": "Great text about me :D- 2",
-    "description-three": "Great text about me :D - 3"
+    "description-one": "placeholder -Your frontend projects clearly show that you place great value on user experience.",
+    "description-two": "placeholder -You demonstrate strong commitment in your project work and show great creativity in finding solutions.",
+    "description-three": "placeholder -You continuously expand your knowledge to keep developing your skills."
+
   },
   "contact": {
     "title-small": "CONTACT ME",

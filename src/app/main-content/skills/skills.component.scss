@@ -14,7 +14,7 @@ $bg-inverse: black;
 // #endregion colors
 
 section {
-  height: 100dvh;
+  min-height: 100dvh;
   width: 100%;
   background-image: url("./../../../../public/assets/img/03-Skills/skills-bg.png");
   background-position: bottom;
@@ -29,7 +29,7 @@ section {
   border: 2px solid red;
   max-width: 1920px;
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
 
@@ -37,7 +37,7 @@ section {
   padding: 0 min(6.4rem, 4.4%);
   @media(max-width: 1000px) {
     flex-direction: column;
-    padding: 0 min(2.4rem, 4.4%);
+  
   }
 }
 
@@ -47,14 +47,16 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10rem 0;
+  padding: 10% 0;
   gap: 5rem;
 }
 
 .upper-subframe {
   display: flex;
-  justify-content: flex-start;
+  // justify-content: flex-start;
+  // flex-wrap: wrap;
   align-items: center;
+  max-width: 100%;
   gap: 3.2rem;
   @media (max-width: 640px) {
     flex-direction: column;
@@ -67,14 +69,68 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  flex: 0 0 300px;
+  gap: 1.6rem;
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0 0 0;
+  }
+}
+
+.title {
+  position: relative;
+  &::after {
+    content: "";
+    width: 150rem;
+    height: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background: url("./../../../../public/assets/img/03-Skills/circle-line.png") center/contain no-repeat;
+  }
+}
+
+.div-paper {
+    // width: 70em;
+    height: 20em;
+    flex: 1 0 0;
+    background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > span {
+        color: $text-inverse;
+        font-size: 1.8rem;
+        padding: min(1em, 5%);
+        // width: 65em;
+    }
 }
 
 .lower-subframe {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-  gap: 3rem;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 16px;
+  @media(max-width: 640px) {
+    flex-direction: column;
+  }
 
+}
+
+.frame-icons {
+  flex: 0 1 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media(max-width: 640px) {
+    flex: 0 1 0rem;;
+  }
+}
+
+.icon {
+  margin: 16px;
 }
 
 .frame-icon-sticker {
@@ -86,7 +142,7 @@ section {
   }
 }
 
-.frame-sticker {
+.sticker {
   background: url("./../../../../public/assets/img/03-Skills/sticker-C.png") center/contain no-repeat;
   display: flex;
   flex-direction: column;
@@ -95,12 +151,13 @@ section {
   position: relative;
   font-size: 2.0rem;
   padding: 1em;
-  width: 20rem;
+   flex: 0 0 20rem;
   height: 20rem;
   transform: rotate(10deg);
   gap: 0.8rem;
   overflow: hidden;
   border-radius: 10px;
+  margin: 16px;
 
   &::before,
   &::after {
@@ -185,17 +242,3 @@ h2 {
     text-align: end;
   }
 
-.div-paper {
-    width: 70em;
-    height: 20em;
-    background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    > span {
-        color: $text-inverse;
-        font-size: 1.8rem;
-        padding: min(1em, 5%);
-        width: 65em;
-    }
-}
