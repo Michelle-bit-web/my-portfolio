@@ -24,15 +24,15 @@
                     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                         <div class="form-group">
                             <label class="fontBricolage500" for="name">{{'contact.label-name' | translate}}</label>
-                            <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required placeholder="{{'contact.input-name' | translate}}">
+                            <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required #nameCtrl = "ngModel" [placeholder]="nameCtrl.invalid && nameCtrl.touched? ('contact.input-name-invalid' | translate) : ('contact.input-name' | translate)">
                         </div>
                         <div class="form-group">
                             <label class="fontBricolage500" for="email">{{'contact.label-mail' | translate}}</label>
-                            <input [(ngModel)]="contactData.email" class="fontBricolage400" name="email" type="email" id="email" required placeholder="{{'contact.input-mail' | translate}}" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                            <input [(ngModel)]="contactData.email" class="fontBricolage400" name="email" type="email" id="email" required  #emailCtrl = "ngModel" [placeholder]="emailCtrl.invalid && emailCtrl.touched? ('contact.input-mail-invalid' | translate) : ('contact.input-mail' | translate)" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                         </div>
                         <div class="form-group">
                             <label class="fontBricolage500" for="message">{{'contact.label-message' | translate}}</label>
-                            <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required placeholder="{{'contact.input-message' | translate}}"></textarea>
+                            <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required  #messageCtrl = "ngModel" [placeholder]="messageCtrl.invalid && messageCtrl.touched? ('contact.input-message-invalid' | translate) : ('contact.input-message' | translate)"></textarea>
                         </div>
                         <div class="checkbox-wrapper form-group">
 
