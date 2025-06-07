@@ -23,25 +23,32 @@
                 <div class="right-frame">
                     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                         <div class="form-group">
-                            <label class="fontBricolage400" for="name">{{'contact.label-name' | translate}}</label>
+                            <label class="fontBricolage500" for="name">{{'contact.label-name' | translate}}</label>
                             <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required placeholder="{{'contact.input-name' | translate}}">
                         </div>
                         <div class="form-group">
-                            <label class="fontBricolage400" for="email">{{'contact.label-mail' | translate}}</label>
+                            <label class="fontBricolage500" for="email">{{'contact.label-mail' | translate}}</label>
                             <input [(ngModel)]="contactData.email" class="fontBricolage400" name="email" type="email" id="email" required placeholder="{{'contact.input-mail' | translate}}" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                         </div>
                         <div class="form-group">
-                            <label class="fontBricolage400" for="message">{{'contact.label-message' | translate}}</label>
+                            <label class="fontBricolage500" for="message">{{'contact.label-message' | translate}}</label>
                             <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required placeholder="{{'contact.input-message' | translate}}"></textarea>
                         </div>
                         <div class="checkbox-wrapper form-group">
-                            <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required>
-                            {{'contact.privacy-note-before' | translate}}
-                            <a [routerLink]="'/privacy-policy'" class="fontBricolage400 pp-link">{{'contact.privacy-policy' | translate}}</a>
-                            {{'contact.privacy-note-after' | translate}}
+                            <span class="check"></span>
+                            <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required class="fontBricolage400">
+                            <span class="checkbox-text fontBricolage400">
+                                {{'contact.privacy-note-before' | translate}}
+                                <a [routerLink]="'/privacy-policy'" class="fontBricolage400 pp-link">{{'contact.privacy-policy' | translate}}</a>
+                                {{'contact.privacy-note-after' | translate}}
+                            </span>
                         </div>
+                        
+                        <div class="button-wrapper">
                         <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid">{{'contact.submit-button' | translate}}</button>
-
+                          <img class="arrow-mobile" src="assets/img/06-Contact/arrow.png" alt="">
+                         </div>
+                         
                     </form>
                 </div>
                 <img class="sticker" src="assets/img/07-Sticker/Sticker 02.png" alt="">

@@ -341,6 +341,7 @@ button {
 .btn-contact {
   width: 16rem;
   box-shadow: 6px 3px 6px 0 $bg-light;
+  transition: scale 0.3s ease, box-shadow 0.3s ease;
   @extend .color-effect;
   &:hover {
     box-shadow: unset;
@@ -350,10 +351,6 @@ button {
       border-radius: 100px;
     }
   }
-  // &:hover {
-  //   scale: 0.9;
-  //   box-shadow: 0 4px 4px $bg-light inset;
-  // }
 }
 
 @media(max-width: 650px) {

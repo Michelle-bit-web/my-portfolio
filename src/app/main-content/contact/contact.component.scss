@@ -76,6 +76,7 @@ section {
     }
     @media(max-width: 768px){
     grid-template-columns: 1fr;
+    top: 0;
   }
 }
 
@@ -85,14 +86,28 @@ section {
     align-items: center;
 }
 .arrow {
-    width: 300px;
+    width: 30rem;
+    position: relative;
+    @media(max-width: 768px){
+      display: none;  
+    }
 }
 
-.checkbox-wrapper {
-    display: flex;
-    justify-content: space-between;
-    
+.arrow-mobile {
+    width: 30rem;
+    transform: rotate(180deg);
+    @media(max-width: 768px){
+      display: flex;
+    }
 }
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 
 input[type=checkbox] {
   height: 1.8rem;
@@ -113,6 +128,7 @@ input,
 textarea {
     color: $text-primary;
     width: 100%;
+    font-size: 1.8rem;
   
 }
 
@@ -122,33 +138,58 @@ form {
     margin: 0 auto;
 }
 
-.from-group {
-    display: flex;
-    flex-direction: column;
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  &:hover input,
+  &:hover textarea {
+    border-top: 2px solid $accent-primary;
+    border-bottom: 2px solid $accent-primary;
+  }
+
+  &:hover label {
+    color: $accent-tertiary;
+  }
 }
 
 input {
     background: transparent;
     height: 4rem;
-    &:hover {
-        border: 2px solid $accent-tertiary;
-    }
-    
+    border-bottom: 2px solid $accent-secondary;
 }
 
 label {
-    font-size: 2rem;
+    font-size: 2.4rem;
     display: block;
-    &:hover {
-        color: $accent-primary;
-    }
+    margin: 1.8rem 0;
 }
 
 .checkbox-wrapper {
     display: flex;
     align-items: center;
-    gap: 1.6rem;
-    width: 50%;
+    justify-content: space-between;
+    margin: 1.8rem 0;
+    gap: 1rem;
+    > input {
+      border: 2px solid $accent-primary;
+      background-color: $bg-primary;
+      position: absolute;
+      height: 0;
+      width: 0;
+      cursor: pointer;
+    }
+}
+
+.check {
+  position: relative;
+
+}
+
+.checkbox-text {
+  display: inline;
+  min-width: 100%;
+  font-size: 1.5rem;
 }
 
 textarea {
@@ -157,9 +198,7 @@ textarea {
     height: 10rem;
     padding-top: 2rem;
     resize: vertical;
-    &:hover {
-        border: 2px solid $accent-tertiary;
-    }
+    border-bottom: 2px solid $accent-secondary;
 }
 
 @property --angle {
@@ -215,6 +254,15 @@ button {
   @media(max-width: 450px){
     font-size: 1.6rem;
   }
+  @media(max-width: 768px){
+     &::after {
+      content: "Hallo";
+      position: absolute;
+      right: 200px;
+      width: 30rem;
+      background: url("./../../../../public/assets/img/06-Contact/arrow.png");
+     }
+    }
 }
 
 @keyframes spin {
@@ -236,14 +284,16 @@ input[type=checkbox].ng-invalid.ng-touched{
 button.ng-invalid {
     background-color: grey;
 }
-//#endregion form
+
 
 .pp-link {
+  color: $accent-primary;
   cursor: pointer;
   &:hover {
     color: $accent-secondary
   }
 }
+//#endregion form
 
 footer {
     display: flex;
