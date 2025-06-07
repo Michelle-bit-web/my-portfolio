@@ -94,6 +94,7 @@ section {
 }
 
 .arrow-mobile {
+    display: none;
     width: 30rem;
     transform: rotate(180deg);
     @media(max-width: 768px){
@@ -129,6 +130,7 @@ textarea {
     color: $text-primary;
     width: 100%;
     font-size: 1.8rem;
+    border-radius: 10px;
   
 }
 
@@ -166,30 +168,62 @@ label {
 }
 
 .checkbox-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1.8rem 0;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  cursor: pointer;
+  margin: 1.8rem 0;
     > input {
-      border: 2px solid $accent-primary;
-      background-color: $bg-primary;
+      opacity: 0;
       position: absolute;
-      height: 0;
-      width: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
       cursor: pointer;
+      z-index: 2;
+    }
+    &:hover input ~ .check {
+      background-color: #7e4ae782;
+    }
+    > input:checked ~ .check {
+      background-color: transparent;
+    }
+    input:checked + .check .img-checked {
+      display: block;
     }
 }
 
 .check {
-  position: relative;
-
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid $accent-primary;
+  border-radius: 1rem;
+  top: 50%;
+  left: 0;
+  translate: 0 -50%;
+  cursor: pointer;
+  &:hover {
+    border-color: transparent;
+      background-color: $bg-primary;
+  }
 }
+
+.img-checked {
+  display: none;
+  height: 3.5rem;
+  width: 3.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
 
 .checkbox-text {
   display: inline;
-  min-width: 100%;
+  width: 100%;
   font-size: 1.5rem;
+  padding-left: 5rem;
 }
 
 textarea {
@@ -279,6 +313,12 @@ textarea.ng-invalid.ng-touched,
 input[type=checkbox].ng-invalid.ng-touched{
     border: 2px solid red;
     border-radius: 10px;
+}
+
+input.ng-invalid.ng-touched::placeholder,
+textarea.ng-invalid.ng-touched::placeholder, 
+input[type=checkbox].ng-invalid.ng-touched::placeholder {
+  color: red;
 }
 
 button.ng-invalid {

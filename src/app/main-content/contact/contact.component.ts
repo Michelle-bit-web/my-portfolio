@@ -71,4 +71,12 @@ export class ContactComponent {
       console.log('overlay inactivated after 3s')
     }, 8000)
   }
+
+  toggleCheck(){
+    if (!this.contactData.checkedStatus){
+      this.contactData.checkedStatus = true;
+    } else {
+      this.contactData.checkedStatus = false;
+    }
+  }
 }
