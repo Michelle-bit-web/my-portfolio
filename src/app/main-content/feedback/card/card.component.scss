@@ -53,11 +53,15 @@ h2 {
     border-radius: 20px;
     position: relative;
     padding: 1.6rem;
+    z-index:1;
   &:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease-in-out;
-        z-index: 1;
-        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1;
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+      .img-hover {
+    opacity: 0.5;
+  }
     }
     @media(max-width: 768px) {
          flex: 0 1 200px;
@@ -72,13 +76,31 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  position: relative;
   > a{
     color: black;
     display: flex;
     align-items: center;
-    gap: 0.8rem
+    gap: 0.8rem;
+    transition: color 0.3s ease;
   }
-  
+  > span p{
+    transition: color 0.3s ease;
+  }
+  &:hover {
+      a, span p {
+        color: $text-primary;
+      }
+    }
 }
-
+   
+.img-hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  opacity: 0;
+}

@@ -148,6 +148,10 @@ section {
   position: relative;
   width: fit-content;
   border-radius: 50%;
+  @extend .color-effect;
+}
+
+.color-effect {
   animation: 3s spin linear infinite;
   z-index: 1;
   &:hover {
@@ -336,11 +340,20 @@ button {
 
 .btn-contact {
   width: 16rem;
-  box-shadow: 0 4px 4px $bg-light;
+  box-shadow: 6px 3px 6px 0 $bg-light;
+  @extend .color-effect;
   &:hover {
+    box-shadow: unset;
     scale: 0.9;
-    box-shadow: 0 4px 4px $bg-light inset;
+    &::after,
+    &::before {
+      border-radius: 100px;
+    }
   }
+  // &:hover {
+  //   scale: 0.9;
+  //   box-shadow: 0 4px 4px $bg-light inset;
+  // }
 }
 
 @media(max-width: 650px) {
