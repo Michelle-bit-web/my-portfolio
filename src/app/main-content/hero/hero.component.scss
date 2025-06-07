@@ -56,6 +56,16 @@ section {
   position: relative;
 }
 
+.name {
+  color: $text-inverse;
+  font-family: 'Kalam';
+  font-size: 2.8rem;
+  position: absolute;
+  bottom: 3%;
+  transform: rotate(4deg);
+  translate: 25% 0;
+}
+
 .polaroid-frame {
   position: relative;
  
@@ -65,6 +75,7 @@ section {
   width: 20.3rem;
   height: 24.4rem;
   transform: rotate(5deg);
+  position: relative;
 }
 
 .bg-polaroid {

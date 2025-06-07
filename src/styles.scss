@@ -79,6 +79,22 @@ a {
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* kalam-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./../public/assets/fonts/kalam-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* kalam-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./../public/assets/fonts/kalam-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 //#endregion font-faces
 
 //#region font-classes
@@ -105,6 +121,16 @@ a {
 .fontBricolage800 {
   font-family: "Bricolage Grotesque";
   font-weight: 800;
+}
+
+.fontKalam400 {
+  font-family: "Kalam";
+  font-weight: 400;
+}
+
+.fontKalam700 {
+  font-family: "Kalam";
+  font-weight: 700;
 }
 
 //#endregion font-classes

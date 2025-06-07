@@ -17,9 +17,19 @@ import 'aos/dist/aos.css';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-  
+  @ViewChild('name', { static: true }) refName!: ElementRef<HTMLDivElement>;
+
    ngOnInit() {
     AOS.init();
   }
+
+  onMouseEnter(){
+    this.refName.nativeElement.textContent = 'Michelle :D';
+  }
+
+  onMouseLeave(){
+    this.refName.nativeElement.textContent = 'Michelle :)';
+  }
+
 
 }
