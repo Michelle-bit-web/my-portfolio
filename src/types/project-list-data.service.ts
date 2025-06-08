@@ -89,8 +89,8 @@ export class ProjectListDataService {
       title: "Pokédex",
       imgResponsive: "assets/img/04-Projects/project-preview/pokedex-resp.png",
       img: "assets/img/04-Projects/project-preview/pokedex-desktop.png",
-      description: "project-card.el-pollo-loco.description",
-      details: "project-card.el-pollo-loco.details",
+      description: "project-card.pokedex.description",
+      details: "project-card.pokedex.details",
       languages: [
         {
           name: "HTML",
@@ -112,8 +112,8 @@ export class ProjectListDataService {
       title: "Bestell App",
       imgResponsive: "assets/img/04-Projects/project-preview/bestell-app-resp.png",
       img: "assets/img/04-Projects/project-preview/bestellapp-desktop.png",
-      description: "project-card.el-pollo-loco.description",
-      details: "project-card.el-pollo-loco.details",
+      description: "project-card.bestell-app.description",
+      details: "project-card.bestell-app.details",
       languages: [
         {
           name: "HTML",
