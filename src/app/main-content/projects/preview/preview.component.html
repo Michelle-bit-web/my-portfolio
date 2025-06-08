@@ -3,7 +3,7 @@
     <app-header class="header" [variant]="'inverse'"></app-header>
             <span>
                 <div class="button-wrapper">
-                    <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="{{ project.title }}" [routerLink]="''">
+                    <img class="arrow left" src="assets/img/04-Projects/arrow.png" alt="{{ project.title }}" [routerLink]="''">
                     <button [routerLink]="''" class="simple">{{ 'project-preview.button-back' | translate }}</button>
                 </div>
                 
@@ -37,10 +37,10 @@
                 <img class="sticker" src="assets/img/07-Sticker/Sticker 01.png" alt="Sticker">
             </div>
             <div class="button-wrapper-right">
-                <a href="https://github.com/Michelle-bit-web" target="_blank">
+                <a [href]="project['github-link']" target="_blank">
                     <button >GitHub</button>
                 </a>
-                <a href="{{project.link}}" target="_blank">
+                <a [href]="project['live-link']" target="_blank">
                     <button >Live-Test</button>
                 </a>
              </div>
@@ -50,7 +50,7 @@
     </div>
     <div class="button-wrapper-right">
         <button class="simple inverse" (click)="nextProject()">{{ 'project-preview.button-next' | translate }}</button>
-        <img class="arrow right" src="assets/img/04-Projects/arrow.png" alt="" >
+        <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="" >
     </div>
   </div>
   

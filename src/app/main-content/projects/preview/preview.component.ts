@@ -24,6 +24,7 @@ export class PreviewComponent {
   project = 
   {
       title: "Join",
+      imgResponsive: "assets/img/04-Projects/project-preview/Property 1=DABubble.png",
       img:"assets/img/04-Projects/project-preview/Property 1=Default.png",
       description: "Task manager inspired by the Kanban system. Create an organize tasks using drag and drop functions, assign users and categories.",
       details: "Short text about my role or the workflow for this project (to show knowledge, independent work or collaboratively)",
@@ -38,7 +39,8 @@ export class PreviewComponent {
          img: "assets/img/03-Skills/icons/3.png" 
         },
       ],
-      link: "https://github.com/Michelle-bit-web"
+      "live-link": "https://github.com/Michelle-bit-web",
+      "github-link": "https://github.com/Michelle-bit-web"
     }
 
   ngOnInit() {

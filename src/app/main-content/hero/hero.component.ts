@@ -18,9 +18,17 @@ import 'aos/dist/aos.css';
 })
 export class HeroComponent {
   @ViewChild('name', { static: true }) refName!: ElementRef<HTMLDivElement>;
+  @ViewChild('btnMobile', { static: true }) refBtn!: ElementRef<HTMLButtonElement>;
+  
 
    ngOnInit() {
     AOS.init();
+  }
+
+  ngAfterViewInit() {
+    if (this.isTouchDevice()) {
+      this.startButtonAnimationLoop();
+    }
   }
 
   onMouseEnter(){
@@ -31,5 +39,21 @@ export class HeroComponent {
     this.refName.nativeElement.textContent = 'Michelle :)';
   }
 
+  isTouchDevice(): boolean {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  }
+
+  startButtonAnimationLoop() {
+    const btn = this.refBtn.nativeElement;
+    const interval = 2000;
+
+    setInterval(() => {
+      btn.classList.add('animate');
+
+      setTimeout(() => {
+        btn.classList.remove('animate');
+      }, 1000);
+    }, interval);
+  }
 
 }

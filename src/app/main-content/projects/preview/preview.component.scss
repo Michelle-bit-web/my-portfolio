@@ -170,6 +170,9 @@ button {
   color: $text-primary;
   border: 0.1rem solid $bg-light;
   margin-left: 2rem;
+  &:hover {
+      color: $accent-secondary;
+    }
   @media(max-width: 450px){
     font-size: 1.6rem;
   }
@@ -190,7 +193,7 @@ button {
     cursor: pointer;
 }
 
-.right {
+.left {
     transform: rotate(180deg)
 }
 

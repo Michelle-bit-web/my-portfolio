@@ -17,6 +17,7 @@ $bg-inverse: black;
 
 section {
   width: 100%;
+  min-height: 100dvh;
   background-image: url("./../../../../public/assets/img/01-Hero/hero-bg.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -30,7 +31,7 @@ section {
 
 .content {
   border: 1px solid red;
-  height: 100dvh;
+  min-height: 100dvh;
   max-width: 1920px;
   width: 100%;
   display: flex;
@@ -337,6 +338,26 @@ button {
     }
   }
 }
+
+//#region greeting-button for mobile device
+.btn-greeting.animate {
+  width: 18rem;
+  .btn-greeting {
+  &::before {
+    transition-delay: 0s, 0.1s;
+    width: 100%;
+    opacity: 1;
+    font-size: 1.8rem;
+  }
+
+  .img-hand {
+    transform: translateX(20px) rotate(360deg);
+    opacity: 1;
+  }}
+  
+}
+//#endregion greeting-button for mobile device
+
 
 .btn-contact {
   width: 16rem;

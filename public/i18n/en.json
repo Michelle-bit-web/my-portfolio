@@ -48,6 +48,14 @@
     "el-pollo-loco": {
       "description": "Jump `N Run game based on object-oriented approach. Help Pepe el Peligroso to fight agains the crazy hen with tabasco salsa.",
       "details": "Short text about my role or the workflow for this project."
+    },
+    "pokedex": {
+      "description": "A responsive, browser-based Pokédex built with JavaScript, HTML, and CSS. It fetches data from the public PokeAPI to display Pokémon cards, detailed information dialogs, and evolution chains.",
+      "details": "Short text about my role or the workflow for this project."
+    },
+    "bestell-app": {
+      "description": "A food ordering application that allows users to browse menus, place orders and choose between delivery or pick-up options. The app is built with HTML, CSS & JavaScript.",
+      "details": "Short text about my role or the workflow for this project."
     }
   },
    "project-preview": {

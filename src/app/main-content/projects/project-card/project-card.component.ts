@@ -21,7 +21,7 @@ export class ProjectCardComponent {
   @Input() project = 
   {
     title: "Join",
-    img:"assets/img/04-Projects/project-preview/Property 1=Default.png",
+    imgResponsive:"assets/img/04-Projects/project-preview/Property 1=Default.png",
     description: "Task manager inspired by the Kanban system. Create an organize tasks using drag and drop functions, assign users and categories.",
   }
   @Input() index = 0;

@@ -48,6 +48,14 @@
     "el-pollo-loco": {
       "description": "Ein Jump 'n' Run-Spiel basierend auf objektorientierter Programmierung. Hilf Pepe el Peligroso, mit Tabascosoße gegen das verrückte Huhn zu kämpfen.",
       "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
+    },
+    "pokedex": {
+      "description": "Ein responsiver, browserbasierter Pokédex, der Daten aus der öffentlichen PokeAPI abruft. Zeigt Pokémon-Karten, Detaildialoge und Entwicklungsketten an.",
+      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
+    },
+    "bestell-app": {
+      "description": "Eine Bestell-App, mit der Benutzer Speisekarten durchsuchen, Bestellungen aufgeben und zwischen Lieferung oder Abholung wählen können.",
+      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
     }
   },
    "project-preview": {
