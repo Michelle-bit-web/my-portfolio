@@ -11,5 +11,66 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-  iconList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+  iconList = [
+    {
+      name: "Angular",
+      img: "1"
+    },
+    {
+      name: "HTML",
+      img: "2"
+    },
+    {
+      name: "CSS",
+      img: "3"
+    },
+    {
+      name: "JavaScript",
+      img: "4"
+    },
+    {
+      name: "Git",
+      img: "5"
+    },
+    {
+      name: "GitHub",
+      img: "6"
+    },
+    {
+      name: "TypeScript",
+      img: "7"
+    },
+    {
+      name: "SCSS",
+      img: "8"
+    },
+    {
+      name: "VS Code",
+      img: "9"
+    },
+    {
+      name: "Firebase",
+      img: "10"
+    },
+    {
+      name: "Material Design",
+      img: "11"
+    },
+    {
+      name: "Bootsrap",
+      img: "12"
+    },
+    {
+      name: "Procreate",
+      img: "13"
+    },
+    {
+      name: "Photoshop",
+      img: "14"
+    },
+    {
+      name: "Gimp",
+      img: "15"
+    },
+  ]
 }

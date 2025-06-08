@@ -14,13 +14,26 @@
             <div class="lower-subframe" data-aos="fade-left">
                 <div class="frame-icons">
                     @for(icon of iconList; track $index){
-                    <img class="icon" src="assets/img/03-Skills/icons/{{iconList[$index]}}.png" alt="">
+                    <div class="icon-and-text">
+                        <img class="icon" src="assets\img\09-Icons\{{iconList[$index].img}}.png" alt="">
+                        <p class="fontBricolage400">{{iconList[$index].name}}</p>
+                    </div>
                     }
                     <div class="sticker fontBricolage400" [attr.sticker-text]="'skills.peel-sticker' | translate">
                         {{'skills.sticker' | translate}}
                         <div class="frame-icon-sticker">
-                            <img class="icon-sticker" src="assets/img/03-Skills/icons/13.png" alt="">
-                            <img class="icon-sticker" src="assets/img/03-Skills/icons/15.png" alt="">
+                            <div class="icons-on-sticker">
+                                <img class="icon-sticker" src="assets\img\09-Icons\17.png" alt="">
+                                <p class="fontBricolage400">Figma</p>
+                            </div>
+                            <div class="icons-on-sticker">
+                                <img class="icon-sticker" src="assets\img\09-Icons\18.png" alt="">
+                                <p>WebStorm</p>
+                            </div>
+                            <div class="icons-on-sticker">
+                                <img class="icon-sticker" src="assets\img\09-Icons\19.png" alt="">
+                                <p>NodeJs</p>
+                            </div>
                         </div>
                   </div>
                 </div> 

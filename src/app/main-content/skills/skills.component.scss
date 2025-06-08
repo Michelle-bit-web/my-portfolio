@@ -129,6 +129,22 @@ section {
   }
 }
 
+.icon-and-text {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ > p {
+  color: transparent;
+  transition: color 1s ease;
+ }
+ &:hover {
+  > p {
+  color: $text-primary;
+ }
+ }
+}
+
 .icon {
   margin: 16px;
 }
@@ -142,6 +158,16 @@ section {
   }
 }
 
+.icons-on-sticker {
+  font-size: 12px;
+  > img {
+    width: 35px;
+    height: 35px;
+  }
+  margin: 4px;
+}
+
+
 .sticker {
   background: url("./../../../../public/assets/img/03-Skills/sticker-C.png") center/contain no-repeat;
   display: flex;
@@ -149,7 +175,7 @@ section {
   text-align: center;
   align-items: center;
   position: relative;
-  font-size: 2.0rem;
+  font-size: 12px;
   padding: 1em;
    flex: 0 0 20rem;
   height: 20rem;
