@@ -12,13 +12,25 @@ $bg-light: white;
 $bg-inverse: black;
 
 // #endregion colors
-.paper-features {
-  width: 56rem;
-  height: 15.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+//#region font-sizes
+.fs-h {
+  font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
 }
+
+.fs-sh {
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 2.0rem);
+}
+
+.fs-paper {
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 2.4rem);
+  color: $text-primary;
+}
+
+.fs-btn {
+  font-size: 1.8rem;
+}
+//#endregion font-sizes
 
 section {
   height: 100dvh;
@@ -60,38 +72,24 @@ section {
 
 .left-frame {
  align-items: center;
- flex: 1 0 50%;
-}
-
-.paper-text {
-  font-size: clamp(1.8rem, 2.5vw + 1rem, 2.4rem);
-  color: $text-primary;
+ justify-content: center;
 }
 
 .right-frame {
   gap: 4rem;
-  
-  > div {
-    
-  > h2 {
-    font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
-    margin: 2.4rem 0;
-  }
-  > img {
-    width: 30.3em;
-    // @media(max-width: 768px) {
-    //   width: 24rem;
-    // }
-  }
-  > span {
-    font-size: clamp(1.8rem, 2.5vw + 1rem, 2.0rem);
-  }
+  > div { 
+    > h2 {
+      margin: 2.4rem 0;
+    }
+    > img {
+      width: 30.3em;
+      @media(max-width: 768px) {
+        width: 24rem;
+      }
+    }
   }
 }
 
-.description {
-  font-size: 2rem;
-}
 
 .container-btn {
 display: flex;
@@ -105,7 +103,6 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1.8rem;
   width: 14.5rem;
   height: 4rem;
   gap: 1rem;
@@ -123,46 +120,54 @@ button {
   }
 }
 
-.paper-wrapper{
+.paper {
   width: 100%;
+  max-width: 56rem;
+  height: 16rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  // flex: 1 1 56rem;
+  @media(max-width: 800px) {
+    width: 100%;
+  }
 }
 
-.paper-location {
-  background: url('./../../../../public/assets/img/02-AboutMe/papers/1.png') center/cover no-repeat;
-  @extend .paper-features;
+.location {
+  background: url('./../../../../public/assets/img/02-AboutMe/papers/1.png') center/contain no-repeat;
+ 
   transform: rotate(-10deg);
-  width: 100%;
-  max-width: 50rem;
+  
+  // max-width: 50rem;
+  display: flex;
+  justify-content: center;
  
 }
 
-.paper-remote {
-  background: url('./../../../../public/assets/img/02-AboutMe/papers/3.png') center/cover no-repeat;
-  @extend .paper-features;
+.project {
+  background: url('./../../../../public/assets/img/02-AboutMe/papers/3.png') center/contain no-repeat;
+
   transform: rotate(5deg);
- width: 100%;
-  max-width: 50rem;
+ 
+//   max-width: 50rem;
 }
 
-.paper-relocate {
-  background: url('./../../../../public/assets/img/02-AboutMe/papers/2.png') center/cover no-repeat;
-  @extend .paper-features;
-  width: 100%;
-  max-width: 50rem;
+.relocate {
+  background: url('./../../../../public/assets/img/02-AboutMe/papers/2.png') center/contain no-repeat;
+  
+  // max-width: 50rem;
 }
 
-@media (max-width: 800px){
-  .paper-location,
-  .paper-remote,
-  .paper-relocate {
-   > span {
-     font-size: 1.8rem;
-   }
-   > img {
-    width: 3rem;
-   }
-   height: 10em;
-  }
-}
+// @media (max-width: 800px){
+//   .paper-location,
+//   .paper-remote,
+//   .paper-relocate {
+//    > span {
+//      font-size: 1.8rem;
+//    }
+//    > img {
+//     width: 3rem;
+//    }
+//    height: 10em;
+//   }
+// }
