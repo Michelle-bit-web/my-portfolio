@@ -29,8 +29,11 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: min(5rem, 3.4%);
-  padding: 0 min(6.4rem, 4.4%);
+  gap: 5%;
+  padding: 0 min(160px, 5%);
+  @media(max-width: 450px) {
+    padding: 0 12px;
+  }
   
 }
 
@@ -44,6 +47,9 @@ section {
   gap: 3.2rem;
   @media(max-width: 768px){
     grid-template-columns: 1fr;
+  }
+  @media(max-width: 450px) {
+    padding: 0;
   }
 }
 

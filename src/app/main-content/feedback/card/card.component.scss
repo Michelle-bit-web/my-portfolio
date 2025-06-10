@@ -64,7 +64,10 @@ h2 {
   }
     }
     @media(max-width: 768px) {
-         flex: 0 1 200px;
+         flex: 0 1 300px;
+    }
+    @media(max-width:471px) {
+       flex: 0.5 1 200px;
     }
 }
 
