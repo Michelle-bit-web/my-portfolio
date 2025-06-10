@@ -73,6 +73,9 @@ section {
   align-items: flex-end;
   flex: 0 0 300px;
   gap: 1.6rem;
+   > .sub-heading {
+    color: $text-primary;
+  }
   @media (max-width: 800px) {
     flex-direction: column;
     align-items: flex-end;

@@ -48,8 +48,8 @@ section {
   @media(max-width: 768px){
     grid-template-columns: 1fr;
   }
-  @media(max-width: 450px) {
-    padding: 0;
+  @media(max-width: 520px){
+    padding: 25% 0;
   }
 }
 
@@ -83,6 +83,9 @@ section {
     grid-template-columns: 1fr;
     top: 2%;
   }
+  @media(max-width: 520px){
+     width: 11rem;
+  }
 }
 
 .arrow-wrapper {
@@ -106,7 +109,7 @@ section {
       display: flex;
     }
     @media(max-width: 450px) {
-      width: 25rem;
+      width: 18rem;
     }
 }
 
