@@ -53,11 +53,18 @@ section {
 
 .main-frame {
   border: 1px solid green;
-  width: calc(100% - min(160px, 5%));
+  width: 70%;
   display: flex;
+  flex-shrink: 1;
   flex-direction: column;
   position: relative;
-  @media(max-width: 650px) {
+  @media(max-width: 1100px) {
+    width: 80%;
+  }
+   @media(max-width: 800px) {
+    width: 90%;
+  }
+  @media(max-width: 655px) {
     width: 100%;
   }
 }
@@ -85,7 +92,7 @@ section {
         filter: saturate(1)
       }
     }
-  @media(max-width: 650px) {
+  @media(max-width: 655px) {
    position: absolute;
    top: 100%;
    left: 50%;
@@ -139,7 +146,7 @@ section {
   &:hover {
     animation: rotateBack ease-out 1s;
   }
-  @media(max-width: 650px) {
+  @media(max-width: 655px) {
    left: 10px;
   }
 }
@@ -181,7 +188,7 @@ section {
   align-items: flex-start;
   width: 10rem;
   min-height: 1.5rem;
-  @media(max-width: 650px) {
+  @media(max-width: 655px) {
     display: none;
   }
 }
