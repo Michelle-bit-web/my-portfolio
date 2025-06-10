@@ -36,7 +36,7 @@
     "page-description": "In dieser Projektübersicht finden sich Webanwendungen zu Business-Tools für Kommunikation und Aufgabenmanagement bis hin zu unterhaltsamen Spielen. Jedes Projekt zeigt verschiedene Aspekte meiner Fähigkeiten zu Design, entwicklung und Nutzererfahrung. Probieren Sie diese gern einmal aus - Feedback ist natürlich jederzeit erwünscht!"
   },
   "project-card": {
-  
+    "project-btn": "Projektdetails",
     "dabubble": {
       "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine durchdachte Kanalstruktur.",
       "details": "Die Herausforderung bei diesem Projekt war die Implementierung einer Echtzeitkommunikation mittels WebSockets sowie die Gestaltung einer intuitiven Benutzeroberfläche mit klarer Channel-Struktur. Mein Schwerpunkt lag auf der Frontend-Architektur und der Entwicklung modularer, wiederverwendbarer Komponenten."

@@ -99,6 +99,9 @@ section {
     @media(max-width: 768px){
       display: flex;
     }
+    @media(max-width: 450px) {
+      width: 25rem;
+    }
 }
 
 .button-wrapper {
@@ -119,7 +122,10 @@ span {
 }
 
 h2 {
-     font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
+  font-size: clamp(48px, 6.2vw + 1rem, 64px);
+    @media(max-width: 450px) {
+      font-size: 32px;
+    }
 }
 
 //#region form
@@ -361,7 +367,10 @@ footer {
 }
 
 .fs20 {
-  font-size: 2.0rem;
+  font-size: clamp(18px, 3.5vw + 1rem, 20px);
+    @media(max-width: 450px) {
+      font-size: 18px;
+    }
 }
 .fs24 {
   font-size: 2.4rem;

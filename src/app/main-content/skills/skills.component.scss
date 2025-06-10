@@ -103,12 +103,9 @@ section {
     align-items: center;
     justify-content: center;
     padding: 32px 16px;
-    > span {
-        color: $text-inverse;
-        font-size: 1.8rem;
-        padding: min(1em, 5%);
-        // width: 65em;
-    }
+    @media(max-width: 450px) {
+    padding: 32px 0;
+  }
 }
 
 .lower-subframe {
@@ -151,7 +148,8 @@ section {
 .text.touch {
   color: transparent;
   transition: color 1s ease;
-  animation: textTouchAppear 0.6s alternate-reverse;
+  animation: textTouchAppear 0.6s ease alternate-reverse;
+  // animation-play-state: ;
 }
 
 @keyframes textTouchAppear {
@@ -291,9 +289,11 @@ section {
 
 span {
   font-size: clamp(18px, 3.5vw + 1rem, 20px);
-    @media(max-width: 450px) {
-      font-size: 16px;
-    }
+  color: $text-inverse;
+  padding: min(1em, 5%);
+  @media(max-width: 450px) {
+    font-size: 16px;
+  }
 }
 
 h2 {

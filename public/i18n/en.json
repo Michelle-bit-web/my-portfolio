@@ -36,7 +36,7 @@
     "page-description": "Take a look at my project showcase featuring a variety of web apps – from business tools for communication and task management to fun and interactive games. Each project highlights different aspects of design, development, and user experience. Feel free to explore and try them out – feedback is always welcome!"
   },
   "project-card": {
-
+    "project-btn": "project details",
     "dabubble": {
       "description": "This App is a Slack clone App. It revolutionized team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
       "details": "The challenge in this project was implementing real-time communication using WebSockets and designing an intuitive user interface with a clear channel structure. My focus was on frontend architecture and the development of modular, reusable components."
