@@ -69,7 +69,7 @@ export class ContactComponent {
     setTimeout(() => {
       this.mailSend = false;
       console.log('overlay inactivated after 3s')
-    }, 8000)
+    }, 4000)
   }
 
   toggleCheck(){

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -13,12 +13,37 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+   @ViewChildren('touchIcon') touchIcons!: QueryList<ElementRef>;
   isTouchDevice:boolean = false;
 
   ngOnInit(): void {
   const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
   this.isTouchDevice = isTouch;
 }
+
+ngAfterViewInit() {
+    if (this.isTouchDevice) {
+      this.restartAnimationLoop();
+    }
+  }
+
+  restartAnimationLoop() {
+    this.touchIcons.forEach((iconEl: ElementRef) => {
+      const nativeEl = iconEl.nativeElement;
+      nativeEl.classList.remove('touch');
+      setTimeout(() => {
+        nativeEl.classList.add('touch');
+      }, 3000)
+      // Restart animation every 3s
+      // const loop = () => {
+      //   nativeEl.classList.remove('touch');
+      //   void nativeEl.offsetWidth; // <- trigger reflow
+      //   nativeEl.classList.add('touch');
+      //   setTimeout(loop, 3000);
+      // };
+      // setTimeout(loop, 0);
+    });
+  }
 
   iconList = [
     {

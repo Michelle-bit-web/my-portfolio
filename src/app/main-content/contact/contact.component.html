@@ -1,6 +1,6 @@
 <section alt="contact-section">
     <div class="fontBricolage500 fs20 send-mail-overlay" *ngIf = "mailSend">
-     <p class="fs28">{{'contact.pautomatic-reply-one' | translate}}</p>
+     <p class="fs28">{{'contact.automatic-reply-one' | translate}}</p>
      <br>
      <p class="fs24">{{'contact.automatic-reply-two' | translate}}</p>
      <p>{{'contact.automatic-reply-three' | translate}}</p>
@@ -49,7 +49,7 @@
                         </div>
                         
                         <div class="button-wrapper">
-                        <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid">{{'contact.submit-button' | translate}}</button>
+                        <button type="submit" class="fontBricolage400" [disabled]="contactForm.invalid" (click)="showSendingResponse()">{{'contact.submit-button' | translate}}</button>
                           <img class="arrow-mobile" src="assets/img/06-Contact/arrow.png" alt="">
                          </div>
 

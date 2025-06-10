@@ -151,7 +151,7 @@ section {
 .text.touch {
   color: transparent;
   transition: color 1s ease;
-  animation: textTouchAppear 0.6s ease forwards;
+  animation: textTouchAppear 0.6s alternate-reverse;
 }
 
 @keyframes textTouchAppear {
@@ -174,16 +174,17 @@ section {
 }
 
 .icon.touch {
-  animation: iconTouchAppear 0.6s ease forwards;
+  filter: saturate(1);
+  animation: iconTouchAppear 0.6s ease alternate-reverse;
 }
 
 @keyframes iconTouchAppear {
   0% {
-    filter: saturate(0);
+    filter: saturate(1);
     transform: scale(1);
   }
   100% {
-    filter: saturate(1);
+    filter: saturate(0);
     transform: scale(0.9);
   }
 }

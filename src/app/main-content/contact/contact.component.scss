@@ -241,6 +241,7 @@ textarea {
 }
 
 button {
+  cursor: pointer;
   box-sizing: border-box;
   width: 14.5rem;
   height: 4rem;
@@ -253,25 +254,28 @@ button {
   border: 0.1rem solid $bg-light;
   position: relative;
   z-index: 0;
+  
   &::after{
+   
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 0.4rem;
-    border-radius: 10rem;
+    height: 50%;
+    width: 10%;
+    background-color: $accent-primary;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
     opacity: 0;
-    background-image: conic-gradient(from var(--angle), $accent-tertiary,transparent 20%, $accent-tertiary);
-    transition: all 0.3s ease-in-out;
-    // animation: 3s spin linear infinite;
+    transition: all 0.5s ease; 
+    z-index: -1;
   }
   &:not(:disabled)::after {
-    opacity: 1;
-  animation: spin 3s linear infinite;
+    border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      box-shadow: 6px 3px 6px 0 $bg-light inset;
+      
 }
   &:disabled {
     background-color: rgba(128, 128, 128, 0.391);
@@ -287,15 +291,15 @@ button {
   @media(max-width: 450px){
     font-size: 1.6rem;
   }
-  @media(max-width: 768px){
-     &::after {
-      content: "Hallo";
-      position: absolute;
-      right: 200px;
-      width: 30rem;
-      background: url("./../../../../public/assets/img/06-Contact/arrow.png");
-     }
-    }
+  // @media(max-width: 768px){
+  //    &::after {
+  //     content: "";
+  //     position: absolute;
+  //     right: 200px;
+  //     width: 30rem;
+  //     background: url("./../../../../public/assets/img/06-Contact/arrow.png");
+  //    }
+  //   }
 }
 
 @keyframes spin {
