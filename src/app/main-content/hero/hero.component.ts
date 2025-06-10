@@ -30,13 +30,13 @@ export class HeroComponent {
     this.isTouchDevice = isTouch;
   }
 
-  ngAfterViewInit() {
-    if (this.isTouchDevice) {
-      // this.startButtonAnimationLoop();
-      const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-      this.isTouchDevice = isTouch;
-    }
-  }
+  // ngAfterViewInit() {
+  //   if (this.isTouchDevice) {
+  //     // this.startButtonAnimationLoop();
+  //     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  //     this.isTouchDevice = isTouch;
+  //   }
+  // }
 
   onMouseEnter(){
     this.refName.nativeElement.textContent = 'Michelle :D';

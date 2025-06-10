@@ -112,6 +112,7 @@ section {
 .picture {
   width: 203px;
   height: 244px;
+  object-fit: contain;
   position: absolute; 
   transform: rotate(5deg);
   filter: saturate(0);

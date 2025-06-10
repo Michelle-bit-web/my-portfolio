@@ -255,7 +255,7 @@ textarea {
   initial-value: 0deg;
 }
 
-button {
+.btn-submit {
   cursor: pointer;
   box-sizing: border-box;
   width: 14.5rem;
@@ -339,8 +339,68 @@ input[type=checkbox].ng-invalid.ng-touched::placeholder {
   color: red;
 }
 
-button.ng-invalid {
+.btn-submit.ng-invalid {
     background-color: grey;
+}
+
+.div-btn-to-top {
+  height: 60px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.241);
+  border-radius: 20px;
+  gap: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+}
+
+.link-back {
+  cursor: pointer;
+}
+
+.arrow-back {
+  cursor: pointer;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  translate:-50% 0;
+  border-top:  3px solid $bg-light;
+  border-left: 3px solid $bg-light;
+  transform: rotate(45deg);
+  animation: arrow-load 2s infinite;
+}
+
+.arrow-back:nth-child(1) {
+  top: 8px;
+  animation-delay: -0.4s;
+}
+
+.arrow-back:nth-child(2) {
+  top: -8px;
+  animation-delay: -0.2s;
+}
+
+.arrow-back:nth-child(3) {
+ bottom: 8px;
+}
+
+@keyframes arrow-load {
+ 0% {
+  opacity: 0;
+  transform: rotate(45deg) translate(20px 20px);
+ } 
+ 0% {
+  opacity: 1;
+ 
+ } 
+ 100% {
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px -20px);
+ } 
 }
 
 

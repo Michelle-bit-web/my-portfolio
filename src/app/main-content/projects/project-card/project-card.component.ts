@@ -16,7 +16,11 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   styleUrl: './project-card.component.scss'
 })
 export class ProjectCardComponent {
-
+  isTouchDevice:boolean = false;
+  gOnInit() {
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    this.isTouchDevice = isTouch;
+  }
   
   @Input() project = 
   {
