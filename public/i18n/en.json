@@ -39,23 +39,23 @@
 
     "dabubble": {
       "description": "This App is a Slack clone App. It revolutionized team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      "details": "Short text about my role or the workflow for this project."
+      "details": "The challenge in this project was implementing real-time communication using WebSockets and designing an intuitive user interface with a clear channel structure. My focus was on frontend architecture and the development of modular, reusable components."
     },
     "join": {
-      "description": "Task manager inspired by the Kanban system. Create an organize tasks using drag and drop functions, assign users and categories.",
-      "details": "Short text about my role or the workflow for this project."
+      "description": "A Task manager inspired by the Kanban system. Create an organize tasks using drag and drop functions, assign users and categories.",
+      "details": "I implemented drag-and-drop functionality and dynamic task rendering. The project followed an agile workflow with a modular Angular structure, allowing tasks and categories to be efficiently created, updated, and reassigned."
     },
     "el-pollo-loco": {
-      "description": "Jump `N Run game based on object-oriented approach. Help Pepe el Peligroso to fight agains the crazy hen with tabasco salsa.",
-      "details": "Short text about my role or the workflow for this project."
+      "description": "A Jump `N Run game based on object-oriented approach. Help Pepe el Peligroso to fight against the crazy hen with tabasco salsa.",
+      "details": "I developed the game logic using object-oriented JavaScript. The challenge was to ensure smooth gameplay across devices by coordinating collision detection, animation timing, and sound synchronization."
     },
     "pokedex": {
       "description": "A responsive, browser-based Pokédex built with JavaScript, HTML, and CSS. It fetches data from the public PokeAPI to display Pokémon cards, detailed information dialogs, and evolution chains.",
-      "details": "Short text about my role or the workflow for this project."
+      "details": "The app includes a searchable Pokémon database and dynamic detail views for each Pokémon. The challenge was integrating the API efficiently and building a responsive, user-friendly interface."
     },
     "bestell-app": {
       "description": "A food ordering application that allows users to browse menus, place orders and choose between delivery or pick-up options. The app is built with HTML, CSS & JavaScript.",
-      "details": "Short text about my role or the workflow for this project."
+      "details": "In this project, the focus was on delivering a user-friendly experience and flexible menu rendering. I put a lot of effort into the interface design. The challenge was to implement the core ordering and basket logic with real-time cart updates, delivery fee calculations, item add/remove functionality, automatic price calculation, and a local storage system for order tracking."
     }
   },
    "project-preview": {
@@ -80,7 +80,7 @@
     "label-name": "What´s your name?",
     "input-name": "Please enter your name",
     "input-name-invalid": "Oops! It seems your name is missing..",
-    "label-mail": "Whta´s your email?",
+    "label-mail": "What´s your email?",
     "input-mail": "Please enter your email",
     "input-mail-invalid": "Hoppla! Your email is missing or invalid..",
     "label-message": "How can I help you?",
@@ -146,5 +146,10 @@
       "privacyLink": "privacy policy",
       "templateBy": "Based on a template by",
       "lawOffice": "Kanzlei Hasselbach"
-    }
+    },
+  "router": {
+    "legal-notice": "legal notice",
+    "privacy-policy": "privacy policy",
+    "preview": "preview"
+  }
 }

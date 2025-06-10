@@ -38,56 +38,109 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  padding: 0 min(6.4rem, 4.4%);
+  padding: 0 min(160px, 5%);
+   @media(max-width: 450px) {
+    padding: 0 12px;
+  }
 }
 
 .header {
   border: 1px solid white;
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 80px;
 }
 
 .main-frame {
   border: 1px solid green;
-  width: clamp(34rem, 80vw + 1rem, 100rem);
+  width: calc(100% - min(160px, 5%));
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
   position: relative;
+  @media(max-width: 650px) {
+    width: 100%;
+  }
 }
 
 .name {
+  width:203px;
+  height: 50px;
   color: $text-inverse;
   font-family: 'Kalam';
-  font-size: 2.8rem;
+  font-size: min(28px, calc(5vw + 1rem));
   position: absolute;
-  bottom: 3%;
+  bottom: 0;
+  left: 50%;
   transform: rotate(4deg);
-  translate: 25% 0;
+  translate: -55% -5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .polaroid-frame {
   position: relative;
+  &:hover {
+      .picture {
+        filter: saturate(1)
+      }
+    }
+  @media(max-width: 650px) {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   translate: -50% 60%;
+   width: fit-content;
+   border: 2px solid yellow;
+  }
+ }
  
-}
-
 .polaroid {
-  width: 20.3rem;
-  height: 24.4rem;
+  width: 203px;
+  height: 244px;
   transform: rotate(5deg);
   position: relative;
 }
 
+.picture {
+  width: 203px;
+  height: 244px;
+  position: absolute; 
+  transform: rotate(5deg);
+  filter: saturate(0);
+  transition: filter 1s ease;
+  // @media(min-width: 768px) {
+  //   filter: saturate(0);
+  // }
+}
+
+.picture.touch {
+   animation: touchAppear 0.6s ease forwards;
+}
+
+
+@keyframes touchAppear {
+  0% {
+    filter: saturate(0);
+  }
+  100% {
+    filter: saturate(1);
+  }
+}
+
+
 .bg-polaroid {
   @extend .polaroid;
   position: absolute;
-  top: -0.7rem;;
-  right: -1rem;
+  top: 0;
+  right: -10px;
   transform: rotate(10deg);
   background-color: #7e4ae7;
   &:hover {
     animation: rotateBack ease-out 1s;
+  }
+  @media(max-width: 650px) {
+   left: 10px;
   }
 }
 
@@ -116,7 +169,7 @@ section {
 // 
 
 .lower-frame {
-  width: fit-content;
+ flex:1;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -128,11 +181,14 @@ section {
   align-items: flex-start;
   width: 10rem;
   min-height: 1.5rem;
+  @media(max-width: 650px) {
+    display: none;
+  }
 }
 
 .pos-absolute {
   position: absolute;
-  bottom: 22%;
+  bottom: 15%;
   left: 4%;
 }
 
@@ -202,11 +258,13 @@ section {
 
 h1 {
   > span {
-    font-size: 12.8rem;
-   @media(max-width: 1210px){
-    font-size: clamp(4.8rem, calc(8vw + 1rem), 10rem);
-   }
+    font-size: clamp(64px, calc(8vw + 1rem), 125px);
+    // font-size: 12.8rem;
+    @media(max-width: 450px) {
+    font-size: 48px;
   }
+  }
+  
 }
 
 button {
@@ -286,7 +344,7 @@ button {
   cursor: pointer;
 
   &::before {
-    content: attr(data-name);
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -298,8 +356,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    transition: width 1s ease, opacity 0.8s ease, font-size 0.8s ease;
+    font-size: 1.8rem;
+    transition: width 1s ease, opacity 1s ease, content 1s ease ;
     z-index: 1;
   }
 }
@@ -328,8 +386,10 @@ button {
       &::before {
       transition-delay: 0s, 0.1s;
       width: 100%;
+      content: attr(data-name);
       opacity: 1;
       font-size: 1.8rem;
+      transition: width 1s ease, opacity 1s ease 0.2s, content 1s ease 0.6s;
     }
     }
     .img-hand {
@@ -340,51 +400,87 @@ button {
 }
 
 //#region greeting-button for mobile device
-.btn-greeting.animate {
-  width: 18rem;
-  .btn-greeting {
+.btn-greeting.touch {
   &::before {
-    transition-delay: 0s, 0.1s;
-    width: 100%;
-    opacity: 1;
-    font-size: 1.8rem;
+    animation: btnTouchAppear 1s ease forwards;
+    animation-delay: 1.5s;
+  }
+}
+
+
+@keyframes btnTouchAppear {
+  0% {
+    width: 0%;
+    content: "";
+    opacity: 0;
   }
 
-  .img-hand {
+  50% {
+   
+    content: "";
+    opacity: 0.3;
+  }
+
+  75% {
+   
+    content: "";
+    opacity: 0.6;
+  }
+
+  100% {
+    width: 100%;
+    content: attr(data-name);
+    opacity: 1;
+  }
+}
+
+.img-hand.touch {
+    animation: handTouchAppear 1s ease forwards;
+    animation-delay: 1.5s;
+  }
+
+@keyframes handTouchAppear {
+  0% {
+    transform: translateX(0x) rotate(0);
+     opacity: 0;
+  }
+  100% {
     transform: translateX(20px) rotate(360deg);
     opacity: 1;
-  }}
-  
+  }
 }
 //#endregion greeting-button for mobile device
 
 
 .btn-contact {
   width: 16rem;
-  box-shadow: 6px 3px 6px 0 $bg-light;
-  transition: scale 0.3s ease, box-shadow 0.3s ease;
-  @extend .color-effect;
+  box-shadow: 0 4px 4px $bg-light;
+   transition: 
+  scale 0.6s ease, 
+  box-shadow 0.3s ease;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 10%;
+    background-color: $accent-primary;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s ease; 
+    z-index: -1;
+  }
   &:hover {
-    box-shadow: unset;
     scale: 0.9;
-    &::after,
-    &::before {
-      border-radius: 100px;
+    box-shadow: 6px 3px 6px 0 $bg-light inset;
+     &::after {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      box-shadow: 6px 3px 6px 0 $bg-light inset;
     }
   }
-}
-
-@media(max-width: 650px) {
-    .icons {
-      display: none;
-    }
-    .upper-frame {
-      position: relative;
-    }
-    .polaroid-frame {
-      position: absolute;
-      left: 30%;
-      top: 30em;
-    }
 }
 

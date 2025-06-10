@@ -29,7 +29,7 @@
 
  <nav [ngClass]="{'color-inverse': variant === 'inverse'}">
    <div class="nav-link-wrapper">
-    <a class="nav-link" href="#about">
+    <a class="nav-link" href="#{{ 'header.about' | translate }}">
       {{ 'header.about' | translate }}
       <img class="nav-cirlce"
         src="assets/img/01-Hero/header-bar/header-frame/lines/1.png"
@@ -39,7 +39,7 @@
   </div>
 
   <div class="nav-link-wrapper">
-    <a class="nav-link" href="#skills">
+    <a class="nav-link" href="# {{ 'header.skills' | translate }}">
       {{ 'header.skills' | translate }}
       <img class="nav-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/2.png"
@@ -48,7 +48,7 @@
     </a>
   </div>
   <div class="nav-link-wrapper">
-    <a class="nav-link" href="#projects">
+    <a class="nav-link" href="#{{ 'header.projects' | translate }}">
       {{ 'header.projects' | translate }}
       <img class="nav-curve-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/3.png"
@@ -57,7 +57,7 @@
     </a>
   </div>
   <div class="nav-link-wrapper">
-    <a class="nav-link" href="#contact">
+    <a class="nav-link" href="#{{ 'header.contact' | translate }}">
       {{ 'header.contact' | translate }}
       <img class="nav-crossing-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/4.png"
@@ -92,8 +92,8 @@
     />
     <nav >
    <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" href="#about">
-      About me
+    <a class="nav-link" href="#{{ 'header.about' | translate }}">
+      {{ 'header.about' | translate }}
       <img class="nav-cirlce"
         src="assets/img/01-Hero/header-bar/header-frame/lines/1.png"
         alt=""
@@ -102,8 +102,8 @@
   </div>
 
   <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" href="#skills">
-      Skills
+    <a class="nav-link" href="#{{ 'header.skills' | translate }}">
+      {{ 'header.skills' | translate }}
       <img class="nav-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/2.png"
         alt=""
@@ -111,8 +111,8 @@
     </a>
   </div>
   <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" href="#projects">
-      Projects
+    <a class="nav-link" href="#{{ 'header.projects' | translate }}">
+      {{ 'header.projects' | translate }}
       <img class="nav-curve-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/3.png"
         alt=""
@@ -120,8 +120,8 @@
     </a>
   </div>
   <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" href="#contact">
-      Contact
+    <a class="nav-link" href="#{{ 'header.contact' | translate }}">
+      {{ 'header.contact' | translate }}
       <img class="nav-crossing-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/4.png"
         alt=""

@@ -3,6 +3,7 @@ import { HeaderComponent } from '../../shared/header/header.component';
 import { TranslateModule, TranslatePipe} from '@ngx-translate/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -10,7 +11,8 @@ import 'aos/dist/aos.css';
   imports: [
     HeaderComponent,
     TranslateModule,
-    TranslatePipe
+    TranslatePipe,
+    CommonModule
 
   ],
   templateUrl: './hero.component.html',
@@ -19,15 +21,20 @@ import 'aos/dist/aos.css';
 export class HeroComponent {
   @ViewChild('name', { static: true }) refName!: ElementRef<HTMLDivElement>;
   @ViewChild('btnMobile', { static: true }) refBtn!: ElementRef<HTMLButtonElement>;
+  isTouchDevice:boolean = false;
   
 
    ngOnInit() {
     AOS.init();
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    this.isTouchDevice = isTouch;
   }
 
   ngAfterViewInit() {
-    if (this.isTouchDevice()) {
-      this.startButtonAnimationLoop();
+    if (this.isTouchDevice) {
+      // this.startButtonAnimationLoop();
+      const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      this.isTouchDevice = isTouch;
     }
   }
 
@@ -39,21 +46,17 @@ export class HeroComponent {
     this.refName.nativeElement.textContent = 'Michelle :)';
   }
 
-  isTouchDevice(): boolean {
-    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  }
+  // startButtonAnimationLoop() {
+  //   const btn = this.refBtn.nativeElement;
+  //   const interval = 2000;
 
-  startButtonAnimationLoop() {
-    const btn = this.refBtn.nativeElement;
-    const interval = 2000;
+  //   setInterval(() => {
+  //     btn.classList.add('animate');
 
-    setInterval(() => {
-      btn.classList.add('animate');
-
-      setTimeout(() => {
-        btn.classList.remove('animate');
-      }, 1000);
-    }, interval);
-  }
+  //     setTimeout(() => {
+  //       btn.classList.remove('animate');
+  //     }, 1000);
+  //   }, interval);
+  // }
 
 }

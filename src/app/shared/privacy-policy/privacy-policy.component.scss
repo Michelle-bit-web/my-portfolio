@@ -67,18 +67,12 @@ section {
 
 button {
   cursor: pointer;
-  box-sizing: border-box;
-  width: 14.5rem;
-  height: 4rem;
-  gap: 1rem;
-  font-size: 1.8rem;
-  border-radius: 10rem;
-  border: 0.1rem;
-  background-color: black;
-  box-shadow: 0.2rem 0.2rem 0.4rem rgb(255, 255, 255);
+  background: transparent;
   color: $text-primary;
-  border: 0.1rem solid $bg-light;
-  margin-right: 2rem;
+  border: unset;
+  &:hover {
+    color: $accent-secondary;
+  }
   @media(max-width: 450px){
     font-size: 1.6rem;
   }
@@ -87,8 +81,10 @@ button {
 .button-wrapper {
     display: flex;
     align-items: center;
+    gap: 3.2rem;
     > .arrow {
     width: 5rem;
+    transform: rotate(180deg);
 }
 }
 

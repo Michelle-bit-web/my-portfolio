@@ -12,13 +12,6 @@ $bg-light: white;
 $bg-inverse: black;
 
 // #endregion colors
-.paper-features {
-  width: 56rem;
-  height: 15.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 section {
   min-height: 100dvh;
@@ -28,7 +21,7 @@ section {
   justify-content: center;
   background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper.png") top/cover no-repeat;
   background-color: $bg-inverse;
-  @media(max-width: 1100px){
+  @media(max-width: 1114px){
     background-position: left;
     background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper-mobile.png") top/cover no-repeat;
     background-color: $bg-inverse;
@@ -38,26 +31,28 @@ section {
 .content {
   border: 2px solid red;
   max-width: 1920px;
+  min-height: 100dvh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: min(5rem, 3.4%);
   padding: 0 min(6.4rem, 4.4%);
   
 }
 
 .main-frame {
   width: 100%;
+  min-height: 534px;
   border: 2px solid green;
   display: flex;
-  // flex-wrap: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // flex-wrap: wrap;
+  flex-wrap: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   position: relative;
-  @media(max-width: 768px) {
-    display: unset;
-    margin: 0 auto;
+  @media(max-width: 1114px) {
+    flex-direction: column;
+    // margin: 0 auto;
+    gap: 4rem;
   }
 }
 
@@ -69,7 +64,7 @@ section {
     width: 50rem;
     gap: 3.2rem;
     padding: 0 min(6.4rem, 4.4%);
-    @media(max-width: 1100px){
+    @media(max-width: 1114px){
      width: 100%;
     }
     @media(max-width: 768px) {
@@ -84,8 +79,9 @@ section {
   align-items: flex-end;
   justify-content: flex-end;
   flex:1;
-  @media(max-width: 768px) {
+  @media(max-width: 1114px) {
     align-items: center;
+    flex: 0;
   }
 
 }
@@ -101,19 +97,23 @@ section {
 }
 
 span {
-    font-size: 2rem;
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.0rem);
 }
 
 h2 {
-    font-size: 6.4rem;
+  font-size: clamp(4.8rem, 6.2vw + 1rem, 6.4rem);
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
 }
 
 p {
-  font-size: 2.0rem;
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.0rem);
+}
+
+.description {
+  min-height: 150px;
 }
 
 .icon-list {
@@ -151,6 +151,7 @@ p {
 
 .img-project {
     width: 50rem;
+    border-radius: 20px;
     @media(max-width: 768px) {
      width: 45rem;
   }

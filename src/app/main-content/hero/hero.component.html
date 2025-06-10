@@ -9,8 +9,8 @@
       <div class="upper-frame">
         <div class="upper-left-frame">
           <div class="btn-wrapper">
-          <img class="img-hand" src="assets/img/01-Hero/title-photo/waving_hand.png" alt="A waving hand animation"/>
-          <button #btnMobile class="fontBricolage500 btn-greeting" [attr.data-name]="'hero.name' | translate">
+          <img  [ngClass]="{ 'touch': isTouchDevice }"class="img-hand" src="assets/img/01-Hero/title-photo/waving_hand.png" alt="A waving hand animation"/>
+          <button #btnMobile class="fontBricolage500 btn-greeting" [attr.data-name]="'hero.name' | translate" [ngClass]="{ 'touch': isTouchDevice }">
             {{'hero.hello-world' | translate}}
             
           </button>
@@ -31,7 +31,9 @@
 
         <div class="polaroid-frame" data-aos="fade-left">
           <div class="bg-polaroid"></div>
-          <img src="/assets/img/01-Hero/title-photo/polaroid.png" class="polaroid" alt="Polaroidimage of me"/>
+          <img class="picture" src="assets/img/01-Hero/IMG_3698.jpeg" alt="" [ngClass]="{ 'touch': isTouchDevice }" [style.animationDelay]="isTouchDevice ? 1 + 's' : null">
+          <!-- <img class="picture" src="assets/img/01-Hero/IMG_3749.jpeg" alt=""> -->
+          <img src="assets/img/01-Hero/title-photo/polaroid.png" class="polaroid" alt="Polaroidimage of me"/>
           <p class="name fontKalam700" #name (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">Michelle &#58;&#41;</p>
         </div>
        
@@ -49,16 +51,17 @@
           <span>E</span>
           <span>R</span>
         </h1>
-        <a class="nav-link" href="#contact">
+        <a class="nav-link" href="#{{ 'header.contact' | translate }}">
           <button class="fontBricolage500 btn-contact">{{'hero.contact' | translate}}</button>
         </a>
       </div>
+      
     </div>
    
     <div class="frame-sm pos-absolute">
       <div class="icons" data-aos="fade-up"><a href="https://www.linkedin.com/in/dr-michelle-puschkarow-605a7b17a/" target="_blank"><img  src="assets/img/01-Hero/social-media/Linkedin.png" alt="LinkedIn Icon"/></a></div>
       <div class="icons" data-aos="fade-up"><a href="https://github.com/Michelle-bit-web" target="_blank"><img  src="assets/img/01-Hero/social-media/Github.png" alt="GitHub Icon" /></a></div>
-      <div class="icons" data-aos="fade-up"><a href="#contact"><img  src="assets/img/01-Hero/social-media/mail.png" alt="Email Icon" /></a></div>
+      <div class="icons" data-aos="fade-up"><a href="#{{ 'header.contact' | translate }}"><img  src="assets/img/01-Hero/social-media/mail.png" alt="Email Icon" /></a></div>
     </div>
   </div>
 </section>

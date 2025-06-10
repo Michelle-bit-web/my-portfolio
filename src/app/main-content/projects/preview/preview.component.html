@@ -1,57 +1,57 @@
 <section alt="contact-section">
   <div class="content">
-    <app-header class="header" [variant]="'inverse'"></app-header>
-            <span>
-                <div class="button-wrapper">
-                    <img class="arrow left" src="assets/img/04-Projects/arrow.png" alt="{{ project.title }}" [routerLink]="''">
-                    <button [routerLink]="''" class="simple">{{ 'project-preview.button-back' | translate }}</button>
+        <app-header class="header" [variant]="'inverse'"></app-header>
+                <span>
+                    <div class="button-wrapper">
+                        <img class="arrow left" src="assets/img/04-Projects/arrow.png" alt="{{ project.title }}" [routerLink]="''">
+                        <button [routerLink]="''" class="simple">{{ 'project-preview.button-back' | translate }}</button>
+                    </div>
+                    
+                </span>
+        <div class="main-frame" *ngIf="project">
+            
+            <div class="left-frame">
+            <h2 class="fontBricolage700">{{ project.title }}</h2>
+                <span class="fontBricolage400 description">
+                    <h3>{{ 'project-preview.description-header' | translate }}</h3>
+                    {{ project.description | translate }}
+                </span>
+                <span class="fontBricolage400">
+                    <h3>{{ 'project-preview.details-header' | translate }}</h3>
+                    {{ project.details | translate }}
+                </span>
+                <div class="icon-list">
+                    @for(item of project.languages; track item; let index = $index){
+                    <div class="icon">
+                        <img src="{{project.languages[index].img}}" alt="Angular Icon">
+                        <p class="fontBricolage400">{{project.languages[index].name}}</p>
+                    </div>
+                    }
+                </div>
+            </div>
+
+
+            <div class="right-frame">
+                <div class="project-img-frame">
+                    <img class="img-project" src="{{ project.img }}" alt="Image of Game El Pollo Loco">
+                    <img class="sticker" src="assets/img/07-Sticker/Sticker 01.png" alt="Sticker">
+                </div>
+                <div class="button-wrapper-right">
+                    <a [href]="project['github-link']" target="_blank">
+                        <button >GitHub</button>
+                    </a>
+                    <a [href]="project['live-link']" target="_blank">
+                        <button >Live-Test</button>
+                    </a>
                 </div>
                 
-            </span>
-    <div class="main-frame" *ngIf="project">
-         
-        <div class="left-frame">
-           <h2 class="fontBricolage700">{{ project.title }}</h2>
-            <span class="fontBricolage400">
-                <h3>{{ 'project-preview.description-header' | translate }}</h3>
-                {{ project.description | translate }}
-            </span>
-            <span class="fontBricolage400">
-                <h3>{{ 'project-preview.details-header' | translate }}</h3>
-                {{ project.details | translate }}
-            </span>
-            <div class="icon-list">
-                @for(item of project.languages; track item; let index = $index){
-                 <div class="icon">
-                    <img src="{{project.languages[index].img}}" alt="Angular Icon">
-                    <p class="fontBricolage400">{{project.languages[index].name}}</p>
-                 </div>
-                }
             </div>
-        </div>
-
-
-        <div class="right-frame">
-            <div class="project-img-frame">
-                <img class="img-project" src="{{ project.img }}" alt="Image of Game El Pollo Loco">
-                <img class="sticker" src="assets/img/07-Sticker/Sticker 01.png" alt="Sticker">
-            </div>
-            <div class="button-wrapper-right">
-                <a [href]="project['github-link']" target="_blank">
-                    <button >GitHub</button>
-                </a>
-                <a [href]="project['live-link']" target="_blank">
-                    <button >Live-Test</button>
-                </a>
-             </div>
             
         </div>
-        
-    </div>
-    <div class="button-wrapper-right">
-        <button class="simple inverse" (click)="nextProject()">{{ 'project-preview.button-next' | translate }}</button>
-        <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="" >
-    </div>
+        <div class="button-wrapper-right">
+            <button class="simple inverse" (click)="nextProject()">{{ 'project-preview.button-next' | translate }}</button>
+            <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="" >
+        </div>
   </div>
   
 </section>

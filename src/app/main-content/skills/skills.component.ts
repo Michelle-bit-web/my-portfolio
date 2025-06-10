@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 
@@ -5,12 +6,20 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   selector: 'app-skills',
   imports: [
     TranslateModule,
-    TranslatePipe
+    TranslatePipe,
+    CommonModule
   ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  isTouchDevice:boolean = false;
+
+  ngOnInit(): void {
+  const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  this.isTouchDevice = isTouch;
+}
+
   iconList = [
     {
       name: "Angular",

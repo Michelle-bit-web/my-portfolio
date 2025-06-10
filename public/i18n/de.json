@@ -39,23 +39,23 @@
   
     "dabubble": {
       "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine durchdachte Kanalstruktur.",
-      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt."
+      "details": "Die Herausforderung bei diesem Projekt war die Implementierung einer Echtzeitkommunikation mittels WebSockets sowie die Gestaltung einer intuitiven Benutzeroberfläche mit klarer Channel-Struktur. Mein Schwerpunkt lag auf der Frontend-Architektur und der Entwicklung modularer, wiederverwendbarer Komponenten."
     },
     "join": {
       "description": "Ein Task-Manager inspiriert vom Kanban-System. Aufgaben lassen sich per Drag & Drop organisieren, Nutzern und Kategorien zuweisen.",
-      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
+      "details": "Ich habe die Drag-and-Drop-Funktionalität sowie die dynamische Anzeige von Aufgaben umgesetzt. Das Projekt wurde agil entwickelt und folgte einer modularen Angular-Struktur, wodurch Aufgaben und Kategorien effizient erstellt, bearbeitet und zugewiesen werden konnten."
     },
     "el-pollo-loco": {
       "description": "Ein Jump 'n' Run-Spiel basierend auf objektorientierter Programmierung. Hilf Pepe el Peligroso, mit Tabascosoße gegen das verrückte Huhn zu kämpfen.",
-      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
+      "details": "Die Spiellogik habe ich mit objektorientiertem JavaScript entwickelt. Die Herausforderung bestand darin, ein flüssiges Spielerlebnis auf verschiedenen Geräten zu ermöglichen – insbesondere durch die Abstimmung von Kollisionserkennung, Animationstiming und Soundeffekten."
     },
     "pokedex": {
       "description": "Ein responsiver, browserbasierter Pokédex, der Daten aus der öffentlichen PokeAPI abruft. Zeigt Pokémon-Karten, Detaildialoge und Entwicklungsketten an.",
-      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
+      "details": "Die App enthält eine durchsuchbare Pokémon-Datenbank und dynamische Detailansichten für jedes Pokémon. Die Herausforderung bestand in der effizienten Anbindung an die API sowie der Umsetzung einer responsiven und benutzerfreundlichen Oberfläche."
     },
     "bestell-app": {
       "description": "Eine Bestell-App, mit der Benutzer Speisekarten durchsuchen, Bestellungen aufgeben und zwischen Lieferung oder Abholung wählen können.",
-      "details": "Kurzer Text über meine Rolle oder den Arbeitsablauf in diesem Projekt (zur Darstellung von Wissen, selbstständigem Arbeiten oder Teamarbeit)."
+      "details": "In diesem Projekt lag der Fokus auf einer benutzerfreundlichen Nutzererfahrung und einer flexiblen Menüdarstellung. Besonders viel Wert habe ich auf das Design gelegt. Die Herausforderung bestand in der Entwicklung der zentralen Bestell- und Warenkorblogik mit Echtzeitaktualisierung, Berechnung von Lieferkosten, Hinzufügen/Entfernen von Artikeln, automatischer Preisberechnung sowie der Speicherung von Bestellungen im Local Storage."
     }
   },
    "project-preview": {
@@ -145,5 +145,10 @@
     "privacyLink": "Datenschutzerklärung",
     "templateBy": "Basierend auf einer Vorlage von",
     "lawOffice": "Kanzlei Hasselbach"
+  },
+  "router": {
+    "legal-notice": "Impressum",
+    "privacy-policy": "Datenschutzerklärung",
+    "preview": "Projektvorschau"
   }
 }

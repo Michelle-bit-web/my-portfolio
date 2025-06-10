@@ -15,8 +15,16 @@
                 <div class="frame-icons">
                     @for(icon of iconList; track $index){
                     <div class="icon-and-text">
-                        <img class="icon" src="assets\img\09-Icons\{{iconList[$index].img}}.png" alt="">
-                        <p class="fontBricolage400">{{iconList[$index].name}}</p>
+
+                        <img class="icon" 
+                        [ngClass]="{ 'touch': isTouchDevice }"
+                        [style.animationDelay]="isTouchDevice ? $index * 0.3 + 's' : null"
+                        src="assets\img\09-Icons\{{iconList[$index].img}}.png" alt="">
+
+                        <p 
+                        [ngClass]="{ 'touch': isTouchDevice }"
+                        [style.animationDelay]="isTouchDevice ? $index * 0.3 + 's' : null"
+                        class="fontBricolage400 text">{{iconList[$index].name}}</p>
                     </div>
                     }
                     <div class="sticker fontBricolage400" [attr.sticker-text]="'skills.peel-sticker' | translate">

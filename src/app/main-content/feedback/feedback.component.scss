@@ -76,7 +76,48 @@ section {
 .title-wrapper {
   display: flex;
   gap: 0.8rem;
+  position: relative;
 }
+
+.arrow-wrapper{
+  height: 100%;
+    &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $bg-light;
+    border: 2px solid red;
+    z-index: 1;
+    transform-origin: top right; // Startpunkt der Skalierung
+    transform: scale(0);
+    // animation: shrink 3s ease-in-out infinite, grow 3s ease-in-out 3s infinite;
+    }
+}
+
+// @keyframes shrink {
+//   0% {
+   
+//      transform: scale(0);
+//   }
+ 
+//   100% {
+   
+//     transform: scale(1);
+//   }
+// }
+
+// @keyframes grow {
+//   0% {
+//     transform: scale(1);
+//   }
+ 
+//   100% {
+//     transform: scale(0);
+//   }
+// }
 
 .card {
     margin: 0 auto
@@ -84,5 +125,7 @@ section {
 
 .arrow {
     width: 10rem;
+    // transform: rotate(0deg);
+    // animation: shrink 3s ease-in-out infinite, grow 3s ease-in-out 3s infinite;
 }
 

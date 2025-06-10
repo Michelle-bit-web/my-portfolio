@@ -33,11 +33,13 @@ section {
   display: flex;
   justify-content: center;
 
-  gap: min(5rem, 3.4%);
-  padding: 0 min(6.4rem, 4.4%);
+  gap: 5%;
+  padding: 0 min(160px, 5%);
   @media(max-width: 1000px) {
     flex-direction: column;
-  
+  }
+  @media(max-width: 450px) {
+    padding: 0 12px;
   }
 }
 
@@ -58,7 +60,7 @@ section {
   align-items: center;
   max-width: 100%;
   gap: 3.2rem;
-  @media (max-width: 640px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     align-items: flex-end;
     
@@ -71,7 +73,7 @@ section {
   align-items: flex-end;
   flex: 0 0 300px;
   gap: 1.6rem;
-  @media (max-width: 640px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     align-items: flex-end;
     flex: 0 0 0;
@@ -83,7 +85,7 @@ section {
   &::after {
     content: "";
     width: 150rem;
-    height: 10rem;
+    height: 130%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -94,12 +96,13 @@ section {
 
 .div-paper {
     // width: 70em;
-    height: 20em;
+    height: fit-content;
     flex: 1 0 0;
     background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 32px 16px;
     > span {
         color: $text-inverse;
         font-size: 1.8rem;
@@ -134,19 +137,55 @@ section {
  flex-direction: column;
  align-items: center;
  justify-content: center;
- > p {
+ > .text {
   color: transparent;
   transition: color 1s ease;
  }
  &:hover {
-  > p {
+  > .text {
   color: $text-primary;
  }
  }
 }
 
+.text.touch {
+  color: transparent;
+  transition: color 1s ease;
+  animation: textTouchAppear 0.6s ease forwards;
+}
+
+@keyframes textTouchAppear {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: $text-primary;
+  }
+}
 .icon {
+  width: 7.2rem;
+  height: 7.2rem;
   margin: 16px;
+  filter: saturate(0); 
+  &:hover {
+    filter: saturate(1);
+    transform: scale(0.9);
+  }
+}
+
+.icon.touch {
+  animation: iconTouchAppear 0.6s ease forwards;
+}
+
+@keyframes iconTouchAppear {
+  0% {
+    filter: saturate(0);
+    transform: scale(1);
+  }
+  100% {
+    filter: saturate(1);
+    transform: scale(0.9);
+  }
 }
 
 .frame-icon-sticker {
@@ -248,23 +287,20 @@ section {
   }
 }
 
-.icon {
-  width: 7.2rem;
-  height: 7.2rem;
-  filter:saturate(0);
-  transition: filter 0.3s ease-in-out;
- &:hover {
-    filter: saturate(1);
-    scale:(0.9);
- }  
-}
 
 span {
-    font-size: 2rem;
+  font-size: clamp(18px, 3.5vw + 1rem, 20px);
+    @media(max-width: 450px) {
+      font-size: 16px;
+    }
 }
 
 h2 {
-    font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
+    // font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
     text-align: end;
+    font-size: clamp(48px, 6.2vw + 1rem, 64px);
+    @media(max-width: 450px) {
+      font-size: 32px;
+    }
   }
 
