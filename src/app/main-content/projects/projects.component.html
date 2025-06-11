@@ -3,7 +3,13 @@
     <div class="main-frame">
         <div class="title-frame" data-aos="fade-right">
           <p class="fontBricolage500">{{'projects.title-small' | translate}}</p>
-          <h2 class="fontBricolage700">{{'projects.page-title' | translate}}</h2>
+          <h2 
+          class="fontBricolage700"
+          [ngClass]="{ 'touch': isTouchDevice }"
+          #touch
+          >
+          {{'projects.page-title' | translate}}
+        </h2>
           <span class="fontBricolage400">{{'projects.page-description' | translate}}</span>
           <span class="fontBricolage400">{{'projects.final' | translate}}</span>
         </div>

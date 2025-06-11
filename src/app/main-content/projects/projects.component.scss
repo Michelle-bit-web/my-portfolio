@@ -78,14 +78,14 @@ h2 {
    font-size: clamp(48px, 6.2vw + 1rem, 64px);
    margin-top: 1.6rem;
    margin-bottom: 3.2rem;
+   width: fit-content;
   @media(max-width: 450px) {
     font-size: 32px;
   }
   position: relative;
   &::after {
     content: "";
-    width: 28rem;
-    height: 8rem;
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -95,5 +95,23 @@ h2 {
         width: 16rem;
         height: 6rem;
     }
+  }
+}
+
+h2.touch::after {
+  width: 0;
+  opacity: 0;
+  animation: touchAppear 0.6s ease 0.5s forwards;
+}
+
+@keyframes touchAppear {
+  0% {
+    width: 0;
+    opacity: 0;
+    
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
   }
 }

@@ -29,7 +29,9 @@
     <div class="right-frame" data-aos="fade-left">
        <div>
          <span class="fontBricolage500 fs-sh">{{'about-me.title-small' | translate}}</span>
-         <h2 class="fontBricolage700 fs-h headline pseudo-animate">{{'about-me.title' | translate}}</h2>
+         <h2 class="fontBricolage700 fs-h headline pseudo-animate" 
+         [ngClass]="{ 'touch': isTouchDevice }"
+         #touch >{{'about-me.title' | translate}}</h2>
        </div>
         <span class="fontBricolage400 fs-sh">{{'about-me.intro' | translate}}</span>
         <span class="fontBricolage400 fs-sh">{{'about-me.description' | translate}}</span>
