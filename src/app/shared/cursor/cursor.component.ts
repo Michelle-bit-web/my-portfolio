@@ -35,15 +35,13 @@ export class CursorComponent implements AfterViewInit{
 
     this.refCursor.nativeElement.style.left = this.mouseX + 'px';
     this.refCursor.nativeElement.style.top = this.mouseY + 'px';
-    
   }
+
   animateCircle() {
     this.circleX += (this.mouseX - this.circleX) * this.speed;
     this.circleY += (this.mouseY - this.circleY) * this.speed;
-
     this.refCircle.nativeElement.style.left = this.circleX + 'px';
     this.refCircle.nativeElement.style.top = this.circleY + 'px';
-
     requestAnimationFrame(() => this.animateCircle());
   }
   

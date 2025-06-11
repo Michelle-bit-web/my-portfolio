@@ -67,7 +67,6 @@ section {
   
   @media(max-width: 1000px) {
     flex-direction: column;
-    // padding: 0 min(2.4rem, 4.4%);
   }
    @media(max-width: 800px) {
     min-height: 100dvh;
@@ -84,7 +83,6 @@ section {
     flex-direction: column;
     align-items: flex-end;
     padding: 10% 0;
-    // gap: 3.2rem;
 }
 
 .title-wrapper {
@@ -107,39 +105,14 @@ section {
     z-index: 1;
     transform-origin: top right; // Startpunkt der Skalierung
     transform: scale(0);
-    // animation: shrink 3s ease-in-out infinite, grow 3s ease-in-out 3s infinite;
     }
 }
-
-// @keyframes shrink {
-//   0% {
-   
-//      transform: scale(0);
-//   }
- 
-//   100% {
-   
-//     transform: scale(1);
-//   }
-// }
-
-// @keyframes grow {
-//   0% {
-//     transform: scale(1);
-//   }
- 
-//   100% {
-//     transform: scale(0);
-//   }
-// }
 
 .card {
     margin: 0 auto;
 }
 
 .arrow {
-    width: 10rem;
-    // transform: rotate(0deg);
-    // animation: shrink 3s ease-in-out infinite, grow 3s ease-in-out 3s infinite;
+    width: 10rem
 }
 

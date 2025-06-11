@@ -13,7 +13,6 @@ import { CommonModule } from '@angular/common';
     TranslateModule,
     TranslatePipe,
     CommonModule
-
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
@@ -30,14 +29,6 @@ export class HeroComponent {
     this.isTouchDevice = isTouch;
   }
 
-  // ngAfterViewInit() {
-  //   if (this.isTouchDevice) {
-  //     // this.startButtonAnimationLoop();
-  //     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  //     this.isTouchDevice = isTouch;
-  //   }
-  // }
-
   onMouseEnter(){
     this.refName.nativeElement.textContent = 'Michelle :D';
   }
@@ -45,18 +36,4 @@ export class HeroComponent {
   onMouseLeave(){
     this.refName.nativeElement.textContent = 'Michelle :)';
   }
-
-  // startButtonAnimationLoop() {
-  //   const btn = this.refBtn.nativeElement;
-  //   const interval = 2000;
-
-  //   setInterval(() => {
-  //     btn.classList.add('animate');
-
-  //     setTimeout(() => {
-  //       btn.classList.remove('animate');
-  //     }, 1000);
-  //   }, interval);
-  // }
-
 }

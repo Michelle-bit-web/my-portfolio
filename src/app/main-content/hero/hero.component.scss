@@ -117,15 +117,11 @@ section {
   transform: rotate(5deg);
   filter: saturate(0);
   transition: filter 1s ease;
-  // @media(min-width: 768px) {
-  //   filter: saturate(0);
-  // }
 }
 
 .picture.touch {
    animation: touchAppear 0.6s ease forwards;
 }
-
 
 @keyframes touchAppear {
   0% {
@@ -135,7 +131,6 @@ section {
     filter: saturate(1);
   }
 }
-
 
 .bg-polaroid {
   @extend .polaroid;
@@ -173,8 +168,6 @@ section {
 .upper-left-frame {
   width: fit-content;
 }
-
-// 
 
 .lower-frame {
  flex:1;
@@ -263,16 +256,13 @@ section {
   }
 }
 
-
 h1 {
   > span {
     font-size: clamp(64px, calc(8vw + 1rem), 125px);
-    // font-size: 12.8rem;
     @media(max-width: 450px) {
-    font-size: 48px;
+      font-size: 48px;
+    }
   }
-  }
-  
 }
 
 button {
@@ -388,17 +378,16 @@ button {
   // HOVER = alles zusammen animieren
   &:hover {
     width: 18rem;
-
     .btn-greeting {
       width: 18rem;
       &::before {
-      transition-delay: 0s, 0.1s;
-      width: 100%;
-      content: attr(data-name);
-      opacity: 1;
-      font-size: 1.8rem;
-      transition: width 1s ease, opacity 1s ease 0.2s, content 1s ease 0.6s;
-    }
+        transition-delay: 0s, 0.1s;
+        width: 100%;
+        content: attr(data-name);
+        opacity: 1;
+        font-size: 1.8rem;
+        transition: width 1s ease, opacity 1s ease 0.2s, content 1s ease 0.6s;
+      }
     }
     .img-hand {
       transform: translateX(20px) rotate(360deg);
@@ -415,26 +404,20 @@ button {
   }
 }
 
-
 @keyframes btnTouchAppear {
   0% {
     width: 0%;
     content: "";
     opacity: 0;
   }
-
   50% {
-   
     content: "";
     opacity: 0.3;
   }
-
   75% {
-   
     content: "";
     opacity: 0.6;
   }
-
   100% {
     width: 100%;
     content: attr(data-name);
@@ -458,7 +441,6 @@ button {
   }
 }
 //#endregion greeting-button for mobile device
-
 
 .btn-contact {
   width: 16rem;

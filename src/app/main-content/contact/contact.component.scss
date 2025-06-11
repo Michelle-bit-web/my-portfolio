@@ -119,12 +119,9 @@ section {
   align-items: center;
 }
 
-
-
 input[type=checkbox] {
   height: 1.8rem;
 }
-
 
 span {
     font-size: 2rem;
@@ -147,7 +144,6 @@ textarea {
     width: 100%;
     font-size: 1.8rem;
     border-radius: 10px;
-  
 }
 
 form {
@@ -159,13 +155,11 @@ form {
 .form-group {
   display: flex;
   flex-direction: column;
-
   &:hover input,
   &:hover textarea {
     border-top: 2px solid $accent-primary;
     border-bottom: 2px solid $accent-primary;
   }
-
   &:hover label {
     color: $accent-tertiary;
   }
@@ -234,7 +228,6 @@ label {
   bottom: 0;
 }
 
-
 .checkbox-text {
   display: inline;
   width: 100%;
@@ -273,7 +266,6 @@ textarea {
   z-index: 0;
   
   &::after{
-   
     content: "";
     position: absolute;
     height: 50%;
@@ -308,15 +300,6 @@ textarea {
   @media(max-width: 450px){
     font-size: 1.6rem;
   }
-  // @media(max-width: 768px){
-  //    &::after {
-  //     content: "";
-  //     position: absolute;
-  //     right: 200px;
-  //     width: 30rem;
-  //     background: url("./../../../../public/assets/img/06-Contact/arrow.png");
-  //    }
-  //   }
 }
 
 @keyframes spin {
@@ -358,7 +341,6 @@ input[type=checkbox].ng-invalid.ng-touched::placeholder {
   padding: 2rem;
   bottom: 0;
   right: 0;
-  
 }
 
 .link-back {
@@ -398,7 +380,6 @@ input[type=checkbox].ng-invalid.ng-touched::placeholder {
  } 
  0% {
   opacity: 1;
- 
  } 
  100% {
   opacity: 0;
@@ -420,7 +401,6 @@ footer {
     display: flex;
     align-items: center;
     width: 100%;
-    
 }
 
 .reply-overlay{

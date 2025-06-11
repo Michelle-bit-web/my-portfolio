@@ -44,8 +44,6 @@ export class PreviewComponent {
     }
 
   ngOnInit() {
-    // let id = +this.route.snapshot.paramMap.get('id')!;
-    // this.project = this.projectListData.projectList[id];
     this.route.paramMap.subscribe(params => {
     const id = +params.get('id')!;
     this.project = this.projectListData.projectList[id];
@@ -61,11 +59,4 @@ export class PreviewComponent {
     this.router.navigate(['/preview', nextId]);
     console.log('das ist die id: ' + nextId)
   }
-    // let id = +this.route.snapshot.paramMap.get('id')!;
-    // let nextId = id + 1;
-    // if (nextId >= this.projectListData.projectList.length) {
-    //   nextId = 0;
-    // }
-    // this.project = this.projectListData.projectList[nextId];
-  // }
 }
