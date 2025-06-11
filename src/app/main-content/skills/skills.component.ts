@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -12,30 +12,37 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
-export class SkillsComponent {
+export class SkillsComponent implements AfterViewInit{
   @ViewChildren('touchIcon') touchIcons!: QueryList<ElementRef>;
   isTouchDevice:boolean = false;
+  private observer!: IntersectionObserver;
 
   ngOnInit(): void {
     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     this.isTouchDevice = isTouch;
  }
 
-ngAfterViewInit() {
-    if (this.isTouchDevice) {
-      this.restartAnimationLoop();
-    }
-  }
-
-  restartAnimationLoop() {
-    this.touchIcons.forEach((iconEl: ElementRef) => {
-      const nativeEl = iconEl.nativeElement;
-      nativeEl.classList.remove('touch');
-      setTimeout(() => {
-        nativeEl.classList.add('touch');
-      }, 3000)
+  ngAfterViewInit() {
+      if (this.isTouchDevice) {
+        // this.restartAnimationLoop();
+      }
+      this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target as HTMLElement;
+        if (entry.isIntersecting) {
+          el.classList.add('touch');
+        } else {
+          el.classList.remove('touch');
+        }
+      });
+    }, {
+      threshold: 0.2 // 20% sichtbar reicht
     });
-  }
+    // Alle Elemente beobachten
+    this.touchIcons.forEach((el: ElementRef) => {
+      this.observer.observe(el.nativeElement);
+    });
+    }
 
   iconList = [
     {

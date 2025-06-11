@@ -17,11 +17,11 @@ section {
   color: $text-inverse;
   display: flex;
   justify-content: center;
-  background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper.png") top/cover no-repeat;
+  background: url("./../../../../../public/assets/img/04-Projects/project-preview/paper-landscape.png") top/cover no-repeat;
   background-color: $bg-inverse;
   @media(max-width: 1114px){
     background-position: left;
-    background: url("./../../../../../public/assets/img/04-Projects/project-preview/Note book paper-mobile.png") top/cover no-repeat;
+    background: url("./../../../../../public/assets/img/04-Projects/project-preview/paper-portrait.png") top/cover no-repeat;
     background-color: $bg-inverse;
   }
 }

@@ -11,7 +11,7 @@ export class ProjectListDataService {
     {
       title: "DABubble",
       imgResponsive: "assets/img/04-Projects/project-preview/da-bubble-resp.png",
-      img: "assets/img/04-Projects/project-preview/Property 1=DABubble.png",
+      img: "assets/img/04-Projects/project-preview/da-bubble.png",
       description: "project-card.dabubble.description",
       details: "project-card.dabubble.details",
       languages: [
@@ -38,7 +38,7 @@ export class ProjectListDataService {
     {
       title: "Join",
       imgResponsive: "assets/img/04-Projects/project-preview/join-resp.png",
-      img: "assets/img/04-Projects/project-preview/Property 1=Join.png",
+      img: "assets/img/04-Projects/project-preview/join.png",
       description: "project-card.join.description",
       details: "project-card.join.details",
       languages: [
@@ -65,7 +65,7 @@ export class ProjectListDataService {
     {
       title: "El Pollo Loco",
       imgResponsive: "assets/img/04-Projects/project-preview/pollo-loco-resp.png",
-      img: "assets/img/04-Projects/project-preview/Property 1=El Pollo Loco.png",
+      img: "assets/img/04-Projects/project-preview/pollo-loco.png",
       description: "project-card.el-pollo-loco.description",
       details: "project-card.el-pollo-loco.details",
       languages: [
