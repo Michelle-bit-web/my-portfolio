@@ -16,7 +16,6 @@ export class HeaderComponent {
   @Input() variant: "default" | "inverse" = "default";
   activeMenu = false;
   language = "en";
- 
 
   constructor(private translate: TranslateService){
     this.language = this.translate.currentLang || 'en';
@@ -26,7 +25,7 @@ export class HeaderComponent {
     if(this.language === current) return;
       this.language = current;
       this.translate.use(current);
-  }
+   }
 
   toggleMenu(){
     const overlay = document.querySelector('.overlay');

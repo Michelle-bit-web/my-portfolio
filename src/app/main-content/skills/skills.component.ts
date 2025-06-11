@@ -13,13 +13,13 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-   @ViewChildren('touchIcon') touchIcons!: QueryList<ElementRef>;
+  @ViewChildren('touchIcon') touchIcons!: QueryList<ElementRef>;
   isTouchDevice:boolean = false;
 
   ngOnInit(): void {
-  const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  this.isTouchDevice = isTouch;
-}
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    this.isTouchDevice = isTouch;
+ }
 
 ngAfterViewInit() {
     if (this.isTouchDevice) {
@@ -34,14 +34,6 @@ ngAfterViewInit() {
       setTimeout(() => {
         nativeEl.classList.add('touch');
       }, 3000)
-      // Restart animation every 3s
-      // const loop = () => {
-      //   nativeEl.classList.remove('touch');
-      //   void nativeEl.offsetWidth; // <- trigger reflow
-      //   nativeEl.classList.add('touch');
-      //   setTimeout(loop, 3000);
-      // };
-      // setTimeout(loop, 0);
     });
   }
 

@@ -1,16 +1,13 @@
 //#region colors
 $text-primary: white;
 $text-inverse: black;
-
 $accent-primary: #7e4ae7;
 $accent-secondary:#bae011;
 $accent-tertiary: #e08c05;
-
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
 $bg-inverse: black;
-
 // #endregion colors
 
 header {
@@ -22,7 +19,6 @@ header {
   font-size: 18px;
   gap: 10%;
 }
-
 
 .container-logo {
   > img {
@@ -41,60 +37,6 @@ header {
   transition: opacity 0.25s ease-in;
 }
 
-// .container-logo {
-//   position: relative;
-//   display: inline-block;
-//   // overflow: hidden;
-//   &::after {
-//   content: '';
-//   position: absolute;
-//   top: 10%; // Abstand zur oberen Kante
-//   right: 10%; // Abstand zur rechten Kante
-//   width: 8px;
-//   height: 8px;
-//   background: white;
-//   border-radius: 50%;
-//   opacity: 0;
-//   filter: blur(0.5%);
-//   transition: all 4s;
-//   transform: scale(1);
-//   pointer-events: none;
-//   animation: glow-pulse 4s ease infinite;
-// }
-// }
-
-// @keyframes glow-pulse {
-//   0% {
-//     opacity: 0;
-//     transform: scale(1);
-//     filter: blur(2px);
-//   }
-
-//   45% {
-//     opacity: 0;
-//     transform: scale(1);
-//     filter: blur(2px);
-//   }
-
-//   50% {
-//     opacity: 1;
-//     transform: scale(1.8);
-//     filter: blur(6px);
-//   }
-
-//   55% {
-//     opacity: 0;
-//     transform: scale(1);
-//     filter: blur(2px);
-//   }
-
-//   100% {
-//     opacity: 0;
-//     transform: scale(1);
-//     filter: blur(2px);
-//   }
-// }
-
 .hover-overlay {
   background-color: $bg-inverse;
 }
@@ -105,8 +47,6 @@ nav {
   justify-content: space-between;
   flex:1;
 }
-
-
 
 .nav-link {
   display: flex;
@@ -128,15 +68,13 @@ nav {
 }
 
 @media (max-width: 650px) {
-    .menu-btn {
-        display: block;
-    }
-    
-    nav {
-        display: none;
-    }
+  .menu-btn {
+    display: block;
+   }
+  nav {
+    display: none;
+  }
 }
-
 
 @property --angle {
   syntax: "<angle>";
@@ -153,40 +91,40 @@ nav {
   position: relative;
   mask-image: linear-gradient(transparent, transparent, transparent, transparent);
   &:hover {
-    
    animation: fade-in ease-in-out forwards;
    animation-duration: 500ms;
   }
 }
-  @keyframes fade-in {
-    0% {
-      mask-image: linear-gradient(transparent, transparent, transparent, transparent);
-    }
-    5%{
-      mask-image: linear-gradient(rgba(0, 0, 0, 0.72), transparent, transparent, transparent);
-    }
-    10% {
-      mask-image: linear-gradient(black, transparent, transparent, transparent);
-    }
-    25% {
-      mask-image: linear-gradient( black, rgba(0, 0, 0, 0.626), transparent, transparent);
-    }
-    35%{
-      mask-image: linear-gradient( black, black, transparent, transparent);
-    }
-    50%{
-      mask-image: linear-gradient( black, black, rgba(0, 0, 0, 0.703), transparent);
-    }
-    75% {
-      mask-image: linear-gradient( black, black, black, transparent);
-    }
-    85% {
-      mask-image: linear-gradient( black, black, black, rgba(0, 0, 0, 0.703));
-    }
-    100% {
-      mask-image: linear-gradient(black, black, black, black);
-    }
+
+@keyframes fade-in {
+  0% {
+    mask-image: linear-gradient(transparent, transparent, transparent, transparent);
   }
+  5%{
+    mask-image: linear-gradient(rgba(0, 0, 0, 0.72), transparent, transparent, transparent);
+ }
+ 10% {
+  mask-image: linear-gradient(black, transparent, transparent, transparent);
+ }
+ 25% {
+  mask-image: linear-gradient( black, rgba(0, 0, 0, 0.626), transparent, transparent);
+ }
+ 35%{
+  mask-image: linear-gradient( black, black, transparent, transparent);
+ }
+ 50%{
+  mask-image: linear-gradient( black, black, rgba(0, 0, 0, 0.703), transparent);
+ }
+ 75% {
+  mask-image: linear-gradient( black, black, black, transparent);
+ }
+ 85% {
+  mask-image: linear-gradient( black, black, black, rgba(0, 0, 0, 0.703));
+ }
+ 100% {
+  mask-image: linear-gradient(black, black, black, black);
+ }
+}
 //#endregion hover animation nav-links
 
 //#region changes dependend on project preview component
@@ -218,11 +156,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.747);
   background: url("./../../../../public/assets/img/01-Hero/mobile-menu-bg.png") bottom/cover no-repeat;
   z-index: 3;
-//   opacity: 1;
-//  @starting-style {
-//     opacity: 0;
-//   }
-transition: 0.8s;
+  transition: 0.8s;
   > nav {
     display: flex;
     flex-direction: column;
@@ -233,12 +167,6 @@ transition: 0.8s;
     opacity: 0;
     transition: 0.8s ease 0.3s;
   }
-  // &:hover {
-  //   height: 80dvh;
-  //   nav {
-  //     display: flex;
-  //   }
-  // }
 }
 
 .overlay.open-menue {
@@ -250,16 +178,11 @@ transition: 0.8s;
 
 .d_none {
   display: none;
-  // opacity: 0;
-  // transition: opacity 0.5s ease;
-  // transition-behavior: allow-discrete;
-
 }
 
 .menu-btn {
   background: transparent;
   border-radius: 1rem;
-  // border: 1px solid white;
   overflow: hidden;
   width: 5rem;
   height: 5rem;
@@ -302,8 +225,8 @@ transition: 0.8s;
  .icons {
   > a {
     > img {
-    border-radius: 50%;
-    border: 2px solid white;
+     border-radius: 50%;
+     border: 2px solid white;
     }
   }
  }
@@ -326,11 +249,11 @@ transition: 0.8s;
 }
 
 .hover-box {
-   width:  3em;
-   height:  3em;
-   position: absolute;
-   opacity: 0;
-  }
+  width:  3em;
+  height:  3em;
+  position: absolute;
+  opacity: 0;
+}
 
 .language-box,
 .slider-box {
@@ -357,12 +280,9 @@ transition: 0.8s;
     transition: all 2s ease-in-out 5s;
     &.right {
       right: 0;
-     
     }
-
     &.left {
       left: 0;
-      
     }
   }
 }

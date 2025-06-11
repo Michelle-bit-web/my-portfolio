@@ -1,17 +1,15 @@
 //#region colors
 $text-primary: white;
 $text-inverse: black;
-
 $accent-primary: #7e4ae7;
 $accent-secondary:#bae011;
 $accent-tertiary: #e08c05;
-
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
 $bg-inverse: black;
-
 // #endregion colors
+
 .paper-features {
   width: 56rem;
   height: 15.2rem;
@@ -30,7 +28,6 @@ section {
 }
 
 .content {
-  border: 2px solid red;
   max-width: 1920px;
   width: 100%;
   min-height: 100dvh;
@@ -44,7 +41,6 @@ section {
 
 .main-frame {
   width: 100%;
-  border: 2px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,9 +51,9 @@ section {
 
 p {
   font-size: clamp(18px, 3.5vw + 1rem, 20px);
-    @media(max-width: 450px) {
-      font-size: 16px;
-    }
+  @media(max-width: 450px) {
+    font-size: 16px;
+  }
 }
 
 span {
@@ -82,10 +78,9 @@ h2 {
    font-size: clamp(48px, 6.2vw + 1rem, 64px);
    margin-top: 1.6rem;
    margin-bottom: 3.2rem;
-    @media(max-width: 450px) {
-      font-size: 32px;
-    }
-
+  @media(max-width: 450px) {
+    font-size: 32px;
+  }
   position: relative;
   &::after {
     content: "";
@@ -97,10 +92,8 @@ h2 {
     translate: 0 60%;
     background: url("./../../../../public/assets/img/04-Projects/underline.png") center/contain no-repeat;
    @media(max-width: 450px) {
-      
         width: 16rem;
         height: 6rem;
-      
     }
   }
 }

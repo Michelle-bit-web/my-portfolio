@@ -1,19 +1,14 @@
 //#region colors
 $text-primary: white;
 $text-inverse: black;
-
 $accent-primary: #7e4ae7;
 $accent-secondary:#bae011;
 $accent-tertiary: #e08c05;
-
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
 $bg-inverse: black;
 // #endregion colors
-
-//#region font-sizes
-// $fs-btn-default: clamp(2rem, calc(7vw + 1rem), 12.8rem);
 
 section {
   width: 100%;
@@ -30,7 +25,6 @@ section {
 }
 
 .content {
-  border: 1px solid red;
   min-height: 100dvh;
   max-width: 1920px;
   width: 100%;
@@ -45,14 +39,12 @@ section {
 }
 
 .header {
-  border: 1px solid white;
   display: flex;
   width: 100%;
   height: 80px;
 }
 
 .main-frame {
-  border: 1px solid green;
   width: 70%;
   display: flex;
   flex-shrink: 1;
@@ -88,17 +80,16 @@ section {
 .polaroid-frame {
   position: relative;
   &:hover {
-      .picture {
-        filter: saturate(1)
-      }
+    .picture {
+      filter: saturate(1)
     }
+  }
   @media(max-width: 655px) {
    position: absolute;
    top: 100%;
    left: 50%;
    translate: -50% 60%;
    width: fit-content;
-   border: 2px solid yellow;
   }
  }
  
@@ -120,7 +111,7 @@ section {
 }
 
 .picture.touch {
-   animation: touchAppear 0.6s ease forwards;
+  animation: touchAppear 0.6s ease forwards;
 }
 
 @keyframes touchAppear {
@@ -369,13 +360,10 @@ button {
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease 0.1s;
   }
-
  .btn-name{
     position: relative;
     z-index: 2;
   }
-
-  // HOVER = alles zusammen animieren
   &:hover {
     width: 18rem;
     .btn-greeting {
@@ -445,7 +433,7 @@ button {
 .btn-contact {
   width: 16rem;
   box-shadow: 0 4px 4px $bg-light;
-   transition: 
+  transition: 
   scale 0.6s ease, 
   box-shadow 0.3s ease;
   &::after {

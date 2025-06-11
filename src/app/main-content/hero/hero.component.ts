@@ -21,7 +21,6 @@ export class HeroComponent {
   @ViewChild('name', { static: true }) refName!: ElementRef<HTMLDivElement>;
   @ViewChild('btnMobile', { static: true }) refBtn!: ElementRef<HTMLButtonElement>;
   isTouchDevice:boolean = false;
-  
 
    ngOnInit() {
     AOS.init();

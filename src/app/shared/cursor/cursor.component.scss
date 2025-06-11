@@ -7,33 +7,33 @@ $fill-color-orange: #e08c05;
 // #endregion colors
 
 .cursor, .circle {
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      will-change: transform;
-      z-index: 10000;
-    }
+  position: fixed;
+   top: 0;
+   left: 0;
+   pointer-events: none;
+   transform: translate(-50%, -50%);
+   will-change: transform;
+   z-index: 10000;
+}
 
-    .cursor {
-      width: 5px;
-      height: 5px;
-      background-color: $fill-color-green;
-      border-radius: 50%;
-      z-index: 10;
-      animation-duration: 0.4s;
-      animation-timing-function: ease-in-out;
-    }
+.cursor {
+  width: 5px;
+  height: 5px;
+  background-color: $fill-color-green;
+  border-radius: 50%;
+  z-index: 10;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
 
-    .circle {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      border: 2px solid $fill-color-green;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 5;
-      transition: background-color 0.3s ease;
-    }
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid $fill-color-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  transition: background-color 0.3s ease;
+}

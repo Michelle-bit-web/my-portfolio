@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from '../../main-content/contact/footer/footer.component';
 import { RouterLink, RouterModule } from '@angular/router';
-import { HeaderComponent } from '../header/header.component';
 import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -17,6 +16,4 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   templateUrl: './legal-notice.component.html',
   styleUrl: './legal-notice.component.scss'
 })
-export class LegalNoticeComponent {
-
-}
+export class LegalNoticeComponent {}

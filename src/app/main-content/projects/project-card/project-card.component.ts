@@ -17,6 +17,7 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 })
 export class ProjectCardComponent {
   isTouchDevice:boolean = false;
+
   gOnInit() {
     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     this.isTouchDevice = isTouch;
@@ -33,6 +34,7 @@ export class ProjectCardComponent {
   ngOnInit(){
       console.log (this.index)
   }
+  
   getIndex(i: number){
     console.log ('Das Bild mit dem Index:' + i + ' wurde geklickt');
     this.index = i;

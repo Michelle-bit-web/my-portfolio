@@ -1,11 +1,9 @@
 //#region colors
 $text-primary: white;
 $text-inverse: black;
-
 $accent-primary: #7e4ae7;
 $accent-secondary:#bae011;
 $accent-tertiary: #e08c05;
-
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
@@ -29,7 +27,6 @@ section {
 }
 
 .content {
-  border: 2px solid red;
   max-width: 1920px;
   min-height: 100dvh;
   width: 100%;
@@ -45,7 +42,6 @@ section {
 .main-frame {
   width: 100%;
   min-height: 534px;
-  border: 2px solid green;
   display: flex;
   flex-wrap: flex;
   justify-content: space-between;
@@ -54,7 +50,6 @@ section {
   position: relative;
   @media(max-width: 1114px) {
     flex-direction: column;
-    // margin: 0 auto;
     gap: 4rem;
   }
 }
@@ -62,20 +57,18 @@ section {
 .left-frame, 
 .right-frame {
   margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 50rem;
-    gap: 3.2rem;
-    padding: 0 min(6.4rem, 4.4%);
-    @media(max-width: 1114px){
-     width: 100%;
-    }
-    @media(max-width: 768px) {
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  gap: 3.2rem;
+  padding: 0 min(6.4rem, 4.4%);
+  @media(max-width: 1114px){
+   width: 100%;
   }
-  
+  @media(max-width: 768px) {
+   padding: 0;
+  }
 }
-
 
 .right-frame {
   display: flex;
@@ -86,7 +79,6 @@ section {
     align-items: center;
     flex: 0;
   }
-
 }
 
 .color-inverse .nav-link-wrapper:nth-child(2) .nav-link {
@@ -157,17 +149,17 @@ p {
 }
 
 .sticker {
-    width: 12rem;
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-    translate: 50% 50%;
-    transition: transform 3s;
-    &:hover {
-      transform: rotate(360deg);
-    }
-    @media(max-width: 768px) {
-     display: none;
+   width: 12rem;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  translate: 50% 50%;
+  transition: transform 3s;
+  &:hover {
+    transform: rotate(360deg);
+  }
+  @media(max-width: 768px) {
+   display: none;
   }
 }
 
@@ -176,8 +168,8 @@ p {
 }
 
 .img-project {
-    width: 50rem;
-    border-radius: 20px;
+  width: 50rem;
+  border-radius: 20px;
   @media(max-width: 550px) {
     width: 100%;
   }
@@ -198,43 +190,43 @@ button {
   border: 0.1rem solid $bg-light;
   margin-left: 2rem;
   &:hover {
-      color: $accent-secondary;
-    }
+    color: $accent-secondary;
+  }
   @media(max-width: 450px){
     font-size: 1.6rem;
   }
 }
 
 .simple {
-    background-color: unset;
-    border: none;
-    color: $text-inverse;
-    width: 10rem;
-    font-weight: bold;
-    box-shadow: none;
-    margin:0;
+  background-color: unset;
+  border: none;
+  color: $text-inverse;
+  width: 10rem;
+  font-weight: bold;
+  box-shadow: none;
+  margin:0;
 }
 
 .arrow {
-    width: 5rem;
-    cursor: pointer;
+  width: 5rem;
+  cursor: pointer;
 }
 
 .left {
-    transform: rotate(180deg)
+  transform: rotate(180deg)
 }
 
 .inverse {
-    color: $text-primary
+  color: $text-primary
 }
 
 .button-wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .button-wrapper-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

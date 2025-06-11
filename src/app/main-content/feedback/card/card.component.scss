@@ -1,16 +1,13 @@
 //#region colors
 $text-primary: white;
 $text-inverse: black;
-
 $accent-primary: #7e4ae7;
 $accent-secondary:#bae011;
 $accent-tertiary: #e08c05;
-
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
 $bg-inverse: black;
-
 // #endregion colors
 
 //#region font-sizes
@@ -33,42 +30,42 @@ h2 {
 // #endregion font-sizes
 
 .card-wrapper {
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    @media(max-width: 768px) {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  @media(max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 
 .card {
-    background: url("./../../../../../public/assets/img/05-Testimonial/A.png") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 0 1 350px;
-    height: 25rem;
-    border-radius: 20px;
-    position: relative;
-    padding: 1.6rem;
-    z-index:1;
+  background: url("./../../../../../public/assets/img/05-Testimonial/A.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 350px;
+  height: 25rem;
+  border-radius: 20px;
+  position: relative;
+  padding: 1.6rem;
+  z-index:1;
   &:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease-in-out;
-      z-index: 1;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
-      .img-hover {
-    opacity: 0.5;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+    .img-hover {
+      opacity: 0.5;
+    }
   }
-    }
-    @media(max-width: 768px) {
-         flex: 0 1 300px;
-    }
-    @media(max-width:471px) {
-       flex: 0.5 1 200px;
-    }
+  @media(max-width: 768px) {
+    flex: 0 1 300px;
+  }
+  @media(max-width:471px) {
+    flex: 0.5 1 200px;
+  }
 }
 
 .arrow {
@@ -91,10 +88,10 @@ h2 {
     transition: color 0.3s ease;
   }
   &:hover {
-      a, span p {
-        color: $text-primary;
-      }
+    a, span p {
+      color: $text-primary;
     }
+  }
 }
    
 .img-hover {

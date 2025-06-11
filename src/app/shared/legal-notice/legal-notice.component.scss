@@ -1,16 +1,13 @@
 //#region colors
 $text-primary: white;
 $text-inverse: black;
-
 $accent-primary: #7e4ae7;
 $accent-secondary:#bae011;
 $accent-tertiary: #e08c05;
-
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
 $bg-inverse: black;
-
 // #endregion colors
 
 //#region font-sizes
@@ -38,7 +35,6 @@ h1 {
   font-size: clamp(4.8rem, 6.5vw + 1rem, 6.4rem);
   margin: 3.6rem 0;
 }
-
 // #endregion font-sizes
 
 section {
@@ -51,7 +47,6 @@ section {
 }
 
 .content {
-  border: 2px solid red;
   background-color: rgba(0, 0, 0, 0.658);
   max-width: 1920px;
   width: 100%;
@@ -61,7 +56,6 @@ section {
   justify-content: flex-start;
   gap: min(5rem, 3.4%);
   padding: 0 min(6.4rem, 4.4%);
-  
 }
 
 button {
@@ -78,18 +72,18 @@ button {
 }
 
 .button-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
-    > .arrow {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  > .arrow {
     width: 5rem;
     transform: rotate(180deg);
-}
+  }
 }
 
 a {
-    color: $accent-primary;
-    &:hover {
-        color: $accent-secondary;
-    }
+  color: $accent-primary;
+  &:hover {
+    color: $accent-secondary;
+  }
 }

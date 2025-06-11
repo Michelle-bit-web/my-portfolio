@@ -1,16 +1,13 @@
 //#region colors
 $text-primary: white;
 $text-inverse: black;
-
 $accent-primary: #7e4ae7;
 $accent-secondary:#bae011;
 $accent-tertiary: #e08c05;
-
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
 $bg-inverse: black;
-
 // #endregion colors
 
 .link-wrapper {
@@ -20,12 +17,11 @@ $bg-inverse: black;
   width: 100%;
   gap: 10%;
   @media(max-width: 450px) {
-        gap: 5%;
-      }
+    gap: 5%;
+  }
 }
 
 footer {
-  border: 2px solid white;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -33,8 +29,8 @@ footer {
   font-size: 1.8rem;
   padding: 2.4rem 0;
   @media(max-width: 450px) {
-         font-size: 14px;
-      }
+    font-size: 14px;
+  }
 }
 
 .container-logo {
@@ -42,7 +38,7 @@ footer {
   align-items: center;
   gap: 2rem;
   img {
-     width: 5rem;
+    width: 5rem;
   }
   &:hover > .logo-hover {
     opacity: 1;
@@ -57,26 +53,24 @@ footer {
   transition: opacity 0.5s ease-in;
 }
 
-
 .footer-link {
-   cursor: pointer;
-   position: relative;
-   display: inline-block;
-   z-index: 2;
-   
-   > img {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  > img {
     position: absolute;
     top: -3rem;
     right: 1.2rem;
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
     @media(max-width: 800px) {
-        width: 30px;
-      }
-      @media(max-width: 450px) {
-        width: 25px;
-        translate: -50% 0;
-      }
+      width: 30px;
+    }
+    @media(max-width: 450px) {
+      width: 25px;
+      translate: -50% 0;
+    }
    }
   &::after {
     content: "";
@@ -99,7 +93,6 @@ footer {
     > img {
       transform: translateX(4rem) rotate(360deg);
       opacity: 1;
-
     }
   }
 }

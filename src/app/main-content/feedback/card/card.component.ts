@@ -22,28 +22,27 @@ export interface List {
 })
 export class CardComponent {
 
-list: List[] = [
-  {
-    firstName: "firstName",
-    lastName: "lastName",
-    profession: "profession",
-    profileLink: "profileLink",
-    feedback: "feedback.description-one"
-  },
-  {
-    firstName: "firstName",
-    lastName: "lastName",
-    profession: "profession",
-    profileLink: "profileLink",
-    feedback: "feedback.description-two"
-  },
-  {
-    firstName: "firstName",
-    lastName: "lastName",
-    profession: "profession",
-    profileLink: "profileLink",
-    feedback: "feedback.description-three"
-  }
-];
-
+  list: List[] = [
+    {
+      firstName: "firstName",
+      lastName: "lastName",
+      profession: "profession",
+      profileLink: "profileLink",
+      feedback: "feedback.description-one"
+    },
+    {
+      firstName: "firstName",
+      lastName: "lastName",
+      profession: "profession",
+      profileLink: "profileLink",
+      feedback: "feedback.description-two"
+    },
+    {
+      firstName: "firstName",
+      lastName: "lastName",
+      profession: "profession",
+      profileLink: "profileLink",
+      feedback: "feedback.description-three"
+    }
+  ];
 }

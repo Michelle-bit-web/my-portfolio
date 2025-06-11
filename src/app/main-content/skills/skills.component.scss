@@ -1,16 +1,13 @@
 //#region colors
 $text-primary: white;
 $text-inverse: black;
-
 $accent-primary: #7e4ae7;
 $accent-secondary:#bae011;
 $accent-tertiary: #e08c05;
-
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
 $bg-light: white;
 $bg-inverse: black;
-
 // #endregion colors
 
 section {
@@ -26,13 +23,11 @@ section {
 }
 
 .content {
-  border: 2px solid red;
   max-width: 1920px;
   width: 100%;
   min-height: 100dvh;
   display: flex;
   justify-content: center;
-
   gap: 5%;
   padding: 0 min(160px, 5%);
   @media(max-width: 1000px) {
@@ -45,7 +40,6 @@ section {
 
 .main-frame {
   width: 100%;
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,8 +49,6 @@ section {
 
 .upper-subframe {
   display: flex;
-  // justify-content: flex-start;
-  // flex-wrap: wrap;
   align-items: center;
   max-width: 100%;
   gap: 3.2rem;
@@ -99,7 +91,6 @@ section {
 }
 
 .div-paper {
-    // width: 70em;
     height: fit-content;
     flex: 1 0 0;
     background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/cover no-repeat;
@@ -120,7 +111,6 @@ section {
   @media(max-width: 640px) {
     flex-direction: column;
   }
-
 }
 
 .frame-icons {
@@ -144,8 +134,8 @@ section {
  }
  &:hover {
   > .text {
-  color: $text-primary;
- }
+   color: $text-primary;
+  }
  }
 }
 
@@ -153,7 +143,6 @@ section {
   color: transparent;
   transition: color 1s ease;
   animation: textTouchAppear 0.6s ease alternate-reverse;
-  // animation-play-state: ;
 }
 
 @keyframes textTouchAppear {
@@ -164,6 +153,7 @@ section {
     color: $text-primary;
   }
 }
+
 .icon {
   width: 7.2rem;
   height: 7.2rem;
@@ -231,7 +221,6 @@ section {
   margin: 4px;
 }
 
-
 .sticker {
   background: url("./../../../../public/assets/img/03-Skills/sticker-C.png") center/contain no-repeat;
   display: flex;
@@ -270,7 +259,6 @@ section {
   }
 
   &::after {
-    // content: attr(sticker-text);
     content: "";
     font-family: "Kalam";
     display: flex;

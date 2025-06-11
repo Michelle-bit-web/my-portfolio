@@ -23,16 +23,16 @@ export class CursorComponent implements AfterViewInit{
   ngAfterViewInit() {
     this.isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     if (!this.isTouchDevice) {
-    this.animateCircle();
-  } else {
-    this.hideCursorElements();
+      this.animateCircle();
+    } else {
+      this.hideCursorElements();
+    }
   }
-  }
+
  @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: any) {
     this.mouseX = event.clientX;
     this.mouseY = event.clientY;
-
     this.refCursor.nativeElement.style.left = this.mouseX + 'px';
     this.refCursor.nativeElement.style.top = this.mouseY + 'px';
   }
@@ -60,7 +60,7 @@ export class CursorComponent implements AfterViewInit{
   }
 
   hideCursorElements() {
-  this.refCursor.nativeElement.style.display = 'none';
-  this.refCircle.nativeElement.style.display = 'none';
-}
+    this.refCursor.nativeElement.style.display = 'none';
+    this.refCircle.nativeElement.style.display = 'none';
+ }
 }

@@ -50,27 +50,22 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            //hier könnte man auch weiteres ergänzen, was passieren soll
             this.showSendingResponse();
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'), //die consolen-Info könnte man entfernen am Ende
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      //Wenn man oben noch was ergänzt, muss das hier auch hin?
       ngForm.resetForm();
     }
   }
 
   showSendingResponse(){
     this.mailSend = true;
-    console.log('mail send')
     setTimeout(() => {
       this.mailSend = false;
-      console.log('overlay inactivated after 3s')
     }, 4000)
   }
 
