@@ -130,3 +130,9 @@ a {
 }
 
 //#endregion font-classes
+
+@media (pointer: coarse) {
+  body {
+    overflow-x: hidden;
+  }
+}
