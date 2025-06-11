@@ -3,7 +3,14 @@
         <div class="main-frame">
             <div class="title-wrapper">
                 <div class="arrow-wrapper">
-                    <img class="arrow" src="assets/img/05-Testimonial/Color option 2.png" alt="" data-aos="fade-left">
+                    <img 
+                    class="arrow" 
+                    src="assets/img/05-Testimonial/arrow-violett.png" 
+                    alt="" 
+                    data-aos="fade-left"
+                    #touchIcon 
+                    [ngClass]="{ 'touch': isTouchDevice }"
+                    >
                 </div>
                 <p class="fontBricolage500 fs20" data-aos="fade-left">{{'feedback.title-small' | translate}}</p>
             </div>

@@ -23,9 +23,7 @@ export class SkillsComponent implements AfterViewInit{
  }
 
   ngAfterViewInit() {
-      if (this.isTouchDevice) {
-        // this.restartAnimationLoop();
-      }
+      if (!this.isTouchDevice) return;
       this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const el = entry.target as HTMLElement;

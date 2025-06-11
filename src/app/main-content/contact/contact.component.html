@@ -55,7 +55,13 @@
 
                     </form>
                 </div>
-                <img class="sticker" src="assets/img/07-Sticker/Sticker 02.png" alt="">
+                <img 
+                class="sticker" 
+                src="assets/img/07-Sticker/Sticker 02.png" 
+                alt="animated Sticker"
+                #touchIcon 
+                [ngClass]="{ 'touch': isTouchDevice }"
+                >
                 <div class="div-btn-to-top" href="#start">
                     <a class="link-back" href="#start">
                         <div class="fontBricolage500 arrow-back"></div>

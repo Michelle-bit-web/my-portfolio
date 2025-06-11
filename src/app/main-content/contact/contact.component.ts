@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren, inject } from '@angular/core';
 import { FooterComponent } from './footer/footer.component';
 import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
@@ -20,14 +20,17 @@ import { RouterModule } from '@angular/router';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
-  http = inject(HttpClient)
+export class ContactComponent implements AfterViewInit{
+  http = inject(HttpClient);
+  @ViewChildren('touchIcon') touchIcons!: QueryList<ElementRef>;
+  isTouchDevice:boolean = false;
+  private observer!: IntersectionObserver;
   contactData = {
     name: '',
     email: '',
     message: '',
     checkedStatus: false,
-  }
+  };
 
   mailTest = false; //auf false, um Live senden zu können
   mailSend = false;
@@ -76,4 +79,28 @@ export class ContactComponent {
       this.contactData.checkedStatus = false;
     }
   }
+
+  ngOnInit(): void {
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    this.isTouchDevice = isTouch;
+ }
+
+  ngAfterViewInit() {
+      if (!this.isTouchDevice) return;
+      this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target as HTMLElement;
+        if (entry.isIntersecting) {
+          el.classList.add('touch');
+        } else {
+          el.classList.remove('touch');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+    this.touchIcons.forEach((el: ElementRef) => {
+      this.observer.observe(el.nativeElement);
+    });
+    }
 }

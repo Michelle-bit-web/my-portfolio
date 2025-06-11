@@ -79,6 +79,19 @@ section {
   }
 }
 
+.sticker.touch {
+ animation: stickerSpin 2s ease 1s forwards;
+}
+
+@keyframes stickerSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .arrow-wrapper {
     flex:1;
     display: flex;
