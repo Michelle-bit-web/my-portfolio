@@ -78,12 +78,11 @@ section {
     &:hover {
       transform: rotate(360deg);
     }
-    @media(max-width: 768px){
-    grid-template-columns: 1fr;
+    @media(max-width: 900px){
     top: 2%;
   }
   @media(max-width: 520px){
-     width: 11rem;
+     width: 10rem;
   }
 }
 
@@ -96,6 +95,8 @@ section {
 .arrow {
     width: 30rem;
     position: relative;
+    opacity: 1;
+    animation: arrow-spin 4s infinite;
     @media(max-width: 768px){
       display: none;  
     }
@@ -104,13 +105,31 @@ section {
 .arrow-mobile {
     display: none;
     width: 30rem;
+    opacity: 1;
+    scale: 1.0;
     transform: rotate(180deg);
+    animation: arrow-spin 4s infinite;
     @media(max-width: 768px){
       display: flex;
     }
     @media(max-width: 450px) {
       width: 18rem;
     }
+}
+
+@keyframes arrow-spin {
+ 0% {
+  translate: 10px 0;
+  scale: 1.0;
+ } 
+ 50% {
+   translate: 0 0;
+  scale: 0.8;
+ } 
+ 100% {
+   translate: 10px 0;
+  scale: 1.0;
+ } 
 }
 
 .button-wrapper {
@@ -131,6 +150,9 @@ h2 {
   font-size: clamp(48px, 6.2vw + 1rem, 64px);
   margin-top: 1.6rem;
   margin-bottom: 3.2rem;
+   @media(max-width: 768px) {
+      margin-right: 24px;
+    }
     @media(max-width: 450px) {
       font-size: 32px;
     }
