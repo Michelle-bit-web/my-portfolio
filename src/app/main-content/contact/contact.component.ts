@@ -29,16 +29,18 @@ export class ContactComponent {
     checkedStatus: false,
   }
 
-  mailTest = true;
+  mailTest = false; //auf false, um Live senden zu können
   mailSend = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://michelle-puschkarow.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'text/plain',
+        'Content-Type': 'text/plain',  
+        // 'Content-Type': 'application/json', //laut KI
         responseType: 'text',
+        // responseType: 'text' as 'json', //laut KI
       },
     },
   };
