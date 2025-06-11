@@ -217,7 +217,7 @@ nav {
   height: 0dvh;
   background-color: rgba(0, 0, 0, 0.747);
   background: url("./../../../../public/assets/img/01-Hero/mobile-menu-bg.png") bottom/cover no-repeat;
-  z-index: 2;
+  z-index: 3;
 //   opacity: 1;
 //  @starting-style {
 //     opacity: 0;
@@ -272,7 +272,7 @@ transition: 0.8s;
 
 .menu-btn .burger-icon {
   transition: translate 1s, rotate 1s;
-  z-index: 3;
+  z-index: 4;
 }
 
 .menu-btn[aria-expanded="true"] .burger-icon {

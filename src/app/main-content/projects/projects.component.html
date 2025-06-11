@@ -5,6 +5,7 @@
           <p class="fontBricolage500">{{'projects.title-small' | translate}}</p>
           <h2 class="fontBricolage700">{{'projects.page-title' | translate}}</h2>
           <span class="fontBricolage400">{{'projects.page-description' | translate}}</span>
+          <span class="fontBricolage400">{{'projects.final' | translate}}</span>
         </div>
         <app-project-card *ngFor="let project of projectListData.projectList; let index = index" [project]="project" [index]="index" class="card-frame"></app-project-card>
      </div>

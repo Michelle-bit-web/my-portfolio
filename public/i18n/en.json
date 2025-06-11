@@ -21,7 +21,9 @@
     "fact-two": "Open for open-source projects",
     "fact-three": "Open to work remote",
     "button": "Let´s talk",
-    "description": "Hi everyone, I'm Michelle – and a big fan of coding. Did you know the quote that says in a crime scene programmers would be both the detective and the criminal? That perfectly captures my fascination: programming isn’t just about solving problems, it’s a thrilling investigation that challenges you and helps you grow.  I love how each project pushes me forward and opens the door to new technologies - also in a team. If you're looking for someone who brings heart, curiosity, and a sharp mind to the table, I’d love to work together!"
+    "intro": "Hi everyone, I'm Michelle – and a big fan of coding.",
+    "description": " Did you know the quote that says in a crime scene programmers would be both the detective and the criminal? That perfectly captures my fascination: programming isn’t just about solving problems, it’s a thrilling investigation that challenges you and helps you grow.  I love how each project pushes me forward and opens the door to new technologies - also in a team.",
+    "final": "If you're looking for someone who brings heart, curiosity, and a sharp mind to the table, I’d love to work together!"
   },
    "skills": {
     "title-small": "MY STACK",
@@ -33,7 +35,8 @@
   "projects": {
     "title-small": "MY CRAFT",
     "page-title": "Projects",
-    "page-description": "Take a look at my project showcase featuring a variety of web apps – from business tools for communication and task management to fun and interactive games. Each project highlights different aspects of design, development, and user experience. Feel free to explore and try them out – feedback is always welcome!"
+    "page-description": "Take a look at my project showcase featuring a variety of web apps – from business tools for communication and task management to fun and interactive games. Each project highlights different aspects of design, development, and user experience.",
+    "final": "Feel free to explore and try them out – feedback is always welcome!"
   },
   "project-card": {
     "project-btn": "project details",

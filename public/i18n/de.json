@@ -21,7 +21,10 @@
     "fact-two": "Offen für Open-Source-Projekte",
     "fact-three": "Offen für Remote-Arbeit",
     "button": "Auf ins Gespräch",
-    "description": "Hallo ihr Lieben, ich bin Michelle – und großer Fan des Codings. Kennen Sie das Zitat, dass Programmierer in einer Krimiserie gleichzeitig Detektiv und Täter seien? Genau das beschreibt meine Faszination: Programmieren bedeutet nicht nur, Probleme zu lösen, sondern sich auf eine spannende Spurensuche zu begeben, bei der man sich ständig weiterentwickelt. Ich liebe es, mich mit jedem Projekt wachsen zu sehen und neue Technologien zu entdecken - das ebenso im Team. Wenn Sie jemanden suchen, der mit Herz, Verstand und Neugier bei der Sache ist: Ich freue mich auf die Zusammenarbeit!"
+    "intro": "Hallo ihr Lieben, ich bin Michelle – und großer Fan des Codings.",
+    "description": "Kennen Sie das Zitat, dass Programmierer in einer Krimiserie gleichzeitig Detektiv und Täter seien? Genau das beschreibt meine Faszination: Programmieren bedeutet nicht nur, Probleme zu lösen, sondern sich auf eine spannende Spurensuche zu begeben, bei der man sich ständig weiterentwickelt. Ich liebe es, mich mit jedem Projekt wachsen zu sehen und neue Technologien zu entdecken - das ebenso im Team.",
+    "final": "Wenn Sie jemanden suchen, der mit Herz, Verstand und Neugier bei der Sache ist: Ich freue mich auf die Zusammenarbeit!"
+  
   },
   "skills": {
     "title-small": "WAS ICH MITBRINGE",
@@ -33,7 +36,8 @@
   "projects": {
     "title-small": "Auszüge meiner Arbeit",
     "page-title": "Projekte",
-    "page-description": "In dieser Projektübersicht finden sich Webanwendungen zu Business-Tools für Kommunikation und Aufgabenmanagement bis hin zu unterhaltsamen Spielen. Jedes Projekt zeigt verschiedene Aspekte meiner Fähigkeiten zu Design, entwicklung und Nutzererfahrung. Probieren Sie diese gern einmal aus - Feedback ist natürlich jederzeit erwünscht!"
+    "page-description": "In dieser Projektübersicht finden sich Webanwendungen zu Business-Tools für Kommunikation und Aufgabenmanagement bis hin zu unterhaltsamen Spielen. Jedes Projekt zeigt verschiedene Aspekte meiner Fähigkeiten zu Design, entwicklung und Nutzererfahrung.",
+    "final": "Probieren Sie diese gern einmal aus - Feedback ist natürlich jederzeit erwünscht!"
   },
   "project-card": {
     "project-btn": "Projektdetails",

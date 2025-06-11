@@ -126,7 +126,7 @@ section {
 .frame-icons {
   flex: 0 1 1000px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   @media(max-width: 640px) {
     flex: 0 1 0rem;;
@@ -137,7 +137,7 @@ section {
  display: flex;
  flex-direction: column;
  align-items: center;
- justify-content: center;
+ justify-content: flex-start;
  > .text {
   color: transparent;
   transition: color 1s ease;
@@ -193,15 +193,37 @@ section {
 
 .frame-icon-sticker {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   > .icon-sticker {
-    width: 5rem;
-    height: 5rem;
+    width: 10px;
+    height: 10px;
   }
 }
 
+.peel-info {
+  font-family: 'Kalam';
+  font-size: min(2.8rem, calc(5vw + 1rem));
+  position: absolute;
+  bottom: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  gap: 16px;
+}
+
+.arrow {
+  height: 3rem;
+}
+
+.intro-text {
+  font-size: 16px;
+}
+
 .icons-on-sticker {
-  font-size: 12px;
+  font-size: 1.6rem;
   > img {
     width: 35px;
     height: 35px;
@@ -219,13 +241,13 @@ section {
   position: relative;
   font-size: 12px;
   padding: 1em;
-   flex: 0 0 20rem;
+  flex: 0 0 20rem;
   height: 20rem;
   transform: rotate(10deg);
   gap: 0.8rem;
   overflow: hidden;
   border-radius: 10px;
-  margin: 16px;
+  margin: 10px;
 
   &::before,
   &::after {
@@ -248,8 +270,11 @@ section {
   }
 
   &::after {
-    content: attr(sticker-text);
+    // content: attr(sticker-text);
+    content: "";
+    font-family: "Kalam";
     display: flex;
+    font-size: 2.8rem;
     align-items: center;
     justify-content: center;
     background: url("./../../../../public/assets/img/03-Skills/sticker-A.png") center/contain no-repeat;
@@ -269,6 +294,9 @@ section {
 
   &:not:hover::after {
     animation: fadeInDown 0.5s 0.5s forwards; // startet nach A
+  }
+  &:hover .peel-info{
+    animation: fadeOutUp 0.5s forwards;
   }
 }
 
