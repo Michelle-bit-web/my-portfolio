@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
-import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
+import { TranslateModule, TranslatePipe, LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-skills',
@@ -17,17 +18,30 @@ export class SkillsComponent implements AfterViewInit{
   @ViewChildren('load') loadElements!: QueryList<ElementRef>;
   isTouchDevice:boolean = false;
   private observer!: IntersectionObserver;
+  private langSub!: Subscription;
+
+  currentLangClass = '';
+
+  constructor(private translate: TranslateService) {}  
 
   ngOnInit(): void {
     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     this.isTouchDevice = isTouch;
- }
+    this.setLangClass(this.translate.currentLang);
+    this.langSub = this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.setLangClass(event.lang);
+    });
+  }
 
   ngAfterViewInit(): void {
     this.generalObserve();
     if (this.isTouchDevice) {
       this.touchObserve();
     }
+  }
+
+  setLangClass(lang: string): void {
+    this.currentLangClass = `title-${lang}`;
   }
 
   generalObserve(){

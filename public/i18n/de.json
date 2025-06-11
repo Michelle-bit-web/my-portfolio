@@ -1,7 +1,7 @@
 {
   "header": {
     "about": "Über mich",
-    "skills": "Fähigkeiten",
+    "skills": "Kenntnisse",
     "projects": "Projekte",
     "contact": "Kontakt",
     "language": {
@@ -28,7 +28,7 @@
   },
   "skills": {
     "title-small": "WAS ICH MITBRINGE",
-    "title": "Meine Fähigkeiten",
+    "title": "Kenntnisse",
     "sticker": "Was mich außerdem interessiert",
     "peel-sticker": "Zieh mich ab",
     "description": "Während einer sechsmonatigen, praxisorientierten Ausbildung habe ich mir eine solide Grundlage in HTML, CSS und JavaScript erarbeitet. Besonders gerne arbeite ich mit Angular, wodurch ich mein Verständnis für TypeScript deutlich vertiefen konnte. Wichtige Tools für die Zusammenarbeit und Versionskontrolle wie GitHub und Loom waren ein zentraler Bestandteil meiner Projekte."

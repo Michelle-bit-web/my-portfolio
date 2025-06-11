@@ -4,12 +4,9 @@
                 <div class="upper-subframe" data-aos="fade-right">
                     <div class="title-frame">
                         <span class="fontBricolage500 sub-heading">{{'skills.title-small' | translate}}</span>
-                        <h2 
-                        class="fontBricolage700 title"
-                        #load
-                        >
-                        {{'skills.title' | translate}}
-                    </h2>
+                        <h2 class="fontBricolage700 title" #load [ngClass]="currentLangClass">
+                            {{'skills.title' | translate}}
+                        </h2> 
                     </div>
                     <div class="div-paper">
                         <span class="fontBricolage400">{{'skills.description' | translate}}</span>

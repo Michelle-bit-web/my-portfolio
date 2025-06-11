@@ -11,8 +11,10 @@ var common_1 = require("@angular/common");
 var core_1 = require("@angular/core");
 var core_2 = require("@ngx-translate/core");
 var SkillsComponent = /** @class */ (function () {
-    function SkillsComponent() {
+    function SkillsComponent(translate) {
+        this.translate = translate;
         this.isTouchDevice = false;
+        this.currentLangClass = '';
         this.iconList = [
             {
                 name: "Angular",
@@ -77,14 +79,22 @@ var SkillsComponent = /** @class */ (function () {
         ];
     }
     SkillsComponent.prototype.ngOnInit = function () {
+        var _this = this;
         var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
         this.isTouchDevice = isTouch;
+        this.setLangClass(this.translate.currentLang);
+        this.langSub = this.translate.onLangChange.subscribe(function (event) {
+            _this.setLangClass(event.lang);
+        });
     };
     SkillsComponent.prototype.ngAfterViewInit = function () {
         this.generalObserve();
         if (this.isTouchDevice) {
             this.touchObserve();
         }
+    };
+    SkillsComponent.prototype.setLangClass = function (lang) {
+        this.currentLangClass = "title-" + lang;
     };
     SkillsComponent.prototype.generalObserve = function () {
         var generalObserver = new IntersectionObserver(function (entries) {
