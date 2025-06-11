@@ -22,7 +22,7 @@ import { RouterModule } from '@angular/router';
 })
 export class ContactComponent implements AfterViewInit{
   http = inject(HttpClient);
-  @ViewChildren('touchIcon') touchIcons!: QueryList<ElementRef>;
+  @ViewChildren('loadIcon') touchIcons!: QueryList<ElementRef>;
   isTouchDevice:boolean = false;
   private observer!: IntersectionObserver;
   contactData = {
@@ -86,14 +86,13 @@ export class ContactComponent implements AfterViewInit{
  }
 
   ngAfterViewInit() {
-      if (!this.isTouchDevice) return;
       this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const el = entry.target as HTMLElement;
         if (entry.isIntersecting) {
-          el.classList.add('touch');
+          el.classList.add('load');
         } else {
-          el.classList.remove('touch');
+          el.classList.remove('load');
         }
       });
     }, {

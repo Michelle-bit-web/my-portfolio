@@ -133,17 +133,17 @@ section {
     bottom: 0;
     left: 0;
     translate: 0 50%;
+    opacity: 0;
     background: url("./../../../../public/assets/img/02-AboutMe/underline.png") center/contain no-repeat;
+    animation: touchAppear 0.6s ease 0.5s forwards;
   }
 }
 
-.headline.touch::after {
-  width: 0;
-  opacity: 0;
-  animation: touchAppear 0.6s ease 0.5s forwards;
+.headline.load::after {
+  animation: loadAppear 0.6s ease 0.5s forwards;
 }
 
-@keyframes touchAppear {
+@keyframes loadAppear {
   0% {
     width: 0;
     opacity: 0;

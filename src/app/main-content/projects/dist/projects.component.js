@@ -30,16 +30,14 @@ var ProjectsComponent = /** @class */ (function () {
     };
     ProjectsComponent.prototype.ngAfterViewInit = function () {
         var _a;
-        if (!this.isTouchDevice)
-            return;
         var observer = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 var el = entry.target;
                 if (entry.isIntersecting) {
-                    el.classList.add('touch');
+                    el.classList.add('load');
                 }
                 else {
-                    el.classList.remove('touch');
+                    el.classList.remove('load');
                 }
             });
         }, { threshold: 0.2 });
@@ -48,7 +46,7 @@ var ProjectsComponent = /** @class */ (function () {
         }
     };
     __decorate([
-        core_1.ViewChild('touch', { static: true })
+        core_1.ViewChild('load', { static: true })
     ], ProjectsComponent.prototype, "frameRef");
     __decorate([
         core_1.Input()

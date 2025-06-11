@@ -81,10 +81,29 @@ var SkillsComponent = /** @class */ (function () {
         this.isTouchDevice = isTouch;
     };
     SkillsComponent.prototype.ngAfterViewInit = function () {
-        var _this = this;
-        if (!this.isTouchDevice)
-            return;
-        this.observer = new IntersectionObserver(function (entries) {
+        this.generalObserve();
+        if (this.isTouchDevice) {
+            this.touchObserve();
+        }
+    };
+    SkillsComponent.prototype.generalObserve = function () {
+        var generalObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                var el = entry.target;
+                if (entry.isIntersecting) {
+                    el.classList.add('load');
+                }
+                else {
+                    el.classList.remove('load');
+                }
+            });
+        }, { threshold: 0.2 });
+        this.loadElements.forEach(function (el) {
+            generalObserver.observe(el.nativeElement);
+        });
+    };
+    SkillsComponent.prototype.touchObserve = function () {
+        var touchObserver = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 var el = entry.target;
                 if (entry.isIntersecting) {
@@ -94,17 +113,17 @@ var SkillsComponent = /** @class */ (function () {
                     el.classList.remove('touch');
                 }
             });
-        }, {
-            threshold: 0.2 // 20% sichtbar reicht
-        });
-        // Alle Elemente beobachten
+        }, { threshold: 0.2 });
         this.touchIcons.forEach(function (el) {
-            _this.observer.observe(el.nativeElement);
+            touchObserver.observe(el.nativeElement);
         });
     };
     __decorate([
         core_1.ViewChildren('touchIcon')
     ], SkillsComponent.prototype, "touchIcons");
+    __decorate([
+        core_1.ViewChildren('load')
+    ], SkillsComponent.prototype, "loadElements");
     SkillsComponent = __decorate([
         core_1.Component({
             selector: 'app-skills',

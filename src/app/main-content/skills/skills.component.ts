@@ -14,6 +14,7 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
 })
 export class SkillsComponent implements AfterViewInit{
   @ViewChildren('touchIcon') touchIcons!: QueryList<ElementRef>;
+  @ViewChildren('load') loadElements!: QueryList<ElementRef>;
   isTouchDevice:boolean = false;
   private observer!: IntersectionObserver;
 
@@ -22,25 +23,44 @@ export class SkillsComponent implements AfterViewInit{
     this.isTouchDevice = isTouch;
  }
 
-  ngAfterViewInit() {
-      if (!this.isTouchDevice) return;
-      this.observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+  ngAfterViewInit(): void {
+    this.generalObserve();
+    if (this.isTouchDevice) {
+      this.touchObserve();
+    }
+  }
+
+  generalObserve(){
+    const generalObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
         const el = entry.target as HTMLElement;
         if (entry.isIntersecting) {
-          el.classList.add('touch');
+          el.classList.add('load');
         } else {
-          el.classList.remove('touch');
+          el.classList.remove('load');
         }
       });
-    }, {
-      threshold: 0.2 // 20% sichtbar reicht
+    }, { threshold: 0.2 });
+    this.loadElements.forEach(el => {
+      generalObserver.observe(el.nativeElement);
     });
-    // Alle Elemente beobachten
-    this.touchIcons.forEach((el: ElementRef) => {
-      this.observer.observe(el.nativeElement);
-    });
-    }
+  }
+
+  touchObserve(){
+    const touchObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const el = entry.target as HTMLElement;
+          if (entry.isIntersecting) {
+            el.classList.add('touch');
+          } else {
+            el.classList.remove('touch');
+          }
+        });
+      }, { threshold: 0.2 });
+      this.touchIcons.forEach(el => {
+        touchObserver.observe(el.nativeElement);
+      });
+  }
 
   iconList = [
     {

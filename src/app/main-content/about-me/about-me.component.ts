@@ -13,7 +13,7 @@ import { TranslateModule, TranslatePipe } from '@ngx-translate/core';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent implements  AfterViewInit{
-  @ViewChild('touch', { static: true }) frameRef!: ElementRef;
+  @ViewChild('load', { static: true }) frameRef!: ElementRef;
     isTouchDevice:boolean = false;
     @Input() project = 
     {
@@ -29,14 +29,14 @@ export class AboutMeComponent implements  AfterViewInit{
   }
 
   ngAfterViewInit(): void {
-    if (!this.isTouchDevice) return;
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const el = entry.target as HTMLElement;
         if (entry.isIntersecting) {
-          el.classList.add('touch');
+          el.classList.add('load');
         } else {
-          el.classList.remove('touch');
+          el.classList.remove('load');
         }
       });
     }, { threshold: 0.2 });
