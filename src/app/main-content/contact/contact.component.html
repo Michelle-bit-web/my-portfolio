@@ -1,5 +1,5 @@
 <section alt="contact-section">
-    <div class="fontBricolage500 fs20 send-mail-overlay" *ngIf = "mailSend">
+    <div class="fontBricolage500 fs20 reply-overlay" *ngIf = "mailSend" [class.active]="mailSend">
      <p class="fs28">{{'contact.automatic-reply-one' | translate}}</p>
      <br>
      <p class="fs24">{{'contact.automatic-reply-two' | translate}}</p>
@@ -9,19 +9,19 @@
         <div class="main-frame">
                 
                 <div class="left-frame">
-                    <span>
+                    <span data-aos="fade-right">
                         <p class="fontBricolage500">{{'contact.title-small' | translate}}</p>
                         <h2 class="fontBricolage700">{{'contact.page-title' | translate}}</h2>
                     </span>
-                    <span class="fontBricolage400 contact-text">
+                    <span class="fontBricolage400 contact-text" data-aos="fade-right">
                        {{'contact.invitation' | translate}}
                     </span>
-                    <div class="arrow-wrapper">
+                    <div class="arrow-wrapper" data-aos="fade-right">
                         <img class="arrow" src="assets/img/06-Contact/arrow.png" alt="">
                     </div>
                 </div>
                 <div class="right-frame">
-                    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-left">
                         <div class="form-group">
                             <label class="fontBricolage500" for="name">{{'contact.label-name' | translate}}</label>
                             <input [(ngModel)]="contactData.name" class="fontBricolage400" name="name" type="text" id="name" required #nameCtrl = "ngModel" [placeholder]="nameCtrl.invalid && nameCtrl.touched? ('contact.input-name-invalid' | translate) : ('contact.input-name' | translate)">
@@ -55,7 +55,7 @@
 
                     </form>
                 </div>
-                <img class="sticker" src="assets/img/07-Sticker/Sticker 02.png" alt="">
+                <img class="sticker" src="assets/img/07-Sticker/Sticker 02.png" alt="" data-aos="fade-left">
                 <div class="div-btn-to-top" href="#start">
                     <a class="link-back" href="#start">
                         <div class="fontBricolage500 arrow-back"></div>

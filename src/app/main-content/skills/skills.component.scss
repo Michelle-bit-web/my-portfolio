@@ -63,7 +63,7 @@ section {
   @media (max-width: 800px) {
     flex-direction: column;
     align-items: flex-end;
-    
+    gap: 0.8rem;
   }
 }
 
@@ -72,7 +72,6 @@ section {
   flex-direction: column;
   align-items: flex-end;
   flex: 0 0 300px;
-  gap: 1.6rem;
    > .sub-heading {
     color: $text-primary;
   }
@@ -85,6 +84,8 @@ section {
 
 .title {
   position: relative;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
   &::after {
     content: "";
     width: 150rem;
