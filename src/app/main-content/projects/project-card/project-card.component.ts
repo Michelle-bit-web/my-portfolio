@@ -47,10 +47,4 @@ export class ProjectCardComponent implements  AfterViewInit{
       observer.observe(this.frameRef.nativeElement);
     }
   }
-  
-  getIndex(i: number){
-    console.log ('Das Bild mit dem Index:' + i + ' wurde geklickt');
-    this.index = i;
-    console.log (this.index)
-  }
 }

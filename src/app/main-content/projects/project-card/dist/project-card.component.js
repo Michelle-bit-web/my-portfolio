@@ -44,11 +44,6 @@ var ProjectCardComponent = /** @class */ (function () {
             observer.observe(this.frameRef.nativeElement);
         }
     };
-    ProjectCardComponent.prototype.getIndex = function (i) {
-        console.log('Das Bild mit dem Index:' + i + ' wurde geklickt');
-        this.index = i;
-        console.log(this.index);
-    };
     __decorate([
         core_1.ViewChild('frameRef', { static: true })
     ], ProjectCardComponent.prototype, "frameRef");

@@ -61,7 +61,7 @@ var ContactComponent = /** @class */ (function () {
         this.mailSend = true;
         setTimeout(function () {
             _this.mailSend = false;
-        }, 4000);
+        }, 3000);
     };
     ContactComponent.prototype.toggleCheck = function () {
         if (!this.contactData.checkedStatus) {

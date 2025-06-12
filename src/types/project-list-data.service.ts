@@ -106,7 +106,7 @@ export class ProjectListDataService {
         },
       ],
       "live-link": "https://michelle-bit-web.github.io/pokedex/",
-      "github-link": "https://github.com/Michelle-bit-web"
+      "github-link": "https://github.com/Michelle-bit-web/pokedex"
     },
     {
       title: "Bestell App",
@@ -129,7 +129,7 @@ export class ProjectListDataService {
         },
       ],
       "live-link": "https://michelle-bit-web.github.io/bestell-app/",
-      "github-link": "https://github.com/Michelle-bit-web"
+      "github-link": "https://github.com/Michelle-bit-web/bestell-app"
     }
   ]
 }

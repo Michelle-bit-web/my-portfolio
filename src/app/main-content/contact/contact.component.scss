@@ -14,6 +14,8 @@ section {
   min-height: 100dvh;
   width: 100%;
   color: $text-primary;
+  display: flex;
+  justify-content: center;
   background: url("./../../../../public/assets/img/06-Contact/bg.png") top/cover no-repeat;
   position: relative;
 }
@@ -370,6 +372,7 @@ input[type=checkbox].ng-invalid.ng-touched::placeholder {
   padding: 2rem;
   bottom: -3%;
   right: 0;
+  z-index: 1;
 }
 
 .link-back {
@@ -436,9 +439,13 @@ footer {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.858);
   background: url("./../../../../public/assets/img/01-Hero/mobile-menu-bg.png") bottom/cover no-repeat;
-  width: 100%;
+  width: 50%;
+  border-top: 2px solid white;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   height: 0dvh;
-  opacity: 0;
+  opacity: 1;
   max-width: 1920px;
   padding: 0 min(6.4rem, 4.4%);
   display: flex;
@@ -446,12 +453,12 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-   transition: 0.8s ease;
+  transition:1s ease;
 }
 
 .reply-overlay.active {
   opacity: 1;
-  height: 100dvh;
+  height: 50dvh;
 }
 
 .fs20 {

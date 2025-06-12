@@ -69,7 +69,7 @@ export class ContactComponent implements AfterViewInit{
     this.mailSend = true;
     setTimeout(() => {
       this.mailSend = false;
-    }, 4000)
+    }, 3000)
   }
 
   toggleCheck(){
