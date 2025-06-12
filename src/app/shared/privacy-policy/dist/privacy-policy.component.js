@@ -12,9 +12,20 @@ var footer_component_1 = require("../../main-content/contact/footer/footer.compo
 var router_1 = require("@angular/router");
 var core_2 = require("@ngx-translate/core");
 var header_component_1 = require("../header/header.component");
+var common_1 = require("@angular/common");
 var PrivacyPolicyComponent = /** @class */ (function () {
     function PrivacyPolicyComponent() {
+        this.isMobileView = false;
     }
+    PrivacyPolicyComponent.prototype.onResize = function () {
+        this.isMobileView = window.innerWidth <= 650;
+    };
+    PrivacyPolicyComponent.prototype.ngOnInit = function () {
+        this.onResize();
+    };
+    __decorate([
+        core_1.HostListener('window:resize', [])
+    ], PrivacyPolicyComponent.prototype, "onResize");
     PrivacyPolicyComponent = __decorate([
         core_1.Component({
             selector: 'app-privacy-policy',
@@ -24,7 +35,8 @@ var PrivacyPolicyComponent = /** @class */ (function () {
                 router_1.RouterModule,
                 router_1.RouterLink,
                 core_2.TranslateModule,
-                core_2.TranslatePipe
+                core_2.TranslatePipe,
+                common_1.CommonModule
             ],
             templateUrl: './privacy-policy.component.html',
             styleUrl: './privacy-policy.component.scss'

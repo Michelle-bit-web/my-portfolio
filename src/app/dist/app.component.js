@@ -9,15 +9,27 @@ exports.__esModule = true;
 exports.AppComponent = void 0;
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var operators_1 = require("rxjs/operators");
 var cursor_component_1 = require("./shared/cursor/cursor.component");
 var core_2 = require("@ngx-translate/core");
 var AppComponent = /** @class */ (function () {
-    function AppComponent(translate) {
+    function AppComponent(translate, router) {
+        var _this = this;
         this.translate = translate;
+        this.router = router;
         this.title = 'my-portfolio';
         this.translate.addLangs(['de', 'en']);
         this.translate.setDefaultLang('en');
         this.translate.use('en');
+        this.router.events.pipe(operators_1.filter(function (event) { return event instanceof router_1.NavigationEnd; })).subscribe(function () {
+            var fragment = _this.router.parseUrl(_this.router.url).fragment;
+            if (fragment) {
+                setTimeout(function () {
+                    var el = document.getElementById(fragment);
+                    el === null || el === void 0 ? void 0 : el.scrollIntoView({ behavior: 'smooth' });
+                }, 0); // wartet auf DOM-Render
+            }
+        });
     }
     AppComponent.prototype.useLanguage = function (language) {
         this.translate.use(language);

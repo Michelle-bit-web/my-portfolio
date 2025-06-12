@@ -1,15 +1,3 @@
-//#region colors
-$text-primary: white;
-$text-inverse: black;
-$accent-primary: #7e4ae7;
-$accent-secondary:#bae011;
-$accent-tertiary: #e08c05;
-$bg-primary: #7e4ae7;
-$bg-secondary: #e08c05;
-$bg-light: white;
-$bg-inverse: black;
-// #endregion colors
-
 header {
   display: flex;
   align-items: center;
@@ -20,13 +8,11 @@ header {
   gap: 10%;
 }
 
-.container-logo {
-  > img {
-    width: 5rem;
-  }
-  &:hover > .logo-hover {
-    opacity: 1;
-  }
+.container-logo > img {
+  width: 5rem;
+}
+.container-logo:hover > .logo-hover {
+  opacity: 1;
 }
 
 .logo-hover {
@@ -38,29 +24,29 @@ header {
 }
 
 .hover-overlay {
-  background-color: $bg-inverse;
+  background-color: black;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex:1;
+  flex: 1;
 }
 
 .nav-link {
   display: flex;
   justify-content: center;
-   position: relative;
-  > img {
-    position: absolute;
-    opacity: 1;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width: 7em;
-    height: 3em;
-  }
+  position: relative;
+}
+.nav-link > img {
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7em;
+  height: 3em;
 }
 
 .menu-btn {
@@ -70,10 +56,12 @@ nav {
 @media (max-width: 650px) {
   .menu-btn {
     display: block;
-   }
+  }
+
   nav {
     display: none;
   }
+
   header.fixed-mobile {
     position: fixed;
     top: 0;
@@ -82,19 +70,18 @@ nav {
     width: 100%;
     background-image: linear-gradient(black, rgba(0, 0, 0, 0.473), transparent);
     padding: 0 min(160px, 5%);
-    @media(max-width: 450px) {
-    padding: 0 12px;
-  }
   }
 }
-
+@media (max-width: 650px) and (max-width: 450px) {
+  header.fixed-mobile {
+    padding: 0 12px;
+  }
+}
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
-
-//#region hover animation nav-links
 .nav-cirlce,
 .nav-line,
 .nav-curve-line,
@@ -102,91 +89,89 @@ nav {
 .box-img {
   position: relative;
   mask-image: linear-gradient(transparent, transparent, transparent, transparent);
-  &:hover {
-   animation: fade-in ease-in-out forwards;
-   animation-duration: 500ms;
-  }
+}
+.nav-cirlce:hover,
+.nav-line:hover,
+.nav-curve-line:hover,
+.nav-crossing-line:hover,
+.box-img:hover {
+  animation: fade-in ease-in-out forwards;
+  animation-duration: 500ms;
 }
 
 @keyframes fade-in {
   0% {
     mask-image: linear-gradient(transparent, transparent, transparent, transparent);
   }
-  5%{
+  5% {
     mask-image: linear-gradient(rgba(0, 0, 0, 0.72), transparent, transparent, transparent);
- }
- 10% {
-  mask-image: linear-gradient(black, transparent, transparent, transparent);
- }
- 25% {
-  mask-image: linear-gradient( black, rgba(0, 0, 0, 0.626), transparent, transparent);
- }
- 35%{
-  mask-image: linear-gradient( black, black, transparent, transparent);
- }
- 50%{
-  mask-image: linear-gradient( black, black, rgba(0, 0, 0, 0.703), transparent);
- }
- 75% {
-  mask-image: linear-gradient( black, black, black, transparent);
- }
- 85% {
-  mask-image: linear-gradient( black, black, black, rgba(0, 0, 0, 0.703));
- }
- 100% {
-  mask-image: linear-gradient(black, black, black, black);
- }
+  }
+  10% {
+    mask-image: linear-gradient(black, transparent, transparent, transparent);
+  }
+  25% {
+    mask-image: linear-gradient(black, rgba(0, 0, 0, 0.626), transparent, transparent);
+  }
+  35% {
+    mask-image: linear-gradient(black, black, transparent, transparent);
+  }
+  50% {
+    mask-image: linear-gradient(black, black, rgba(0, 0, 0, 0.703), transparent);
+  }
+  75% {
+    mask-image: linear-gradient(black, black, black, transparent);
+  }
+  85% {
+    mask-image: linear-gradient(black, black, black, rgba(0, 0, 0, 0.703));
+  }
+  100% {
+    mask-image: linear-gradient(black, black, black, black);
+  }
 }
-//#endregion hover animation nav-links
-
-//#region changes dependend on project preview component
 .color-inverse .nav-link-wrapper:nth-child(1) .nav-link,
 .color-inverse .nav-link-wrapper:nth-child(2) .nav-link {
-  color: $text-inverse;
+  color: black;
 }
 
 @media (max-width: 1114px) {
   .color-inverse .nav-link-wrapper:nth-child(3) .nav-link,
-  .color-inverse .nav-link-wrapper:nth-child(4) .nav-link {
-    color: $text-inverse;
+.color-inverse .nav-link-wrapper:nth-child(4) .nav-link {
+    color: black;
   }
 }
-
 .color-inverse .logo-normal,
-.color-inverse svg path{
-  filter:invert(1);
+.color-inverse svg path {
+  filter: invert(1);
 }
-//#endregion changes dependend on project preview component
 
-//#region mobile burger menu
-.overlay{
+.overlay {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 0dvh;
   background-color: rgba(0, 0, 0, 0.747);
   background: url("./../../../../public/assets/img/01-Hero/mobile-menu-bg.png") bottom/cover no-repeat;
   z-index: 3;
   transition: 0.8s;
-  > nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3.2rem;
-    padding: 5.0rem 3.2rem;
-    height: 50%;
-    opacity: 0;
-    transition: 0.8s ease 0.3s;
-  }
+}
+.overlay > nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 5rem 3.2rem;
+  height: 50%;
+  opacity: 0;
+  transition: 0.8s ease 0.3s;
 }
 
 .overlay.open-menue {
   height: 80dvh;
-    nav {
-     opacity: 1;
-    }
-  }
+}
+.overlay.open-menue nav {
+  opacity: 1;
+}
 
 .d_none {
   display: none;
@@ -200,9 +185,9 @@ nav {
   height: 5rem;
   align-items: center;
   justify-content: center;
-  > .burger-icon {
-    width: 4rem;
-  }
+}
+.menu-btn > .burger-icon {
+  width: 4rem;
 }
 
 .menu-btn .burger-icon {
@@ -210,7 +195,7 @@ nav {
   z-index: 4;
 }
 
-.menu-btn[aria-expanded="true"] .burger-icon {
+.menu-btn[aria-expanded=true] .burger-icon {
   translate: 2.5px 0px;
   rotate: 0.125turn;
 }
@@ -220,13 +205,13 @@ nav {
   stroke-dasharray: 60 30 60 300;
 }
 
-.menu-btn[aria-expanded="true"] .line {
+.menu-btn[aria-expanded=true] .line {
   stroke-dasharray: 60 105 60 300;
   stroke-dashoffset: -90;
 }
 
 .icons {
-  border-color: 2px solid $bg-light;
+  border-color: 2px solid white;
 }
 
 .icons-mobile {
@@ -234,14 +219,10 @@ nav {
   gap: 1.6rem;
 }
 
- .icons {
-  > a {
-    > img {
-     border-radius: 50%;
-     border: 2px solid white;
-    }
-  }
- }
+.icons > a > img {
+  border-radius: 50%;
+  border: 2px solid white;
+}
 
 .logo-menu {
   box-sizing: border-box;
@@ -250,9 +231,6 @@ nav {
   margin-top: 2.1rem;
   margin-left: 3rem;
 }
-//#endregion mobile burger menu
-
-//#region language slider
 
 .toggle-box {
   display: flex;
@@ -261,8 +239,8 @@ nav {
 }
 
 .hover-box {
-  width:  3em;
-  height:  3em;
+  width: 3em;
+  height: 3em;
   position: absolute;
   opacity: 0;
 }
@@ -276,26 +254,25 @@ nav {
 
 .language-box {
   cursor: pointer;
-  color:$text-primary;
-  &:hover .hover-box {
-    opacity: 1;
-  }
-  &.active p {
-    color: $accent-tertiary;
-  }
+  color: white;
+}
+.language-box:hover .hover-box {
+  opacity: 1;
+}
+.language-box.active p {
+  color: #e08c05;
 }
 
 .slider-box {
   position: relative;
-  > .circle {
-    position: absolute;
-    transition: all 2s ease-in-out 5s;
-    &.right {
-      right: 0;
-    }
-    &.left {
-      left: 0;
-    }
-  }
 }
-//#endregion language slider
+.slider-box > .circle {
+  position: absolute;
+  transition: all 2s ease-in-out 5s;
+}
+.slider-box > .circle.right {
+  right: 0;
+}
+.slider-box > .circle.left {
+  left: 0;
+}

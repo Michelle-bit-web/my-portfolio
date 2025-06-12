@@ -1,4 +1,4 @@
-<header class="fontBricolage700">
+<header class="fontBricolage700" [ngClass]="{'fixed-mobile': isMobileView}">
 
   <div class="container-logo" [ngClass]="{'color-inverse': variant === 'inverse'}">
     
@@ -28,8 +28,8 @@
   </button>
 
  <nav [ngClass]="{'color-inverse': variant === 'inverse'}">
-   <div class="nav-link-wrapper">
-    <a class="nav-link" href="#{{ 'header.about' | translate }}">
+  <div class="nav-link-wrapper">
+    <a class="nav-link" [routerLink]="''" [fragment]="'header.about' | translate">
       {{ 'header.about' | translate }}
       <img class="nav-cirlce"
         src="assets/img/01-Hero/header-bar/header-frame/lines/1.png"
@@ -37,9 +37,8 @@
       />
     </a>
   </div>
-
   <div class="nav-link-wrapper">
-    <a class="nav-link" href="#{{ 'header.skills' | translate }}">
+    <a class="nav-link" [routerLink]="''" [fragment]="'header.skills' | translate">
       {{ 'header.skills' | translate }}
       <img class="nav-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/2.png"
@@ -48,7 +47,7 @@
     </a>
   </div>
   <div class="nav-link-wrapper">
-    <a class="nav-link" href="#{{ 'header.projects' | translate }}">
+    <a class="nav-link" [routerLink]="''" [fragment]="'header.projects' | translate">
       {{ 'header.projects' | translate }}
       <img class="nav-curve-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/3.png"
@@ -57,7 +56,7 @@
     </a>
   </div>
   <div class="nav-link-wrapper">
-    <a class="nav-link" href="#{{ 'header.contact' | translate }}">
+    <a class="nav-link" [routerLink]="''" [fragment]="'header.contact' | translate">
       {{ 'header.contact' | translate }}
       <img class="nav-crossing-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/4.png"
@@ -92,7 +91,7 @@
     />
     <nav >
    <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" href="#{{ 'header.about' | translate }}">
+    <a class="nav-link" [routerLink]="''" [fragment]="'header.about' | translate">
       {{ 'header.about' | translate }}
       <img class="nav-cirlce"
         src="assets/img/01-Hero/header-bar/header-frame/lines/1.png"
@@ -102,7 +101,7 @@
   </div>
 
   <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" href="#{{ 'header.skills' | translate }}">
+    <a class="nav-link" [routerLink]="''" [fragment]="'header.skills' | translate">
       {{ 'header.skills' | translate }}
       <img class="nav-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/2.png"
@@ -111,7 +110,7 @@
     </a>
   </div>
   <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" href="#{{ 'header.projects' | translate }}">
+    <a class="nav-link" [routerLink]="''" [fragment]="'header.projects' | translate">
       {{ 'header.projects' | translate }}
       <img class="nav-curve-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/3.png"
@@ -120,7 +119,7 @@
     </a>
   </div>
   <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" href="#{{ 'header.contact' | translate }}">
+    <a class="nav-link" [routerLink]="''" [fragment]="'header.contact' | translate">
       {{ 'header.contact' | translate }}
       <img class="nav-crossing-line"
         src="assets/img/01-Hero/header-bar/header-frame/lines/4.png"

@@ -1,13 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostListener } from '@angular/core';
 import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Router, NavigationEnd, RouterModule } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
   imports: [
     CommonModule,
     TranslateModule,
-    TranslatePipe
+    TranslatePipe,
+    CommonModule,
+    RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -16,9 +20,27 @@ export class HeaderComponent {
   @Input() variant: "default" | "inverse" = "default";
   activeMenu = false;
   language = "en";
+  isMobileView = false;
+  isHome = false;
 
-  constructor(private translate: TranslateService){
+  constructor(private translate: TranslateService, private router: Router){
     this.language = this.translate.currentLang || 'en';
+
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.isHome = event.urlAfterRedirects === '/' || event.url === '/';
+    });
+  
+  }
+
+  @HostListener('window:resize', [])
+  onResize() {
+    this.isMobileView = window.innerWidth <= 650;
+  }
+
+  ngOnInit() {
+    this.onResize();
   }
 
   switchLanguage(current:string){

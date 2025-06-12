@@ -58,6 +58,14 @@ section {
   padding: 0 min(6.4rem, 4.4%);
 }
 
+.policy-overlay {
+  min-height: 100vh;
+}
+
+.policy-overlay.mobile {
+  margin-top: 80px;
+}
+
 button {
   cursor: pointer;
   background: transparent;

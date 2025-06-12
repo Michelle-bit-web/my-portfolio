@@ -36,7 +36,10 @@ section {
   @media(max-width: 450px) {
     padding: 0 12px;
   }
-  
+}
+
+.top-frame.mobile {
+  margin-top: 80px;
 }
 
 .main-frame {

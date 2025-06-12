@@ -1,7 +1,7 @@
 <section alt="contact-section">
   <div class="content">
         <app-header class="header" [variant]="'inverse'"></app-header>
-                <span>
+                <span class="top-frame" [ngClass]="{'mobile': isMobileView}">
                     <div class="button-wrapper">
                         <img class="arrow left" src="assets/img/04-Projects/arrow.png" alt="{{ project.title }}" [routerLink]="''">
                         <button [routerLink]="''" class="simple">{{ 'project-preview.button-back' | translate }}</button>

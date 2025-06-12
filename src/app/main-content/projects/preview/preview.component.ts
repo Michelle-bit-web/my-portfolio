@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, HostListener } from '@angular/core';
 import { HeaderComponent } from '../../../shared/header/header.component';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
@@ -20,6 +20,7 @@ export class PreviewComponent {
   projectListData = inject(ProjectListDataService);
   route = inject(ActivatedRoute);
   router = inject(Router);
+  isMobileView = false;
   
   project = 
   {
@@ -43,11 +44,17 @@ export class PreviewComponent {
       "github-link": "https://github.com/Michelle-bit-web"
     }
 
+  @HostListener('window:resize', [])
+  onResize() {
+    this.isMobileView = window.innerWidth <= 650;
+   }
+
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
     const id = +params.get('id')!;
     this.project = this.projectListData.projectList[id];
   });
+   this.onResize();
   }
 
   nextProject(){

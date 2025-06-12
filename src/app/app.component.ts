@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 import { CursorComponent } from './shared/cursor/cursor.component';
 import { TranslateModule } from '@ngx-translate/core';
 import {TranslateService} from "@ngx-translate/core";
@@ -18,12 +19,23 @@ export class AppComponent {
 
   title = 'my-portfolio';
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private router: Router) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
     this.translate.use('en');
+
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      const fragment = this.router.parseUrl(this.router.url).fragment;
+      if (fragment) {
+        setTimeout(() => {
+          const el = document.getElementById(fragment);
+          el?.scrollIntoView({ behavior: 'smooth' });
+        }, 0); // wartet auf DOM-Render
+      }
+    });
   }
- 
 
   useLanguage(language: string): void {
     this.translate.use(language);
