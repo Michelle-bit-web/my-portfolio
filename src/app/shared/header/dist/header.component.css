@@ -154,6 +154,12 @@ nav {
   background: url("./../../../../public/assets/img/01-Hero/mobile-menu-bg.png") bottom/cover no-repeat;
   z-index: 3;
   transition: 0.8s;
+  padding: 0 min(160px, 5%);
+}
+@media (max-width: 450px) {
+  .overlay {
+    padding: 0 12px;
+  }
 }
 .overlay > nav {
   display: flex;
@@ -228,8 +234,8 @@ nav {
   box-sizing: border-box;
   width: 5rem;
   height: 5rem;
-  margin-top: 2.1rem;
-  margin-left: 3rem;
+  margin-top: 2.2rem;
+  margin-left: 0;
 }
 
 .toggle-box {

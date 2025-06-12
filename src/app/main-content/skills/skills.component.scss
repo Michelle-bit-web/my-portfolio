@@ -159,6 +159,10 @@ section {
   @media(max-width: 640px) {
     flex: 0 1 0rem;;
   }
+  @media(max-width: 600px) {
+  justify-content: center;
+  align-items: center;
+  }
 }
 
 .icon-and-text {
