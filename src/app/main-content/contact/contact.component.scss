@@ -36,6 +36,7 @@ section {
 
 .main-frame {
   width: 100%;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;

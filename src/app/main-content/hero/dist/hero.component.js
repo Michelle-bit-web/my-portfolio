@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13,6 +17,7 @@ var core_2 = require("@ngx-translate/core");
 var aos_1 = require("aos");
 require("aos/dist/aos.css");
 var common_1 = require("@angular/common");
+var init_1 = require("@angular/localize/init");
 var HeroComponent = /** @class */ (function () {
     function HeroComponent() {
         this.isTouchDevice = false;
@@ -22,6 +27,9 @@ var HeroComponent = /** @class */ (function () {
         aos_1["default"].init();
         var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
         this.isTouchDevice = isTouch;
+        // Workaround für Safari: setze data-name explizit per Code
+        var name = init_1.$localize(templateObject_1 || (templateObject_1 = __makeTemplateObject([":@@hero.name:Michelle"], [":@@hero.name:Michelle"]))); // oder via TranslateService
+        this.refBtn.nativeElement.setAttribute('data-name', name);
     };
     HeroComponent.prototype.onMouseEnter = function () {
         this.refName.nativeElement.textContent = 'Michelle :D';
@@ -51,3 +59,4 @@ var HeroComponent = /** @class */ (function () {
     return HeroComponent;
 }());
 exports.HeroComponent = HeroComponent;
+var templateObject_1;

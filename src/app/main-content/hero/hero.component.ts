@@ -4,6 +4,7 @@ import { TranslateModule, TranslatePipe} from '@ngx-translate/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { CommonModule } from '@angular/common';
+import { $localize } from '@angular/localize/init';
 
 
 @Component({
@@ -27,6 +28,10 @@ export class HeroComponent {
     AOS.init();
     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     this.isTouchDevice = isTouch;
+
+    // Workaround für Safari: setze data-name explizit per Code
+    const name = $localize`:@@hero.name:Michelle`; // oder via TranslateService
+    this.refBtn.nativeElement.setAttribute('data-name', name);
   }
 
   onMouseEnter(){
