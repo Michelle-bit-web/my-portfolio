@@ -29,8 +29,15 @@
 
         <div class="polaroid-frame" data-aos="fade-left">
           <div class="bg-polaroid"></div>
-          <img class="picture" src="assets/img/01-Hero/IMG_3698.jpeg" alt="{{'hero.image.polaroid-frame' | translate}}" [ngClass]="{ 'touch': isTouchDevice }" [style.animationDelay]="isTouchDevice ? 1 + 's' : null">
-          <img src="assets/img/01-Hero/title-photo/polaroid.png" class="polaroid" alt="{{'hero.image.picture' | translate}}"/>
+          <picture>
+            <source media="(max-width: 650px)" srcset="assets/img/01-Hero/IMG_3698-mobile.jpeg" class="picture" [ngClass]="{ 'touch': isTouchDevice }" [style.animationDelay]="isTouchDevice ? 1 + 's' : null" />
+            <img class="picture" src="assets/img/01-Hero/IMG_3698.jpeg" alt="{{'hero.image.polaroid-frame' | translate}}" [ngClass]="{ 'touch': isTouchDevice }" [style.animationDelay]="isTouchDevice ? 1 + 's' : null" />                  
+          </picture>
+          <picture>
+            <source media="(max-width: 650px)" srcset="assets/img/01-Hero/title-photo/polaroid-mobile.png" class="polaroid" />
+            <img src="assets/img/01-Hero/title-photo/polaroid.png" class="polaroid" alt="{{'hero.image.picture' | translate}}"/>                  
+          </picture>
+         
           <p class="name fontKalam700" #name (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">Michelle &#58;&#41;</p>
         </div>
        
