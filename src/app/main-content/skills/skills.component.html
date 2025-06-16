@@ -17,11 +17,14 @@
                     @for(icon of iconList; track $index){
                     <div class="icon-and-text">
 
-                        <img class="icon"
-                        #touchIcon 
-                        [ngClass]="{ 'touch': isTouchDevice }"
-                        [style.animationDelay]="isTouchDevice ? $index * 0.3 + 's' : null"
-                        src="assets\img\09-Icons\{{iconList[$index].img}}.png" alt="{{iconList[$index].name}}">
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="assets\img\09-Icons\mobile\{{iconList[$index].img}}.png" />
+                            <img class="icon"
+                            #touchIcon 
+                            [ngClass]="{ 'touch': isTouchDevice }"
+                            [style.animationDelay]="isTouchDevice ? $index * 0.3 + 's' : null"
+                            src="assets\img\09-Icons\{{iconList[$index].img}}.png" alt="{{iconList[$index].name}}">
+                        </picture>
 
                         <p 
                         #touchIcon
