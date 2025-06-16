@@ -21,7 +21,7 @@
                         #touchIcon 
                         [ngClass]="{ 'touch': isTouchDevice }"
                         [style.animationDelay]="isTouchDevice ? $index * 0.3 + 's' : null"
-                        src="assets\img\09-Icons\{{iconList[$index].img}}.png" alt="Code Language Icons">
+                        src="assets\img\09-Icons\{{iconList[$index].img}}.png" alt="{{iconList[$index].name}}">
 
                         <p 
                         #touchIcon
@@ -32,21 +32,21 @@
                     }
                     <div class="sticker fontBricolage400" [attr.sticker-text]="'skills.peel-sticker' | translate">
                         <p class="fontKalam400 peel-info">
-                            <img class="arrow" src="assets/img/03-Skills/arrow-white.png" alt="">
+                            <img class="arrow" src="assets/img/03-Skills/arrow-white.png" alt="{{'skills.image.arrow' | translate}}">
                             {{'skills.peel-sticker' | translate}}
                         </p>
                         <p class="fontKalam400 intro-text">{{'skills.sticker' | translate}}</p>
                         <div class="frame-icon-sticker">
                             <div class="icons-on-sticker">
-                                <img class="icon-sticker" src="assets\img\09-Icons\17.png" alt="">
+                                <img class="icon-sticker" src="assets\img\09-Icons\17.png" alt="Figma {{'skills.image.icon' | translate}}">
                                 <p class="fontKalam400">Figma</p>
                             </div>
                             <div class="icons-on-sticker">
-                                <img class="icon-sticker" src="assets\img\09-Icons\18.png" alt="">
+                                <img class="icon-sticker" src="assets\img\09-Icons\18.png" alt="WebStorm {{'skills.image.icon' | translate}}">
                                 <p class="fontKalam400">WebStorm</p>
                             </div>
                             <div class="icons-on-sticker">
-                                <img class="icon-sticker" src="assets\img\09-Icons\19.png" alt="">
+                                <img class="icon-sticker" src="assets\img\09-Icons\19.png" alt="NodeJs {{'skills.image.icon' | translate}}">
                                 <p class="fontKalam400">NodeJs</p>
                             </div>
                         </div>

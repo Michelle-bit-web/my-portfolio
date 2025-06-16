@@ -9,12 +9,10 @@
       <div class="upper-frame">
         <div class="upper-left-frame">
           <div class="btn-wrapper">
-          <img  [ngClass]="{ 'touch': isTouchDevice }"class="img-hand" src="assets/img/01-Hero/title-photo/waving_hand.png" alt="A waving hand animation"/>
+          <img  [ngClass]="{ 'touch': isTouchDevice }"class="img-hand" src="assets/img/01-Hero/title-photo/waving_hand.png" alt="{{'hero.image.hand-icon' | translate}}"/>
           <button #btnMobile class="fontBricolage500 btn-greeting" [attr.data-name]="'hero.name' | translate" [ngClass]="{ 'touch': isTouchDevice }">
             {{'hero.hello-world' | translate}}
-            
           </button>
-          <!-- <button class="btn-name" class="fontBricolage500 btn-name">I´m Michelle</button> -->
         </div>
 
         <h1 class="fontBricolage700 bouncing-letters" data-aos="fade-right">
@@ -31,9 +29,8 @@
 
         <div class="polaroid-frame" data-aos="fade-left">
           <div class="bg-polaroid"></div>
-          <img class="picture" src="assets/img/01-Hero/IMG_3698.jpeg" alt="" [ngClass]="{ 'touch': isTouchDevice }" [style.animationDelay]="isTouchDevice ? 1 + 's' : null">
-          <!-- <img class="picture" src="assets/img/01-Hero/IMG_3749.jpeg" alt=""> -->
-          <img src="assets/img/01-Hero/title-photo/polaroid.png" class="polaroid" alt="Polaroidimage of me"/>
+          <img class="picture" src="assets/img/01-Hero/IMG_3698.jpeg" alt="{{'hero.image.polaroid-frame' | translate}}" [ngClass]="{ 'touch': isTouchDevice }" [style.animationDelay]="isTouchDevice ? 1 + 's' : null">
+          <img src="assets/img/01-Hero/title-photo/polaroid.png" class="polaroid" alt="{{'hero.image.picture' | translate}}"/>
           <p class="name fontKalam700" #name (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">Michelle &#58;&#41;</p>
         </div>
        
@@ -59,9 +56,9 @@
     </div>
    
     <div class="frame-sm pos-absolute">
-      <div class="icons" data-aos="fade-up"><a href="https://www.linkedin.com/in/dr-michelle-puschkarow-605a7b17a/" target="_blank"><img  src="assets/img/01-Hero/social-media/Linkedin.png" alt="LinkedIn Icon"/></a></div>
-      <div class="icons" data-aos="fade-up"><a href="https://github.com/Michelle-bit-web" target="_blank"><img  src="assets/img/01-Hero/social-media/Github.png" alt="GitHub Icon" /></a></div>
-      <div class="icons" data-aos="fade-up"><a href="#{{ 'header.contact' | translate }}"><img  src="assets/img/01-Hero/social-media/mail.png" alt="Email Icon" /></a></div>
+      <div class="icons" data-aos="fade-up"><a href="https://www.linkedin.com/in/dr-michelle-puschkarow-605a7b17a/" target="_blank"><img  src="assets/img/01-Hero/social-media/Linkedin.png" alt="{{ 'header.image.icon-linked-in' | translate }}"/></a></div>
+      <div class="icons" data-aos="fade-up"><a href="https://github.com/Michelle-bit-web" target="_blank"><img  src="assets/img/01-Hero/social-media/Github.png" alt="{{ 'header.image.icon-github' | translate }}" /></a></div>
+      <div class="icons" data-aos="fade-up"><a href="#{{ 'header.contact' | translate }}"><img  src="assets/img/01-Hero/social-media/mail.png" alt="{{ 'header.image.icon-email' | translate }}" /></a></div>
     </div>
   </div>
 </section>

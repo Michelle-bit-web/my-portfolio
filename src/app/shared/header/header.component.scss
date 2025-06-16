@@ -23,6 +23,7 @@ header {
 .container-logo {
   > img {
     width: 5rem;
+    height: auto;
   }
   &:hover > .logo-hover {
     opacity: 1;
@@ -30,6 +31,8 @@ header {
 }
 
 .logo-hover {
+  width: 5rem;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -292,6 +295,8 @@ nav {
 .slider-box {
   position: relative;
   > .circle {
+    width: 17px;
+    height: 16px;
     position: absolute;
     transition: all 2s ease-in-out 5s;
     &.right {
@@ -300,6 +305,10 @@ nav {
     &.left {
       left: 0;
     }
+  }
+  > .slider {
+    width: 33px;
+    height: 8px;
   }
 }
 //#endregion language slider

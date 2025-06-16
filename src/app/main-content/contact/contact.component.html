@@ -17,7 +17,7 @@
                        {{'contact.invitation' | translate}}
                     </span>
                     <div class="arrow-wrapper" data-aos="fade-right">
-                        <img class="arrow" src="assets/img/06-Contact/arrow.png" alt="">
+                        <img class="arrow" src="assets/img/06-Contact/arrow.png" alt="{{'contact.image.arrow-animate' | translate}}">
                     </div>
                 </div>
                 <div class="right-frame">
@@ -38,34 +38,30 @@
                             <p class="invalid-message fontBricolage400" *ngIf="messageCtrl.invalid && messageCtrl.touched">{{'contact.input-message-invalid' | translate}}</p>
                         </div>
                         <div class="checkbox-wrapper form-group">
-
                             <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required class="fontBricolage400">
                             <span class="check" (click)="toggleCheck()">
-                                <img class="img-checked" src="assets/img/06-Contact/Check.png" alt="">
+                                <img class="img-checked" src="assets/img/06-Contact/Check.png" alt="{{'contact.image.check' | translate}}">
                             </span>
                             <span class="checkbox-text fontBricolage400">
                                 {{'contact.privacy-note-before' | translate}}
                                 <a [routerLink]="'/privacy-policy'" class="fontBricolage400 pp-link">{{'contact.privacy-policy' | translate}}</a>
                                 {{'contact.privacy-note-after' | translate}}
                             </span>
-
                         </div>
-                        
                         <div class="button-wrapper">
                         <button type="submit" class="fontBricolage400 btn-submit" [disabled]="contactForm.invalid" (click)="showSendingResponse()">{{'contact.submit-button' | translate}}</button>
-                          <img class="arrow-mobile" src="assets/img/06-Contact/arrow.png" alt="">
+                          <img class="arrow-mobile" src="assets/img/06-Contact/arrow.png" alt="{{'contact.image.arrow-animate' | translate}}">
                          </div>
-
                     </form>
                 </div>
                 <img 
                 class="sticker" 
                 src="assets/img/07-Sticker/Sticker 02.png" 
-                alt="animated Sticker"
+                alt="{{'contact.image.sticker' | translate}}"
                 #loadIcon 
                 >
                 <div class="div-btn-to-top" href="#start">
-                    <a class="link-back" href="#start">
+                    <a class="link-to-main-page" href="#start">
                         <div class="fontBricolage500 arrow-back"></div>
                         <div class="fontBricolage500 arrow-back"></div>
                         <div class="fontBricolage500 arrow-back"></div>

@@ -7,12 +7,32 @@
     "language": {
       "de": "DE",
       "en": "EN"
+    },
+    "image": {
+      "logo-normal": "Logo image",
+      "logo-hover": "Colour effect of logo image on hover",
+      "menu-icon": "Icon to open or close menu",
+      "nav-link-hover-one": "Line encircling the link on hover",
+      "nav-link-hover-two": "Straight underline for link on hover",
+      "nav-link-hover-three": "Curvy underline for link on hover",
+      "nav-link-hover-four": "Line crossing out the link on hover",
+      "line-box": "Square of lines surrounding the language on hover",
+      "slider": "Slide bar for language switch",
+      "slider-circle": "Circle on slider pointing out selected language",
+      "icon-linked-in": "LinkedIn icon",
+      "icon-github": "GitHub icon",
+      "icon-email": "Email icon"
     }
   },
   "hero": {
     "hello-world": "Hello world",
     "name": "I´m Michelle",
-    "contact": "Get in touch"
+    "contact": "Get in touch",
+    "image": {
+      "hand-icon": "Animated waving hand icon",
+      "polaroid-frame": "Frame of an polaroid picture",
+      "picture": "Porttrait of me, the author"
+    }
   },
   "about-me": {
     "title-small": "THIS IS WHO I AM.",
@@ -23,14 +43,24 @@
     "button": "Let´s talk",
     "intro": "Hi everyone, I'm Michelle – and a big fan of coding.",
     "description": " Did you know the quote that says in a crime scene programmers would be both the detective and the criminal? That perfectly captures my fascination: programming isn’t just about solving problems, it’s a thrilling investigation that challenges you and helps you grow.  I love how each project pushes me forward and opens the door to new technologies - also in a team.",
-    "final": "If you're looking for someone who brings heart, curiosity, and a sharp mind to the table, I’d love to work together!"
+    "final": "If you're looking for someone who brings heart, curiosity, and a sharp mind to the table, I’d love to work together!",
+    "image": {
+      "paper": "Coloured ripped paper",
+      "location": "Icon for location",
+      "remote": "Icon for working remote",
+      "open-source": "Icon for open-source projects"
+    }
   },
    "skills": {
     "title-small": "MY STACK",
     "title": "My Skills",
     "sticker": "I´d like to dive into:",
     "peel-sticker": "Peel me off",
-    "description": "During a six-month, practice-oriented training program, I built a solid foundation in HTML, CSS, and JavaScript. I especially enjoy working with Angular, which has helped me deepen my understanding of TypeScript. Essential tools for collaboration and version control, such as GitHub and Loom, where a big part of my projects."
+    "description": "During a six-month, practice-oriented training program, I built a solid foundation in HTML, CSS, and JavaScript. I especially enjoy working with Angular, which has helped me deepen my understanding of TypeScript. Essential tools for collaboration and version control, such as GitHub and Loom, where a big part of my projects.",
+    "image": {
+      "arrow": "Arrow indicating to peel the sticker",
+      "icon": "icon"
+    }
   },
   "projects": {
     "title-small": "MY CRAFT",
@@ -59,13 +89,21 @@
     "bestell-app": {
       "description": "A food ordering application that allows users to browse menus, place orders and choose between delivery or pick-up options. The app is built with HTML, CSS & JavaScript.",
       "details": "In this project, the focus was on delivering a user-friendly experience and flexible menu rendering. I put a lot of effort into the interface design. The challenge was to implement the core ordering and basket logic with real-time cart updates, delivery fee calculations, item add/remove functionality, automatic price calculation, and a local storage system for order tracking."
-    }
+    },
+    "image": {
+        "card": "preview image"
+      }
   },
-   "project-preview": {
+  "project-preview": {
     "button-back": "Go Back",
     "description-header": "Description",
     "details-header": "Implementation Details",
-    "button-next": "Next"
+    "button-next": "Next",
+    "image": {
+      "arrow-back": "Arrow back to main page",
+      "arrow-next": "Arrow to next project",
+      "sticker": "Animated sticker with Logo"
+    }
   },
   "feedback": {
     "title-small": "IN THEIR WORDS",
@@ -73,7 +111,12 @@
     "profile": "Profile",
     "description-one": "placeholder -Your frontend projects clearly show that you place great value on user experience.",
     "description-two": "placeholder -You demonstrate strong commitment in your project work and show great creativity in finding solutions.",
-    "description-three": "placeholder -You continuously expand your knowledge to keep developing your skills."
+    "description-three": "placeholder -You continuously expand your knowledge to keep developing your skills.",
+    "image": {
+      "arrow": "Animated arrow pointing to headline",
+      "linked-in": "LinkedIn icon",
+      "lines-hover": "Background lines on the feedback card displayed on hover"
+    }
 
   },
   "contact": {
@@ -96,11 +139,23 @@
     "submit-button": "Send",
     "automatic-reply-one": "Thanks a lot for your message!",
     "automatic-reply-two": "I will answer as soon as possible.",
-    "automatic-reply-three": "I hope, you enjoyed my website."
+    "automatic-reply-three": "I hope, you enjoyed my website.",
+    "image": {
+      "arrow-animate": "animated curvy arrow directed towards contact form",
+      "check": "Check mark for consent for privacy policy",
+      "sticker": "Animated sticker with logo"
+    }
   },
   "footer": {
     "legal-notice": "Legal Notice",
-    "email": "Email"
+    "email": "Email",
+    "image": {
+      "logo-normal": "Logo image",
+      "logo-hover": "Colour effect of logo image on hover",
+      "icon-linked-in": "Animated LinkedIn icon",
+      "icon-github": "Animated GitHub icon",
+      "icon-email": "Animated email icon"
+    }
   },
   "legal-notice": {
     "button-back": "Go Back",
@@ -154,5 +209,9 @@
     "legal-notice": "legal notice",
     "privacy-policy": "privacy policy",
     "preview": "preview"
+  },
+  "meta": {
+    "title": "My Portfolio",
+    "description": "Welcome to my page! Get to know me and discover my web development projects."
   }
 }

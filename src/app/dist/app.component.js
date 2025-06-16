@@ -13,10 +13,12 @@ var operators_1 = require("rxjs/operators");
 var cursor_component_1 = require("./shared/cursor/cursor.component");
 var core_2 = require("@ngx-translate/core");
 var AppComponent = /** @class */ (function () {
-    function AppComponent(translate, router) {
+    function AppComponent(translate, router, meta, titleService) {
         var _this = this;
         this.translate = translate;
         this.router = router;
+        this.meta = meta;
+        this.titleService = titleService;
         this.title = 'my-portfolio';
         this.translate.addLangs(['de', 'en']);
         this.translate.setDefaultLang('en');
@@ -27,12 +29,23 @@ var AppComponent = /** @class */ (function () {
                 setTimeout(function () {
                     var el = document.getElementById(fragment);
                     el === null || el === void 0 ? void 0 : el.scrollIntoView({ behavior: 'smooth' });
-                }, 0); // wartet auf DOM-Render
+                }, 0);
             }
         });
+        this.translate.onLangChange.subscribe(function () {
+            _this.setPageMeta();
+        });
+        this.setPageMeta();
     }
     AppComponent.prototype.useLanguage = function (language) {
         this.translate.use(language);
+    };
+    AppComponent.prototype.setPageMeta = function () {
+        var _this = this;
+        this.translate.get(['meta.title', 'meta.description']).subscribe(function (translations) {
+            _this.titleService.setTitle(translations['meta.title']);
+            _this.meta.updateTag({ name: 'description', content: translations['meta.description'] });
+        });
     };
     AppComponent = __decorate([
         core_1.Component({

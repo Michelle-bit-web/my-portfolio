@@ -7,12 +7,32 @@
     "language": {
       "de": "DE",
       "en": "EN"
+    },
+    "image": {
+      "logo-normal": "Bild des Logos",
+      "logo-hover": "Farbeffekt des Logos durch den Mauszeiger",
+      "menu-icon": "Menü öffnen oder schließen",
+      "nav-link-hover-one": "Mauszeiger Effekt, der den Link umkreist",
+      "nav-link-hover-two": "Mauszeiger Effekt, der den Link unterstreicht",
+      "nav-link-hover-three": "Mauszeiger Effekt, der den Link geschwungen unterstreicht",
+      "nav-link-hover-four": "Mauszeiger Effekt, der den Link durchstreicht",
+      "line-box": "Mauszeiger Effekt, bei dem ein Quadrat die Sprache umrandet",
+      "slider": "Sprachregler",
+      "slider-circle": "Kreis des Sprachreglers, der die gewählte Sprache anzeigt",
+      "icon-linked-in": "LinkedIn Symbol",
+      "icon-github": "GitHub Symbol",
+      "icon-email": "E-Mail Symbol"
     }
   },
   "hero": {
     "hello-world": "Hallo Welt",
     "name": "Ich bin Michelle",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "image": {
+        "hand-icon": "Animiertes winkendes Handsymbol",
+        "polaroid-frame": "Rahmen eines Polaroid-Bildes",
+        "picture": "Porttrait von mir, der Autorin"
+      }
   },
   "about-me": {
     "title-small": "Das bin ich.",
@@ -23,15 +43,24 @@
     "button": "Gern melden",
     "intro": "Hallo ihr Lieben, ich bin Michelle – und großer Fan des Codings.",
     "description": "Kennen Sie das Zitat, dass Programmierer in einer Krimiserie gleichzeitig Detektiv und Täter seien? Genau das beschreibt meine Faszination: Programmieren bedeutet nicht nur, Probleme zu lösen, sondern sich auf eine spannende Spurensuche zu begeben, bei der man sich ständig weiterentwickelt. Ich liebe es, mich mit jedem Projekt wachsen zu sehen und neue Technologien zu entdecken - das ebenso im Team.",
-    "final": "Wenn Sie jemanden suchen, der mit Herz, Verstand und Neugier bei der Sache ist: Ich freue mich auf die Zusammenarbeit!"
-  
+    "final": "Wenn Sie jemanden suchen, der mit Herz, Verstand und Neugier bei der Sache ist: Ich freue mich auf die Zusammenarbeit!",
+    "image": {
+      "paper": "Farbiges zerrissenes Papier",
+      "location": "Ortssymbol",
+      "remote": "Symbol für Heimarbeit",
+      "open-source": "Symbol für Projekte zur freien Nutzung"
+    }
   },
   "skills": {
     "title-small": "WAS ICH MITBRINGE",
     "title": "Kenntnisse",
     "sticker": "Künftig gerne auch:",
     "peel-sticker": "Zieh mich ab",
-    "description": "Während einer sechsmonatigen, praxisorientierten Ausbildung habe ich mir eine solide Grundlage in HTML, CSS und JavaScript erarbeitet. Besonders gerne arbeite ich mit Angular, wodurch ich mein Verständnis für TypeScript deutlich vertiefen konnte. Wichtige Tools für die Zusammenarbeit und Versionskontrolle wie GitHub und Loom waren ein zentraler Bestandteil meiner Projekte."
+    "description": "Während einer sechsmonatigen, praxisorientierten Ausbildung habe ich mir eine solide Grundlage in HTML, CSS und JavaScript erarbeitet. Besonders gerne arbeite ich mit Angular, wodurch ich mein Verständnis für TypeScript deutlich vertiefen konnte. Wichtige Tools für die Zusammenarbeit und Versionskontrolle wie GitHub und Loom waren ein zentraler Bestandteil meiner Projekte.",
+    "image": {
+      "arrow": "Pfeil, der aufzeigt, den Aufkleber abzuziehen",
+      "icon" : "Symbol"
+    }
   },
   "projects": {
     "title-small": "Auszüge meiner Arbeit",
@@ -60,13 +89,21 @@
     "bestell-app": {
       "description": "Eine Bestell-App, mit der Benutzer Speisekarten durchsuchen, Bestellungen aufgeben und zwischen Lieferung oder Abholung wählen können.",
       "details": "In diesem Projekt lag der Fokus auf einer benutzerfreundlichen Nutzererfahrung und einer flexiblen Menüdarstellung. Besonders viel Wert habe ich auf das Design gelegt. Die Herausforderung bestand in der Entwicklung der zentralen Bestell- und Warenkorblogik mit Echtzeitaktualisierung, Berechnung von Lieferkosten, Hinzufügen/Entfernen von Artikeln, automatischer Preisberechnung sowie der Speicherung von Bestellungen im Local Storage."
-    }
+    },
+    "image": {
+        "card": "Bildvorschau"
+      }
   },
    "project-preview": {
     "button-back": "Zurück",
     "description-header": "Beschreibung",
     "details-header": "Details zur Implementierung",
-    "button-next": "Weiter"
+    "button-next": "Weiter",
+    "image": {
+      "arrow-back": "Pfeil zurück zur Startseite",
+      "arrow-next": "Pfeil weiter zum nächsten Projekt",
+      "sticker": "Animierter Sticker mit dem Logo"
+    }
   },
   "feedback": {
     "title-small": "In ihren Worten",
@@ -74,7 +111,12 @@
     "profile": "Profil",
     "description-one": "-Platzhalter-In deinen Frontend-Projekten wurde immer deutlich, dass du großen Wert auf Nutzerfreundlichkeit legst.",
     "description-two": "-Platzhalter-Du zeigst großen Ehrgeiz bei deiner Projektumsetzung und bist darüber hinaus auch sehr kreativ in der Lösungsfindung.",
-    "description-three": "-Platzhalter-Du erarbeitest dir viel zusätzliches Know-how, um dich kontinuierlich weiterzuentwickeln."
+    "description-three": "-Platzhalter-Du erarbeitest dir viel zusätzliches Know-how, um dich kontinuierlich weiterzuentwickeln.",
+    "image": {
+      "arrow": "Animierter Pfeil, der auf die Überschrift verweist",
+      "linked-in": "LinkedIn Symbol",
+      "lines-hover": "Mauszeiger Effekt, der Linien im Hintergrund der Karte erzeugt"
+    }
   },
   "contact": {
     "title-small": "KONTAKTIEREN SIE MICH",
@@ -96,11 +138,23 @@
     "submit-button": "Senden",
     "automatic-reply-one": "Vielen Dank für Ihre Nachricht!",
     "automatic-reply-two": "Ich melde mich so schnell wie möglich zurück.",
-    "automatic-reply-three": "Ich hoffe, Ihnen hat meine Website gefallen."
+    "automatic-reply-three": "Ich hoffe, Ihnen hat meine Website gefallen.",
+    "image": {
+      "arrow-animate": "Animierter Pfeil, der auf das Kontaktformular zeigt",
+      "check": "Haken für das Einverständnis zur Datenschutzerklärung",
+      "sticker": "Animater Sticker mit dem Logo"
+    }
 },
   "footer": {
     "legal-notice": "Impressum",
-    "email": "E-Mail"
+    "email": "E-Mail",
+    "image": {
+      "logo-normal": "Bild des Logos",
+      "logo-hover": "Farbeffekt des Logos durch den Mauszeiger",
+      "icon-linked-in": "Animiertes LinkedIn Symbol",
+      "icon-github": "Animiertes GitHub Symbol",
+      "icon-email": "Animiertes E-Mail Symbol"
+    }
   },
   "legal-notice": {
     "button-back": "Zurück",
@@ -154,5 +208,9 @@
     "legal-notice": "Impressum",
     "privacy-policy": "Datenschutzerklärung",
     "preview": "Projektvorschau"
+  },
+  "meta": {
+    "title": "Mein Portfolio",
+    "description": "Willkommen auf meiner Webseite! Lernen Sie mich kennen und entdecken Sie meine Projekte im Bereich Webentwicklung."
   }
 }

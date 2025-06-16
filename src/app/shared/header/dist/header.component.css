@@ -10,12 +10,15 @@ header {
 
 .container-logo > img {
   width: 5rem;
+  height: auto;
 }
 .container-logo:hover > .logo-hover {
   opacity: 1;
 }
 
 .logo-hover {
+  width: 5rem;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -273,6 +276,8 @@ nav {
   position: relative;
 }
 .slider-box > .circle {
+  width: 17px;
+  height: 16px;
   position: absolute;
   transition: all 2s ease-in-out 5s;
 }
@@ -281,4 +286,8 @@ nav {
 }
 .slider-box > .circle.left {
   left: 0;
+}
+.slider-box > .slider {
+  width: 33px;
+  height: 8px;
 }
