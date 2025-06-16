@@ -1,4 +1,4 @@
-<section alt="contact-section">
+<section>
     <div class="fontBricolage500 fs20 reply-overlay" *ngIf = "mailSend" [class.active]="mailSend">
      <p class="fs28">{{'contact.automatic-reply-one' | translate}}</p>
      <br>
@@ -37,7 +37,7 @@
                             <textarea [(ngModel)]="contactData.message" class="fontBricolage400" name="message" id="message" required  #messageCtrl = "ngModel" [placeholder]="'contact.input-message' | translate"></textarea>
                             <p class="invalid-message fontBricolage400" *ngIf="messageCtrl.invalid && messageCtrl.touched">{{'contact.input-message-invalid' | translate}}</p>
                         </div>
-                        <div class="checkbox-wrapper form-group">
+                        <label class="checkbox-wrapper form-group">
                             <input [(ngModel)]="contactData.checkedStatus" type="checkbox" name="checkedStatus" required class="fontBricolage400">
                             <span class="check" (click)="toggleCheck()">
                                 <img class="img-checked" src="assets/img/06-Contact/Check.png" alt="{{'contact.image.check' | translate}}">
@@ -47,7 +47,7 @@
                                 <a [routerLink]="'/privacy-policy'" class="fontBricolage400 pp-link">{{'contact.privacy-policy' | translate}}</a>
                                 {{'contact.privacy-note-after' | translate}}
                             </span>
-                        </div>
+                        </label>
                         <div class="button-wrapper">
                         <button type="submit" class="fontBricolage400 btn-submit" [disabled]="contactForm.invalid" (click)="showSendingResponse()">{{'contact.submit-button' | translate}}</button>
                           <img class="arrow-mobile" src="assets/img/06-Contact/arrow.png" alt="{{'contact.image.arrow-animate' | translate}}">
