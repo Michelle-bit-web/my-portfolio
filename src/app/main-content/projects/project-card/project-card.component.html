@@ -4,7 +4,10 @@ data-aos="fade-left" [attr.button]="'project-card.project-btn' | translate"
 [ngClass]="{ 'touch': isTouchDevice }"
 #frameRef 
 >
-    <img [routerLink]="['preview', index]" src="{{project.imgResponsive}}" alt="{{ project.title }} {{ 'project-card.image.card' | translate }}">
+    <picture>
+        <source media="(max-width: 768px)" srcset="{{project.imgResponsiveMobile}}" [routerLink]="['preview', index]"/>
+        <img [routerLink]="['preview', index]" src="{{project.imgResponsive}}" alt="{{ project.title }} {{ 'project-card.image.card' | translate }}">                  
+    </picture>
     <h3 class="fontBricolage700">{{ project.title }}</h3>
     <span class="fontBricolage400">{{ project.description | translate }}</span>
 </div>

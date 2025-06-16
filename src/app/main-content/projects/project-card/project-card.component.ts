@@ -20,9 +20,13 @@ export class ProjectCardComponent implements  AfterViewInit{
     isTouchDevice:boolean = false;
     @Input() project = 
     {
-      title: "Join",
-      imgResponsive:"assets/img/04-Projects/project-preview/Property 1=Default.png",
-      description: "Task manager inspired by the Kanban system. Create an organize tasks using drag and drop functions, assign users and categories.",
+      title: "DABubble",
+      imgResponsive: "assets/img/04-Projects/project-preview/da-bubble-resp.png",
+      imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/da-bubble-resp.png",
+      img: "assets/img/04-Projects/project-preview/da-bubble.png",
+      imgMobile: "assets/img/04-Projects/project-preview/mobile/da-bubble.png",
+      description: "project-card.dabubble.description",
+      details: "project-card.dabubble.details",
     }
     @Input() index = 0;
 

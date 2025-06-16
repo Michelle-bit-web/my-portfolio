@@ -32,7 +32,11 @@
 
             <div class="right-frame">
                 <div class="project-img-frame">
-                    <img class="img-project" src="{{ project.img }}" alt="{{ project.title }}">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="{{ project.imgMobile }}" class="img-project"/>
+                        <img class="img-project" src="{{ project.img }}" alt="{{ project.title }}">                  
+                    </picture>
+                    
                     <img class="sticker" src="assets/img/07-Sticker/Sticker 01.png" alt="{{ 'project-preview.image.sticker' | translate }}">
                 </div>
                 <div class="button-wrapper-right">

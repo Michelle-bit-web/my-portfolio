@@ -14,7 +14,9 @@ var ProjectListDataService = /** @class */ (function () {
             {
                 title: "DABubble",
                 imgResponsive: "assets/img/04-Projects/project-preview/da-bubble-resp.png",
+                imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/da-bubble-resp.png",
                 img: "assets/img/04-Projects/project-preview/da-bubble.png",
+                imgMobile: "assets/img/04-Projects/project-preview/mobile/da-bubble.png",
                 description: "project-card.dabubble.description",
                 details: "project-card.dabubble.details",
                 languages: [
@@ -41,7 +43,9 @@ var ProjectListDataService = /** @class */ (function () {
             {
                 title: "Join",
                 imgResponsive: "assets/img/04-Projects/project-preview/join-resp.png",
+                imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/join-resp.png",
                 img: "assets/img/04-Projects/project-preview/join.png",
+                imgMobile: "assets/img/04-Projects/project-preview/mobile/join.png",
                 description: "project-card.join.description",
                 details: "project-card.join.details",
                 languages: [
@@ -68,7 +72,9 @@ var ProjectListDataService = /** @class */ (function () {
             {
                 title: "El Pollo Loco",
                 imgResponsive: "assets/img/04-Projects/project-preview/pollo-loco-resp.png",
+                imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/pollo-loco-resp.png",
                 img: "assets/img/04-Projects/project-preview/pollo-loco.png",
+                imgMobile: "assets/img/04-Projects/project-preview/mobile/pollo-loco.png",
                 description: "project-card.el-pollo-loco.description",
                 details: "project-card.el-pollo-loco.details",
                 languages: [
@@ -91,7 +97,9 @@ var ProjectListDataService = /** @class */ (function () {
             {
                 title: "Pokédex",
                 imgResponsive: "assets/img/04-Projects/project-preview/pokedex-resp.png",
+                imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/pokedex-resp.png",
                 img: "assets/img/04-Projects/project-preview/pokedex-desktop.png",
+                imgMobile: "assets/img/04-Projects/project-preview/mobile/pokedex-desktop.png",
                 description: "project-card.pokedex.description",
                 details: "project-card.pokedex.details",
                 languages: [
@@ -114,7 +122,9 @@ var ProjectListDataService = /** @class */ (function () {
             {
                 title: "Bestell App",
                 imgResponsive: "assets/img/04-Projects/project-preview/bestell-app-resp.png",
+                imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/bestell-app-resp.png",
                 img: "assets/img/04-Projects/project-preview/bestellapp-desktop.png",
+                imgMobile: "assets/img/04-Projects/project-preview/mobile/bestellapp-desktop.png",
                 description: "project-card.bestell-app.description",
                 details: "project-card.bestell-app.details",
                 languages: [
