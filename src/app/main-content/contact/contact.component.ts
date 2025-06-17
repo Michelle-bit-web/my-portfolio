@@ -41,9 +41,7 @@ export class ContactComponent implements AfterViewInit{
     options: {
       headers: {
         'Content-Type': 'text/plain',  
-        // 'Content-Type': 'application/json', //laut KI
         responseType: 'text',
-        // responseType: 'text' as 'json', //laut KI
       },
     },
   };

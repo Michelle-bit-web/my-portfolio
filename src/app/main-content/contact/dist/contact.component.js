@@ -32,7 +32,6 @@ var ContactComponent = /** @class */ (function () {
             options: {
                 headers: {
                     'Content-Type': 'text/plain',
-                    // 'Content-Type': 'application/json', //laut KI
                     responseType: 'text'
                 }
             }
