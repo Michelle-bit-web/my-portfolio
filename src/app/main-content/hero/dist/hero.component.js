@@ -22,14 +22,13 @@ var HeroComponent = /** @class */ (function () {
     function HeroComponent() {
         this.isTouchDevice = false;
         this.isHome = true;
+        this.nameLocalized = '';
     }
     HeroComponent.prototype.ngOnInit = function () {
         aos_1["default"].init();
         var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
         this.isTouchDevice = isTouch;
-        // Workaround für Safari: setze data-name explizit per Code
-        var name = init_1.$localize(templateObject_1 || (templateObject_1 = __makeTemplateObject([":@@hero.name:Michelle"], [":@@hero.name:Michelle"]))); // oder via TranslateService
-        this.refBtn.nativeElement.setAttribute('data-name', name);
+        this.nameLocalized = init_1.$localize(templateObject_1 || (templateObject_1 = __makeTemplateObject([":@@hero.name:I\u00B4m Michelle"], [":@@hero.name:I\u00B4m Michelle"])));
     };
     HeroComponent.prototype.onMouseEnter = function () {
         this.refName.nativeElement.textContent = 'Michelle :D';

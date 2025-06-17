@@ -23,15 +23,13 @@ export class HeroComponent {
   @ViewChild('btnMobile', { static: true }) refBtn!: ElementRef<HTMLButtonElement>;
   isTouchDevice:boolean = false;
   isHome = true;
+  nameLocalized = '';
 
    ngOnInit() {
     AOS.init();
     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     this.isTouchDevice = isTouch;
-
-    // Workaround für Safari: setze data-name explizit per Code
-    const name = $localize`:@@hero.name:Michelle`; // oder via TranslateService
-    this.refBtn.nativeElement.setAttribute('data-name', name);
+    this.nameLocalized = $localize`:@@hero.name:I´m Michelle`;
   }
 
   onMouseEnter(){

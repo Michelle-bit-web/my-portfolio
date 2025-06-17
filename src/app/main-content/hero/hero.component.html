@@ -11,7 +11,8 @@
           <div class="btn-wrapper">
           <img  [ngClass]="{ 'touch': isTouchDevice }"class="img-hand" src="assets/img/01-Hero/title-photo/waving_hand.png" alt="{{'hero.image.hand-icon' | translate}}"/>
           <button #btnMobile class="fontBricolage500 btn-greeting" [attr.data-name]="'hero.name' | translate" [ngClass]="{ 'touch': isTouchDevice }">
-            {{'hero.hello-world' | translate}}
+            <span class="btn-label">{{ 'hero.hello-world' | translate }}</span>
+            <span #name class="btn-overlay-text">{{ nameLocalized }}</span>
           </button>
         </div>
 

@@ -324,8 +324,14 @@ button {
   padding: 1rem;
   cursor: pointer;
 }
-.btn-wrapper .btn-greeting::before {
-  content: "";
+.btn-wrapper .btn-greeting .btn-label {
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+.btn-wrapper .btn-greeting .btn-overlay-text {
   position: absolute;
   left: 0;
   top: 0;
@@ -338,8 +344,10 @@ button {
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
-  transition: width 1s ease, opacity 1s ease, content 1s ease;
   z-index: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: width 1s ease, opacity 1s ease 0.2s;
 }
 .btn-wrapper .img-hand {
   position: absolute;
@@ -351,30 +359,31 @@ button {
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease 0.1s;
 }
-.btn-wrapper .btn-name {
-  position: relative;
-  z-index: 2;
-}
 .btn-wrapper:hover {
   width: 18rem;
 }
 .btn-wrapper:hover .btn-greeting {
   width: 18rem;
 }
-.btn-wrapper:hover .btn-greeting::before {
+.btn-wrapper:hover .btn-greeting .btn-label {
+  opacity: 0;
+}
+.btn-wrapper:hover .btn-greeting .btn-overlay-text {
   transition-delay: 0s, 0.1s;
   width: 100%;
-  content: attr(data-name);
   opacity: 1;
   font-size: 1.8rem;
-  transition: width 1s ease, opacity 1s ease 0.2s, content 1s ease 0.6s;
 }
 .btn-wrapper:hover .img-hand {
   transform: translateX(20px) rotate(360deg);
   opacity: 1;
 }
 
-.btn-greeting.touch::before {
+.btn-greeting.touch .btn-label {
+  animation: hideLabel 1s ease forwards;
+  animation-delay: 1.5s;
+}
+.btn-greeting.touch .btn-overlay-text {
   animation: btnTouchAppear 1s ease forwards;
   animation-delay: 1.5s;
 }
@@ -382,21 +391,22 @@ button {
 @keyframes btnTouchAppear {
   0% {
     width: 0%;
-    content: "";
     opacity: 0;
   }
   50% {
-    content: "";
     opacity: 0.3;
-  }
-  75% {
-    content: "";
-    opacity: 0.6;
   }
   100% {
     width: 100%;
-    content: attr(data-name);
     opacity: 1;
+  }
+}
+@keyframes hideLabel {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .img-hand.touch {
