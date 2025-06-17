@@ -1,9 +1,9 @@
-<section class="privacy-policy-section fs20">
+<section class="privacy-policy-section fs20" id="{{'legal-notice.title' | translate}}">
   <div class="content">
    <app-header class="header"></app-header>  
   <div class="imprint-overlay  fontBricolage400 fs20" [ngClass]="{'mobile': isMobileView}">
     <div class="button-wrapper">
-        <img class="arrow" src="assets/img/04-Projects/arrow.png" alt="{{'project-preview.image.arrow-back' | translate}}">
+        <img [routerLink]="''" class="arrow" src="assets/img/04-Projects/arrow.png" alt="{{'project-preview.image.arrow-back' | translate}}">
         <button [routerLink]="''" class="simple fontBricolage500 fs16">{{'legal-notice.button-back' | translate}}</button>
     </div>
     <h1 class="fontBricolage500 fs32">{{'legal-notice.title' | translate}}</h1>

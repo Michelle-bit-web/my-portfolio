@@ -56,7 +56,6 @@ section {
   justify-content: flex-start;
   gap: min(5rem, 3.4%);
   padding: 0 min(6.4rem, 4.4%);
-  margin-top: 80px;
 }
 
 .imprint-overlay.mobile {
@@ -83,6 +82,7 @@ button {
   > .arrow {
     width: 5rem;
     transform: rotate(180deg);
+    cursor: pointer;
   }
 }
 
