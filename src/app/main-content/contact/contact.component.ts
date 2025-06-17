@@ -48,7 +48,11 @@ export class ContactComponent implements AfterViewInit{
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http.post(this.post.endPoint, this.post.body(this.contactData),
+      {
+        headers: { 'Content-Type': 'text/plain' },
+        responseType: 'text' as 'json'  // wichtig: explizit casten
+      })
         .subscribe({
           next: (response) => {
             this.showSendingResponse();

@@ -40,7 +40,10 @@ var ContactComponent = /** @class */ (function () {
     ContactComponent.prototype.onSubmit = function (ngForm) {
         var _this = this;
         if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-            this.http.post(this.post.endPoint, this.post.body(this.contactData))
+            this.http.post(this.post.endPoint, this.post.body(this.contactData), {
+                headers: { 'Content-Type': 'text/plain' },
+                responseType: 'text' // wichtig: explizit casten
+            })
                 .subscribe({
                 next: function (response) {
                     _this.showSendingResponse();
