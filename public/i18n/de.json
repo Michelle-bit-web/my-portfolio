@@ -86,10 +86,6 @@
       "description": "Ein responsiver, browserbasierter Pokédex, der Daten aus der öffentlichen PokeAPI abruft. Zeigt Pokémon-Karten, Detaildialoge und Entwicklungsketten an.",
       "details": "Die App enthält eine durchsuchbare Pokémon-Datenbank und dynamische Detailansichten für jedes Pokémon. Die Herausforderung bestand in der effizienten Anbindung an die API sowie der Umsetzung einer responsiven und benutzerfreundlichen Oberfläche."
     },
-    "bestell-app": {
-      "description": "Eine Bestell-App, mit der Benutzer Speisekarten durchsuchen, Bestellungen aufgeben und zwischen Lieferung oder Abholung wählen können.",
-      "details": "In diesem Projekt lag der Fokus auf einer benutzerfreundlichen Nutzererfahrung und einer flexiblen Menüdarstellung. Besonders viel Wert habe ich auf das Design gelegt. Die Herausforderung bestand in der Entwicklung der zentralen Bestell- und Warenkorblogik mit Echtzeitaktualisierung, Berechnung von Lieferkosten, Hinzufügen/Entfernen von Artikeln, automatischer Preisberechnung sowie der Speicherung von Bestellungen im Local Storage."
-    },
     "image": {
         "card": "Bildvorschau"
       }

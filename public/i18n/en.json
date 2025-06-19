@@ -86,10 +86,6 @@
       "description": "A responsive, browser-based Pokédex built with JavaScript, HTML, and CSS. It fetches data from the public PokeAPI to display Pokémon cards, detailed information dialogs, and evolution chains.",
       "details": "The app includes a searchable Pokémon database and dynamic detail views for each Pokémon. The challenge was integrating the API efficiently and building a responsive, user-friendly interface."
     },
-    "bestell-app": {
-      "description": "A food ordering application that allows users to browse menus, place orders and choose between delivery or pick-up options. The app is built with HTML, CSS & JavaScript.",
-      "details": "In this project, the focus was on delivering a user-friendly experience and flexible menu rendering. I put a lot of effort into the interface design. The challenge was to implement the core ordering and basket logic with real-time cart updates, delivery fee calculations, item add/remove functionality, automatic price calculation, and a local storage system for order tracking."
-    },
     "image": {
         "card": "preview image"
       }

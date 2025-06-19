@@ -116,33 +116,8 @@ var ProjectListDataService = /** @class */ (function () {
                         img: "assets/img/09-Icons/4.png"
                     },
                 ],
-                "live-link": "https://michelle-bit-web.github.io/pokedex/",
+                "live-link": "http://pokedex.michelle-puschkarow.de/",
                 "github-link": "https://github.com/Michelle-bit-web/pokedex"
-            },
-            {
-                title: "Bestell App",
-                imgResponsive: "assets/img/04-Projects/project-preview/bestell-app-resp.png",
-                imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/bestell-app-resp.png",
-                img: "assets/img/04-Projects/project-preview/bestellapp-desktop.png",
-                imgMobile: "assets/img/04-Projects/project-preview/mobile/bestellapp-desktop.png",
-                description: "project-card.bestell-app.description",
-                details: "project-card.bestell-app.details",
-                languages: [
-                    {
-                        name: "HTML",
-                        img: "assets/img/09-Icons/2.png"
-                    },
-                    {
-                        name: "CSS",
-                        img: "assets/img/09-Icons/3.png"
-                    },
-                    {
-                        name: "JavaScript",
-                        img: "assets/img/09-Icons/4.png"
-                    },
-                ],
-                "live-link": "https://michelle-bit-web.github.io/bestell-app/",
-                "github-link": "https://github.com/Michelle-bit-web/bestell-app"
             }
         ];
     }
