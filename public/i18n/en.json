@@ -70,17 +70,13 @@
   },
   "project-card": {
     "project-btn": "project details",
-    "dabubble": {
-      "description": "This App is a Slack clone App. It revolutionized team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      "details": "The challenge in this project was implementing real-time communication using WebSockets and designing an intuitive user interface with a clear channel structure. My focus was on frontend architecture and the development of modular, reusable components."
-    },
     "join": {
-      "description": "A Task manager inspired by the Kanban system. Create an organize tasks using drag and drop functions, assign users and categories.",
-      "details": "I implemented drag-and-drop functionality and dynamic task rendering. The project followed an agile workflow with a modular Angular structure, allowing tasks and categories to be efficiently created, updated, and reassigned."
-    },
+      "description": "I am currently working on this task manager with two other colleagues. At the moment we are implementing task creation, organizing them via drag & drop, and assigning users and categories.",
+      "details": "In the current project phase, I have implemented a service for database communication and I am creating the card templates for future tasks. The project is developed using an agile approach and follows a modular Angular structure, allowing tasks and categories to be created, edited, and assigned efficiently."
+},
     "el-pollo-loco": {
-      "description": "A Jump `N Run game based on object-oriented approach. Help Pepe el Peligroso to fight against the crazy hen with tabasco salsa.",
-      "details": "I developed the game logic using object-oriented JavaScript. The challenge was to ensure smooth gameplay across devices by coordinating collision detection, animation timing, and sound synchronization."
+      "description": "This Jump `N Run game is at its final development state and based on object-oriented approach. Help Pepe el Peligroso to fight against the crazy hen with tabasco salsa.",
+      "details": "I am developing the game logic using object-oriented JavaScript. The challenge is to ensure smooth gameplay across devices by coordinating collision detection, animation timing, and sound synchronization."
     },
     "pokedex": {
       "description": "A responsive, browser-based Pokédex built with JavaScript, HTML, and CSS. It fetches data from the public PokeAPI to display Pokémon cards, detailed information dialogs, and evolution chains.",
@@ -105,9 +101,9 @@
     "title-small": "IN THEIR WORDS",
     "page-title": "Colleagues´ Thoughts",
     "profile": "Profile",
-    "description-one": "placeholder -Your frontend projects clearly show that you place great value on user experience.",
-    "description-two": "placeholder -You demonstrate strong commitment in your project work and show great creativity in finding solutions.",
-    "description-three": "placeholder -You continuously expand your knowledge to keep developing your skills.",
+    "description-one": "Michelle quickly grew close to my heart with her calm, focused, and always warm-hearted nature. Her understanding of programming and her willingness to help often got me through tricky moments.",
+    "description-two": "Michelle works in a structured way, researches thoroughly, and brings a great dynamic to the team through her calm and empathetic manner. I especially appreciate her ability to explain complex concepts clearly, she’s a true asset!",
+    "description-three": "Thanks Michelle, you are always ready to help fix issues and invest far more time than expected. Working with you is truly fun and your positive energy is contagious – thank you for putting so much heart into our shared project!",
     "image": {
       "arrow": "Animated arrow pointing to headline",
       "linked-in": "LinkedIn icon",

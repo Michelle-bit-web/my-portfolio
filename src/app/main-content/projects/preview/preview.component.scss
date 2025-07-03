@@ -127,6 +127,7 @@ p {
 }
 
 .icon-list {
+  width: 100%;
   display: flex;
   gap: 3.2rem;
     > .icon {
@@ -149,6 +150,9 @@ p {
        }
     }
   }
+   @media(max-width: 500px) {
+    flex-wrap: wrap;
+   }
 }
 
 .sticker {

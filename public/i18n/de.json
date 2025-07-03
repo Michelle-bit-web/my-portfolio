@@ -70,17 +70,13 @@
   },
   "project-card": {
     "project-btn": "Projektdetails",
-    "dabubble": {
-      "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine durchdachte Kanalstruktur.",
-      "details": "Die Herausforderung bei diesem Projekt war die Implementierung einer Echtzeitkommunikation mittels WebSockets sowie die Gestaltung einer intuitiven Benutzeroberfläche mit klarer Channel-Struktur. Mein Schwerpunkt lag auf der Frontend-Architektur und der Entwicklung modularer, wiederverwendbarer Komponenten."
-    },
     "join": {
-      "description": "Ein Task-Manager inspiriert vom Kanban-System. Aufgaben lassen sich per Drag & Drop organisieren, Nutzern und Kategorien zuweisen.",
-      "details": "Ich habe die Drag-and-Drop-Funktionalität sowie die dynamische Anzeige von Aufgaben umgesetzt. Das Projekt wurde agil entwickelt und folgte einer modularen Angular-Struktur, wodurch Aufgaben und Kategorien effizient erstellt, bearbeitet und zugewiesen werden konnten."
+      "description": "An diesem Task-Manager arbeite ich derzeit mit zwei weiteren Kollegen. Gerade sind wir dabei Aufgaben erstellen zu lassen, per Drag & Drop zu organisieren, ihnen Nutzer und Kategorien zuzuweisen.",
+      "details": "Im aktuellen Projektabschnitt habe ich einen Service für die Kommunikation mit der Datenbank implementiert und erstelle die Kartenvorlagen für spätere Aufgaben. Das Projekt wird agil entwickelt und folgte einer modularen Angular-Struktur, wodurch Aufgaben und Kategorien effizient erstellt, bearbeitet und zugewiesen werden können."
     },
     "el-pollo-loco": {
-      "description": "Ein Jump 'n' Run-Spiel basierend auf objektorientierter Programmierung. Hilf Pepe el Peligroso, mit Tabascosoße gegen das verrückte Huhn zu kämpfen.",
-      "details": "Die Spiellogik habe ich mit objektorientiertem JavaScript entwickelt. Die Herausforderung bestand darin, ein flüssiges Spielerlebnis auf verschiedenen Geräten zu ermöglichen – insbesondere durch die Abstimmung von Kollisionserkennung, Animationstiming und Soundeffekten."
+      "description": "Dieses Jump 'n' Run-Spiel befindet sich aktuell in seinen finalen Zügen und basiert auf objektorientierter Programmierung. Hilf Pepe el Peligroso, mit Tabascosoße gegen das verrückte Huhn zu kämpfen.",
+      "details": "Die Spiellogik entwickle ich mit objektorientiertem JavaScript. Die Herausforderung besteht darin, ein flüssiges Spielerlebnis auf verschiedenen Geräten zu ermöglichen – insbesondere durch die Abstimmung von Kollisionserkennung, Animationstiming und Soundeffekten."
     },
     "pokedex": {
       "description": "Ein responsiver, browserbasierter Pokédex, der Daten aus der öffentlichen PokeAPI abruft. Zeigt Pokémon-Karten, Detaildialoge und Entwicklungsketten an.",
@@ -105,9 +101,9 @@
     "title-small": "In ihren Worten",
     "page-title": "Feedback von Kollegen",
     "profile": "Profil",
-    "description-one": "-Platzhalter-In deinen Frontend-Projekten wurde immer deutlich, dass du großen Wert auf Nutzerfreundlichkeit legst.",
-    "description-two": "-Platzhalter-Du zeigst großen Ehrgeiz bei deiner Projektumsetzung und bist darüber hinaus auch sehr kreativ in der Lösungsfindung.",
-    "description-three": "-Platzhalter-Du erarbeitest dir viel zusätzliches Know-how, um dich kontinuierlich weiterzuentwickeln.",
+    "description-one": "Michelle ist mir durch ihre ruhige, konzentrierte und immer herzliche Art sehr ans Herz gewachsen. Ihr Verständnis fürs Programmieren und ihre Hilfsbereitschaft haben mir oft durch knifflige Momente geholfen.",
+    "description-two": "Michelle arbeitet strukturiert, recherchiert gründlich und bringt durch ihre ruhige, empathische Art eine tolle Teamdynamik mit. Besonders schätze ich ihre Fähigkeit, komplexe Zusammenhänge klar zu erklären – fachlich wie menschlich eine echte Bereicherung!",
+    "description-three": "Michelle, es ist einfach großartig, mit dir im Projekt zusammenzuarbeiten. Du hilfst jederzeit, Fehler zu beheben und investierst weit mehr Zeit als gefordert. Mit dir macht Teamarbeit wirklich Spaß und du steckst uns alle mit deiner positiven Art an. Danke für so viel Herzblut für unser gemeinsames Projekt!",
     "image": {
       "arrow": "Animierter Pfeil, der auf die Überschrift verweist",
       "linked-in": "LinkedIn Symbol",

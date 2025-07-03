@@ -12,35 +12,6 @@ var ProjectListDataService = /** @class */ (function () {
     function ProjectListDataService() {
         this.projectList = [
             {
-                title: "DABubble",
-                imgResponsive: "assets/img/04-Projects/project-preview/da-bubble-resp.png",
-                imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/da-bubble-resp.png",
-                img: "assets/img/04-Projects/project-preview/da-bubble.png",
-                imgMobile: "assets/img/04-Projects/project-preview/mobile/da-bubble.png",
-                description: "project-card.dabubble.description",
-                details: "project-card.dabubble.details",
-                languages: [
-                    {
-                        name: "Angular",
-                        img: "assets/img/09-Icons/1.png"
-                    },
-                    {
-                        name: "HTML",
-                        img: "assets/img/09-Icons/2.png"
-                    },
-                    {
-                        name: "SCSS",
-                        img: "assets/img/09-Icons/8.png"
-                    },
-                    {
-                        name: "TypeScript",
-                        img: "assets/img/09-Icons/7.png"
-                    }
-                ],
-                "live-link": "https://github.com/Michelle-bit-web",
-                "github-link": "https://github.com/Michelle-bit-web"
-            },
-            {
                 title: "Join",
                 imgResponsive: "assets/img/04-Projects/project-preview/join-resp.png",
                 imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/join-resp.png",
@@ -64,10 +35,14 @@ var ProjectListDataService = /** @class */ (function () {
                     {
                         name: "TypeScript",
                         img: "assets/img/09-Icons/7.png"
+                    },
+                    {
+                        name: "Firebase",
+                        img: "assets/img/09-Icons/10.png"
                     }
                 ],
-                "live-link": "https://github.com/Michelle-bit-web",
-                "github-link": "https://github.com/Michelle-bit-web"
+                "live-link": "https://github.com/Michelle-bit-web/join",
+                "github-link": "https://github.com/Michelle-bit-web/join"
             },
             {
                 title: "El Pollo Loco",

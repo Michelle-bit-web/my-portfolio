@@ -24,24 +24,24 @@ export class CardComponent {
 
   list: List[] = [
     {
-      firstName: "firstName",
-      lastName: "lastName",
-      profession: "profession",
-      profileLink: "profileLink",
+      firstName: "Anne",
+      lastName: "Dalchow",
+      profession: "Frontend Developer",
+      profileLink: "https://www.linkedin.com/in/anne-dalchow/",
       feedback: "feedback.description-one"
     },
     {
-      firstName: "firstName",
-      lastName: "lastName",
-      profession: "profession",
-      profileLink: "profileLink",
+      firstName: "Marco",
+      lastName: "Palummieri",
+      profession: "Frontend Developer",
+      profileLink: "https://www.linkedin.com/in/marco-palummieri/",
       feedback: "feedback.description-two"
     },
     {
-      firstName: "firstName",
-      lastName: "lastName",
-      profession: "profession",
-      profileLink: "profileLink",
+      firstName: "Viktor",
+      lastName: "Naumann",
+      profession: "Frontend Developer",
+      profileLink: "https://www.linkedin.com/in/viktor-naumann/",
       feedback: "feedback.description-three"
     }
   ];
