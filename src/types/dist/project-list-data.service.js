@@ -39,9 +39,13 @@ var ProjectListDataService = /** @class */ (function () {
                     {
                         name: "Firebase",
                         img: "assets/img/09-Icons/10.png"
+                    },
+                    {
+                        name: "Material Design",
+                        img: "assets/img/09-Icons/11.png"
                     }
                 ],
-                "live-link": "https://github.com/Michelle-bit-web/join",
+                "live-link": "https://join.michelle-puschkarow.de/",
                 "github-link": "https://github.com/Michelle-bit-web/join"
             },
             {

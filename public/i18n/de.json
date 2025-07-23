@@ -71,8 +71,8 @@
   "project-card": {
     "project-btn": "Projektdetails",
     "join": {
-      "description": "An diesem Task-Manager arbeite ich derzeit mit zwei weiteren Kollegen. Gerade sind wir dabei Aufgaben erstellen zu lassen, per Drag & Drop zu organisieren, ihnen Nutzer und Kategorien zuzuweisen.",
-      "details": "Im aktuellen Projektabschnitt habe ich einen Service für die Kommunikation mit der Datenbank implementiert und erstelle die Kartenvorlagen für spätere Aufgaben. Das Projekt wird agil entwickelt und folgte einer modularen Angular-Struktur, wodurch Aufgaben und Kategorien effizient erstellt, bearbeitet und zugewiesen werden können."
+      "description": "Join ist eine Task-Manager Web-Applikation, ähnlich einem Kanban-System. Es lassen sich Aufgaben erstellen, per Drag & Drop organisieren sowie Nutzer und Kategorien zuweisen.",
+      "details": "Das Projekt wurde agil entwickelt und folgte einer modularen Angular-Struktur. Durch die Verwendung der Firestore Database und Authentication von Firebase können Daten zuverlässig und sicher gespeichert werden."
     },
     "el-pollo-loco": {
       "description": "Dieses Jump 'n' Run-Spiel befindet sich aktuell in seinen finalen Zügen und basiert auf objektorientierter Programmierung. Hilf Pepe el Peligroso, mit Tabascosoße gegen das verrückte Huhn zu kämpfen.",

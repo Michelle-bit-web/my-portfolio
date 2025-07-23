@@ -77,6 +77,5 @@ export class PreviewComponent {
       nextId = 0;
     }
     this.router.navigate(['/preview', nextId]);
-    console.log('das ist die id: ' + nextId)
   }
 }

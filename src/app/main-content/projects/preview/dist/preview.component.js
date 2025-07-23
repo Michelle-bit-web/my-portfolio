@@ -71,7 +71,6 @@ var PreviewComponent = /** @class */ (function () {
             nextId = 0;
         }
         this.router.navigate(['/preview', nextId]);
-        console.log('das ist die id: ' + nextId);
     };
     __decorate([
         core_1.HostListener('window:resize', [])

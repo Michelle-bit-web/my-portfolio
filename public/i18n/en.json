@@ -71,9 +71,9 @@
   "project-card": {
     "project-btn": "project details",
     "join": {
-      "description": "I am currently working on this task manager with two other colleagues. At the moment we are implementing task creation, organizing them via drag & drop, and assigning users and categories.",
-      "details": "In the current project phase, I have implemented a service for database communication and I am creating the card templates for future tasks. The project is developed using an agile approach and follows a modular Angular structure, allowing tasks and categories to be created, edited, and assigned efficiently."
-},
+     "description": "Join is a task manager web application, similar to a Kanban system. Tasks can be created, organized via drag & drop, and assigned to users and categories.",
+     "details": "The project was developed using an agile methodology and follows a modular Angular architecture. By utilizing Firebase's Firestore database and authentication, data can be stored reliably and securely."
+    },
     "el-pollo-loco": {
       "description": "This Jump `N Run game is at its final development state and based on object-oriented approach. Help Pepe el Peligroso to fight against the crazy hen with tabasco salsa.",
       "details": "I am developing the game logic using object-oriented JavaScript. The challenge is to ensure smooth gameplay across devices by coordinating collision detection, animation timing, and sound synchronization."
