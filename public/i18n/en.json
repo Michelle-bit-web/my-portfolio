@@ -75,8 +75,8 @@
      "details": "The project was developed using an agile methodology and follows a modular Angular architecture. By utilizing Firebase's Firestore database and authentication, data can be stored reliably and securely."
     },
     "el-pollo-loco": {
-      "description": "This Jump `N Run game is at its final development state and based on object-oriented approach. Help Pepe el Peligroso to fight against the crazy hen with tabasco salsa.",
-      "details": "I am developing the game logic using object-oriented JavaScript. The challenge is to ensure smooth gameplay across devices by coordinating collision detection, animation timing, and sound synchronization."
+      "description": "In this Jump `N Run game you play Pepe el Peligroso, the fearless defender of Mexico. Armed only with courage and a few bottles of spicy salsa, you need to help him roast some chickens.",
+      "details": "This project was developed using HTML, CSS, and JavaScript, with a focus on object-oriented programming to structure the game logic and customize the animations. The game world is rendered by using html canvas. Integrated music and sound effects create a great gaming experience."
     },
     "pokedex": {
       "description": "A responsive, browser-based Pokédex built with JavaScript, HTML, and CSS. It fetches data from the public PokeAPI to display Pokémon cards, detailed information dialogs, and evolution chains.",

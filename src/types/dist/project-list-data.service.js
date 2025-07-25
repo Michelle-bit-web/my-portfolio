@@ -70,8 +70,8 @@ var ProjectListDataService = /** @class */ (function () {
                         img: "assets/img/09-Icons/4.png"
                     },
                 ],
-                "live-link": "https://github.com/Michelle-bit-web",
-                "github-link": "https://github.com/Michelle-bit-web"
+                "live-link": "https://el-pollo-loco.michelle-puschkarow.de/",
+                "github-link": "https://github.com/Michelle-bit-web/el-pollo-loco"
             },
             {
                 title: "Pokédex",
