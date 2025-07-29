@@ -23,7 +23,7 @@ export class HeaderComponent {
   isMobileView = false;
   isHome = false;
 
-  constructor(private translate: TranslateService, private router: Router){
+  constructor(private translate: TranslateService, private router: Router) {
     this.language = this.translate.currentLang || 'en';
 
     this.router.events.pipe(
@@ -31,7 +31,7 @@ export class HeaderComponent {
     ).subscribe((event: NavigationEnd) => {
       this.isHome = event.urlAfterRedirects === '/' || event.url === '/';
     });
-  
+
   }
 
   @HostListener('window:resize', [])
@@ -43,26 +43,40 @@ export class HeaderComponent {
     this.onResize();
   }
 
-  switchLanguage(current:string){
-    if(this.language === current) return;
-      this.language = current;
-      this.translate.use(current);
-   }
+  switchLanguage(current: string) {
+    if (this.language === current) return;
+    this.language = current;
+    this.translate.use(current);
+  }
 
-  toggleMenu(){
-    const overlay = document.querySelector('.overlay');
-    overlay?.classList.toggle('d_none');
-    const button = document.querySelector(".menu-btn");
-    const isOpened = button?.getAttribute("aria-expanded");
-    if(isOpened === "false") {
-      button?.setAttribute("aria-expanded", "true");
+  toggleMenu() {
+    let overlay = document.querySelector('.overlay') as HTMLElement;
+    let button = document.querySelector(".menu-btn") as HTMLElement;
+    if (!overlay || !button) return;
+    const isOpened = button.getAttribute("aria-expanded") === "true";
+    if (isOpened) {
+      this.closeOverlay(overlay, button);
     } else {
-      button?.setAttribute("aria-expanded", "false");
+      this.openOverlay(overlay, button);
     }
-    if(this.activeMenu){
-      this.activeMenu = false
-    } else {
+  }
+
+  closeOverlay(overlay: HTMLElement, button: HTMLElement) {
+    overlay.classList.remove('open-menue');
+    button.setAttribute("aria-expanded", "false");
+
+    setTimeout(() => {
+      overlay.style.display = "none";
+      this.activeMenu = false;
+    }, 800);
+  }
+
+  openOverlay(overlay: HTMLElement, button: HTMLElement){
+    overlay.style.display = "block";
+      setTimeout(() => {
+        overlay.classList.add('open-menue');
+      }, 10);
+      button.setAttribute("aria-expanded", "true");
       this.activeMenu = true;
-    }
   }
 }

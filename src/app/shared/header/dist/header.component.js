@@ -41,21 +41,33 @@ var HeaderComponent = /** @class */ (function () {
     };
     HeaderComponent.prototype.toggleMenu = function () {
         var overlay = document.querySelector('.overlay');
-        overlay === null || overlay === void 0 ? void 0 : overlay.classList.toggle('d_none');
         var button = document.querySelector(".menu-btn");
-        var isOpened = button === null || button === void 0 ? void 0 : button.getAttribute("aria-expanded");
-        if (isOpened === "false") {
-            button === null || button === void 0 ? void 0 : button.setAttribute("aria-expanded", "true");
+        if (!overlay || !button)
+            return;
+        var isOpened = button.getAttribute("aria-expanded") === "true";
+        if (isOpened) {
+            this.closeOverlay(overlay, button);
         }
         else {
-            button === null || button === void 0 ? void 0 : button.setAttribute("aria-expanded", "false");
+            this.openOverlay(overlay, button);
         }
-        if (this.activeMenu) {
-            this.activeMenu = false;
-        }
-        else {
-            this.activeMenu = true;
-        }
+    };
+    HeaderComponent.prototype.closeOverlay = function (overlay, button) {
+        var _this = this;
+        overlay.classList.remove('open-menue');
+        button.setAttribute("aria-expanded", "false");
+        setTimeout(function () {
+            overlay.style.display = "none";
+            _this.activeMenu = false;
+        }, 800);
+    };
+    HeaderComponent.prototype.openOverlay = function (overlay, button) {
+        overlay.style.display = "block";
+        setTimeout(function () {
+            overlay.classList.add('open-menue');
+        }, 10);
+        button.setAttribute("aria-expanded", "true");
+        this.activeMenu = true;
     };
     __decorate([
         core_1.Input()

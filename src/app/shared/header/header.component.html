@@ -1,8 +1,9 @@
-<header class="fontBricolage700" [ngClass]="{'fixed-mobile': isMobileView}">
-
-  <div class="container-logo" [ngClass]="{'color-inverse': variant === 'inverse'}">
-    
-    <img 
+<header class="fontBricolage700" [ngClass]="{ 'fixed-mobile': isMobileView }">
+  <div
+    class="container-logo"
+    [ngClass]="{ 'color-inverse': variant === 'inverse' }"
+  >
+    <img
       class="logo-normal"
       src="assets/img/08-Logo/Logo 3 Statisch.png"
       alt="{{ 'header.image.logo-normal' | translate }}"
@@ -13,124 +14,233 @@
       alt="{{ 'header.image.logo-hover' | translate }}"
     />
   </div>
-  
-  <button (click)="toggleMenu()" class="menu-btn" aria-controls="navigation" aria-expanded="false" [ngClass]="{'color-inverse': variant === 'inverse' && !activeMenu}">
-    <svg class="burger-icon" viewBox="-5 0 100 100" width="40" fill="none" [attr.aria-label]="'header.image.menu-icon' | translate">
-      <path class="line" 
-      stroke="white"
-      stroke-width="10" 
-      stroke-linecap="round" 
-      stroke-linejoin="round" 
-      d="m 15 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
-    </path>
-    
+
+  <button
+    (click)="toggleMenu()"
+    class="menu-btn"
+    aria-controls="navigation"
+    aria-expanded="false"
+    [ngClass]="{ 'color-inverse': variant === 'inverse' && !activeMenu }"
+  >
+    <svg
+      class="burger-icon"
+      viewBox="-5 0 100 100"
+      width="40"
+      fill="none"
+      [attr.aria-label]="'header.image.menu-icon' | translate"
+    >
+      <path
+        class="line"
+        stroke="white"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m 15 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+      ></path>
     </svg>
   </button>
 
- <nav [ngClass]="{'color-inverse': variant === 'inverse'}">
-  <div class="nav-link-wrapper">
-    <a class="nav-link" [routerLink]="''" [fragment]="'header.about' | translate">
-      {{ 'header.about' | translate }}
-      <img class="nav-cirlce"
-        src="assets/img/01-Hero/header-bar/header-frame/lines/1.png"
-        alt="{{ 'header.image.nav-link-hover-one' | translate }}"
-      />
-    </a>
-  </div>
-  <div class="nav-link-wrapper">
-    <a class="nav-link" [routerLink]="''" [fragment]="'header.skills' | translate">
-      {{ 'header.skills' | translate }}
-      <img class="nav-line"
-        src="assets/img/01-Hero/header-bar/header-frame/lines/2.png"
-        alt="{{ 'header.image.nav-link-hover-two' | translate }}"
-      />
-    </a>
-  </div>
-  <div class="nav-link-wrapper">
-    <a class="nav-link" [routerLink]="''" [fragment]="'header.projects' | translate">
-      {{ 'header.projects' | translate }}
-      <img class="nav-curve-line"
-        src="assets/img/01-Hero/header-bar/header-frame/lines/3.png"
-        alt="{{ 'header.image.nav-link-hover-three' | translate }}"
-      />
-    </a>
-  </div>
-  <div class="nav-link-wrapper">
-    <a class="nav-link" [routerLink]="''" [fragment]="'header.contact' | translate">
-      {{ 'header.contact' | translate }}
-      <img class="nav-crossing-line"
-        src="assets/img/01-Hero/header-bar/header-frame/lines/4.png"
-        alt="{{ 'header.image.nav-link-hover-four' | translate }}"
-      />
-    </a>
-  </div>
+  <nav [ngClass]="{ 'color-inverse': variant === 'inverse' }">
+    <div class="nav-link-wrapper">
+      <a
+        class="nav-link"
+        [routerLink]="''"
+        [fragment]="'header.about' | translate"
+      >
+        {{ "header.about" | translate }}
+        <img
+          class="nav-cirlce"
+          src="assets/img/01-Hero/header-bar/header-frame/lines/1.png"
+          alt="{{ 'header.image.nav-link-hover-one' | translate }}"
+        />
+      </a>
+    </div>
+    <div class="nav-link-wrapper">
+      <a
+        class="nav-link"
+        [routerLink]="''"
+        [fragment]="'header.skills' | translate"
+      >
+        {{ "header.skills" | translate }}
+        <img
+          class="nav-line"
+          src="assets/img/01-Hero/header-bar/header-frame/lines/2.png"
+          alt="{{ 'header.image.nav-link-hover-two' | translate }}"
+        />
+      </a>
+    </div>
+    <div class="nav-link-wrapper">
+      <a
+        class="nav-link"
+        [routerLink]="''"
+        [fragment]="'header.projects' | translate"
+      >
+        {{ "header.projects" | translate }}
+        <img
+          class="nav-curve-line"
+          src="assets/img/01-Hero/header-bar/header-frame/lines/3.png"
+          alt="{{ 'header.image.nav-link-hover-three' | translate }}"
+        />
+      </a>
+    </div>
+    <div class="nav-link-wrapper">
+      <a
+        class="nav-link"
+        [routerLink]="''"
+        [fragment]="'header.contact' | translate"
+      >
+        {{ "header.contact" | translate }}
+        <img
+          class="nav-crossing-line"
+          src="assets/img/01-Hero/header-bar/header-frame/lines/4.png"
+          alt="{{ 'header.image.nav-link-hover-four' | translate }}"
+        />
+      </a>
+    </div>
 
-  <div class="toggle-box">
-      <div class="language-box" (click)="switchLanguage('en')"  [class.active]="language === 'en'">
+    <div class="toggle-box">
+      <div
+        class="language-box"
+        (click)="switchLanguage('en')"
+        [class.active]="language === 'en'"
+      >
         <p>EN</p>
-        <img class="hover-box"  src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt="{{ 'header.image.line-box' | translate }}">
+        <img
+          class="hover-box"
+          src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png"
+          alt="{{ 'header.image.line-box' | translate }}"
+        />
       </div>
 
       <div class="slider-box">
-        <img class="slider" src="assets/img/01-Hero/header-bar/header-frame/bar.png" alt="{{ 'header.image.slider' | translate }}">
-        <img class="circle" src="assets/img/01-Hero/header-bar/header-frame/circle.png" alt="{{ 'header.image.slider-circle' | translate }}" [class.left]="language === 'en'" [class.right]="language === 'de'">
+        <img
+          class="slider"
+          src="assets/img/01-Hero/header-bar/header-frame/bar.png"
+          alt="{{ 'header.image.slider' | translate }}"
+        />
+        <img
+          class="circle"
+          src="assets/img/01-Hero/header-bar/header-frame/circle.png"
+          alt="{{ 'header.image.slider-circle' | translate }}"
+          [class.left]="language === 'en'"
+          [class.right]="language === 'de'"
+        />
       </div>
 
-      <div class="language-box" (click)="switchLanguage('de')" [class.active]="language === 'de'">
+      <div
+        class="language-box"
+        (click)="switchLanguage('de')"
+        [class.active]="language === 'de'"
+      >
         <p>DE</p>
-        <img class="hover-box"  src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png" alt="{{ 'header.image.line-box' | translate }}">
+        <img
+          class="hover-box"
+          src="assets/img/01-Hero/header-bar/header-frame/lines/Toggle.png"
+          alt="{{ 'header.image.line-box' | translate }}"
+        />
       </div>
     </div>
-
- </nav>
-  <div class="overlay d_none" [ngClass]="{'open-menue': activeMenu}">
-    <img 
+  </nav>
+  <div class="overlay d_none" [ngClass]="{ 'open-menue': activeMenu }">
+    <img
       class="logo-normal logo-menu"
       src="assets/img/08-Logo/Logo 3 Statisch.png"
       alt="{{ 'header.image.logo-normal' | translate }}"
     />
-    <nav >
-   <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" [routerLink]="''" [fragment]="'header.about' | translate">
-      {{ 'header.about' | translate }}
-    </a>
-  </div>
-
-  <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" [routerLink]="''" [fragment]="'header.skills' | translate">
-      {{ 'header.skills' | translate }}
-    </a>
-  </div>
-  <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" [routerLink]="''" [fragment]="'header.projects' | translate">
-      {{ 'header.projects' | translate }}
-    </a>
-  </div>
-  <div (click)="toggleMenu()" class="nav-link-wrapper">
-    <a class="nav-link" [routerLink]="''" [fragment]="'header.contact' | translate">
-      {{ 'header.contact' | translate }}
-    </a>
-  </div>
-  <div class="toggle-box">
-      <div class="language-box" (click)="switchLanguage('en')"  [class.active]="language === 'en'">
-        <p>EN</p>
-      </div>
-      <div class="slider-box">
-        <img class="slider" src="assets/img/01-Hero/header-bar/header-frame/bar.png" alt="{{ 'header.image.slider' | translate }}">
-        <img class="circle" src="assets/img/01-Hero/header-bar/header-frame/circle.png" alt="{{ 'header.image.slider-circle' | translate }}" [class.left]="language === 'en'" [class.right]="language === 'de'">
+    <nav>
+      <div (click)="toggleMenu()" class="nav-link-wrapper">
+        <a
+          class="nav-link"
+          [routerLink]="''"
+          [fragment]="'header.about' | translate"
+        >
+          {{ "header.about" | translate }}
+        </a>
       </div>
 
-      <div class="language-box" (click)="switchLanguage('de')" [class.active]="language === 'de'">
-        <p>DE</p>
+      <div (click)="toggleMenu()" class="nav-link-wrapper">
+        <a
+          class="nav-link"
+          [routerLink]="''"
+          [fragment]="'header.skills' | translate"
+        >
+          {{ "header.skills" | translate }}
+        </a>
       </div>
-    </div>
-  <div class="frame-sm icons-mobile">
-      <div class="icons"><a href="https://www.linkedin.com/in/dr-michelle-puschkarow/" target="_blank"><img  src="assets/img/01-Hero/social-media/Linkedin.png" alt="{{ 'header.image.icon-linked-in' | translate }}"/></a></div>
-      <div class="icons"><a href="https://github.com/Michelle-bit-web" target="_blank"><img  src="assets/img/01-Hero/social-media/Github.png" alt="{{ 'header.image.icon-github' | translate }}" /></a></div>
-      <div class="icons"><a href="#contact"><img  src="assets/img/01-Hero/social-media/mail.png" alt="{{ 'header.image.icon-email' | translate }}" /></a></div>
-    </div>
- </nav>
- 
+      <div (click)="toggleMenu()" class="nav-link-wrapper">
+        <a
+          class="nav-link"
+          [routerLink]="''"
+          [fragment]="'header.projects' | translate"
+        >
+          {{ "header.projects" | translate }}
+        </a>
+      </div>
+      <div (click)="toggleMenu()" class="nav-link-wrapper">
+        <a
+          class="nav-link"
+          [routerLink]="''"
+          [fragment]="'header.contact' | translate"
+        >
+          {{ "header.contact" | translate }}
+        </a>
+      </div>
+      <div class="toggle-box">
+        <div
+          class="language-box"
+          (click)="switchLanguage('en')"
+          [class.active]="language === 'en'"
+        >
+          <p>EN</p>
+        </div>
+        <div class="slider-box">
+          <img
+            class="slider"
+            src="assets/img/01-Hero/header-bar/header-frame/bar.png"
+            alt="{{ 'header.image.slider' | translate }}"
+          />
+          <img
+            class="circle"
+            src="assets/img/01-Hero/header-bar/header-frame/circle.png"
+            alt="{{ 'header.image.slider-circle' | translate }}"
+            [class.left]="language === 'en'"
+            [class.right]="language === 'de'"
+          />
+        </div>
+
+        <div
+          class="language-box"
+          (click)="switchLanguage('de')"
+          [class.active]="language === 'de'"
+        >
+          <p>DE</p>
+        </div>
+      </div>
+      <div class="frame-sm icons-mobile">
+        <div class="icons">
+          <a
+            href="https://www.linkedin.com/in/dr-michelle-puschkarow/"
+            target="_blank"
+            ><img
+              src="assets/img/01-Hero/social-media/Linkedin.png"
+              alt="{{ 'header.image.icon-linked-in' | translate }}"
+          /></a>
+        </div>
+        <div class="icons">
+          <a href="https://github.com/Michelle-bit-web" target="_blank"
+            ><img
+              src="assets/img/01-Hero/social-media/Github.png"
+              alt="{{ 'header.image.icon-github' | translate }}"
+          /></a>
+        </div>
+        <div class="icons">
+          <a href="#contact"
+            ><img
+              src="assets/img/01-Hero/social-media/mail.png"
+              alt="{{ 'header.image.icon-email' | translate }}"
+          /></a>
+        </div>
+      </div>
+    </nav>
   </div>
-  
 </header>

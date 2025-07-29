@@ -171,7 +171,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.747);
   background: url("./../../../../public/assets/img/01-Hero/mobile-menu-bg.png") bottom/cover no-repeat;
   z-index: 3;
-  transition: 0.8s;
+  transition: height 0.8s, opacity 0.8s ease 0.3s;
   padding: 0 min(160px, 5%);
   @media(max-width: 450px) {
     padding: 0 12px;
@@ -184,16 +184,17 @@ nav {
     padding: 5.0rem 3.2rem;
     height: 50%;
     opacity: 0;
-    transition: 0.8s ease 0.3s;
+    transition: opacity 0.4s ease 0.1s;
   }
 }
 
 .overlay.open-menue {
   height: 80dvh;
+  opacity: 1;
     nav {
      opacity: 1;
     }
-  }
+}
 
 .d_none {
   display: none;
