@@ -19,9 +19,9 @@ section {
   justify-content: center;
   background: url("./../../../../../public/assets/img/04-Projects/project-preview/paper-landscape.png") top/cover no-repeat;
   background-color: $bg-inverse;
-  @media(max-width: 1114px){
+  @media(max-width: 1145px){
     background-position: left;
-    background: url("./../../../../../public/assets/img/04-Projects/project-preview/paper-portrait.png") top/cover no-repeat;
+    background: url("./../../../../../public/assets/img/04-Projects/project-preview/paper-portrait.png") center/cover no-repeat;
     background-color: $bg-inverse;
   }
 }
@@ -44,28 +44,41 @@ section {
 
 .main-frame {
   width: 100%;
-  min-height: 534px;
+  min-height: 630px;
   display: flex;
   flex-wrap: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  @media(max-width: 1114px) {
+  @media(max-width: 1145px) {
     flex-direction: column;
-    gap: 4rem;
+    gap: 3.5rem;
+    min-height: 1000px
+  }
+  @media(max-width: 800px) {
+   min-height: 900px;
+   justify-content: flex-start;
+  }
+  @media(max-width: 660px) {
+   min-height: 950px;
+  }
+  @media(max-width: 450px) {
+   min-height: 870px;
+  }
+  @media(max-width: 400px) {
+   min-height: 880px;
   }
 }
 
 .left-frame, 
 .right-frame {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 50rem;
-  gap: 3.2rem;
-  padding: 0 min(6.4rem, 4.4%);
-  @media(max-width: 1114px){
+  gap: 3rem;
+  padding: 0 min(6.4rem, 4.4%) 0 0;
+  @media(max-width: 1145px){
    width: 100%;
   }
   @media(max-width: 768px) {
@@ -74,11 +87,11 @@ section {
 }
 
 .right-frame {
+  height: 435px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  flex:1;
-  @media(max-width: 1114px) {
+  @media(max-width: 1145px) {
     align-items: center;
     flex: 0;
   }
@@ -122,22 +135,27 @@ p {
     }
 }
 
-.description {
-  min-height: 150px;
+.description,
+.details {
+  min-height: 130px;
 }
 
 .icon-list {
   width: 100%;
   display: flex;
-  gap: 3.2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
     > .icon {
       display: flex;
       flex-direction: column;
       align-items: center;
        > img {
-        width: 6rem;
+       width: 6rem;
        height: 6rem;
        }
+    }
+    @media(max-width: 768px) {
+      flex-wrap: wrap;
     }
      @media(max-width: 450px) {
       > .icon {
@@ -150,9 +168,6 @@ p {
        }
     }
   }
-   @media(max-width: 500px) {
-    flex-wrap: wrap;
-   }
 }
 
 .sticker {
