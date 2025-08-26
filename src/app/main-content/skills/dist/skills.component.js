@@ -21,31 +21,31 @@ var SkillsComponent = /** @class */ (function () {
                 img: "1"
             },
             {
-                name: "HTML",
+                name: "TypeScript",
                 img: "2"
             },
             {
-                name: "CSS",
+                name: "JavaScript",
                 img: "3"
             },
             {
-                name: "JavaScript",
+                name: "HTML",
                 img: "4"
             },
             {
-                name: "Git",
+                name: "CSS",
                 img: "5"
             },
             {
-                name: "GitHub",
+                name: "SCSS",
                 img: "6"
             },
             {
-                name: "TypeScript",
+                name: "API",
                 img: "7"
             },
             {
-                name: "SCSS",
+                name: "Firebase",
                 img: "8"
             },
             {
@@ -53,28 +53,48 @@ var SkillsComponent = /** @class */ (function () {
                 img: "9"
             },
             {
-                name: "Firebase",
+                name: "WebStorm",
                 img: "10"
             },
             {
-                name: "Material Design",
+                name: "Scrum",
                 img: "11"
             },
             {
-                name: "Bootsrap",
+                name: "Git",
                 img: "12"
             },
             {
-                name: "Procreate",
+                name: "GitHub",
                 img: "13"
             },
             {
-                name: "Photoshop",
+                name: "NPM",
                 img: "14"
             },
             {
-                name: "Gimp",
+                name: "Material Design",
                 img: "15"
+            },
+            {
+                name: "Bootstrap",
+                img: "16"
+            },
+            {
+                name: "Procreate",
+                img: "17"
+            },
+            {
+                name: "Photoshop",
+                img: "18"
+            },
+            {
+                name: "Gimp",
+                img: "19"
+            },
+            {
+                name: "Figma",
+                img: "20"
             },
         ];
     }
