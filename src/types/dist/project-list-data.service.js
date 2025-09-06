@@ -99,7 +99,7 @@ var ProjectListDataService = /** @class */ (function () {
                         img: "assets/img/09-Icons/7.png"
                     }
                 ],
-                "live-link": "http://pokedex.michelle-puschkarow.de/",
+                "live-link": "https://pokedex.michelle-puschkarow.de/",
                 "github-link": "https://github.com/Michelle-bit-web/pokedex"
             },
             {
@@ -132,7 +132,7 @@ var ProjectListDataService = /** @class */ (function () {
                         img: "assets/img/09-Icons/2.png"
                     },
                 ],
-                "live-link": "http://bestellapp.michelle-puschkarow.de/",
+                "live-link": "https://bestellapp.michelle-puschkarow.de/",
                 "github-link": "https://github.com/Michelle-bit-web/bestellApp"
             }
         ];
