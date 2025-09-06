@@ -29,10 +29,10 @@
     "name": "Ich bin Michelle",
     "contact": "Kontakt",
     "image": {
-        "hand-icon": "Animiertes winkendes Handsymbol",
-        "polaroid-frame": "Rahmen eines Polaroid-Bildes",
-        "picture": "Porttrait von mir, der Autorin"
-      }
+      "hand-icon": "Animiertes winkendes Handsymbol",
+      "polaroid-frame": "Rahmen eines Polaroid-Bildes",
+      "picture": "Porttrait von mir, der Autorin"
+    }
   },
   "about-me": {
     "title-small": "Das bin ich.",
@@ -59,7 +59,7 @@
     "description": "Während einer sechsmonatigen, praxisorientierten Ausbildung habe ich mir eine solide Grundlage in HTML, CSS und JavaScript erarbeitet. Besonders gerne arbeite ich mit Angular, wodurch ich mein Verständnis für TypeScript deutlich vertiefen konnte. Wichtige Tools für die Zusammenarbeit und Versionskontrolle wie GitHub und Loom waren ein zentraler Bestandteil meiner Projekte.",
     "image": {
       "arrow": "Pfeil, der aufzeigt, den Aufkleber abzuziehen",
-      "icon" : "Symbol"
+      "icon": "Symbol"
     }
   },
   "projects": {
@@ -75,18 +75,22 @@
       "details": "Das Projekt wurde agil entwickelt und folgte einer modularen Angular-Struktur. Durch die Verwendung der Firestore Database und Authentication von Firebase können Daten zuverlässig und sicher gespeichert werden."
     },
     "el-pollo-loco": {
-    "description": "In diesem Jump ’n’ Run Spiel spielst du Pepe el Peligroso, den furchtlosen Verteidiger Mexikos. Ausschließlich bewaffnet mit Mut und wenigen Flaschen scharfer Salsa musst du ihm helfen, ein paar Hühner zu rösten.",
-    "details": "Dieses Projekt wurde mit HTML, CSS und JavaScript entwickelt, wobei der Schwerpunkt auf objektorientierter Programmierung lag, um die Spiellogik zu strukturieren und Animationen individuell anzupassen. Die Spielwelt wird mit HTML Canvas gerendert. Integrierte Musik und Soundeffekte sorgen für ein großartiges Spielerlebnis."
+      "description": "In diesem Jump ’n’ Run Spiel spielst du Pepe el Peligroso, den furchtlosen Verteidiger Mexikos. Ausschließlich bewaffnet mit Mut und wenigen Flaschen scharfer Salsa musst du ihm helfen, ein paar Hühner zu rösten.",
+      "details": "Dieses Projekt wurde mit HTML, CSS und JavaScript entwickelt, wobei der Schwerpunkt auf objektorientierter Programmierung lag, um die Spiellogik zu strukturieren und Animationen individuell anzupassen. Die Spielwelt wird mit HTML Canvas gerendert. Integrierte Musik und Soundeffekte sorgen für ein großartiges Spielerlebnis."
     },
     "pokedex": {
       "description": "Ein responsiver, browserbasierter Pokédex, der Daten aus der öffentlichen PokeAPI abruft. Zeigt Pokémon-Karten, Detaildialoge und Entwicklungsketten an.",
       "details": "Die App enthält eine durchsuchbare Pokémon-Datenbank und dynamische Detailansichten für jedes Pokémon. Die Herausforderung bestand in der effizienten Anbindung an die API sowie der Umsetzung einer responsiven und benutzerfreundlichen Oberfläche."
     },
+    "bestell-app": {
+      "description": "Neuentwicklung meiner BestellApp-Landingpage als Full-Stack-Projekt mit React und Vite im Frontend, GSAP-Animationen und Django für das Backend-API.",
+      "details": "Mit diesem Projekt möchte ich meine Kenntnisse in React (Vite) und Django vertiefen. Geplant sind Benutzer-Login, Zahlungsoptionen, Datenspeicherung im Backend sowie eine REST-API. Mit GSAP-Animationen wird die Nutzererfahrung zusätzlich verbessert."
+    },
     "image": {
-        "card": "Bildvorschau"
-      }
+      "card": "Bildvorschau"
+    }
   },
-   "project-preview": {
+  "project-preview": {
     "button-back": "Zurück",
     "description-header": "Beschreibung",
     "details-header": "Details zur Implementierung",
@@ -136,7 +140,7 @@
       "check": "Haken für das Einverständnis zur Datenschutzerklärung",
       "sticker": "Animater Sticker mit dem Logo"
     }
-},
+  },
   "footer": {
     "legal-notice": "Impressum",
     "email": "E-Mail",

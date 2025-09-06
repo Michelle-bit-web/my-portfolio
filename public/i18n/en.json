@@ -51,7 +51,7 @@
       "open-source": "Icon for open-source projects"
     }
   },
-   "skills": {
+  "skills": {
     "title-small": "MY STACK",
     "title": "My Skills",
     "sticker": "Currently diving into:",
@@ -71,8 +71,8 @@
   "project-card": {
     "project-btn": "project details",
     "join": {
-     "description": "Join is a task manager web application, similar to a Kanban system. Tasks can be created, organized via drag & drop, and assigned to users and categories.",
-     "details": "The project was developed using an agile methodology and follows a modular Angular architecture. By utilizing Firebase's Firestore database and authentication, data can be stored reliably and securely."
+      "description": "Join is a task manager web application, similar to a Kanban system. Tasks can be created, organized via drag & drop, and assigned to users and categories.",
+      "details": "The project was developed using an agile methodology and follows a modular Angular architecture. By utilizing Firebase's Firestore database and authentication, data can be stored reliably and securely."
     },
     "el-pollo-loco": {
       "description": "In this Jump ’n’ Run game you play Pepe el Peligroso, the fearless defender of Mexico. Armed only with courage and a few bottles of spicy salsa, you need to help him roast some chickens.",
@@ -82,9 +82,13 @@
       "description": "A responsive, browser-based Pokédex built with JavaScript, HTML, and CSS. It fetches data from the public PokeAPI to display Pokémon cards, detailed information dialogs, and evolution chains.",
       "details": "The app includes a searchable Pokémon database and dynamic detail views for each Pokémon. The challenge was integrating the API efficiently and building a responsive, user-friendly interface."
     },
+    "bestell-app": {
+      "description": "Rebuilding the BestellApp landing page as a full-stack project using React with Vite for the frontend, GSAP for animations, and Django for the backend API.",
+      "details": "This project is a rebuild of BestellApp to deepen my skills in React (Vite) and Django. It will include user authentication, payment integration, backend data storage, and a REST API. GSAP animations will enhance the overall user experience."
+    },
     "image": {
-        "card": "preview image"
-      }
+      "card": "preview image"
+    }
   },
   "project-preview": {
     "button-back": "Go Back",
@@ -109,7 +113,6 @@
       "linked-in": "LinkedIn icon",
       "lines-hover": "Background lines on the feedback card displayed on hover"
     }
-
   },
   "contact": {
     "title-small": "CONTACT ME",
@@ -157,10 +160,10 @@
     "address": "Address:",
     "city": "City:",
     "contact": {
-        "title": "Contact:",
-        "phone": "Phone: number",
-        "email": "Email:"
-      },
+      "title": "Contact:",
+      "phone": "Phone: number",
+      "email": "Email:"
+    },
     "disclaimer": "Disclaimer:",
     "liabilityContentTitle": "Liability for Content",
     "liabilityContent": "The contents of my pages have been created with the utmost care. However, I cannot guarantee the contents' accuracy, completeness or topicality. As a service provider, I am responsible for my own content on these pages according to general laws pursuant to § 7(1) DDG. According to §§ 8 to 10 DDG, however, I can not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected by this. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such legal violations, I will remove the content immediately. The website is intended solely for non-commercial and therefore private purposes as my personal portfolio.",
@@ -180,23 +183,23 @@
     "lawFirm": "Kanzlei Hasselbach"
   },
   "privacy-policy": {
-      "button-back": "Go Back",
-      "title": "Privacy Policy",
-      "subtitle": "Information in accordance with Section 5 DDG",
-      "disclaimer": "Disclaimer:",
-      "general": "General information",
-      "generalText": "You can use this website without providing personal data. If you contact me via the contact form, your data (name, email address, message) will be processed solely to handle your request. This is done based on your consent in accordance with Art. 6 (1) (a) GDPR. The data will not be shared with third parties and will be deleted after the request has been resolved, unless legal retention obligations apply.",
-      "noteTransmission": "Note on data transmission",
-      "noteTransmissionText": "Please note that data transmission over the Internet (e.g., via email) may have security vulnerabilities. Complete protection of data from third-party access is not possible.",
-      "spamDisclaimer": "Prohibition of unsolicited contact",
-      "spamDisclaimerText": "Use of the contact details provided in the legal notice for sending unsolicited advertising or information is not permitted. As operator of the pages I reserves the right to take legal action against unsolicited advertising information, such as spam or similar abuses.",
-      "createdWith": "Created with",
-      "generator": "Impressum-Generator.de",
-      "toolPurpose": "the tool for legal notice and",
-      "privacyLink": "privacy policy",
-      "templateBy": "Based on a template by",
-      "lawOffice": "Kanzlei Hasselbach"
-    },
+    "button-back": "Go Back",
+    "title": "Privacy Policy",
+    "subtitle": "Information in accordance with Section 5 DDG",
+    "disclaimer": "Disclaimer:",
+    "general": "General information",
+    "generalText": "You can use this website without providing personal data. If you contact me via the contact form, your data (name, email address, message) will be processed solely to handle your request. This is done based on your consent in accordance with Art. 6 (1) (a) GDPR. The data will not be shared with third parties and will be deleted after the request has been resolved, unless legal retention obligations apply.",
+    "noteTransmission": "Note on data transmission",
+    "noteTransmissionText": "Please note that data transmission over the Internet (e.g., via email) may have security vulnerabilities. Complete protection of data from third-party access is not possible.",
+    "spamDisclaimer": "Prohibition of unsolicited contact",
+    "spamDisclaimerText": "Use of the contact details provided in the legal notice for sending unsolicited advertising or information is not permitted. As operator of the pages I reserves the right to take legal action against unsolicited advertising information, such as spam or similar abuses.",
+    "createdWith": "Created with",
+    "generator": "Impressum-Generator.de",
+    "toolPurpose": "the tool for legal notice and",
+    "privacyLink": "privacy policy",
+    "templateBy": "Based on a template by",
+    "lawOffice": "Kanzlei Hasselbach"
+  },
   "router": {
     "legal-notice": "legal notice",
     "privacy-policy": "privacy policy",

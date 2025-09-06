@@ -26,23 +26,23 @@ var ProjectListDataService = /** @class */ (function () {
                     },
                     {
                         name: "HTML",
-                        img: "assets/img/09-Icons/2.png"
+                        img: "assets/img/09-Icons/4.png"
                     },
                     {
                         name: "SCSS",
-                        img: "assets/img/09-Icons/8.png"
+                        img: "assets/img/09-Icons/6.png"
                     },
                     {
                         name: "TypeScript",
-                        img: "assets/img/09-Icons/7.png"
+                        img: "assets/img/09-Icons/2.png"
                     },
                     {
                         name: "Firebase",
-                        img: "assets/img/09-Icons/10.png"
+                        img: "assets/img/09-Icons/8.png"
                     },
                     {
                         name: "Material Design",
-                        img: "assets/img/09-Icons/11.png"
+                        img: "assets/img/09-Icons/15.png"
                     }
                 ],
                 "live-link": "https://join.michelle-puschkarow.de/",
@@ -59,15 +59,15 @@ var ProjectListDataService = /** @class */ (function () {
                 languages: [
                     {
                         name: "HTML",
-                        img: "assets/img/09-Icons/2.png"
+                        img: "assets/img/09-Icons/4.png"
                     },
                     {
                         name: "CSS",
-                        img: "assets/img/09-Icons/3.png"
+                        img: "assets/img/09-Icons/5.png"
                     },
                     {
                         name: "JavaScript",
-                        img: "assets/img/09-Icons/4.png"
+                        img: "assets/img/09-Icons/3.png"
                     },
                 ],
                 "live-link": "https://el-pollo-loco.michelle-puschkarow.de/",
@@ -84,19 +84,56 @@ var ProjectListDataService = /** @class */ (function () {
                 languages: [
                     {
                         name: "HTML",
-                        img: "assets/img/09-Icons/2.png"
+                        img: "assets/img/09-Icons/4.png"
                     },
                     {
                         name: "CSS",
-                        img: "assets/img/09-Icons/3.png"
+                        img: "assets/img/09-Icons/5.png"
                     },
                     {
                         name: "JavaScript",
-                        img: "assets/img/09-Icons/4.png"
+                        img: "assets/img/09-Icons/3.png"
                     },
+                    {
+                        name: "API",
+                        img: "assets/img/09-Icons/7.png"
+                    }
                 ],
                 "live-link": "http://pokedex.michelle-puschkarow.de/",
                 "github-link": "https://github.com/Michelle-bit-web/pokedex"
+            },
+            {
+                title: "Bestell App",
+                imgResponsive: "assets/img/04-Projects/project-preview/bestell-app-resp.png",
+                imgResponsiveMobile: "assets/img/04-Projects/project-preview/mobile/bestell-app-resp.png",
+                img: "assets/img/04-Projects/project-preview/bestellapp-desktop.png",
+                imgMobile: "assets/img/04-Projects/project-preview/mobile/bestellapp-desktop.png",
+                description: "project-card.bestell-app.description",
+                details: "project-card.bestell-app.details",
+                languages: [
+                    {
+                        name: "React",
+                        img: "assets/img/09-Icons/21.png"
+                    },
+                    {
+                        name: "Django",
+                        img: "assets/img/09-Icons/23.png"
+                    },
+                    {
+                        name: "HTML",
+                        img: "assets/img/09-Icons/4.png"
+                    },
+                    {
+                        name: "CSS",
+                        img: "assets/img/09-Icons/5.png"
+                    },
+                    {
+                        name: "TypeScript",
+                        img: "assets/img/09-Icons/2.png"
+                    },
+                ],
+                "live-link": "http://bestellApp.michelle-puschkarow.de/",
+                "github-link": "https://github.com/Michelle-bit-web/bestellApp"
             }
         ];
     }
