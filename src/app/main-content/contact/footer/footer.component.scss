@@ -19,6 +19,9 @@ $bg-inverse: black;
   @media(max-width: 450px) {
     gap: 5%;
   }
+  @media(max-width: 325px) {
+    gap: 4%;
+  }
 }
 
 footer {

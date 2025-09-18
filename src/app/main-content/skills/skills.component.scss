@@ -2,7 +2,7 @@
 $text-primary: white;
 $text-inverse: black;
 $accent-primary: #7e4ae7;
-$accent-secondary:#bae011;
+$accent-secondary: #bae011;
 $accent-tertiary: #e08c05;
 $bg-primary: #7e4ae7;
 $bg-secondary: #e08c05;
@@ -30,10 +30,10 @@ section {
   justify-content: center;
   gap: 5%;
   padding: 0 min(160px, 5%);
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
-  @media(max-width: 450px) {
+  @media (max-width: 450px) {
     padding: 0 12px;
   }
 }
@@ -64,7 +64,7 @@ section {
   flex-direction: column;
   align-items: flex-end;
   flex: 0 0 300px;
-   > .sub-heading {
+  > .sub-heading {
     color: $text-primary;
   }
   @media (max-width: 800px) {
@@ -87,7 +87,8 @@ section {
     left: 50%;
     translate: -50% -50%;
     opacity: 0;
-    background: url("./../../../../public/assets/img/03-Skills/circle-line.png") center/contain no-repeat;
+    background: url("./../../../../public/assets/img/03-Skills/circle-line.png")
+      center/contain no-repeat;
   }
 }
 
@@ -103,12 +104,10 @@ section {
   animation: loadAppearEn 0.6s ease 1s forwards;
 }
 
-
 @keyframes loadAppearEn {
   0% {
     height: 0;
     opacity: 0;
-    
   }
   100% {
     height: 150%;
@@ -120,7 +119,6 @@ section {
   0% {
     height: 0;
     opacity: 0;
-    
   }
   100% {
     height: 160%;
@@ -129,15 +127,19 @@ section {
 }
 
 .div-paper {
-    height: fit-content;
-    flex: 1 0 0;
-    background: url("./../../../../public/assets/img/03-Skills/paper-decription.png") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 32px 16px;
-    @media(max-width: 450px) {
-    padding: 32px 0;
+  height: fit-content;
+  flex: 1 0 0;
+  background: url("./../../../../public/assets/img/03-Skills/paper-decription.png")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  @media (max-width: 1000px) {
+    padding: 36px 0px 0px 0px;
+  }
+  @media (max-width: 450px) {
+    padding: 36px 0px 24px 0px;
   }
 }
 
@@ -146,7 +148,7 @@ section {
   justify-content: flex-end;
   width: 100%;
   gap: 16px;
-  @media(max-width: 640px) {
+  @media (max-width: 640px) {
     flex-direction: column;
   }
 }
@@ -156,29 +158,38 @@ section {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  @media(max-width: 640px) {
-    flex: 0 1 0rem;;
+  @media (max-width: 640px) {
+    flex: 0 1 0rem;
   }
-  @media(max-width: 570px) {
-  justify-content: center;
-  align-items: center;
+  @media (max-width: 570px) {
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .icon-and-text {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: flex-start;
- > .text {
-  color: transparent;
-  transition: color 1s ease;
- }
- &:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   > .text {
-   color: $text-primary;
+    color: transparent;
+    transition: color 1s ease;
   }
- }
+  > p {
+    font-size: 16px;
+  }
+  &:hover {
+    > .text {
+      color: $text-primary;
+    }
+    > picture {
+      > .icon {
+        filter: saturate(1);
+        transform: scale(0.9);
+      }
+    }
+  }
 }
 
 .text.touch {
@@ -200,12 +211,8 @@ section {
   width: 7.2rem;
   height: 7.2rem;
   margin: 16px;
-  filter: saturate(0); 
-  &:hover {
-    filter: saturate(1);
-    transform: scale(0.9);
-  }
-  @media(max-width: 650px) {
+  filter: saturate(0);
+  @media (max-width: 650px) {
     width: 6.5rem;
     height: 6.5rem;
   }
@@ -238,7 +245,7 @@ section {
 }
 
 .peel-info {
-  font-family: 'Kalam';
+  font-family: "Kalam";
   font-size: min(2.8rem, calc(5vw + 1rem));
   position: absolute;
   bottom: 7%;
@@ -269,7 +276,8 @@ section {
 }
 
 .sticker {
-  background: url("./../../../../public/assets/img/03-Skills/sticker-C.png") center/contain no-repeat;
+  background: url("./../../../../public/assets/img/03-Skills/sticker-C.png")
+    center/contain no-repeat;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -301,7 +309,8 @@ section {
 
   &::before {
     content: "";
-    background: url("./../../../../public/assets/img/03-Skills/sticker-B.png") center/contain no-repeat;
+    background: url("./../../../../public/assets/img/03-Skills/sticker-B.png")
+      center/contain no-repeat;
     z-index: 1;
   }
 
@@ -312,7 +321,8 @@ section {
     font-size: 2.8rem;
     align-items: center;
     justify-content: center;
-    background: url("./../../../../public/assets/img/03-Skills/sticker-A.png") center/contain no-repeat;
+    background: url("./../../../../public/assets/img/03-Skills/sticker-A.png")
+      center/contain no-repeat;
     z-index: 2;
   }
 
@@ -330,7 +340,7 @@ section {
   &:not:hover::after {
     animation: fadeInDown 0.5s 0.5s forwards; // startet nach A
   }
-  &:hover .peel-info{
+  &:hover .peel-info {
     animation: fadeOutUp 0.5s forwards;
   }
 }
@@ -357,16 +367,15 @@ span {
   font-size: clamp(18px, 3.5vw + 1rem, 20px);
   color: $text-inverse;
   padding: min(1em, 5%);
-  @media(max-width: 450px) {
+  @media (max-width: 450px) {
     font-size: 16px;
   }
 }
 
 h2 {
-    text-align: end;
-    font-size: clamp(48px, 6.2vw + 1rem, 64px);
-    @media(max-width: 450px) {
-      font-size: 32px;
-    }
+  text-align: end;
+  font-size: clamp(48px, 6.2vw + 1rem, 64px);
+  @media (max-width: 450px) {
+    font-size: 32px;
   }
-
+}

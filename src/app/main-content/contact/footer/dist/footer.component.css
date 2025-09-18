@@ -10,6 +10,11 @@
     gap: 5%;
   }
 }
+@media (max-width: 325px) {
+  .link-wrapper {
+    gap: 4%;
+  }
+}
 
 footer {
   height: auto;
